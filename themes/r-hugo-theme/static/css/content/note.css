@@ -1,0 +1,33 @@
+main .note,
+main .note_warning,
+main .note_caution,
+main .note_tip {
+  padding: 0.5rem 1rem;
+  display: block;
+  border-left: solid 0.5rem #5f0f40;
+  font-size: 1.4rem;
+  width: fit-content;
+  max-width: 100%;
+}
+main .note::before,
+main .note_warning::before,
+main .note_caution::before,
+main .note_tip::before {
+  white-space: pre;
+  font-size: inherit;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+main .note::before {
+  content: "NOTE: ";
+}
+main .note_warning::before {
+  content: "WARNING: ";
+}
+main .note_caution::before {
+  content: "CAUTION: ";
+}
+main .note_tip::before {
+  content: "TIP: ";
+}

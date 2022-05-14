@@ -4,7 +4,6 @@ footer {
   bottom: 0;
   background-color: var(--background-dark);
   color: var(--text-light);
-  padding: 1rem 2.5rem;
   min-height: fit-content;
 }
 

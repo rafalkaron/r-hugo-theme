@@ -14,7 +14,7 @@ html {
   font-family: "Oxygen", Arial, Helvetica, sans-serif;
   line-height: 1.6em;
   text-align: left;
-  color: #222222;
+  color: var(--text-dark);
   font-size: 1.6rem;
 }
 

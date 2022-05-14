@@ -4,3 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+main {
+  display: block;
+  min-width: 60rem;
+  margin: 5rem 10rem;
+}
+
+body {
+  margin: 0;
+  min-width: 375px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: var(--background-light);
+}

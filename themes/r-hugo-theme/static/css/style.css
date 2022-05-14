@@ -4,6 +4,7 @@
 @import "layout/base.css";
 @import "layout/header.css";
 @import "layout/footer.css";
+@import "layout/columns.css";
 
 /* CONTENT */
 @import "content/headings.css";
@@ -13,6 +14,7 @@
 @import "content/link.css";
 @import "content/list.css";
 @import "content/quote.css";
+@import "content/note.css";
 
 /* STYLING */
 @import "styling/typography.css";

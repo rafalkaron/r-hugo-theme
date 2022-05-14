@@ -1,0 +1,37 @@
+.two_column {
+  column-count: 2;
+}
+
+.three_column {
+  column-count: 3;
+}
+
+.four_column {
+  column-count: 4;
+}
+
+/* Style column classes */
+.two_column,
+.three_column,
+.four_column {
+  column-gap: 1.6rem;
+}
+
+/* Avoid breaking some elements in columns */
+.two_column p,
+.three_column p,
+.four_column p,
+.two_column dt,
+.three_column dt,
+.four_column dt,
+.two_column dd,
+.three_column dd,
+.four_column dd,
+.two_column h1,
+.three_column h1,
+.four_column h1,
+.two_column h2,
+.three_column h2,
+.four_column h2 {
+  break-inside: avoid;
+}
