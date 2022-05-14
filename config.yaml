@@ -6,7 +6,9 @@ theme: "r-hugo-theme"
 
 Menus:
   main:
-    - Name: "Home"
-      URL: "/home"
+    - Name: "Site"
+      URL: "/site"
     - Name: "Blog"
       URL: "/blog"
+    - Name: "Structure"
+      URL: "/structure"
