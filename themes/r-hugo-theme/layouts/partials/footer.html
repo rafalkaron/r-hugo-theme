@@ -6,15 +6,30 @@
     </p>
   </div>
   <div class="footer-column footer-contact">
-    <a target="blank" class="footer-image-link" href="mailto:mail@domain.com" title="Email"><img class="footer-icon"
-        src="img/email.svg" /></a>
-    <a target="blank" class="footer-image-link" href="https://github.com/github_id" title="GitHub"><img
-        class="footer-icon" src="img/github.svg" /></a>
-    <a target="blank" class="footer-image-link" href="https://linkedin.com/in/linkedin_id" title="LinkedIn"><img
+
+    {{ if .Site.Params.email }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.footer.email }}" title="Email"><img
+        class="footer-icon" src="img/email.svg" /></a>
+    {{ end }}
+
+    {{ if .Site.Params.github }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.github }}" title="GitHub"><img class="footer-icon"
+        src="img/github.svg" /></a>
+    {{ end }}
+
+    {{ if .Site.Params.linkedin }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.linkedin }}" title="LinkedIn"><img
         class="footer-icon" src="img/linkedin.svg" /></a>
-    <a target="blank" class="footer-image-link" href="https://twitter.com/twitter_id" title="Twitter"><img
+    {{ end }}
+
+    {{ if .Site.Params.twitter }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.twitter }}" title="Twitter"><img
         class="footer-icon" src="img/twitter.svg" /></a>
-    <a target="blank" class="footer-image-link" href="https://500px.com/500px_id" title="500px"><img class="footer-icon"
-        src="img/500px.svg" /></a>
+    {{ end }}
+
+    {{ if .Site.Params.five_o_o_px }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.five_o_o_px }}" title="500px"><img
+        class="footer-icon" src="img/500px.svg" /></a>
+    {{ end }}
   </div>
 </footer>

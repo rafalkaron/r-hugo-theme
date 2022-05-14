@@ -17,8 +17,9 @@ Menus:
       weight: 3
 
 Params:
-  - email: "mailto:mail@domain.com"
-  - github: "https://github.com/github_id"
-  - linkedin: "https://linkedin.com/in/linkedin_id"
-  - twitter: "https://twitter.com/twitter_id"
-  - 500px: "https://500px.com/500px_id"
+  # Leave blank to automatically remove icon from the footer
+  email: "mailto:mail@domain.com"
+  github: "https://github.com/github_id"
+  linkedin: "https://linkedin.com/in/linkedin_id"
+  twitter: "https://twitter.com/twitter_id"
+  five_o_o_px: "https://500px.com/500px_id"
