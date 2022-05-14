@@ -13,5 +13,7 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
 # Hugo
 .hugo_build.lock
+_site/
