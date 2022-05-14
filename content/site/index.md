@@ -1,5 +1,5 @@
 ---
-title: site
+title: Site
 draft: false
 ---
 # Site
