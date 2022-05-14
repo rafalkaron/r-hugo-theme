@@ -1,0 +1,54 @@
+main ol,
+main ul {
+  margin: 0;
+}
+main li {
+  margin: 0.8rem 0;
+  font-size: 1.6rem;
+}
+main ul.items {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.8rem 0 0 0;
+  padding: 0;
+}
+main ul.items > li {
+  font-size: 1.3rem;
+  list-style: none;
+  padding: 0.25em 0.75em;
+  margin: 0.8rem 1.6rem 0.8rem 0;
+  background-color: #e0e0e0;
+  color: #222222;
+  border-radius: 0.25rem;
+  width: auto;
+  text-align: center;
+  vertical-align: middle;
+  display: inline;
+  text-decoration: none;
+}
+main ul.items * {
+  border: none;
+  text-decoration: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+main dl {
+  display: block;
+  margin: 1.6rem 0;
+}
+main dd + dt {
+  margin-top: 1.6rem;
+}
+main dt,
+main dd {
+  border-left: solid 0.5rem #5f0f40;
+  padding: 0 0 0 1.4rem;
+  font-size: 1.4rem;
+}
+main dt,
+main dt * {
+  font-weight: bold;
+}
+main dd {
+  margin: 0 0 0 0;
+}

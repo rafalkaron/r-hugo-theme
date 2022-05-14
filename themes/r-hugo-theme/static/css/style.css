@@ -1,11 +1,22 @@
 @import "variables.css";
+
 /* LAYOUT */
 @import "layout/base.css";
 @import "layout/header.css";
 @import "layout/footer.css";
+
+/* CONTENT */
+@import "content/headings.css";
+@import "content/code.css";
+@import "content/table.css";
+@import "content/images.css";
+@import "content/link.css";
+@import "content/list.css";
+@import "content/quote.css";
 
 /* STYLING */
 @import "styling/typography.css";
 @import "styling/hide_scrollbar.css";
 @import "styling/smooth_scroll.css";
 @import "styling/animations.css";
+@import "styling/selection.css";

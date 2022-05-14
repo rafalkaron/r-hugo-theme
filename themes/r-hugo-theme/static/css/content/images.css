@@ -1,0 +1,33 @@
+/* Images */
+img {
+  overflow: auto;
+  padding: 0;
+  margin: var(--margin) 0;
+  max-width: 100%;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+img.center {
+  margin: var(--margin) auto;
+  display: block;
+}
+.left {
+  float: left;
+  display: block;
+}
+.right {
+  float: right;
+  display: block;
+}
+
+/* Figures */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  font-weight: bold;
+  color: var(--text-dark);
+}
