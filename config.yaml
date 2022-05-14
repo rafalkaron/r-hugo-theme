@@ -15,3 +15,10 @@ Menus:
     - Name: "Blog"
       URL: "/blog"
       weight: 3
+
+Params:
+  - email: "mailto:mail@domain.com"
+  - github: "https://github.com/github_id"
+  - linkedin: "https://linkedin.com/in/linkedin_id"
+  - twitter: "https://twitter.com/twitter_id"
+  - 500px: "https://500px.com/500px_id"

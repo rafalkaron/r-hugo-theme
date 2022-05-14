@@ -4,7 +4,6 @@ footer {
   bottom: 0;
   background-color: var(--background-dark);
   color: var(--text-light);
-  min-height: fit-content;
   display: flex;
   justify-content: space-between;
 }
@@ -15,13 +14,21 @@ footer * {
 
 div.footer-column {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  margin: auto var(--margin-extra-large);
+  flex-shrink: 0;
+}
+
+div.footer-copyr {
+  margin-left: var(--margin-extra-large);
+  margin-right: var(--margin);
+}
+
+div.footer-contact {
+  margin-right: var(--margin-extra-large);
+  margin-left: var(--margin);
 }
 
 div.footer-contact > a > img {
   width: 2.8rem;
-  height: 2.8rem;
   padding-left: 0.8rem;
 }
