@@ -17,3 +17,7 @@
 # Hugo
 .hugo_build.lock
 _site/
+
+# Temp
+.DS_Store
+*.swp
