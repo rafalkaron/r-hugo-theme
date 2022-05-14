@@ -8,7 +8,10 @@ Menus:
   main:
     - Name: "Site"
       URL: "/site"
-    - Name: "Blog"
-      URL: "/blog"
+      weight: 1
     - Name: "Structure"
       URL: "/structure"
+      weight: 2
+    - Name: "Blog"
+      URL: "/blog"
+      weight: 3

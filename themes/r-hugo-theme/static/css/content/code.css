@@ -6,23 +6,20 @@ code {
   background-color: var(--background-dark);
   font-family: "Oxygen Mono", monospace;
   color: var(--text-light);
+  border-radius: 0.25rem;
 }
 code * {
   font-family: "Oxygen Mono", monospace;
   color: var(--text-light);
 }
-main :not(pre) > code {
-  color: var(--background-dark);
-  border-radius: 0.25rem;
-  font-size: 1.4rem;
-}
+
 main pre {
   margin: 1.6rem 0;
   padding: 0;
   display: block;
   width: fit-content;
-  border-radius: 0.25rem;
 }
+
 @media screen {
   main pre {
     max-height: 70vh;
