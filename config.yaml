@@ -1,0 +1,12 @@
+baseURL: "https://rafalkaron.github.io/"
+languageCode: "en-us"
+title: "RK"
+params: description = "TODO"
+theme: "r-hugo-theme"
+
+Menus:
+  main:
+    - Name: "Site"
+      URL: "/site"
+    - Name: "Blog"
+      URL: "/blog"
