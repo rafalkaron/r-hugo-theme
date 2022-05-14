@@ -1,5 +1,0 @@
-/* Style selected text highlight */
-*::selection {
-    background-color: $primary-color;
-    color: $text-light;
-}
