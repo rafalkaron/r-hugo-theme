@@ -13,9 +13,9 @@ html {
 * {
   font-family: "Oxygen", Arial, Helvetica, sans-serif;
   line-height: 1.6em;
-  text-align: left;
   color: var(--text-dark);
   font-size: 1.6rem;
+  text-align: justify;
 }
 
 /* Prevent font scaling in landscape */

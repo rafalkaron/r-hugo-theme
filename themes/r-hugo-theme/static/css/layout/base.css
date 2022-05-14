@@ -8,7 +8,8 @@
 main {
   display: block;
   min-width: 60rem;
-  margin: var(--margin-large) var(--margin-extra-large);
+  margin: calc(var(--margin-large) + var(--margin-large))
+    var(--margin-extra-large) var(--margin-large) var(--margin-extra-large);
 }
 
 body {

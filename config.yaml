@@ -1,6 +1,6 @@
 baseURL: "https://rafalkaron.github.io/"
 languageCode: "en-us"
-title: "RK"
+title: "R theme"
 params: description = "TODO"
 theme: "r-hugo-theme"
 
@@ -27,4 +27,4 @@ Params:
   # Add favicon
   favicon_href: "img/favicon.svg"
   # Add site logo to the header, leave blank to skip
-  logo_href: "img/logo.svg"
+  logo_href:
