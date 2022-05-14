@@ -7,7 +7,7 @@ theme: "r-hugo-theme"
 Menus:
   main:
     - Name: "Site"
-      URL: "/site"
+      URL: "/"
       weight: 1
     - Name: "Structure"
       URL: "/structure"
