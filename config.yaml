@@ -23,3 +23,8 @@ Params:
   linkedin: "https://linkedin.com/in/linkedin_id"
   twitter: "https://twitter.com/twitter_id"
   five_o_o_px: "https://500px.com/500px_id"
+
+  # Add favicon
+  favicon_href: "img/favicon.svg"
+  # Add site logo to the header, leave blank to skip
+  logo_href: "img/logo.svg"
