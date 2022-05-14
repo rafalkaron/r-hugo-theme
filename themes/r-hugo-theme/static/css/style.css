@@ -37,7 +37,7 @@ html {
     background-color: #f4f4f4;
   }
 
-  main#page-content {
+  main {
     display: block;
     min-width: 60rem;
     margin: 0 0 0 40rem;
@@ -48,23 +48,13 @@ html {
     padding: 5rem 10rem;
   }
 
-  div#post-list-container {
-    margin-top: 2.5rem;
-  }
-
-  div#post-list-container article {
-    padding: 2.5rem 10rem;
-  }
-
-  article + article,
-  div#tags-container,
-  div#categories-container {
+  article + article {
     border-top: 0.5rem dotted #e0e0e0;
   }
 
   /*** Body - END */
   /*** Header - START */
-  header#site-header {
+  header {
     position: fixed;
     display: flexbox;
     width: 30rem;
@@ -99,7 +89,7 @@ html {
   }
 
   /* Navigation */
-  nav#site-nav {
+  nav {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -125,7 +115,7 @@ html {
   }
 
   /* Navigation links */
-  div#toc-pages ul {
+  nav ul {
     margin: 0;
     padding: 0;
     display: flexbox;
@@ -133,7 +123,7 @@ html {
     flex-wrap: wrap;
   }
 
-  div#toc-sections ul {
+  nav ul {
     margin: 0;
     padding: 0;
     display: flexbox;
@@ -141,32 +131,32 @@ html {
     flex-wrap: wrap;
   }
 
-  div#toc-pages li {
+  nav li {
     list-style: none;
     padding-bottom: 0.8em;
   }
 
-  div#toc-pages li:last-of-type {
+  nav li:last-of-type {
     padding-bottom: 0;
   }
 
-  div#toc-sections li {
+  nav li {
     list-style: none;
     padding-bottom: 0.4em;
     line-height: 1em;
   }
 
   /* Navigation links */
-  #toc-pages a.nav-link {
+  nav a.nav-link {
     font-weight: bold;
     font-size: 2.2rem;
   }
 
-  #toc-sections a.nav-link {
+  nav a.nav-link {
     font-size: 1.4rem;
   }
 
-  a.nav-link {
+  nav a {
     color: #f4f4f4;
     text-decoration: none;
     text-transform: lowercase;
@@ -179,9 +169,15 @@ html {
     text-decoration: underline;
   }
 
+  header > a:first-child {
+    color: white;
+    size: 25rem;
+    text-decoration: none;
+  }
+
   /*** Header - END */
   /*** Footer - START */
-  footer#site-footer {
+  footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -229,10 +225,6 @@ html {
     color: #222222;
     padding: 5rem;
   }
-
-  div#post-list-container article {
-    padding: 2.5rem 5rem;
-  }
 }
 @media only screen and (max-width: 1015px) {
   /*** General - START  */
@@ -266,7 +258,7 @@ html {
     background-color: #f4f4f4;
   }
 
-  main#page-content {
+  main {
     margin: 0;
   }
 
@@ -283,15 +275,13 @@ html {
     margin-top: 2.5rem;
   }
 
-  article + article,
-  div#categories-container,
-  div#tags-container {
+  article + article {
     border-top: 0.5rem dotted #e0e0e0;
   }
 
   /*** Body - END */
   /*** Header - START */
-  header#site-header {
+  header {
     position: relative;
     top: 0;
     left: 0;
@@ -330,7 +320,7 @@ html {
   }
 
   /* Navigation */
-  nav#site-nav {
+  nav {
     margin: 0;
   }
 
@@ -343,7 +333,7 @@ html {
   }
 
   /* Navigation links */
-  div#toc-pages ul {
+  nav ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -351,7 +341,7 @@ html {
     flex-wrap: wrap;
   }
 
-  div#toc-sections ul {
+  nav ul {
     margin: 0;
     padding: 0;
     display: flex;
@@ -359,13 +349,13 @@ html {
     flex-wrap: wrap;
   }
 
-  div#toc-pages li {
+  nav li {
     padding: 0 0.8rem;
     list-style: none;
     text-align: right;
   }
 
-  div#toc-sections li {
+  nav li {
     padding: 0 0.8rem;
     padding-bottom: 0.4em;
     list-style: none;
@@ -373,12 +363,12 @@ html {
     text-align: right;
   }
 
-  #toc-pages a.nav-link {
+  nav a.nav-link {
     font-weight: bold;
     font-size: 2.2rem;
   }
 
-  #toc-sections a.nav-link {
+  nav a.nav-link {
     font-size: 1.4rem;
   }
 
@@ -478,21 +468,21 @@ html {
     width: 100%;
   }
 
-  div#toc-pages ul {
+  nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
   }
 
-  div#toc-sections ul {
+  nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
   }
 
-  #toc-pages a.nav-link {
+  nav a.nav-link {
     font-weight: bold;
     font-size: 2.2rem;
     text-align: center;
@@ -500,7 +490,7 @@ html {
     justify-content: center;
   }
 
-  #toc-sections a.nav-link {
+  nav a.nav-link {
     font-size: 1.4rem;
     text-align: center;
     display: flex;
@@ -620,17 +610,17 @@ html {
     break-after: always;
   }
 
-  div#toc-sections ul {
+  nav ul {
     margin: 0;
   }
 
-  div#toc-sections li {
+  nav li {
     color: #222222;
     margin: 0.8rem 0;
     font-size: 1.8rem;
   }
 
-  #toc-sections a.nav-link {
+  nav a.nav-link {
     text-decoration: none;
     color: #295180;
     font-weight: bold;
@@ -682,21 +672,21 @@ html {
 
   /*** Titles - END */
   /*** Links - START */
-  main#page-content a {
+  main a {
     border-bottom: none !important;
     color: #222222;
   }
-  main#page-content a.expand {
+  main a.expand {
     color: #295180;
   }
-  main#page-content a.expand::after {
+  main a.expand::after {
     content: " (" attr(href) ") ";
     font-weight: normal;
   }
-  main#page-content li abbr,
-  main#page-content li abbr[title],
-  main#page-content p abbr,
-  main#page-content p abbr[title] {
+  main li abbr,
+  main li abbr[title],
+  main p abbr,
+  main p abbr[title] {
     border-bottom: none !important;
     color: #222222;
   }
@@ -788,7 +778,7 @@ html {
 
 /*** Page-level animations - START*/
 main,
-#toc-sections li {
+li {
   -webkit-animation: fadein 1s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1s;
@@ -940,20 +930,20 @@ input:focus {
   color: #f4f4f4;
 }
 
-main#page-content p {
+main p {
   margin: 1.6rem 0 0 0;
   display: block;
   font-size: 1.6rem;
 }
-main#page-content h1 + p,
-main#page-content h2 + p,
-main#page-content h3 + p,
-main#page-content h4 + p,
-main#page-content h5 + p,
-main#page-content h6 + p {
+main h1 + p,
+main h2 + p,
+main h3 + p,
+main h4 + p,
+main h5 + p,
+main h6 + p {
   margin-top: 0.8rem;
 }
-main#page-content code {
+main code {
   word-wrap: break-word;
   display: inline;
   width: auto;
@@ -961,15 +951,15 @@ main#page-content code {
   background-color: #e0e0e0;
   font-family: "Oxygen Mono", monospace;
 }
-main#page-content code * {
+main code * {
   font-family: "Oxygen Mono", monospace;
 }
-main#page-content :not(pre) > code {
+main :not(pre) > code {
   color: #222222;
   border-radius: 0.25rem;
   font-size: 1.4rem;
 }
-main#page-content pre {
+main pre {
   margin: 1.6rem 0;
   padding: 0;
   display: block;
@@ -977,14 +967,14 @@ main#page-content pre {
   border-radius: 0.25rem;
 }
 @media screen {
-  main#page-content pre {
+  main pre {
     max-height: 70vh;
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 }
-main#page-content pre > code {
+main pre > code {
   white-space: pre-wrap;
   margin: 0;
   padding: 1rem;
@@ -992,15 +982,15 @@ main#page-content pre > code {
   font-size: 1.3rem;
   line-height: 1.3em;
 }
-main#page-content pre > code * {
+main pre > code * {
   font-size: 1.3rem;
 }
-main#page-content .language-python pre code {
+main .language-python pre code {
   white-space: pre;
   overflow-x: scroll;
   overflow-y: scroll;
 }
-main#page-content table {
+main table {
   width: 100%;
   margin: 1.6rem 0;
   table-layout: auto;
@@ -1009,55 +999,55 @@ main#page-content table {
   border-top: 0.25rem solid #5f0f40;
   border-bottom: 0.25rem solid #5f0f40;
 }
-main#page-content table:has(thead) {
+main table:has(thead) {
   border-top: none;
 }
-main#page-content td,
-main#page-content tr,
-main#page-content th {
+main td,
+main tr,
+main th {
   padding: 0.5em;
 }
-main#page-content th,
-main#page-content th * {
+main th,
+main th * {
   font-weight: bold;
   color: #f4f4f4;
   background-color: #5f0f40;
 }
-main#page-content tr:nth-child(odd) > td {
+main tr:nth-child(odd) > td {
   background-color: transparent;
 }
-main#page-content tr:nth-child(even) > td {
+main tr:nth-child(even) > td {
   background-color: #e0e0e0;
 }
-main#page-content table.cv-experience {
+main table.cv-experience {
   border: none;
   width: 100%;
   margin-top: 1.6rem;
   display: block;
 }
-main#page-content table.cv-experience thead {
+main table.cv-experience thead {
   display: none;
 }
-main#page-content table.cv-experience tr > td {
+main table.cv-experience tr > td {
   background-color: transparent;
   vertical-align: top;
 }
-main#page-content table.cv-experience tr > td:nth-child(1) {
+main table.cv-experience tr > td:nth-child(1) {
   padding: 0.75rem 2.5rem 0.75rem 0;
 }
-main#page-content table.cv-experience tr > td:nth-child(2) {
+main table.cv-experience tr > td:nth-child(2) {
   border-left: solid 0.25rem #5f0f40;
   padding: 0.75rem 0 0.75rem 2.5rem;
 }
-main#page-content table.cv-experience td {
+main table.cv-experience td {
   color: #5f0f40;
   font-size: 1.4rem;
 }
-main#page-content table.cv-experience td strong {
+main table.cv-experience td strong {
   color: #222222;
   font-size: 1.6rem;
 }
-main#page-content img {
+main img {
   overflow: auto;
   padding: 0;
   margin: 1.6rem 0;
@@ -1065,27 +1055,27 @@ main#page-content img {
   display: block;
   border-radius: 0.25rem;
 }
-main#page-content img.center {
+main img.center {
   margin: 1.6rem auto;
   display: block;
 }
-main#page-content .left {
+main .left {
   float: left;
   display: block;
 }
-main#page-content .right {
+main .right {
   float: right;
   display: block;
 }
-main#page-content figure {
+main figure {
   margin: 0;
   padding: 0;
 }
-main#page-content figcaption {
+main figcaption {
   font-weight: bold;
   color: #5f0f40;
 }
-main#page-content code {
+main code {
   word-wrap: break-word;
   display: inline;
   width: auto;
@@ -1093,15 +1083,15 @@ main#page-content code {
   background-color: #e0e0e0;
   font-family: "Oxygen Mono", monospace;
 }
-main#page-content code * {
+main code * {
   font-family: "Oxygen Mono", monospace;
 }
-main#page-content :not(pre) > code {
+main :not(pre) > code {
   color: #222222;
   border-radius: 0.25rem;
   font-size: 1.4rem;
 }
-main#page-content pre {
+main pre {
   margin: 1.6rem 0;
   padding: 0;
   display: block;
@@ -1109,14 +1099,14 @@ main#page-content pre {
   border-radius: 0.25rem;
 }
 @media screen {
-  main#page-content pre {
+  main pre {
     max-height: 70vh;
     overflow-y: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
 }
-main#page-content pre > code {
+main pre > code {
   white-space: pre-wrap;
   margin: 0;
   padding: 1rem;
@@ -1124,26 +1114,26 @@ main#page-content pre > code {
   font-size: 1.3rem;
   line-height: 1.3em;
 }
-main#page-content pre > code * {
+main pre > code * {
   font-size: 1.3rem;
 }
-main#page-content .language-python pre code {
+main .language-python pre code {
   white-space: pre;
   overflow-x: scroll;
   overflow-y: scroll;
 }
-main#page-content cite {
+main cite {
   font-style: italic;
 }
-main#page-content q {
+main q {
   font-style: italic;
 }
-main#page-content q::before,
-main#page-content q::after {
+main q::before,
+main q::after {
   content: '"';
   font-style: inherit;
 }
-main#page-content blockquote {
+main blockquote {
   width: fit-content;
   margin: 1.6rem 0;
   padding: 0 0.5rem 0 1.2rem;
@@ -1151,24 +1141,24 @@ main#page-content blockquote {
   border-left: solid 0.5rem #5f0f40;
   border-color: #e0e0e0;
 }
-main#page-content blockquote * {
+main blockquote * {
   font-size: 1.3rem;
 }
-main#page-content ol,
-main#page-content ul {
+main ol,
+main ul {
   margin: 0;
 }
-main#page-content li {
+main li {
   margin: 0.8rem 0;
   font-size: 1.6rem;
 }
-main#page-content ul.items {
+main ul.items {
   display: flex;
   flex-wrap: wrap;
   margin: 0.8rem 0 0 0;
   padding: 0;
 }
-main#page-content ul.items > li {
+main ul.items > li {
   font-size: 1.3rem;
   list-style: none;
   padding: 0.25em 0.75em;
@@ -1182,36 +1172,36 @@ main#page-content ul.items > li {
   display: inline;
   text-decoration: none;
 }
-main#page-content ul.items * {
+main ul.items * {
   border: none;
   text-decoration: inherit;
   font-size: inherit;
   font-weight: inherit;
 }
-main#page-content dl {
+main dl {
   display: block;
   margin: 1.6rem 0;
 }
-main#page-content dd + dt {
+main dd + dt {
   margin-top: 1.6rem;
 }
-main#page-content dt,
-main#page-content dd {
+main dt,
+main dd {
   border-left: solid 0.5rem #5f0f40;
   padding: 0 0 0 1.4rem;
   font-size: 1.4rem;
 }
-main#page-content dt,
-main#page-content dt * {
+main dt,
+main dt * {
   font-weight: bold;
 }
-main#page-content dd {
+main dd {
   margin: 0 0 0 0;
 }
-main#page-content .note,
-main#page-content .note_warning,
-main#page-content .note_caution,
-main#page-content .note_tip {
+main .note,
+main .note_warning,
+main .note_caution,
+main .note_tip {
   padding: 0.5rem 1rem;
   display: block;
   border-left: solid 0.5rem #5f0f40;
@@ -1219,66 +1209,66 @@ main#page-content .note_tip {
   width: fit-content;
   max-width: 100%;
 }
-main#page-content .note::before,
-main#page-content .note_warning::before,
-main#page-content .note_caution::before,
-main#page-content .note_tip::before {
+main .note::before,
+main .note_warning::before,
+main .note_caution::before,
+main .note_tip::before {
   white-space: pre;
   font-size: inherit;
   display: inline-block;
   font-weight: bold;
   font-size: 1.4rem;
 }
-main#page-content .note::before {
+main .note::before {
   content: "NOTE: ";
 }
-main#page-content .note_warning::before {
+main .note_warning::before {
   content: "WARNING: ";
 }
-main#page-content .note_caution::before {
+main .note_caution::before {
   content: "CAUTION: ";
 }
-main#page-content .note_tip::before {
+main .note_tip::before {
   content: "TIP: ";
 }
-main#page-content abbr,
-main#page-content abbr[title] {
+main abbr,
+main abbr[title] {
   text-decoration: none;
   font-weight: inherit;
   line-height: inherit;
   font-size: inherit;
 }
-main#page-content li abbr,
-main#page-content li abbr[title],
-main#page-content p abbr,
-main#page-content p abbr[title] {
+main li abbr,
+main li abbr[title],
+main p abbr,
+main p abbr[title] {
   text-decoration: none;
   border-bottom: 0.25rem dotted #e0e0e0;
   font-size: inherit;
 }
-main#page-content a > abbr,
-main#page-content a > abbr[title] {
+main a > abbr,
+main a > abbr[title] {
   text-decoration: inherit;
   border-bottom: inherit;
 }
-main#page-content abbr:hover,
-main#page-content abbr:focus,
-main#page-content abbr:active,
-main#page-content abbr[title]:hover,
-main#page-content abbr[title]:focus,
-main#page-content abbr[title]:active {
+main abbr:hover,
+main abbr:focus,
+main abbr:active,
+main abbr[title]:hover,
+main abbr[title]:focus,
+main abbr[title]:active {
   color: #5f0f40;
 }
 @media only screen and (max-width: 450px), (max-height: 450px) {
-  main#page-content abbr[title] {
+  main abbr[title] {
     position: relative;
     /* ensure consistent styling across browsers */
     text-decoration: inherit;
     border-bottom: none;
     font-size: inherit;
   }
-  main#page-content abbr[title]:hover::after,
-  main#page-content abbr[title]:focus::after {
+  main abbr[title]:hover::after,
+  main abbr[title]:focus::after {
     content: attr(title);
     position: absolute;
     left: 0;
@@ -1296,31 +1286,31 @@ main#page-content abbr[title]:active {
     padding: 0.25rem 0.75rem;
   }
 }
-main#page-content a {
+main a {
   text-decoration: none;
   color: #295180;
   font-weight: bold;
 }
-main#page-content a > abbr {
+main a > abbr {
   text-decoration: inherit;
   color: inherit;
 }
-main#page-content a:hover,
-main#page-content a:active,
-main#page-content a:focus {
+main a:hover,
+main a:active,
+main a:focus {
   text-decoration: underline;
 }
-main#page-content a:hover > abbr,
-main#page-content a:active > abbr,
-main#page-content a:focus > abbr {
+main a:hover > abbr,
+main a:active > abbr,
+main a:focus > abbr {
   color: inherit;
 }
-main#page-content h1,
-main#page-content h2,
-main#page-content h3,
-main#page-content h4,
-main#page-content h5,
-main#page-content h6 {
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
   margin: 1.5em 0 0 0;
   color: #5f0f40;
   display: block;
@@ -1328,52 +1318,52 @@ main#page-content h6 {
   line-height: 1.1em;
   margin-left: -0.035em;
 }
-main#page-content h1 *,
-main#page-content h2 *,
-main#page-content h3 *,
-main#page-content h4 *,
-main#page-content h5 *,
-main#page-content h6 * {
+main h1 *,
+main h2 *,
+main h3 *,
+main h4 *,
+main h5 *,
+main h6 * {
   letter-spacing: inherit;
   color: inherit;
   font-weight: inherit;
   font-size: inherit;
 }
-main#page-content h1 {
+main h1 {
   margin: 0;
   font-size: 4rem;
   font-weight: bold;
   margin-left: -0.035em;
 }
-main#page-content h2 {
+main h2 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #5f0f40;
 }
-main#page-content h3 {
+main h3 {
   margin: 1em 0 0 0;
   font-size: 2.2rem;
   font-weight: normal;
 }
-main#page-content h4,
-main#page-content h5,
-main#page-content h6 {
+main h4,
+main h5,
+main h6 {
   margin: 1em 0 0 0;
   font-size: 1.8rem;
   font-weight: normal;
 }
-main#page-content h1 > img,
-main#page-content h2 > img,
-main#page-content h3 > img,
-main#page-content h4 > img,
-main#page-content h5 > img,
-main#page-content h6 > img {
+main h1 > img,
+main h2 > img,
+main h3 > img,
+main h4 > img,
+main h5 > img,
+main h6 > img {
   display: inline;
   margin: inherit;
   height: 1.2em;
   margin-bottom: -0.25em;
 }
-main#page-content img.post-image {
+main img.post-image {
   overflow: auto;
   padding: 0;
   margin: 1.6rem 0;
@@ -1382,74 +1372,61 @@ main#page-content img.post-image {
   border-radius: 0.25rem;
   height: unset;
 }
-main#page-content div#post-list-container ul#post-list {
+main div#post-list-container ul#post-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-main#page-content div#post-list-container ul#post-list li.post-item {
+main div#post-list-container ul#post-list li.post-item {
   margin: 0;
   padding: 0;
 }
-main#page-content div#post-list-container ul#post-list li.post-item a.post-link,
-main#page-content
-  div#post-list-container
-  ul#post-list
-  li.post-item
-  a.post-link:hover,
-main#page-content
-  div#post-list-container
-  ul#post-list
-  li.post-item
-  a.post-link:active {
+main div#post-list-container ul#post-list li.post-item a.post-link,
+main div#post-list-container ul#post-list li.post-item a.post-link:hover,
+main div#post-list-container ul#post-list li.post-item a.post-link:active {
   text-decoration-color: #5f0f40;
 }
-main#page-content
-  div#post-list-container
-  ul#post-list
-  li.post-item
-  div.post-excerpt
-  p {
+main div#post-list-container ul#post-list li.post-item div.post-excerpt p {
   margin-top: 1.6rem;
 }
-main#page-content div.read-more,
-main#page-content div.go-back {
+main div.read-more,
+main div.go-back {
   text-align: right;
 }
-main#page-content div.read-more a.read-more-link,
-main#page-content div.read-more a.go-back-link,
-main#page-content div.go-back a.read-more-link,
-main#page-content div.go-back a.go-back-link {
+main div.read-more a.read-more-link,
+main div.read-more a.go-back-link,
+main div.go-back a.read-more-link,
+main div.go-back a.go-back-link {
   font-size: 1.8rem;
 }
-main#page-content div.post-info {
+main div.post-info {
   margin-top: 1.6rem;
 }
-main#page-content div.post-info * {
+main div.post-info * {
   font-weight: bold;
 }
-main#page-content div.post-info span.post-categories {
+main div.post-info span.post-categories {
   text-decoration: none;
   font-weight: bold;
   color: #222222;
 }
-main#page-content div.post-info span.post-categories * {
+main div.post-info span.post-categories * {
   text-decoration: inherit;
   font-weight: inherit;
   color: inherit;
 }
-main#page-content div.post-info span.post-categories:hover,
-main#page-content div.post-info span.post-categories:active {
+main div.post-info span.post-categories:hover,
+main div.post-info span.post-categories:active {
   color: #295180;
   text-decoration: underline;
 }
-main#page-content ul.post-tags {
+main ul.post-tags {
   display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin-top: 0.25rem;
 }
-main#page-content ul.post-tags li.post-tag {
+main ul.post-tags li.post-tag {
   font-size: 1.3rem;
   list-style: none;
   padding: 0.25em 0.75em;
@@ -1464,19 +1441,17 @@ main#page-content ul.post-tags li.post-tag {
   text-decoration: none;
   font-weight: bold;
 }
-main#page-content ul.post-tags li.post-tag * {
+main ul.post-tags li.post-tag * {
   border: none;
   text-decoration: inherit;
   font-size: inherit;
   font-weight: inherit;
   color: inherit;
 }
-main#page-content ul.post-tags li.post-tag:hover,
-main#page-content ul.post-tags li.post-tag:active {
+main ul.post-tags li.post-tag:hover,
+main ul.post-tags li.post-tag:active {
   color: #295180;
 }
-main#page-content img.post-image {
+main img.post-image {
   margin-top: 0;
 }
-
-/*# sourceMappingURL=r.css.map */
