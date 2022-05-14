@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  margin: 0;
+}
+
+* {
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+  text-align: left;
+  color: #222222;
+  font-size: 1.6rem;
+}
+
+/* Prevent font scaling in landscape */
+html {
+  -webkit-text-size-adjust: none;
+}
+
+code,
+code *,
+pre,
+pre * {
+  font-family: "Oxygen Mono", monospace;
+}
+/*
+header > a:first-child {
+  font-family: "Lalezar", sans-serif;
+}*/

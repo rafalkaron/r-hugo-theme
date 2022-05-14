@@ -1,0 +1,42 @@
+header {
+  background-color: var(--background-dark);
+  color: var(--text-light);
+  display: flex;
+}
+
+header > a:first-child {
+  color: var(--text-light);
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 2.4rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav > ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+nav li {
+  list-style: none;
+  padding: 1em 2em;
+}
+
+nav li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+nav a:hover,
+nav a:active,
+nav a:focus {
+  text-decoration: underline;
+}
