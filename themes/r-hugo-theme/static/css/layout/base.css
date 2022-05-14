@@ -8,7 +8,7 @@
 main {
   display: block;
   min-width: 60rem;
-  margin: 5rem 10rem;
+  margin: var(--margin-large) var(--margin-extra-large);
 }
 
 body {

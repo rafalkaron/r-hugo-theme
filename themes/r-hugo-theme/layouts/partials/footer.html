@@ -1,5 +1,20 @@
 <footer>
-  <p>
-    &copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-  </p>
+  <div class="footer-column">
+    <p>
+      &copy; {{ now.Year }}
+      <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+    </p>
+  </div>
+  <div class="footer-column footer-contact">
+    <a target="blank" class="footer-image-link" href="mailto:mail@domain.com" title="Email"><img class="footer-icon"
+        src="img/email.svg" /></a>
+    <a target="blank" class="footer-image-link" href="https://github.com/github_id" title="GitHub"><img
+        class="footer-icon" src="img/github.svg" /></a>
+    <a target="blank" class="footer-image-link" href="https://linkedin.com/in/linkedin_id" title="LinkedIn"><img
+        class="footer-icon" src="img/linkedin.svg" /></a>
+    <a target="blank" class="footer-image-link" href="https://twitter.com/twitter_id" title="Twitter"><img
+        class="footer-icon" src="img/twitter.svg" /></a>
+    <a target="blank" class="footer-image-link" href="https://500px.com/500px_id" title="500px"><img class="footer-icon"
+        src="img/500px.svg" /></a>
+  </div>
 </footer>

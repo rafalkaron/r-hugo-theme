@@ -5,8 +5,23 @@ footer {
   background-color: var(--background-dark);
   color: var(--text-light);
   min-height: fit-content;
+  display: flex;
+  justify-content: space-between;
 }
 
 footer * {
   color: var(--text-light);
+}
+
+div.footer-column {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: auto var(--margin-extra-large);
+}
+
+div.footer-contact > a > img {
+  width: 2.8rem;
+  height: 2.8rem;
+  padding-left: 0.8rem;
 }

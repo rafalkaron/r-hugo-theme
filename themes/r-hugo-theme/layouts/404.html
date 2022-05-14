@@ -1,5 +1,7 @@
-{{ define "main" -}}
-<h1>404: Page not found</h1>
+{{ define "main"}}
+    <main id="main">
+      <div>
+        <h1>404: Page not found</h1>
 <pre
   style="
     white-space: pre;
@@ -7,16 +9,20 @@
     font-size: 1.8rem;
     display: inline-block;
     font-weight: bold;
-    color: #5f0f40;
-  "
->
-  ##          ##
-    ##      ##
-  ##############
-####  ######  ####
+    color: #222222;
+  ">
+    ##          ##
+      ##      ##
+    ##############
+  ####  ######  ####
 ######################
 ##  ##############  ##
 ##  ##          ##  ##
-    ####  ####
+      ####  ####
 </pre>
-{{- end }}
+      </div>
+      <div>
+       <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
+      </div>
+    </main>
+{{ end }}
