@@ -1,56 +1,23 @@
-main table {
+table {
   margin: 1.6rem 0;
   table-layout: auto;
   border-collapse: collapse;
   border: none;
-  border-top: 0.25rem solid var(--background-dark);
-  border-bottom: 0.25rem solid var(--background-dark);
 }
-main table:has(thead) {
-  border-top: none;
-}
-main td,
-main tr,
-main th {
+td,
+tr,
+th {
   padding: 0.5em;
 }
-main th,
-main th * {
+th,
+th * {
   font-weight: bold;
   color: var(--background-middle);
   background-color: var(--background-dark);
 }
-main tr:nth-child(odd) > td {
+tr:nth-child(odd) > td {
   background-color: transparent;
 }
-main tr:nth-child(even) > td {
+tr:nth-child(even) > td {
   background-color: var(--background-middle);
-}
-main table.cv-experience {
-  border: none;
-  width: 100%;
-  margin-top: 1.6rem;
-  display: block;
-}
-main table.cv-experience thead {
-  display: none;
-}
-main table.cv-experience tr > td {
-  background-color: transparent;
-  vertical-align: top;
-}
-main table.cv-experience tr > td:nth-child(1) {
-  padding: 0.75rem 2.5rem 0.75rem 0;
-}
-main table.cv-experience tr > td:nth-child(2) {
-  border-left: solid 0.25rem var(--text-dark);
-  padding: 0.75rem 0 0.75rem 2.5rem;
-}
-main table.cv-experience td {
-  color: var(--text-dark);
-  font-size: 1.4rem;
-}
-main table.cv-experience td strong {
-  color: var(--text-dark);
-  font-size: 1.6rem;
 }

@@ -7,8 +7,7 @@
 
 main {
   display: block;
-  min-width: 60rem;
-  margin: calc(var(--header-height)) var(--margin-layout-large)
+  margin: calc(var(--font-size) * 5) var(--margin-layout-large)
     var(--margin-layout-small) var(--margin-layout-large);
 }
 

@@ -6,28 +6,28 @@ footer {
   color: var(--text-light);
   display: flex;
   justify-content: space-between;
-  min-height: var(--footer-height);
+  min-height: calc(var(--font-size) * 3.5);
 }
 
 footer * {
   color: var(--text-light);
-  font-size: var(--footer-text-size);
 }
 
 div.footer-column {
   display: flex;
   align-items: center;
-  flex-shrink: 0;
 }
 
 div.footer-copyr {
   margin-left: var(--margin-layout-large);
-  margin-right: var(--margin-content);
+  margin-right: 0.5em;
+  flex-shrink: 0;
 }
 
 div.footer-contact {
   margin-right: var(--margin-layout-large);
-  margin-left: var(--margin-content);
+  margin-left: 0.5em;
+  flex-wrap: wrap;
 }
 
 footer a {
@@ -37,7 +37,7 @@ footer a {
 
 a.footer-image-link {
   line-height: 0;
-  margin: 0 0 0 calc(var(--footer-icon-height) / 2);
+  margin: 0 0 0 1em;
 }
 
 img.footer-icon {

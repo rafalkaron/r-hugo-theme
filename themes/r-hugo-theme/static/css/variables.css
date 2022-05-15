@@ -26,24 +26,53 @@
   --header-height: 6rem;
 
   --footer-height: 6rem;
-  --footer-text-size: unset;
   --footer-icon-height: 2.4rem;
 
   /* BORDERS */
   --border-thin: solid 0.25rem $primary-color;
   --border: solid 0.5rem $primary-color;
-  --border-radius: 0.25rem;
+  --border-radius: 0.5rem;
 }
 
 @media only screen and (max-width: 680px) {
   :root {
     /* MARGINS */
-    --margin-content-small: 0.8rem;
-    --margin-content: 1.6rem;
-    --margin-content-large: 3.2rem;
-
     --margin-layout-small: 2.5rem;
     --margin-layout: 5rem;
     --margin-layout-large: 10rem;
+  }
+}
+
+/* LARGE DEVICES
+@media only screen and (max-width: 1200px) {
+  :root {
+  }
+} */
+/* LAPTOPS */
+@media only screen and (max-width: 992px) {
+  :root {
+    --margin-layout-small: 2.5rem;
+    --margin-layout: 5rem;
+    --margin-layout-large: 10rem;
+  }
+}
+/* TABLETS */
+@media only screen and (max-width: 768px) {
+  :root {
+    --font-size: 1.4rem;
+
+    --margin-layout-small: 1rem;
+    --margin-layout: 2rem;
+    --margin-layout-large: 6rem;
+  }
+}
+/* PORTRAIT PHONES */
+@media only screen and (max-width: 576px) {
+  :root {
+    --font-size: 1.2rem;
+
+    --margin-layout-small: 1rem;
+    --margin-layout: 1.5rem;
+    --margin-layout-large: 2.5rem;
   }
 }
