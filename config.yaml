@@ -1,20 +1,23 @@
 baseURL: "https://rafalkaron.github.io/"
 languageCode: "en-us"
-title: "R theme"
+title: "R"
 params: description = "TODO"
 theme: "r-hugo-theme"
 
 Menus:
   main:
-    - Name: "Site"
+    - Name: "Portfolio"
       URL: "/"
       weight: 1
-    - Name: "Structure"
-      URL: "/structure"
+    - Name: "Docs"
+      URL: "/docs"
       weight: 2
+    - Name: "Gallery"
+      URL: "/gallery"
+      weight: 3
     - Name: "Blog"
       URL: "/blog"
-      weight: 3
+      weight: 4
 
 Params:
   # Leave blank to automatically remove icon from the footer
