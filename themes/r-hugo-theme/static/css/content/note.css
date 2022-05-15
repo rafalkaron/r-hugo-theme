@@ -2,12 +2,13 @@ main .note,
 main .note_warning,
 main .note_caution,
 main .note_tip {
+  margin: 1.6rem 0;
   padding: 0.5rem 1rem;
   display: block;
-  border-left: solid 0.5rem var(--background-dark);
-  font-size: 1.4rem;
-  width: fit-content;
-  max-width: 100%;
+  /*border-left: solid 0.5rem var(--background-dark);*/
+  background-color: var(--background-middle);
+  border-radius: var(--border-radius);
+  width: 100%;
 }
 main .note::before,
 main .note_warning::before,
@@ -17,7 +18,6 @@ main .note_tip::before {
   font-size: inherit;
   display: inline-block;
   font-weight: bold;
-  font-size: 1.4rem;
 }
 main .note::before {
   content: "NOTE: ";

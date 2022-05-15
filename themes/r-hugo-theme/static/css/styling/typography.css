@@ -31,3 +31,15 @@ header > a:first-child,
 div.footer-copyr > p > a {
   font-family: "Gugi", sans-serif;
 }
+
+.text_small {
+  font-size: 0.8rem !important;
+}
+
+.text_normal {
+  font-size: 1.6rem !important;
+}
+
+.text_large {
+  font-size: 1.5rem !important;
+}

@@ -3,41 +3,43 @@ title: Site
 draft: false
 ---
  
-## Header 2
+## Heading 2 {#custom-id}
 
 Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
 
-### Header 3
+### Heading 3
 
 Et ipsum irure minim adipisicing quis qui anim.
 
-#### Header 4
+#### Heading 4
 
 Quis sint labore sunt et cupidatat excepteur amet aute.
 
-##### Header 5
+##### Heading 5
 
 Ut adipisicing excepteur id consequat sunt laborum eu nostrud et excepteur exercitation minim.
 
-##### Header 6
+##### Heading 6
 
 Qui laborum deserunt pariatur veniam et est laborum.
 
 ## Formatting
 
-### Basic
+***
+
+## Basic
 
 **Bold**  
 *Italic*  
-~~strikethrough~~
+~~strikethrough~~  
 
-### Extended
+## Extended
 
 Large text
-{: .text_large}
+{.text_large}
 
 Small text
-{: .text_small}
+{.text_small}
 
 ## Lists
 
@@ -66,7 +68,15 @@ Title B
 - Item A
 - Item B
 - Item C
-{:.items}
+- Item D
+- Item G
+{.items}
+
+## Task list
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
 ## Table
 
@@ -110,20 +120,30 @@ bike](assets/bicycle.jpg){: width="350px"}
 ## Notes
 
 Laboris anim cupidatat do tempor fugiat qui aute magna nostrud sint reprehenderit cupidatat.
-{:.note}
+{.note}
 
 Irure nulla aliquip officia enim ut dolor adipisicing non adipisicing.
-{:.note_tip}
+{.note_tip}
 
 Officia quis eu Lorem quis ex dolore non veniam ex ad.
-{:.note_warning}
+{.note_warning}
 
 Minim officia esse nulla consectetur ut non et officia tempor consequat tempor.
-{:.note_caution}
+{.note_caution}
 
-## Abbreviations
+## Footnotes
 
-SME
+Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+
+[^1]: This is the first footnote.
+
+[^bignote]: Here's one with multiple paragraphs and code.
+
+    Indent paragraphs to include them in the footnote.
+
+    `{ my code }`
+
+    Add as many paragraphs as you like.
 
 ## Quote
 
@@ -136,14 +156,14 @@ SME
 ### Two columns
 
 Cillum sint nisi voluptate ad est adipisicing enim mollit fugiat aliqua nostrud aute sit mollit. Ex cillum in minim culpa veniam deserunt. Ullamco ad anim commodo qui eiusmod exercitation aliqua id amet tempor. Minim ex amet incididunt ad adipisicing ut aliqua cillum quis amet. Incididunt dolor aliquip non tempor duis occaecat amet nulla reprehenderit. Ullamco ea consectetur cillum nulla fugiat deserunt.
-{:.two_column}
+{.two_column}
 
 ### Three columns
 
 Sunt voluptate ex elit ullamco cillum reprehenderit ea sunt proident et adipisicing sunt qui. Pariatur laboris adipisicing adipisicing fugiat commodo aliquip mollit incididunt magna. Exercitation ullamco nisi cupidatat Lorem fugiat deserunt sit nulla sit voluptate sunt. Sunt sunt proident id proident ad cupidatat quis anim do. Mollit exercitation commodo do ullamco occaecat ex eu deserunt excepteur reprehenderit dolor sunt. Id deserunt ad pariatur mollit laborum deserunt duis ullamco proident enim culpa aliqua. Aute consequat in proident enim ullamco aliquip quis.
-{:.three_column}
+{.three_column}
 
 ### Four columns
 
 Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco. Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco.
-{:.four_column}
+{.four_column}

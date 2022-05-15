@@ -1,7 +1,6 @@
 main p {
   margin: 1.6rem 0 0 0;
   display: block;
-  font-size: 1.6rem;
 }
 main h1 + p,
 main h2 + p,

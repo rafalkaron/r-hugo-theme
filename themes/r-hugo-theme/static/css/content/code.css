@@ -28,7 +28,7 @@ pre {
     max-height: 70vh;
     overflow-y: auto;
     -ms-overflow-style: none;
-    scrollbar-width: none;
+    /*scrollbar-width: none;*/
     width: 100%;
   }
 }
