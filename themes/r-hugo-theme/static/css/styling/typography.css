@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -11,7 +9,7 @@ html {
 }
 
 * {
-  font-family: "Oxygen", Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: var(--line-height);
   color: var(--text-dark);
   text-align: justify;
@@ -26,9 +24,10 @@ code,
 code *,
 pre,
 pre * {
-  font-family: "Oxygen Mono", monospace;
+  font-family: "Source Code Pro", monospace;
 }
-/*
-header > a:first-child {
-  font-family: "Lalezar", sans-serif;
-}*/
+
+header > a:first-child,
+div.footer-copyr > p > a {
+  font-family: "Gugi", sans-serif;
+}
