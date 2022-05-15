@@ -19,13 +19,13 @@ div.footer-column {
 }
 
 div.footer-copyr {
-  margin-left: var(--margin-layout-large);
+  margin-left: var(--margin-large);
   margin-right: 0.5em;
   flex-shrink: 0;
 }
 
 div.footer-contact {
-  margin-right: var(--margin-layout-large);
+  margin-right: var(--margin-large);
   margin-left: 0.5em;
   flex-wrap: wrap;
 }
@@ -41,5 +41,5 @@ a.footer-image-link {
 }
 
 img.footer-icon {
-  height: var(--footer-icon-height);
+  height: 1.5em;
 }

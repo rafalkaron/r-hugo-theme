@@ -1,11 +1,11 @@
-ol,
-ul {
+main ol,
+main ul {
   margin: 0;
 }
 main li {
-  margin: var(--margin-content-small) var(--margin-content-large);
+  margin: 0.5em 2em;
 }
-ul.items {
+main ul.items {
   display: flex;
   flex-wrap: wrap;
   margin: 0.8rem 0 0 0;
@@ -29,22 +29,23 @@ ul.items * {
   text-decoration: inherit;
   font-weight: inherit;
 }
-dl {
+
+main dl {
   display: block;
-  margin: var(--margin-content) var(--margin-content);
+  margin: 1em 1em;
 }
-dd + dt {
+main dd + dt {
   margin-top: 1rem;
 }
-dt,
-dd {
+main dt,
+main dd {
   border-left: solid 0.5rem var(--background-middle);
   padding: 0 0 0 1.4rem;
 }
-dt,
-dt * {
+main dt,
+main dt * {
   font-weight: bold;
 }
-dd {
+main dd {
   margin: 0 0 0 0;
 }

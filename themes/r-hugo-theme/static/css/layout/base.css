@@ -7,8 +7,8 @@
 
 main {
   display: block;
-  margin: calc(var(--font-size) * 5) var(--margin-layout-large)
-    var(--margin-layout-small) var(--margin-layout-large);
+  margin: calc(var(--font-size) * 5) var(--margin-large) var(--margin)
+    var(--margin-large);
 }
 
 body {

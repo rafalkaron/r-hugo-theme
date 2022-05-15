@@ -15,7 +15,7 @@ input {
   text-decoration: none;
 
   display: table;
-  margin: 6.5rem auto var(--margin-content);
+  margin: 6.5rem auto 1em;
 }
 
 input:hover,
