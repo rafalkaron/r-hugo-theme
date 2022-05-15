@@ -34,3 +34,16 @@
   --border: solid 0.5rem $primary-color;
   --border-radius: 0.25rem;
 }
+
+@media only screen and (max-width: 680px) {
+  :root {
+    /* MARGINS */
+    --margin-content-small: 0.8rem;
+    --margin-content: 1.6rem;
+    --margin-content-large: 3.2rem;
+
+    --margin-layout-small: 2.5rem;
+    --margin-layout: 5rem;
+    --margin-layout-large: 10rem;
+  }
+}

@@ -23,14 +23,6 @@ Ut adipisicing excepteur id consequat sunt laborum eu nostrud et excepteur exerc
 
 Qui laborum deserunt pariatur veniam et est laborum.
 
-# Header 1B
-
-Laboris minim pariatur magna excepteur amet quis elit est minim est.
-
-# Header 1C
-
-Laboris minim pariatur magna excepteur amet quis elit est minim est.
-
 # Formatting
 
 ## Basic
