@@ -1,9 +1,9 @@
 {{ define "main"}}
-    <main id="main">
-      <div>
-        <h1>404: Page not found</h1>
-<pre
-  style="
+<main id="main">
+  <div>
+    <h1>404: Page not found</h1>
+    <h2><a href="{{ "/" | relURL }}">Take me home</a></h2>
+    <pre style="
     white-space: pre;
     font-family: 'Oxygen Mono', monospace;
     font-size: 1.8rem;
@@ -20,9 +20,6 @@
 ##  ##          ##  ##
       ####  ####
 </pre>
-      </div>
-      <div>
-       <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
-      </div>
-    </main>
+  </div>
+</main>
 {{ end }}

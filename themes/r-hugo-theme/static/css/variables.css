@@ -9,10 +9,15 @@
   --background-middle: #e0e0e0;
   --background-dark: #222222;
 
-  --margin-small: 0.8rem;
-  --margin: 1.6rem;
-  --margin-large: 5rem;
-  --margin-extra-large: 15rem;
+  --margin-content-small: 0.8rem;
+  --margin-content: 1.6rem;
+  --margin-content-large: 3.2rem;
+
+  --margin-layout-small: 5rem;
+  --margin-layout: 10rem;
+  --margin-layout-large: 15rem;
+
+  --bar-height: 6rem;
 
   --border-thin: solid 0.25rem $primary-color;
   --border: solid 0.5rem $primary-color;

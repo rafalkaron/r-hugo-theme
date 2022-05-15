@@ -6,6 +6,7 @@ footer {
   color: var(--text-light);
   display: flex;
   justify-content: space-between;
+  min-height: var(--bar-height);
 }
 
 footer * {
@@ -19,16 +20,25 @@ div.footer-column {
 }
 
 div.footer-copyr {
-  margin-left: var(--margin-extra-large);
-  margin-right: var(--margin);
+  margin-left: var(--margin-layout-large);
+  margin-right: var(--margin-content);
 }
 
 div.footer-contact {
-  margin-right: var(--margin-extra-large);
-  margin-left: var(--margin);
+  margin-right: var(--margin-layout-large);
+  margin-left: var(--margin-content);
 }
 
-div.footer-contact > a > img {
-  width: 2.8rem;
-  padding-left: 0.8rem;
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.footer-image-link {
+  line-height: 0;
+  margin: 1.8rem 1rem;
+}
+
+img.footer-icon {
+  width: 2.4rem;
 }

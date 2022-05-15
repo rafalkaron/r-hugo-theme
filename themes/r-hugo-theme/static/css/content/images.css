@@ -1,15 +1,15 @@
 /* Images */
-img {
+main img {
   overflow: auto;
   padding: 0;
-  margin: var(--margin) 0;
+  margin: var(--margin-content) 0;
   max-width: 100%;
   display: block;
   border-radius: var(--border-radius);
 }
 
 img.center {
-  margin: var(--margin) auto;
+  margin: var(--margin-content) auto;
   display: block;
 }
 .left {
@@ -22,12 +22,12 @@ img.center {
 }
 
 /* Figures */
-figure {
+main figure {
   margin: 0;
   padding: 0;
 }
 
-figcaption {
+main figcaption {
   font-weight: bold;
   color: var(--text-dark);
 }
