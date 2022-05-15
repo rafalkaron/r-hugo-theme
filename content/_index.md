@@ -70,8 +70,8 @@ Title B
 
 ## Table
 
-|Header text|
-|-|-|
+|Header A|Header B|
+|--------|--------|
 | Item A | Item B |
 | Item C | Item D |
 

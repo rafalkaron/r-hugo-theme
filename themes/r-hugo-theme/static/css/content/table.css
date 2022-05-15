@@ -3,6 +3,7 @@ table {
   table-layout: auto;
   border-collapse: collapse;
   border: none;
+  width: 100%;
 }
 td,
 tr,
