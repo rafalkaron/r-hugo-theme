@@ -15,12 +15,9 @@
 @import "content/list.css";
 @import "content/quote.css";
 @import "content/note.css";
-@import "content/formatting.css";
 
 /* STYLING */
 @import "styling/typography.css";
-@import "styling/hide_scrollbar.css";
-@import "styling/smooth_scroll.css";
 @import "styling/animations.css";
 @import "styling/selection.css";
 @import "styling/shadow.css";

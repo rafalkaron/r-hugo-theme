@@ -7,10 +7,12 @@ code {
   font-family: "Oxygen Mono", monospace;
   color: var(--text-light);
   border-radius: var(--border-radius);
+  font-size: 0.9rem;
 }
 code * {
   font-family: "Oxygen Mono", monospace;
   color: var(--text-light);
+  font-size: 0.8rem;
 }
 
 pre {
@@ -34,8 +36,5 @@ pre > code {
   margin: 0;
   padding: 1rem;
   display: block;
-  line-height: 1.3em;
-}
-pre > code * {
-  font-size: 1.2rem;
+  line-height: 1.2em;
 }

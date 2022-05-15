@@ -79,7 +79,7 @@ Title B
 
 ### Inline code
 
-`@import`
+Lorem ipsum `@import` lorem ipsum
 
 ### Codeblock
 

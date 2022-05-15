@@ -3,9 +3,9 @@ main ul {
   margin: 0;
 }
 main li {
-  margin: 0.5em 2em;
+  margin: 0.5rem 2rem;
 }
-main ul.items {
+ul.items {
   display: flex;
   flex-wrap: wrap;
   margin: 0.8rem 0 0 0;
@@ -15,8 +15,8 @@ ul.items > li {
   list-style: none;
   padding: 0.25em 0.75em;
   margin: 0.8rem 1.6rem 0.8rem 0;
-  background-color: #e0e0e0;
-  color: #222222;
+  background-color: var(--background-middle);
+  color: var(--text-dark);
   border-radius: 0.25rem;
   width: auto;
   text-align: center;
@@ -32,7 +32,7 @@ ul.items * {
 
 main dl {
   display: block;
-  margin: 1em 1em;
+  margin: 1rem 1rem;
 }
 main dd + dt {
   margin-top: 1rem;
@@ -40,7 +40,7 @@ main dd + dt {
 main dt,
 main dd {
   border-left: solid 0.5rem var(--background-middle);
-  padding: 0 0 0 1.4rem;
+  padding: 0 0 0 0.5rem;
 }
 main dt,
 main dt * {

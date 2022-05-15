@@ -4,19 +4,19 @@ main a {
   font-weight: bold;
 }
 
-a > abbr {
-  text-decoration: inherit;
-  color: inherit;
-}
-
 a:hover,
 a:active,
 a:focus {
   text-decoration: underline;
 }
 
-a:hover > abbr,
-a:active > abbr,
-a:focus > abbr {
+main a > abbr {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+main a:hover > abbr,
+main a:active > abbr,
+main a:focus > abbr {
   color: inherit;
 }

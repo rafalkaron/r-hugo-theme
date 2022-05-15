@@ -7,7 +7,7 @@ header {
   align-items: baseline;
   justify-content: flex-start;
   padding: 0 var(--margin-large) 0 var(--margin-large);
-  min-height: calc(var(--font-size) * 5);
+  min-height: 5rem;
 }
 
 header > img.site-logo {
@@ -20,7 +20,7 @@ header > a.site-title {
   color: var(--text-light);
   text-decoration: none;
   font-weight: bold;
-  font-size: 3em;
+  font-size: 3rem;
   padding: 0 2.5rem 0 0;
   white-space: nowrap;
 }
@@ -31,14 +31,14 @@ nav > ul {
 
 nav li {
   list-style: none;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
 }
 
 nav li a {
   color: var(--text-light);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 nav a:hover,

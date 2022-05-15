@@ -7,25 +7,20 @@ main img {
   border-radius: var(--border-radius);
 }
 
+main figcaption {
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
 img.center {
   margin: 1em auto;
   display: block;
 }
-.left {
+img.left {
   float: left;
   display: block;
 }
-.right {
+img.right {
   float: right;
   display: block;
-}
-
-main figure {
-  margin: 0;
-  padding: 0;
-}
-
-main figcaption {
-  font-weight: bold;
-  color: var(--text-dark);
 }
