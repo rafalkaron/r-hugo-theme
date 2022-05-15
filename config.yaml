@@ -1,6 +1,6 @@
 baseURL: "https://rafalkaron.github.io/"
 languageCode: "en-us"
-title: "R"
+title: "R."
 params: description = "TODO"
 theme: "r-hugo-theme"
 
