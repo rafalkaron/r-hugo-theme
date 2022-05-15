@@ -1,4 +1,5 @@
 :root {
+  /* COLORS */
   --primary-color: #5f0f40;
   --secondary-color: #295180;
 
@@ -9,6 +10,7 @@
   --background-middle: #e0e0e0;
   --background-dark: #222222;
 
+  /* MARGINS */
   --margin-content-small: 0.8rem;
   --margin-content: 1.6rem;
   --margin-content-large: 3.2rem;
@@ -17,8 +19,17 @@
   --margin-layout: 10rem;
   --margin-layout-large: 15rem;
 
-  --bar-height: 6rem;
+  /* DIMENSIONS */
+  --font-size: 1.6rem;
+  --line-height: 1.6em;
 
+  --header-height: 6rem;
+
+  --footer-height: 6rem;
+  --footer-text-size: unset;
+  --footer-icon-height: 2.4rem;
+
+  /* BORDERS */
   --border-thin: solid 0.25rem $primary-color;
   --border: solid 0.5rem $primary-color;
   --border-radius: 0.25rem;

@@ -7,7 +7,7 @@ header {
   align-items: baseline;
   justify-content: flex-start;
   padding: 0 var(--margin-layout-large) 0 var(--margin-layout-large);
-  min-height: (--bar-height);
+  min-height: var(--header-height);
 }
 
 header > img.site-logo {

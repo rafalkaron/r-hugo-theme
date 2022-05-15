@@ -6,11 +6,12 @@ footer {
   color: var(--text-light);
   display: flex;
   justify-content: space-between;
-  min-height: var(--bar-height);
+  min-height: var(--footer-height);
 }
 
 footer * {
   color: var(--text-light);
+  font-size: var(--footer-text-size);
 }
 
 div.footer-column {
@@ -36,9 +37,9 @@ footer a {
 
 a.footer-image-link {
   line-height: 0;
-  margin: 1.8rem 1rem;
+  margin: 0 0 0 calc(var(--footer-icon-height) / 2);
 }
 
 img.footer-icon {
-  width: 2.4rem;
+  height: var(--footer-icon-height);
 }

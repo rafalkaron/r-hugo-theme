@@ -12,9 +12,9 @@ html {
 
 * {
   font-family: "Oxygen", Arial, Helvetica, sans-serif;
-  line-height: 1.6em;
+  line-height: var(--line-height);
   color: var(--text-dark);
-  font-size: 1.6rem;
+  font-size: var(--font-size);
   text-align: justify;
 }
 
