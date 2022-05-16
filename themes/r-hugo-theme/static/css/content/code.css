@@ -7,7 +7,7 @@ code {
   font-family: "Oxygen Mono", monospace;
   color: var(--text-light);
   border-radius: var(--border-radius);
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 code * {
   font-family: "Oxygen Mono", monospace;

@@ -1,7 +1,3 @@
-main ol,
-main ul {
-  margin: 0;
-}
 main li {
   margin: calc(var(--margin-content) / 2) 2rem;
 }
@@ -23,6 +19,7 @@ ul.items > li {
   vertical-align: middle;
   display: inline;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 ul.items * {
   border: none;

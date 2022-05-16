@@ -1,3 +1,11 @@
 main div.footnotes * {
   font-size: 0.8rem;
 }
+
+main div.footnotes li {
+  margin: 0.25rem 1rem;
+}
+
+main div.footnotes a.footnote-backref {
+  color: var(--blue);
+}

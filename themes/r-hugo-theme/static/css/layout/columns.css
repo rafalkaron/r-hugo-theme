@@ -14,7 +14,7 @@
 .two_column,
 .three_column,
 .four_column {
-  column-gap: var(--margin);
+  column-gap: var(--margin-content);
 }
 
 /* Avoid breaking some elements in columns */
