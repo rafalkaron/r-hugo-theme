@@ -1,6 +1,12 @@
 main li {
   margin: calc(var(--margin-content) / 2) 2rem;
 }
+
+main ol > li::marker {
+  font-weight: bold;
+}
+
+/* Items */
 ul.items {
   display: flex;
   flex-wrap: wrap;
@@ -27,6 +33,7 @@ ul.items * {
   font-weight: inherit;
 }
 
+/* Definition list */
 main dl {
   display: block;
   margin: 1rem 1rem;
@@ -42,7 +49,4 @@ main dd {
 main dt,
 main dt * {
   font-weight: bold;
-}
-main dd {
-  margin: 0 0 0 0;
 }

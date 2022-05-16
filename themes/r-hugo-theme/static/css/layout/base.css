@@ -7,7 +7,7 @@
 
 main {
   display: block;
-  margin: 5rem var(--margin-large) var(--margin) var(--margin-large);
+  margin: var(--margin) var(--margin-large);
 }
 
 body {

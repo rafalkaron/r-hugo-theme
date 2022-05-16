@@ -1,7 +1,7 @@
 main img {
   overflow: auto;
   padding: 0;
-  margin: var(--margin-content) 0;
+  margin-top: var(--margin-content);
   max-width: 100%;
   display: block;
   border-radius: var(--border-radius);
@@ -23,4 +23,19 @@ img.left {
 img.right {
   float: right;
   display: block;
+}
+p.tiny > img {
+  max-width: 10rem;
+}
+p.small > img {
+  max-width: 15rem;
+}
+p.medium > img {
+  max-width: 20rem;
+}
+p.large > img {
+  max-width: 25rem;
+}
+p.huge > img {
+  max-width: 30rem;
 }

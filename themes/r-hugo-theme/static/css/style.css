@@ -5,6 +5,12 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/columns.css";
+@import "layout/blog.css";
+
+/* STYLING */
+@import "styling/typography.css";
+@import "styling/selection.css";
+/* @import "styling/shadow.css"; */
 
 /* CONTENT */
 @import "content/headings.css";
@@ -17,10 +23,3 @@
 @import "content/note.css";
 @import "content/hr.css";
 @import "content/fn.css";
-
-/* STYLING */
-@import "styling/typography.css";
-@import "styling/selection.css";
-/* @import "styling/shadow.css"; */
-/* @import "styling/button.css"; */
-/* @import "styling/animations.css"; */

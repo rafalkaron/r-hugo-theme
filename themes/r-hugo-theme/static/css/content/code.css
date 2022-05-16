@@ -38,3 +38,8 @@ pre > code {
   display: block;
   line-height: 1.2em;
 }
+
+code *::selection {
+  background-color: #e0e0e04d;
+  color: inherit;
+}

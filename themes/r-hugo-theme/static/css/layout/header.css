@@ -1,13 +1,11 @@
 header {
   background-color: var(--background-dark);
   color: var(--text-light);
-  position: fixed;
-  width: 100%;
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
   padding: 0 var(--margin-large) 0 var(--margin-large);
-  min-height: 5rem;
+  min-height: 4rem;
 }
 
 header > img.site-logo {

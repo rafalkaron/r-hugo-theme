@@ -135,11 +135,35 @@ Lorem ipsum `@import` lorem ipsum
 ## Links
 
 [404](404)  
-[Google](https://www.google.com)
+[Google](https://www.google.com)  
+[Heading 3](#heading-3)
 
 ## Images
 
-bike](assets/bicycle.jpg){: width="350px"}
+### Tiny
+
+![Mountain](_images/mountain.jpg)
+{.tiny}
+
+### Small
+
+![Mountain](_images/mountain.jpg)
+{.small}
+
+### Medium
+
+![Mountain](_images/mountain.jpg)
+{.medium}
+
+### Large
+
+![Mountain](_images/mountain.jpg)
+{.large}
+
+### Huge
+
+![Mountain](_images/mountain.jpg)
+{.huge}
 
 ## Notes
 
@@ -157,17 +181,13 @@ Minim officia esse nulla consectetur ut non et officia tempor consequat tempor.
 
 ## Footnotes
 
-Here's a simple footnote,[^1] and here's a longer one.[^bignote]
+Footnote a[^1], Footnote b[^footnote_b]
 
-[^1]: This is the first footnote.
+[^1]: Laboris anim cupidatat do tempor fugiat
 
-[^bignote]: Here's one with multiple paragraphs and code.
+[^footnote_b]: Laboris anim cupidatat do tempor fugiat
 
     Indent paragraphs to include them in the footnote.
-
-    `{ my code }`
-
-    Add as many paragraphs as you like.
 
 ## Quote
 
