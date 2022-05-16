@@ -15,6 +15,7 @@
   --background-dark: #2e2e2e;
 
   /* MARGINS */
+  --margin-content: 1.6rem;
   --margin: 5rem;
   --margin-large: 20rem;
 
@@ -24,6 +25,7 @@
 
   /* BORDERS */
   --border-radius: 0.35rem;
+  --border-width: 0.5rem;
 }
 
 /* LARGE DEVICES */

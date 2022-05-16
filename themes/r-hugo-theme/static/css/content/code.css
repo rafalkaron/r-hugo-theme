@@ -16,7 +16,7 @@ code * {
 }
 
 pre {
-  margin: 1.6rem 0;
+  margin: var(--margin-content) 0;
   padding: 0;
   display: block;
   width: fit-content;
@@ -34,7 +34,6 @@ pre {
 }
 pre > code {
   white-space: pre-wrap;
-  margin: 0;
   padding: 1rem;
   display: block;
   line-height: 1.2em;

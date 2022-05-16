@@ -1,7 +1,7 @@
 main img {
   overflow: auto;
   padding: 0;
-  margin: 1em 0;
+  margin: var(--margin-content) 0;
   max-width: 100%;
   display: block;
   border-radius: var(--border-radius);
@@ -13,7 +13,7 @@ main figcaption {
 }
 
 img.center {
-  margin: 1em auto;
+  margin: var(--margin-content) auto;
   display: block;
 }
 img.left {

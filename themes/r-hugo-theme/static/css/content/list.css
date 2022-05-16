@@ -3,7 +3,7 @@ main ul {
   margin: 0;
 }
 main li {
-  margin: 0.5rem 2rem;
+  margin: calc(var(--margin-content) / 2) 2rem;
 }
 ul.items {
   display: flex;
@@ -39,7 +39,7 @@ main dd + dt {
 }
 main dt,
 main dd {
-  border-left: solid 0.5rem var(--background-middle);
+  border-left: solid var(--border-width) var(--background-middle);
   padding: 0 0 0 0.5rem;
 }
 main dt,
