@@ -12,17 +12,17 @@ main figcaption {
   color: var(--text-dark);
 }
 
-img.center {
-  margin: var(--margin-content) auto;
-  display: block;
+p.center {
+  display: flex;
+  justify-content: center;
 }
-img.left {
-  float: left;
-  display: block;
+p.left {
+  display: flex;
+  justify-content: flex-start;
 }
-img.right {
-  float: right;
-  display: block;
+p.right {
+  display: flex;
+  justify-content: flex-end;
 }
 p.tiny > img {
   max-width: 10rem;

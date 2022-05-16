@@ -156,6 +156,16 @@ Lorem ipsum `@import` lorem ipsum
 ![Mountain](_images/mountain.jpg)
 {.tiny}
 
+### Tiny Center
+
+![Mountain](_images/mountain.jpg)
+{.tiny .center}
+
+### Tiny Right
+
+![Mountain](_images/mountain.jpg)
+{.tiny .right}
+
 ### Small
 
 ![Mountain](_images/mountain.jpg)
@@ -175,8 +185,6 @@ Lorem ipsum `@import` lorem ipsum
 
 ![Mountain](_images/mountain.jpg)
 {.huge}
-
-## Notes
 
 Laboris anim cupidatat do tempor fugiat qui aute magna nostrud sint reprehenderit cupidatat.
 {.note}
