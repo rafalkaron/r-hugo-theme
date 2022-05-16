@@ -40,6 +40,13 @@ a.footer-image-link {
   margin: 0 0 0 1rem;
 }
 
+footer a:hover,
+footer a:active,
+footer a:focus {
+  text-decoration: none;
+  color: var(--orange);
+}
+
 img.footer-icon {
   height: 1.5rem;
 }
