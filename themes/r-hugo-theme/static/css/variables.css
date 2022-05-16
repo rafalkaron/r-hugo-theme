@@ -1,13 +1,17 @@
 :root {
   /* COLORS */
-  --primary-color: #e87d3e;
-  --secondary-color: #6c99bb;
+  --yellow: #e5b567;
+  --green: #b4d273;
+  --orange: #e87d3e;
+  --purple: #9e86c8;
+  --pink: #b05279;
+  --blue: #6c99bb;
 
   --text-dark: #2e2e2e;
   --text-light: #f4f4f4;
 
   --background-light: #f4f4f4;
-  --background-middle: #d6d6d6;
+  --background-middle: #e0e0e0;
   --background-dark: #2e2e2e;
 
   /* MARGINS */

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 
+/* General */
 html {
   scroll-behavior: smooth;
   font-size: calc(0.625 * var(--font-size));
@@ -15,11 +16,12 @@ html {
   text-align: justify;
 }
 
-/* Prevent font scaling in landscape */
+/* Prevent font scaling in landscape (iPhone fix)*/
 html {
   -webkit-text-size-adjust: none;
 }
 
+/* Monospace */
 code,
 code *,
 pre,
@@ -27,47 +29,39 @@ pre * {
   font-family: "Source Code Pro", monospace;
 }
 
+/* Logo */
 header > a:first-child,
 div.footer-copyr > p > a {
   font-family: "Gugi", sans-serif;
 }
 
+/* Font size */
 .text_small {
   font-size: 0.8rem !important;
 }
-
 .text_normal {
   font-size: 1.6rem !important;
 }
-
 .text_large {
   font-size: 1.5rem !important;
 }
 
-.monokai_background {
-  color: #2e2e2e !important;
+/* Colors */
+.yellow {
+  color: var(--yellow) !important;
 }
-.monokai_comments {
-  color: #797979 !important;
+.green {
+  color: var(--green) !important;
 }
-.monokai_white {
-  color: #d6d6d6 !important;
+.orange {
+  color: var(--orange) !important;
 }
-.monokai_yellow {
-  color: #e5b567 !important;
+.purple {
+  color: var(--purple) !important;
 }
-.monokai_green {
-  color: #b4d273 !important;
+.pink {
+  color: var(--pink) !important;
 }
-.monokai_orange {
-  color: #e87d3e !important;
-}
-.monokai_purple {
-  color: #9e86c8 !important;
-}
-.monokai_pink {
-  color: #b05279 !important;
-}
-.monokai_blue {
-  color: #6c99bb !important;
+.blue {
+  color: var(--blue) !important;
 }

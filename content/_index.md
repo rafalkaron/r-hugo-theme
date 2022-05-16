@@ -41,26 +41,20 @@ Large text
 Small text
 {.text_small}
 
-### Extended: Monokai colors
+### Extended: Colors
 
-background  
-{.monokai_background}
-comments  
-{.monokai_comments}
-white  
-{.monokai_white}
 yellow  
-{.monokai_yellow}
+{.yellow}
 green  
-{.monokai_green}
+{.green}
 orange  
-{.monokai_orange}
+{.orange}
 purple  
-{.monokai_purple}
+{.purple}
 pink  
-{.monokai_pink}
+{.pink}
 blue  
-{.monokai_blue}
+{.blue}
 
 ## Lists
 
