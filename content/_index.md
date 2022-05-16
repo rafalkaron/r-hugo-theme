@@ -104,10 +104,21 @@ Title B
 
 ## Table
 
+### Regular
+
 |Header A|Header B|
 |--------|--------|
 | Item A | Item B |
 | Item C | Item D |
+
+### CV
+
+|     |
+|-:|:-|
+| **01.2020 – present** <br> Company | **Role** |
+| **01.2020 – 01.2020** <br> Company | **Role** |
+| **01.2020 – 01.2020** <br> Company | **Role** |  
+{.cv-experience}
 
 ## Code
 
