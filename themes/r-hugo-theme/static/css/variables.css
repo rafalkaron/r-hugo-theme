@@ -1,14 +1,14 @@
 :root {
   /* COLORS */
-  --primary-color: #5f0f40;
-  --secondary-color: #295180;
+  --primary-color: #e87d3e;
+  --secondary-color: #6c99bb;
 
-  --text-dark: #222222;
+  --text-dark: #2e2e2e;
   --text-light: #f4f4f4;
 
   --background-light: #f4f4f4;
-  --background-middle: #e0e0e0;
-  --background-dark: #222222;
+  --background-middle: #d6d6d6;
+  --background-dark: #2e2e2e;
 
   /* MARGINS */
   --margin: 5rem;

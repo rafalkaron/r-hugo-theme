@@ -54,6 +54,10 @@ markup:
       hardWraps: false
       unsafe: true
       xhtml: false
+  highlight:
+    codeFences: true
+    noClasses: true
+    style: monokai
   tableOfContents:
     endLevel: 3
     ordered: false

@@ -27,19 +27,40 @@ Qui laborum deserunt pariatur veniam et est laborum.
 
 ***
 
-## Basic
+### Builtin
 
 **Bold**  
 *Italic*  
 ~~strikethrough~~  
 
-## Extended
+### Extended: Size
 
 Large text
 {.text_large}
 
 Small text
 {.text_small}
+
+### Extended: Monokai colors
+
+background  
+{.monokai_background}
+comments  
+{.monokai_comments}
+white  
+{.monokai_white}
+yellow  
+{.monokai_yellow}
+green  
+{.monokai_green}
+orange  
+{.monokai_orange}
+purple  
+{.monokai_purple}
+pink  
+{.monokai_pink}
+blue  
+{.monokai_blue}
 
 ## Lists
 
