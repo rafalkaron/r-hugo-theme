@@ -15,6 +15,8 @@
 @import "content/list.css";
 @import "content/quote.css";
 @import "content/note.css";
+@import "content/hr.css";
+@import "content/fn.css";
 
 /* STYLING */
 @import "styling/typography.css";
