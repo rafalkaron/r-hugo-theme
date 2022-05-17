@@ -4,7 +4,7 @@ header {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-  padding: 0 var(--margin-large) 0 var(--margin-large);
+  padding: 0 var(--margin-layout-large) 0 var(--margin-layout-large);
   min-height: 4rem;
 }
 
