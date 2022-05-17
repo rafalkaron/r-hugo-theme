@@ -1,6 +1,8 @@
 ---
 title: Sample blog post C
 date: 1993-11-18
+tags: ["Tag a", "Tag B", "Tag C"]
+categories: ["Category b"]
 draft: false
 ---
 
@@ -187,4 +189,3 @@ Sunt voluptate ex elit ullamco cillum reprehenderit ea sunt proident et adipisic
 
 Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco. Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco.
 {:.four_column}
-
