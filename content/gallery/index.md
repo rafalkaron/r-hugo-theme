@@ -3,4 +3,11 @@ title: Gallery
 draft: false
 ---
 
-## Heading 2
+![Mountain](../_images/mountain.jpg)
+{.tiny}
+![Mountain](../_images/mountain.jpg)
+{.tiny}
+![Mountain](../_images/mountain.jpg)
+{.tiny}
+![Mountain](../_images/mountain.jpg)
+{.tiny}
