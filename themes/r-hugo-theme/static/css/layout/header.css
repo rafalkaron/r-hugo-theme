@@ -39,6 +39,16 @@ nav li a {
   font-size: 1.125rem;
 }
 
+/* Indicate active sites */
+nav li a::after .active {
+  content: ".";
+  display: flex;
+  justify-content: center;
+  color: var(--accent);
+  line-height: 0;
+  margin-top: -0.25rem;
+}
+
 nav a:hover,
 nav a:active,
 nav a:focus {
