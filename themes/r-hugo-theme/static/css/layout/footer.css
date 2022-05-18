@@ -7,6 +7,7 @@ footer {
   display: flex;
   justify-content: space-between;
   min-height: 3rem;
+  border-top: 0.5rem solid var(--accent);
 }
 
 footer * {
@@ -44,7 +45,7 @@ footer a:hover,
 footer a:active,
 footer a:focus {
   text-decoration: none;
-  color: var(--orange);
+  color: var(--accent);
 }
 
 img.footer-icon {
