@@ -7,7 +7,6 @@ header {
   padding: 0 var(--margin-layout-large) 0 var(--margin-layout-large);
   border-bottom: 0.5rem solid var(--accent);
   min-height: 4rem;
-  /*border-bottom: 0.5rem solid #aad922;*/
 }
 
 header > img.site-logo {

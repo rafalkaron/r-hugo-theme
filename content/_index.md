@@ -25,15 +25,15 @@ Qui laborum deserunt pariatur veniam et est laborum.
 
 ## Formatting
 
-***
-
 ### Builtin
 
 **Bold**  
 *Italic*  
 ~~strikethrough~~  
 
-### Extended: Size
+***
+
+### Extended
 
 Large text
 {.text_large}
@@ -41,19 +41,17 @@ Large text
 Small text
 {.text_small}
 
-### Extended: Colors
-
-yellow  
+**yellow**  
 {.yellow}
-green  
+**green**  
 {.green}
-orange  
+**orange**  
 {.orange}
-purple  
+**purple**  
 {.purple}
-pink  
+**pink**  
 {.pink}
-blue  
+**blue**  
 {.blue}
 
 ## Lists

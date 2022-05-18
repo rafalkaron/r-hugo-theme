@@ -43,25 +43,31 @@ div.footer-copyr > p > a {
   font-size: 1.6rem !important;
 }
 .text_large {
-  font-size: 1.5rem !important;
+  font-size: 1.6rem !important;
 }
 
 /* Colors */
-.yellow {
+.yellow,
+.yellow * {
   color: var(--yellow) !important;
 }
-.green {
+.green,
+.green * {
   color: var(--green) !important;
 }
-.orange {
+.orange,
+.orange * {
   color: var(--orange) !important;
 }
-.purple {
+.purple,
+.purple * {
   color: var(--purple) !important;
 }
-.pink {
+.pink,
+.pink * {
   color: var(--pink) !important;
 }
-.blue {
+.blue,
+.blue * {
   color: var(--blue) !important;
 }

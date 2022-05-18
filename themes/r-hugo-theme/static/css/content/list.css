@@ -1,5 +1,5 @@
 main li {
-  margin: calc(var(--margin-content) / 2) 2rem;
+  margin: 0.8rem 0 0 2rem;
 }
 
 main ol > li::marker {

@@ -2,7 +2,7 @@
 title: Sample blog post A
 date: 2020-11-18
 tags: ["Tag a"]
-categories: ["Category a"]
+categories: ["Category a", "Category b"]
 ---
 
 Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Dolor sint labore velit sint sunt in do. Nostrud pariatur laborum cillum cillum consequat veniam irure duis ex officia tempor qui. Fugiat id veniam laboris eiusmod incididunt velit enim mollit.
