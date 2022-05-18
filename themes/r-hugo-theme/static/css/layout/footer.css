@@ -1,13 +1,12 @@
 footer {
   margin-top: auto;
+  padding-bottom: 0.8rem;
   position: relative;
   bottom: 0;
   background-color: var(--background-dark);
   color: var(--text-light);
   display: flex;
   justify-content: space-between;
-  min-height: 3rem;
-  border-top: 0.5rem solid var(--accent);
 }
 
 footer * {
@@ -16,19 +15,22 @@ footer * {
 
 div.footer-column {
   display: flex;
-  align-items: center;
 }
 
 div.footer-copyr {
   margin-left: var(--margin-layout-large);
-  margin-right: 0.5rem;
   flex-shrink: 0;
+  align-items: flex-start;
+}
+
+div.footer-copyr p {
+  margin: 0.8rem 0.8rem 0 0;
 }
 
 div.footer-contact {
   margin-right: var(--margin-layout-large);
-  margin-left: 0.5rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 footer a {
@@ -38,7 +40,7 @@ footer a {
 
 a.footer-image-link {
   line-height: 0;
-  margin: 0 0 0 1rem;
+  margin: 0.8rem 0 0 0.8rem;
 }
 
 footer a:hover,

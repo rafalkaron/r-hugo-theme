@@ -5,8 +5,7 @@ header {
   align-items: baseline;
   justify-content: flex-start;
   padding: 0 var(--margin-layout-large) 0 var(--margin-layout-large);
-  border-bottom: 0.5rem solid var(--accent);
-  min-height: 4rem;
+  border-bottom: var(--border-width) solid var(--accent);
 }
 
 header > img.site-logo {
@@ -37,7 +36,7 @@ nav li a {
   color: var(--text-light);
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
 }
 
 nav a:hover,
