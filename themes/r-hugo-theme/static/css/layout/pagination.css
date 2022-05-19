@@ -1,0 +1,4 @@
+div#pagination {
+  margin-top: var(--margin-layout);
+  text-align: right;
+}

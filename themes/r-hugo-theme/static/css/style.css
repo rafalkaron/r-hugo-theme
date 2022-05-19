@@ -6,6 +6,7 @@
 @import "layout/footer.css";
 @import "layout/columns.css";
 @import "layout/blog.css";
+@import "layout/pagination.css";
 
 /* STYLING */
 @import "styling/typography.css";
