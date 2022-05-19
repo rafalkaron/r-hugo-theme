@@ -1,11 +1,26 @@
 <article>
-	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	<h1 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ if .Date }}
 	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
 	{{ end }}
-	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+	{{ with .Params.categories }}
+	<div class="categories">
+		{{ range . }}
+		<ph> • <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></ph>
+		{{ end }}
+	</div>
 	{{ end }}
+</div>
+
+{{ with .Params.tags }}
+<div>
+	<ul class="items tags">
+		{{ range . }}
+		<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+		{{ end }}
+	</ul>
+</div>
+{{ end }}
 	<div>
 		{{ .Summary }}
 		{{ if .Truncated }}

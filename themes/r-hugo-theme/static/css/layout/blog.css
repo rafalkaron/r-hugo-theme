@@ -7,7 +7,7 @@ div#intro {
   justify-content: flex-start;
 }
 
-ul#tags {
+ul.tags {
   margin-top: 0.5rem;
   font-weight: bold;
 }

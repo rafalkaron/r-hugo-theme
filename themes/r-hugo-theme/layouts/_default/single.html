@@ -10,7 +10,7 @@
 					{{ end }}
 				
 					{{ with .Params.categories }}
-					<div id="categories">
+					<div class="categories">
 						{{ range . }}
 						<ph> • <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></ph>
 						{{ end }}
@@ -20,7 +20,7 @@
 
 				{{ with .Params.tags }}
 				<div>
-					<ul id="tags" class="items">
+					<ul class="items">
 						{{ range . }}
 						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
 						{{ end }}
