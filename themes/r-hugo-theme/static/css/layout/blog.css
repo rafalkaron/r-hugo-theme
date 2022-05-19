@@ -1,3 +1,17 @@
 time {
   font-weight: bold;
 }
+
+div#intro {
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul#tags {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+div#meta {
+  margin: 0.5rem 0 var(--margin-content) 0;
+}

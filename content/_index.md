@@ -41,17 +41,17 @@ Large text
 Small text
 {.text_small}
 
-**yellow**  
+**yellow**
 {.yellow}
-**green**  
+**green**
 {.green}
-**orange**  
+**orange**
 {.orange}
-**purple**  
+**purple**
 {.purple}
-**pink**  
+**pink**
 {.pink}
-**blue**  
+**blue**
 {.blue}
 
 ## Lists

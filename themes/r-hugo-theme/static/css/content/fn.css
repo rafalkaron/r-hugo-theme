@@ -6,6 +6,10 @@ main div.footnotes li {
   margin: 0.25rem 1rem;
 }
 
+main div.footnotes li p {
+  margin: 0;
+}
+
 main div.footnotes ol {
   margin-top: 0.8rem;
 }

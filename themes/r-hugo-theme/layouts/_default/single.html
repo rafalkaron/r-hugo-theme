@@ -2,21 +2,35 @@
 	<main>
 		<article>
 			<h1>{{ .Title }}</h1>
-			{{ if .Date }}
-				<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-			{{ end }}
-			<div>
-				{{ .Content }}
-			</div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+			<div id="meta">
+				
+				<div id="intro">
+					{{ if .Date }}
+					<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006" }} </time>
 					{{ end }}
-				</ul>
+				
+					{{ with .Params.categories }}
+					<div id="categories">
+						{{ range . }}
+						<ph> • <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></ph>
+						{{ end }}
+					</div>
+					{{ end }}
+				</div>
+
+				{{ with .Params.tags }}
+				<div>
+					<ul id="tags" class="items">
+						{{ range . }}
+						<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+						{{ end }}
+					</ul>
+				</div>
+				{{ end }}
 			</div>
-			{{ end }}
+			<section id="content">
+				{{ .Content }}
+			</section>
 			{{ with .Site.DisqusShortname }}
 			<div>
 				{{ template "_internal/disqus.html" . }}
