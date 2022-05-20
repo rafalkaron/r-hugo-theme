@@ -1,0 +1,23 @@
+<div class="taxonomy-list">
+  
+  <h2>Categories</h2>
+  <div class="categories">
+    <ul class="items">
+      {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+      {{end}}
+    </ul>
+  </div>
+
+  <div class="tags">
+    <h2>Tags</h2>
+    <ul class="items">
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+      {{ with $.Site.GetPage (printf "/tags/%s" $name) }}
+        <li><a href={{ .RelPermalink }} title="All pages with tag <i>{{$name}}</i>">{{$name}}</a></li>
+      {{ end }}
+    {{ end }}
+    </ul>
+  </div>
+  
+</div>

@@ -31,17 +31,23 @@ div.author::before {
   content: " • ";
 }
 
-div.tags > ul {
+div.tags > ul,
+div.categories > ul {
   margin-top: 0.5rem;
   font-weight: bold;
 }
 
-div.tags a {
+div.tags a,
+div.categories a {
   color: var(--text-dark);
 }
+
 div.tags a:hover,
 div.tags a:active,
-div.tags a:focus {
+div.tags a:focus,
+div.categories a:hover,
+div.categories a:active,
+div.categories a:focus {
   color: var(--blue);
 }
 

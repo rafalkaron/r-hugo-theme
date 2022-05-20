@@ -18,6 +18,7 @@ Menus:
     - Name: "Blog"
       URL: "/blog"
       weight: 4
+      layout: "blog"
 
 Params:
   # Leave blank to automatically remove icon from the footer
