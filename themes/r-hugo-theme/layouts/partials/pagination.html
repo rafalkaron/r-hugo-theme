@@ -3,9 +3,12 @@
   <a href="{{ .Paginator.Prev.URL }}">Previous</a>
   {{ end }}
 
+  {{ if or (.Paginator.HasNext) (.Paginator.HasPrev) }}
   <ph class="pagination-counter">
     Page {{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}
   </ph>
+  {{ end }}
+
   {{ if .Paginator.HasNext }}
   <a href="{{ .Paginator.Next.URL }}">Next</a>
   {{ end }}
