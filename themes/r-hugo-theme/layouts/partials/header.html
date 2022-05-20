@@ -1,7 +1,5 @@
 <header>
-  {{ if .Site.Params.logo_href }} <img class="site-logo" src=" {{
-  .Site.Params.logo_href | default " img/logo.svg" }}" alt="Site logo"> {{ end
-  }}
+  {{ partial "head" . }}
   <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }} </a>
   {{ with .Site.Menus.main }}
   <nav>
