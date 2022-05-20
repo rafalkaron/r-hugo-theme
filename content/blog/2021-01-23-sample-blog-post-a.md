@@ -1,7 +1,8 @@
 ---
 title: Sample blog post A
 date: 2020-11-18
-tags: ["Tag a"]
+author: "Name Surname"
+tags: ["Tag a", "Tag b", "Tag c", "Tag d", "Tag e", "Tag f", "Tag g", "Tag h", "Tag i", "Tag j", "Tag k", "Tag l", "Tag m"]
 categories: ["Category a", "Category b"]
 ---
 

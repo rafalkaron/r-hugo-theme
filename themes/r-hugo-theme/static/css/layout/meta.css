@@ -1,0 +1,50 @@
+div.meta-top {
+  display: flex;
+}
+
+div.datetime {
+  font-weight: bold;
+}
+
+div.author {
+  font-weight: bold;
+}
+
+div.author,
+div.categories {
+  margin-left: 0.25rem;
+}
+
+div.categories span.category a {
+  color: var(--text-dark);
+}
+
+div.categories span.category a:hover,
+div.categories span.category a:active,
+div.categories span.category a:focus {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+div.categories span.category::before,
+div.author::before {
+  content: " • ";
+}
+
+div.tags > ul {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+div.tags a {
+  color: var(--text-dark);
+}
+div.tags a:hover,
+div.tags a:active,
+div.tags a:focus {
+  color: var(--blue);
+}
+
+div.summary {
+  margin-top: calc(var(--margin) * 0.25);
+}

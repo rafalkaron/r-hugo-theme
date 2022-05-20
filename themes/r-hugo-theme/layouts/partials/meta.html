@@ -1,14 +1,23 @@
-<div id="meta">
+<div class="meta">
 				
-  <div class="date-categories">
+  <div class="meta-top">
+    
     {{ if .Date }}
-    <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006" }}</time>
+    <div class="datetime">
+      <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006" }}</time>
+    </div>
+    {{ end }}
+    
+    {{ if .Params.author }}
+    <div class="author">
+      <ph>{{ .Params.author }}</ph>
+    </div>
     {{ end }}
   
     {{ with .Params.categories }}
     <div class="categories">
       {{ range . }}
-      <ph> • <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></ph>
+      <span class="category"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span>
       {{ end }}
     </div>
     {{ end }}

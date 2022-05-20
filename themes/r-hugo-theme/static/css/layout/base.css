@@ -7,7 +7,7 @@
 
 main {
   display: block;
-  margin: var(--margin) var(--margin-large);
+  margin: calc(var(--margin) * 1.5) var(--margin-large);
 }
 
 body {
