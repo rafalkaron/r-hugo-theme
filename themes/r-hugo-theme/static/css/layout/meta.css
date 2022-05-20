@@ -10,8 +10,8 @@ div.author {
   font-weight: bold;
 }
 
-div.author,
-div.categories {
+div.meta div.author,
+div.meta div.categories {
   margin-left: 0.25rem;
 }
 
