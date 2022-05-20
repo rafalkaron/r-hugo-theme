@@ -16,7 +16,7 @@ code * {
 }
 
 pre {
-  margin: var(--margin-content) 0;
+  margin: var(--margin) 0;
   padding: 0;
   display: block;
   width: fit-content;

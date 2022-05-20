@@ -1,5 +1,5 @@
 hr {
-  margin-top: var(--margin-content);
+  margin-top: var(--margin);
   color: var(--background-middle);
   border-width: calc(var(--border-width) / 2);
   border-style: solid;

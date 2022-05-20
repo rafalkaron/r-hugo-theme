@@ -1,7 +1,7 @@
 main img {
   overflow: auto;
   padding: 0;
-  margin-top: var(--margin-content);
+  margin-top: var(--margin);
   max-width: 100%;
   display: block;
   border-radius: var(--border-radius);

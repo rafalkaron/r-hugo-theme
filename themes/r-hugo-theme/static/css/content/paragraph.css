@@ -1,5 +1,5 @@
 main p {
-  margin: var(--margin-content) 0 0 0;
+  margin: var(--margin) 0 0 0;
   display: block;
 }
 main h1 + p,
@@ -8,5 +8,5 @@ main h3 + p,
 main h4 + p,
 main h5 + p,
 main h6 + p {
-  margin-top: calc(var(--margin-content) / 2);
+  margin-top: calc(var(--margin) / 2);
 }

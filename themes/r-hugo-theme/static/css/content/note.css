@@ -2,7 +2,7 @@ main .note,
 main .note_warning,
 main .note_caution,
 main .note_tip {
-  margin-top: var(--margin-content);
+  margin-top: var(--margin);
   padding: 0.5rem 1rem;
   display: block;
   border-left: solid 0.5rem var(--background-dark);

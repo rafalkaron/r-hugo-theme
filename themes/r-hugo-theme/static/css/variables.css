@@ -17,9 +17,8 @@
   --background-dark: #2e2e2e;
 
   /* MARGINS */
-  --margin-content: 1.6rem;
-  --margin-layout: 1.6rem;
-  --margin-layout-large: 20rem;
+  --margin: 1.6rem;
+  --margin-large: 20rem;
 
   /* DIMENSIONS */
   --font-size: 1.6rem;
@@ -33,31 +32,31 @@
 /* LARGE DEVICES */
 @media only screen and (max-width: 1200px) {
   :root {
-    --margin-layout: 1.6rem;
-    --margin-layout-large: 15rem;
+    --margin: 1.6rem;
+    --margin-large: 15rem;
   }
 }
 /* LAPTOPS */
 @media only screen and (max-width: 992px) {
   :root {
     --font-size: 1.5rem;
-    --margin-layout: 1.6rem;
-    --margin-layout-large: 10rem;
+    --margin: 1.5rem;
+    --margin-large: 10rem;
   }
 }
 /* TABLETS */
 @media only screen and (max-width: 768px) {
   :root {
     --font-size: 1.4rem;
-    --margin-layout: 1rem;
-    --margin-layout-large: 5rem;
+    --margin: 1.4rem;
+    --margin-large: 5rem;
   }
 }
 /* PORTRAIT PHONES */
 @media only screen and (max-width: 576px) {
   :root {
     --font-size: 1.2rem;
-    --margin-layout: 0.75rem;
-    --margin-layout-large: 2.5rem;
+    --margin: 1.2rem;
+    --margin-large: 2.5rem;
   }
 }
