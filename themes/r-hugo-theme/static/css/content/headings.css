@@ -41,3 +41,10 @@ h6 {
 h1.ref > a {
   color: var(--text-dark);
 }
+
+h1.ref > a:hover,
+h1.ref > a:active,
+h1.ref > a:focus {
+  text-decoration: none;
+  color: var(--blue);
+}

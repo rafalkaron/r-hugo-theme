@@ -7,7 +7,7 @@
 
 main {
   display: block;
-  margin: calc(var(--margin) * 1.5) var(--margin-large);
+  margin: calc(var(--margin) * 1.25) var(--margin-large);
 }
 
 body {
@@ -22,4 +22,20 @@ body {
 
 article {
   margin-top: var(--margin);
+}
+
+#blog article {
+  margin-top: calc(var(--margin) * 2);
+}
+
+#home article {
+  margin-top: 0;
+}
+
+article._index {
+  margin-top: 0;
+}
+
+article:first-of-type {
+  margin-top: 0;
 }

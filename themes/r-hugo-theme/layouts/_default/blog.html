@@ -1,11 +1,12 @@
 {{ define "main" }}
 <main id="blog">
 
-  {{ partial "taxonomy_list.html" . }}
-
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}
+
+  {{ partial "taxonomy_list.html" . }}
+
 
   {{ range .Paginator.Pages }} {{ .Render "summary" }} {{ end }}
   
