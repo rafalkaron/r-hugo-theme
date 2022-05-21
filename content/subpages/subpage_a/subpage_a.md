@@ -2,11 +2,12 @@
 title: Subpage A
 draft: false
 weight: 1
+description: "This is an optional short description. If it's not added, the first paragraph gets truncated."
 ---
 
 ## Heading 2
 
-Ex fugiat sint Lorem reprehenderit. Et in ex esse consequat dolore occaecat culpa amet ullamco aliquip magna excepteur. 
+Ex fugiat sint Lorem reprehenderit. Et in ex esse consequat dolore occaecat culpa amet ullamco aliquip magna excepteur.
 
 Irure ea sit duis eu deserunt. Occaecat eiusmod magna excepteur elit minim ut. Sit eiusmod sit et dolore elit ad cillum anim. Deserunt aute minim aliqua voluptate fugiat. Ad officia culpa magna duis non enim ullamco excepteur nisi.
 
