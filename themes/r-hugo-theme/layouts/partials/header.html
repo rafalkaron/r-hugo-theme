@@ -1,13 +1,25 @@
 <header>
   {{ partial "head" . }}
-    <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }} </a>
-  {{ with .Site.Menus.main }}
+  <div id="site-title">
+    <a href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }} </a>
+  </div>
+
   <nav>
-    <ul>
-      {{ range . }}
-      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-      {{ end }}
-    </ul>
+    <div id="nav-primary">
+      <ul>
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <!-- <div id="nav-secondary">
+      <ul>
+        {{ range .RegularPages }}
+          {{ if (not (in .Permalink "blog")) }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div> -->
   </nav>
-  {{ end }}
 </header>

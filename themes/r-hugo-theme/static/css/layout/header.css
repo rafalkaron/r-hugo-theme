@@ -9,7 +9,7 @@ header {
   min-height: 5rem;
 }
 
-header > a.site-title {
+header div#site-title a {
   color: var(--text-light);
   text-decoration: none;
   font-weight: bold;
@@ -18,20 +18,36 @@ header > a.site-title {
   padding-right: 1rem;
 }
 
-nav > ul {
+#nav-primary ul {
   display: flex;
 }
 
-nav li {
+#nav-secondary ul {
+  display: flex;
+}
+
+#nav-primary li {
   list-style: none;
   padding: 0.5rem 1rem;
 }
 
-nav li a {
+#nav-secondary li {
+  list-style: none;
+  padding: 0.25rem 0.5rem;
+}
+
+#nav-primary li a {
   color: var(--text-light);
   text-decoration: none;
   font-weight: 600;
   font-size: 1.125rem;
+}
+
+#nav-secondary li a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.75rem;
 }
 
 /* Indicate active sites */

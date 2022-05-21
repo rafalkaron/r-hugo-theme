@@ -35,7 +35,3 @@ article {
 article._index {
   margin-top: 0;
 }
-
-article:first-of-type {
-  margin-top: 0;
-}
