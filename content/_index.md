@@ -1,5 +1,5 @@
 ---
-title: Site
+title: Home
 draft: false
 ---
  

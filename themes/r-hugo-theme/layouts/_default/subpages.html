@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main>
+  {{ if or .Title .Content }}
+    {{ partial "_index.html" . }}
+  {{ end }}
+  {{ range where .Paginator.Pages "Params.hidden" "ne" "true"}} 
+  <article>
+    <h1 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+  </article>
+  <div class="summary">
+		{{ .Summary | truncate 180 }}
+	</div>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+</main>
+{{ end }}

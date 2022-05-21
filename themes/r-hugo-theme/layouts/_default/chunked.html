@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main>
+  {{ if or .Title .Content }}
+    {{ partial "_index.html" . }}
+  {{ end }}
+  {{ range .Paginator.Pages }}
+    <article>
+      <h1>{{ .Title }}</h1>
+      {{ partial "meta" . }}
+      <section id="content">{{ .Content }}</section>
+      {{ with .Site.DisqusShortname }}
+      <div>{{ template "_internal/disqus.html" . }}</div>
+      {{ end }}
+    </article>
+  {{ end }}
+  {{ partial "pagination.html" . }}
+</main>
+{{ end }}

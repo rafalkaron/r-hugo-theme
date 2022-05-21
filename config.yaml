@@ -7,15 +7,16 @@ theme: "r-hugo-theme"
 
 Menus:
   main:
-    - Name: "Portfolio"
+    - Name: "Home"
       URL: "/"
       weight: 1
-    - Name: "Docs"
-      URL: "/docs"
+    - Name: "Subpages"
+      URL: "/subpages"
       weight: 2
-    - Name: "Gallery"
-      URL: "/gallery"
+    - Name: "Chunked"
+      URL: "/chunked"
       weight: 3
+      layout: "chunked"
     - Name: "Blog"
       URL: "/blog"
       weight: 4
