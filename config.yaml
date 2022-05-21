@@ -1,10 +1,22 @@
 baseURL: "https://rafalkaron.github.io/"
 languageCode: "en-us"
-title: "R."
-params:
-  description: "TODO"
 theme: "r-hugo-theme"
 
+Params:
+  title: "R."
+  description: "Site description."
+  author: "Name Surname"
+  favicon_href: "img/favicon.svg"
+
+  # Footer icons
+  # Leave blank to automatically remove icon from the footer
+  email: "mailto:mail@domain.com"
+  github: "https://github.com/github_id"
+  linkedin: "https://linkedin.com/in/linkedin_id"
+  twitter: "https://twitter.com/twitter_id"
+  five_o_o_px: "https://500px.com/500px_id"
+
+# Navigation
 Menus:
   main:
     - Name: "Home"
@@ -22,19 +34,7 @@ Menus:
       weight: 4
       layout: "blog"
 
-Params:
-  # Leave blank to automatically remove icon from the footer
-  email: "mailto:mail@domain.com"
-  github: "https://github.com/github_id"
-  linkedin: "https://linkedin.com/in/linkedin_id"
-  twitter: "https://twitter.com/twitter_id"
-  five_o_o_px: "https://500px.com/500px_id"
-
-  # Add favicon
-  favicon_href: "img/favicon.svg"
-  # Add site logo to the header, leave blank to skip
-  logo_href:
-
+# Rendering settings
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:

@@ -6,7 +6,9 @@ footer {
   background-color: var(--background-dark);
   color: var(--text-light);
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  min-height: 5rem;
 }
 
 footer * {
@@ -20,7 +22,12 @@ div.footer-column {
 div.footer-copyr {
   margin-left: var(--margin-large);
   flex-shrink: 0;
-  align-items: flex-start;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+div.footer-copyr a {
+  font-size: 1.1rem;
 }
 
 div.footer-copyr p {

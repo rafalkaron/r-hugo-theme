@@ -1,6 +1,6 @@
 <header>
   {{ partial "head" . }}
-  <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Title }} </a>
+    <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }} </a>
   {{ with .Site.Menus.main }}
   <nav>
     <ul>

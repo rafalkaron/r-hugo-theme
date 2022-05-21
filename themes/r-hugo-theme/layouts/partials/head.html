@@ -2,15 +2,17 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-	<title>{{ .Title }}</title>
+	<title>{{ .Site.Params.title }} | {{ .Title }}</title>
+	
 	{{ with .Site.Params.description }}
-	<meta name="description" content="{{ . }}">{{ end }}
+		<meta name="description" content="{{ . }}">{{ end }}
 	{{ with .Site.Params.author }}
-	<meta name="author" content="{{ . }}">{{ end }}
+		<meta name="author" content="{{ . }}">
+	{{ end }}
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<link rel="icon" type="image/ico" href="{{ .Site.Params.favicon_href | relURL | default "img/favicon.svg" }}">
+	
 	{{ with .OutputFormats.Get "RSS" -}}
-	{{ printf `
-	<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
+		{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
 	{{- end }}
 </head>
