@@ -60,9 +60,8 @@ nav li a::after .active {
   margin-top: -0.25rem;
 }
 
-nav a:hover,
-nav a:active,
-nav a:focus {
+#nav-primary a:hover,
+#nav-primary a:active {
   text-decoration: none;
   color: var(--accent);
 }
