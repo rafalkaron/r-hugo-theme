@@ -5,8 +5,7 @@ main a {
 }
 
 a:hover,
-a:active,
-a:focus {
+a:active {
   text-decoration: underline;
 }
 
@@ -16,7 +15,6 @@ main a > abbr {
 }
 
 main a:hover > abbr,
-main a:active > abbr,
-main a:focus > abbr {
+main a:active > abbr {
   color: inherit;
 }
