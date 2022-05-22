@@ -1,6 +1,6 @@
 ---
-title: Sample blog post B
-date: 2020-11-18
+title: Post B
+date: 2020-10-18
 tags: ["Tag a", "Tag B", "Tag C"]
 categories: ["Category a"]
 ---

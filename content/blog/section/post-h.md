@@ -1,6 +1,6 @@
 ---
-title: Sample blog post I
-date: 1993-11-18
+title: Post H
+date: 2020-04-18
 tags: ["Tag a", "Tag B", "Tag C"]
 categories: ["Category b"]
 draft: false
@@ -71,7 +71,7 @@ Title B
 - Item A
 - Item B
 - Item C
-{:.items}
+{.items}
 
 ## Tables
 
@@ -152,16 +152,16 @@ Title B
 ## Notes
 
 Laboris anim cupidatat do tempor fugiat qui aute magna nostrud sint reprehenderit cupidatat.
-{:.note}
+{.note}
 
 Irure nulla aliquip officia enim ut dolor adipisicing non adipisicing.
-{:.note_tip}
+{.note_tip}
 
 Officia quis eu Lorem quis ex dolore non veniam ex ad.
-{:.note_warning}
+{.note_warning}
 
 Minim officia esse nulla consectetur ut non et officia tempor consequat tempor.
-{:.note_caution}
+{.note_caution}
 
 ## Abbreviations
 
@@ -178,14 +178,14 @@ SME
 ### Two columns
 
 Cillum sint nisi voluptate ad est adipisicing enim mollit fugiat aliqua nostrud aute sit mollit. Ex cillum in minim culpa veniam deserunt. Ullamco ad anim commodo qui eiusmod exercitation aliqua id amet tempor. Minim ex amet incididunt ad adipisicing ut aliqua cillum quis amet. Incididunt dolor aliquip non tempor duis occaecat amet nulla reprehenderit. Ullamco ea consectetur cillum nulla fugiat deserunt.
-{:.two_column}
+{.two_column}
 
 ### Three columns
 
 Sunt voluptate ex elit ullamco cillum reprehenderit ea sunt proident et adipisicing sunt qui. Pariatur laboris adipisicing adipisicing fugiat commodo aliquip mollit incididunt magna. Exercitation ullamco nisi cupidatat Lorem fugiat deserunt sit nulla sit voluptate sunt. Sunt sunt proident id proident ad cupidatat quis anim do. Mollit exercitation commodo do ullamco occaecat ex eu deserunt excepteur reprehenderit dolor sunt. Id deserunt ad pariatur mollit laborum deserunt duis ullamco proident enim culpa aliqua. Aute consequat in proident enim ullamco aliquip quis.
-{:.three_column}
+{.three_column}
 
 ### Four columns
 
 Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco. Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco.
-{:.four_column}
+{.four_column}
