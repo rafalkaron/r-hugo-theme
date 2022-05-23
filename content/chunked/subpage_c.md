@@ -1,5 +1,6 @@
 ---
 title: Subpage C
+weight: 3
 draft: false
 ---
 

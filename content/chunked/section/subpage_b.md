@@ -1,5 +1,6 @@
 ---
 title: Subpage B
+weight: 2
 draft: false
 ---
 
