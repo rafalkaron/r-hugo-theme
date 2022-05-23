@@ -1,0 +1,13 @@
+div#next-parent-previous-page {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: var(--margin);
+}
+
+div.next-page,
+div.parent-page,
+div.previous-page {
+  display: block;
+  margin: 0 var(--margin);
+}

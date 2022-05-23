@@ -27,4 +27,5 @@
 @import "layout/blog.css";
 @import "layout/subpages.css";
 @import "layout/single.css";
+@import "layout/next_parent_prev.css";
 @import "layout/pagination.css";

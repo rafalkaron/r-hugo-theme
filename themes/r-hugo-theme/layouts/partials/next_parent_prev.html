@@ -1,0 +1,19 @@
+<div id="next-parent-previous-page">
+  <div class="next-page">
+    {{ if .NextInSection }}
+    <a class="next-page-link" href="{{ .NextInSection.Permalink }}">« {{ .NextInSection.Title | truncate 50 "..." }}</a>
+    {{ end }}
+  </div>
+
+  <div class="parent-page">
+    {{ if .Parent }}
+    <a class="parent-page-link" href="{{ .Parent.Permalink }}">{{ .Parent.Title | truncate 50 "..."}}</a>
+    {{ end }}
+  </div>
+
+  <div class="previous-page">
+    {{ if .PrevInSection }}
+    <a class="previous-page-link" href="{{ .PrevInSection.Permalink }}">{{ .PrevInSection.Title | truncate 50 "..."}} »</a>
+    {{ end }}
+  </div>
+</div>
