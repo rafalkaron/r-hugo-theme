@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main id="terms">
+  <article>
+    <h1>{{ .Title }}</h1>
+
+    <div class="terms">
+      <ul class="items">
+        {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{end}}
+      </ul>
+    </div>
+  </article>
+</main>
+{{ end }}

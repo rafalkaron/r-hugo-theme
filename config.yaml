@@ -16,6 +16,9 @@ Params:
   twitter: "https://twitter.com/twitter_id"
   five_o_o_px: "https://500px.com/500px_id"
 
+#Taxonomies:
+#  tag: "tags"
+
 # Navigation
 Menus:
   main:
