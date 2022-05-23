@@ -2,6 +2,10 @@ main#layout-blog article {
   margin-top: calc(var(--margin) * 2);
 }
 
+div.taxonomy-list h2 {
+  margin-top: 0;
+}
+
 h1.ref > a {
   color: var(--text-dark);
 }

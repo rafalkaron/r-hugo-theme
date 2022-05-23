@@ -37,3 +37,14 @@ h5,
 h6 {
   margin-top: 0.75em;
 }
+
+a.heading-link {
+  color: transparent;
+  text-decoration: none;
+}
+
+a.heading-link:hover,
+a.heading-link:active {
+  color: var(--blue);
+  text-decoration: none;
+}
