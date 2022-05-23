@@ -1,13 +1,5 @@
 @import "variables.css";
 
-/* LAYOUT */
-@import "layout/base.css";
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/columns.css";
-@import "layout/meta.css";
-@import "layout/pagination.css";
-
 /* STYLING */
 @import "styling/typography.css";
 @import "styling/selection.css";
@@ -25,3 +17,13 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/paragraph.css";
+
+/* LAYOUT */
+@import "layout/base.css";
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/columns.css";
+@import "layout/meta.css";
+@import "layout/blog.css";
+@import "layout/subpages.css";
+@import "layout/pagination.css";
