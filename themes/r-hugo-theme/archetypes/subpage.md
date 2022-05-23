@@ -1,4 +1,4 @@
 ---
-title: Single site
+title: Subpage
 draft: false
 ---

@@ -25,6 +25,7 @@ Menus:
     - Name: "Subpages"
       URL: "/subpages"
       weight: 2
+      another_level:
     - Name: "Chunked"
       URL: "/chunked"
       weight: 3

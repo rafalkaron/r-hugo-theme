@@ -26,4 +26,5 @@
 @import "layout/meta.css";
 @import "layout/blog.css";
 @import "layout/subpages.css";
+@import "layout/single.css";
 @import "layout/pagination.css";

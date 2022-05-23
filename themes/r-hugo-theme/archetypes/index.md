@@ -1,4 +1,4 @@
 ---
-title: Single site
+title: Index
 draft: false
 ---
