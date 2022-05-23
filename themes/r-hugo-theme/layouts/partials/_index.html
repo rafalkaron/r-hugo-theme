@@ -1,7 +1,7 @@
-<div>
   {{ with .Params.Title }}
   <h1>{{ . }}</h1>
-  {{ end }} {{ with .Content }}
-  <div>{{ . }}</div>
+  {{ end }} 
+  
+  {{ with .Content }}
+  <section>{{ . }}</section>
   {{ end }}
-</div>

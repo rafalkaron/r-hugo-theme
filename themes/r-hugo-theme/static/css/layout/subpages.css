@@ -11,6 +11,7 @@ a.subpages-list-link {
   font-size: 1.4rem;
 }
 
-div.description {
+#layout-subpages div.description {
   font-size: 0.8rem;
+  color: var(--text-middle);
 }

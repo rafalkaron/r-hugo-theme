@@ -1,3 +1,7 @@
+#layout-blog article {
+  margin-top: calc(var(--margin) * 2);
+}
+
 h1.ref > a {
   color: var(--text-dark);
 }

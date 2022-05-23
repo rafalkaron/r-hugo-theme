@@ -1,14 +1,18 @@
 {{ define "main" }}
-<main>
+<main id="layout-subpages">
+  <article>
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}
-  <ul class="subpages-list">
-      {{ range where .Paginator.Pages "Params.hidden" "ne" "true"}} 
-      <li class="subpages-list-item"><a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
-      {{ partial "description.html" . }}</li>
-      {{ end }}
-    </ul>
+    <section class="_index">
+      <ul class="subpages-list">
+          {{ range .Paginator.Pages }} 
+          <li class="subpages-list-item"><a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ partial "description.html" . }}</li>
+          {{ end }}
+      </ul>
+    </section>
+  </article>
   {{ partial "pagination.html" . }}
 </main>
 {{ end }}

@@ -24,10 +24,6 @@ article {
   margin-top: var(--margin);
 }
 
-#blog article {
-  margin-top: calc(var(--margin) * 2);
-}
-
 #home article {
   margin-top: 0;
 }
