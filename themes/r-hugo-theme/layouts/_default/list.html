@@ -4,9 +4,7 @@
     {{ partial "_index.html" . }}
   {{ end }}
   {{ range .Paginator.Pages }}
-  {{ range sort .Params.weight "value" "desc" }}
   {{ .Render "summary" }}
-  {{ end }}
   {{ end }}
   {{ partial "pagination.html" . }}
 </main>
