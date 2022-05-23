@@ -3,7 +3,7 @@
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}
-  {{ range .Paginator.Pages }}
+  {{ range sort .Paginator.Pages .Params.weight }}
   {{ .Render "summary" }}
   {{ end }}
   {{ partial "pagination.html" . }}
