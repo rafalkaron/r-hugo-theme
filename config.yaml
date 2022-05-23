@@ -11,7 +11,7 @@ Params:
   # Footer icons
   # Leave blank to automatically remove icon from the footer
   email: "mailto:mail@domain.com"
-  github: "https://github.com/github_id"
+  github: "https://github.com/rafalkaron/r-hugo-theme"
   linkedin: "https://linkedin.com/in/linkedin_id"
   twitter: "https://twitter.com/twitter_id"
   five_o_o_px: "https://500px.com/500px_id"

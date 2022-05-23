@@ -8,7 +8,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5rem;
+  min-height: 4rem;
   padding: 0 var(--margin-large) 0.8rem var(--margin-large);
 }
 
@@ -23,7 +23,6 @@ div.footer-column {
 div.footer-copyr {
   flex-shrink: 0;
   font-weight: bold;
-  font-size: 1.2rem;
 }
 
 div.footer-copyr p {
