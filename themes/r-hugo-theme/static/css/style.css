@@ -5,8 +5,9 @@
 /* LAYOUT */
 @import "layout/base.css";
 @import "layout/blog.css";
-@import "layout/breadcrumbs.css";
+@import "layout/terms.css";
 @import "layout/header.css";
+@import "layout/top-nav.css";
 @import "layout/meta.css";
 @import "layout/subpages.css";
 @import "layout/single.css";

@@ -3,7 +3,7 @@ footer {
   padding-bottom: 0.8rem;
   position: relative;
   bottom: 0;
-  background-color: var(--background-dark);
+  background-color: var(--footer);
   color: var(--text-light);
   display: flex;
   align-items: center;

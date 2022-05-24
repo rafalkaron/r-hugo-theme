@@ -15,5 +15,5 @@ main div.footnotes ol {
 }
 
 main div.footnotes a.footnote-backref {
-  color: var(--blue);
+  color: var(--link);
 }

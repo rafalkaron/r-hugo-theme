@@ -22,7 +22,7 @@ div.categories span.category a {
 div.categories span.category a:hover,
 div.categories span.category a:active,
 div.categories span.category a:focus {
-  color: var(--blue);
+  color: var(--link);
   text-decoration: none;
 }
 
@@ -48,7 +48,7 @@ div.tags a:focus,
 div.categories a:hover,
 div.categories a:active,
 div.categories a:focus {
-  color: var(--blue);
+  color: var(--link);
 }
 
 div.summary {

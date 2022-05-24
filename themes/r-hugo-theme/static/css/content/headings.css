@@ -46,6 +46,6 @@ a.heading-link {
 
 a.heading-link:hover,
 a.heading-link:active {
-  color: var(--blue);
+  color: var(--link);
   text-decoration: none;
 }

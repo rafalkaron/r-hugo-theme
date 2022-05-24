@@ -69,5 +69,5 @@ div.footer-copyr > p > a {
 }
 .blue,
 .blue * {
-  color: var(--blue) !important;
+  color: var(--link) !important;
 }
