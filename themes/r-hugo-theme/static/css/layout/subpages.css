@@ -13,7 +13,6 @@ a.subpages-list-link {
 
 main#layout-subpages div.description {
   font-size: 0.8rem;
-  color: var(--text-middle);
 }
 
 main#layout-subpages > article:first-child {

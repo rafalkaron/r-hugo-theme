@@ -2,8 +2,16 @@ main#layout-blog article {
   margin-top: calc(var(--margin) * 2);
 }
 
+main#layout-blog article:first-of-type {
+  margin-top: 0;
+}
+
 div.taxonomy-list h2 {
   margin-top: 0;
+}
+
+h1.ref {
+  border-bottom: none;
 }
 
 h1.ref > a {
@@ -14,4 +22,35 @@ h1.ref > a:hover,
 h1.ref > a:active {
   text-decoration: none;
   color: var(--blue);
+}
+
+div.taxonomy-refs {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* border-bottom: 0.1rem solid var(--text-dark); */
+}
+
+div.taxonomy-refs li {
+  display: inline;
+  white-space: nowrap;
+  margin: 0;
+}
+
+div.taxonomy-refs li + li:before {
+  content: " • ";
+  font-size: 0.8rem;
+}
+
+div.taxonomy-refs a {
+  color: var(--text-dark);
+  font-size: 0.8rem;
+}
+
+div.taxonomy-refs a:hover,
+div.taxonomy-refs a:active {
+  color: var(--blue);
+  text-decoration: none;
 }

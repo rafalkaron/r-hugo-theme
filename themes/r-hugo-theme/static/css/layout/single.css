@@ -1,3 +1,7 @@
 main#layout-single > article:first-child {
   margin-top: 0;
 }
+
+div.description {
+  margin-top: calc(var(--margin) / 2);
+}

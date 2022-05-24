@@ -4,6 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
+  /* border-bottom: 0.1rem solid var(--text-dark); */
 }
 
 .breadcrumb li {
@@ -18,7 +19,7 @@
 }
 
 .breadcrumb a {
-  color: var(--text-middle);
+  color: var(--text-dark);
   font-size: 0.8rem;
 }
 
