@@ -1,6 +1,6 @@
 h1 {
   font-size: 2rem;
-  border-bottom: calc(var(--border-width) / 2) solid var(--text-dark);
+  /* border-bottom: calc(var(--border-width) / 4) solid var(--text-dark); */
 }
 
 h2 {
