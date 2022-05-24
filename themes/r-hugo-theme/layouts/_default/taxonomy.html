@@ -4,8 +4,8 @@
     {{ partial "back-to-blog" . }}
   </div>
   <article>
-  {{ if or .Title .Content }}
-    {{ partial "_index.html" . }}
+  {{ with .Title }}
+    <h1>#{{ . }}</h1>
   {{ end }}
   </article>
 
