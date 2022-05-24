@@ -3,5 +3,4 @@ hr {
   color: var(--background-middle);
   border-width: calc(var(--border-width) / 2);
   border-style: solid;
-  border: solid calc(var(--border-width) * 0.2) var(--background-dark);
 }
