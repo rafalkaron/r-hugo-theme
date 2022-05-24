@@ -1,7 +1,6 @@
 {{ define "main" }}
 <main id="layout-subpages">
   <article>
-    {{ partial "breadcrumbs" . }}
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}
