@@ -1,5 +1,5 @@
 div#pagination {
-  margin-top: var(--margin);
+  margin-top: calc(var(--margin) * 2);
   text-align: right;
   font-weight: bold;
 }

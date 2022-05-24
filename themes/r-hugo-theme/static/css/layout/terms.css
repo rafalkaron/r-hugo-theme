@@ -1,3 +1,7 @@
-#layout-terms article:first-of-type {
-  margin-top: 0;
+#layout-term .top-gutter {
+  justify-content: flex-end;
+}
+
+#layout-terms .top-gutter {
+  justify-content: flex-end;
 }

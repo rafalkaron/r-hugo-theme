@@ -1,6 +1,6 @@
-main#layout-single > article:first-of-type {
+/* main#layout-single > article:first-of-type {
   margin-top: 0;
-}
+} */
 
 main#layout-single div.description {
   margin-top: calc(var(--margin) / 2);

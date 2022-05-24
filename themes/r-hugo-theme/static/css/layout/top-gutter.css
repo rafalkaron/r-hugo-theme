@@ -3,9 +3,10 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  border-bottom: solid calc(var(--border-width) * 0.2) var(--background-dark);
 }
 
-.next-parent-previous-page {
+.next-previous-page {
   display: flex;
   flex-direction: row;
 }
@@ -14,7 +15,7 @@
 }
 
 div.previous-page {
-  margin-left: 0.5rem !important;
+  margin-left: 0.5rem;
 }
 
 .top-nav {

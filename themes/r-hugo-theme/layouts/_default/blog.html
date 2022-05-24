@@ -1,6 +1,8 @@
 {{ define "main" }}
 <main id="layout-blog">
-  {{ partial "taxonomy-refs" . }}
+  <div class="top-gutter">
+    {{ partial "taxonomy-refs" . }}
+    </div>
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}
