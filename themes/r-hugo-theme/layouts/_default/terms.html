@@ -5,7 +5,7 @@
   </div>
   <article>
     <h1>{{ .Title }}</h1>
-    <div class="terms">
+    <div class="terms tags categories">
       <ul class="items">
         {{ if eq .Title "Tags" }}
           {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
