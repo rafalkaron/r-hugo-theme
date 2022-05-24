@@ -5,8 +5,8 @@
     <h1>{{ .Title }}</h1>
     {{ partial "meta" . }}
     <div class="description">
-      {{ if .Params.description }}
-        {{ .Params.description }}
+      {{ with .Params.description }}
+        {{ . }}
       {{ end }}
     </div>
     <section id="content">{{ .Content }}</section>
@@ -14,6 +14,6 @@
     <div>{{ template "_internal/disqus.html" . }}</div>
     {{ end }}
   </article>
-  {{ partial "next_parent_prev" . }}
+  {{ partial "next-parent-prev" . }}
 </main>
 {{ end }}

@@ -1,4 +1,20 @@
-@import "variables.css";
+/* VARIABLES */
+@import "variables/dimensions.css";
+@import "variables/palette-light.css";
+
+/* LAYOUT */
+@import "layout/base.css";
+@import "layout/blog.css";
+@import "layout/breadcrumbs.css";
+@import "layout/header.css";
+@import "layout/meta.css";
+@import "layout/subpages.css";
+@import "layout/single.css";
+@import "layout/columns.css";
+@import "layout/footer.css";
+@import "layout/next-prev.css";
+@import "layout/pagination.css";
+@import "layout/print.css"; /* TODO */
 
 /* STYLING */
 @import "styling/typography.css";
@@ -7,26 +23,13 @@
 
 /* CONTENT */
 @import "content/headings.css";
-@import "content/code.css";
-@import "content/table.css";
-@import "content/images.css";
+@import "content/paragraph.css";
 @import "content/link.css";
 @import "content/list.css";
-@import "content/quote.css";
 @import "content/note.css";
+@import "content/quote.css";
+@import "content/code.css";
+@import "content/table.css";
+@import "content/image.css";
 @import "content/hr.css";
 @import "content/fn.css";
-@import "content/paragraph.css";
-
-/* LAYOUT */
-@import "layout/base.css";
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/columns.css";
-@import "layout/meta.css";
-@import "layout/blog.css";
-@import "layout/subpages.css";
-@import "layout/single.css";
-@import "layout/next_parent_prev.css";
-@import "layout/pagination.css";
-@import "layout/breadcrumbs.css";

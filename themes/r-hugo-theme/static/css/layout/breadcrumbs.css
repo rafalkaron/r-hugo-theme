@@ -1,4 +1,4 @@
-.breadcrumb {
+.breadcrumbs {
   list-style: none;
 
   display: flex;
@@ -7,24 +7,24 @@
   /* border-bottom: 0.1rem solid var(--text-dark); */
 }
 
-.breadcrumb li {
+.breadcrumbs li {
   display: inline;
   white-space: nowrap;
   margin: 0;
 }
 
-.breadcrumb li + li:before {
+.breadcrumbs li + li:before {
   content: "/";
   padding: 0.3rem;
 }
 
-.breadcrumb a {
+.breadcrumbs a {
   color: var(--text-dark);
   font-size: 0.8rem;
 }
 
-.breadcrumb a:hover,
-.breadcrumb a:active {
+.breadcrumbs a:hover,
+.breadcrumbs a:active {
   color: var(--blue);
   text-decoration: none;
 }

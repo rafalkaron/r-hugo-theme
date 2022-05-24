@@ -1,4 +1,4 @@
-<ul class="breadcrumb">
+<ul class="breadcrumbs">
   {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
 </ul>
 
@@ -12,5 +12,3 @@
     <a href="{{ .p1.RelPermalink }}">{{ .p1.Title | truncate 25 }}</a>
   </li>
 {{ end }}
-
-<!-- Thank you! https://dongheenam.info/posts/breadcrumb-navigation-in-hugo/ -->

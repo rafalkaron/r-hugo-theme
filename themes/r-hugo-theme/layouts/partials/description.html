@@ -1,6 +1,6 @@
 <div class="description">
-  {{ if .Params.description }}
-    {{ .Params.description }}
+  {{ with .Params.description }}
+    {{ . }}
   {{ else }}
     {{ .Summary | truncate 150 }}
   {{ end }}

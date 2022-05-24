@@ -4,13 +4,11 @@
     <a class="next-page-link" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">« previous</a>
     {{ end }}
   </div>
-
   <div class="parent-page">
     {{ if .Parent }}
     <a class="parent-page-link" title="{{ .Parent.Title | truncate 50 "..."}}" href="{{ .Parent.Permalink }}">up</a>
     {{ end }}
   </div>
-
   <div class="previous-page">
     {{ if .PrevInSection }}
     <a class="previous-page-link" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">next »</a>

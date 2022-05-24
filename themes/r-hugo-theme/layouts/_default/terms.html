@@ -1,25 +1,21 @@
 {{ define "main" }}
-<main id="terms">
+<main id="layout-terms">
+  {{ partial "back-to-blog" . }}
   <article>
     <h1>{{ .Title }}</h1>
-
     <div class="terms">
       <ul class="items">
         {{ if eq .Title "Tags" }}
           {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
-          <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
           {{end}}
         {{ else if eq .Title "Categories" }}
           {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-          <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
           {{end}}
         {{ end }}
-
       </ul>
     </div>
-
-    {{ partial "all_posts" . }}
-
   </article>
 </main>
 {{ end }}

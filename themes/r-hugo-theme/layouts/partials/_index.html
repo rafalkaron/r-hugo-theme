@@ -1,7 +1,6 @@
-  {{ with .Params.Title }}
+{{ with .Params.Title }}
   <h1>{{ . }}</h1>
-  {{ end }} 
-  
-  {{ with .Content }}
+{{ end }} 
+{{ with .Content }}
   <section>{{ . }}</section>
-  {{ end }}
+{{ end }}

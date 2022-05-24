@@ -2,17 +2,17 @@
 <main id="layout-subpages">
   <article>
   {{ if or .Title .Content }}
-    {{ partial "_index.html" . }}
+    {{ partial "_index" . }}
   {{ end }}
     <section class="_index">
       <ul class="subpages-list">
           {{ range .Paginator.Pages }} 
           <li class="subpages-list-item"><a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
-            {{ partial "description.html" . }}</li>
+            {{ partial "description" . }}</li>
           {{ end }}
       </ul>
     </section>
   </article>
-  {{ partial "pagination.html" . }}
+  {{ partial "pagination" . }}
 </main>
 {{ end }}

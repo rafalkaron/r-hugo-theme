@@ -1,14 +1,10 @@
 {{ define "main" }}
 <main id="layout-blog">
-
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}
-
-  {{ partial "taxonomy_refs" . }}
-
+  {{ partial "taxonomy-refs" . }}
   {{ range .Paginator.Pages }} {{ .Render "summary" }} {{ end }}
-  
-  {{ partial "pagination.html" . }}
+  {{ partial "pagination" . }}
 </main>
 {{ end }}

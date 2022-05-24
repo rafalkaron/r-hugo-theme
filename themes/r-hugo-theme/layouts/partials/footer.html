@@ -7,45 +7,20 @@
   </div>
   <div class="footer-column footer-contact">
     {{ if .Site.Params.email }}
-    <a
-      target="blank"
-      class="footer-image-link"
-      href="{{ .Site.Params.footer.email }}"
-      title="Email"
-      ><img class="footer-icon" src="{{ "img/email.svg" | relURL }}" /></a
-    >
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.footer.email }}" title="Email"><img
+        class="footer-icon" src="{{ "img/email.svg" | relURL }}" /></a>
     {{ end }} {{ if .Site.Params.github }}
-    <a
-      target="blank"
-      class="footer-image-link"
-      href="{{ .Site.Params.github }}"
-      title="GitHub"
-      ><img class="footer-icon" src="{{ "img/github.svg" | relURL }}" /></a
-    >
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.github }}" title="GitHub"><img class="footer-icon"
+        src="{{ "img/github.svg" | relURL }}" /></a>
     {{ end }} {{ if .Site.Params.linkedin }}
-    <a
-      target="blank"
-      class="footer-image-link"
-      href="{{ .Site.Params.linkedin }}"
-      title="LinkedIn"
-      ><img class="footer-icon" src="{{ "img/linkedin.svg" | relURL }}" /></a
-    >
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.linkedin }}" title="LinkedIn"><img
+        class="footer-icon" src="{{ "img/linkedin.svg" | relURL }}" /></a>
     {{ end }} {{ if .Site.Params.twitter }}
-    <a
-      target="blank"
-      class="footer-image-link"
-      href="{{ .Site.Params.twitter }}"
-      title="Twitter"
-      ><img class="footer-icon" src="{{ "img/twitter.svg" | relURL }}" /></a
-    >
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.twitter }}" title="Twitter"><img
+        class="footer-icon" src="{{ "img/twitter.svg" | relURL }}" /></a>
     {{ end }} {{ if .Site.Params.five_o_o_px }}
-    <a
-      target="blank"
-      class="footer-image-link"
-      href="{{ .Site.Params.five_o_o_px }}"
-      title="500px"
-      ><img class="footer-icon" src="{{ "img/500px.svg" | relURL }}" /></a
-    >
-    {{ end }} {{ partial "top.html" . }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.five_o_o_px }}" title="500px"><img
+        class="footer-icon" src="{{ "img/500px.svg" | relURL }}" /></a>
+    {{ end }} {{ partial "back-to-top" . }}
   </div>
 </footer>

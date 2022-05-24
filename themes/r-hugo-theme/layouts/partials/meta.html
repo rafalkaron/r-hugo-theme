@@ -1,5 +1,4 @@
 <div class="meta">
-				
   <div class="meta-top">
     
     {{ if .Date }}
@@ -8,9 +7,9 @@
     </div>
     {{ end }}
     
-    {{ if .Params.author }}
+    {{ with .Params.author }}
     <div class="author">
-      <ph>{{ .Params.author }}</ph>
+      <ph>{{ . }}</ph>
     </div>
     {{ end }}
   
