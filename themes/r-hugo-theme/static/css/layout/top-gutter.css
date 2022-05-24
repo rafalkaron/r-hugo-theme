@@ -1,3 +1,22 @@
+.top-gutter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.next-parent-previous-page {
+  display: flex;
+  flex-direction: row;
+}
+.next-parent-previous-page a {
+  display: block;
+}
+
+div.previous-page {
+  margin-left: 0.5rem !important;
+}
+
 .top-nav {
   list-style: none;
   display: flex;

@@ -1,0 +1,12 @@
+<div class="next-parent-previous-page">
+  <div class="next-page top-nav">
+    {{ if .NextInSection }}
+    <a class="next-page-link" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">«</a>
+    {{ end }}
+  </div>
+  <div class="previous-page top-nav">
+    {{ if .PrevInSection }}
+    <a class="previous-page-link" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">»</a>
+    {{ end }}
+  </div>
+</div>

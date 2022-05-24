@@ -1,19 +1,17 @@
 {{ define "main" }}
 <main id="layout-single">
-  {{ partial "breadcrumbs" . }}
+  <div class="top-gutter">
+  {{ partial "breadcrumbs" . }} {{ partial "next-prev" . }}
+  </div>
   <article>
     <h1>{{ .Title }}</h1>
     {{ partial "meta" . }}
-    <div class="description">
-      {{ with .Params.description }}
-        {{ . }}
-      {{ end }}
-    </div>
+    {{ partial "description" . }}
     <section id="content">{{ .Content }}</section>
     {{ with .Site.DisqusShortname }}
     <div>{{ template "_internal/disqus.html" . }}</div>
     {{ end }}
   </article>
-  {{ partial "next-parent-prev" . }}
+  
 </main>
 {{ end }}
