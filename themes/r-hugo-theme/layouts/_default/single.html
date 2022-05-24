@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="layout-single">
+  {{ partial "breadcrumbs" . }}
   <article>
-    {{ partial "breadcrumbs" . }}
     <h1>{{ .Title }}</h1>
     {{ partial "meta" . }}
     <div class="description">

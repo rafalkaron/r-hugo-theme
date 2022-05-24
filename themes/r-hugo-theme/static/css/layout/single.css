@@ -1,4 +1,4 @@
-main#layout-single > article:first-child {
+main#layout-single > article:first-of-type {
   margin-top: 0;
 }
 
