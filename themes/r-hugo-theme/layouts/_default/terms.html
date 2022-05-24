@@ -5,9 +5,16 @@
 
     <div class="terms">
       <ul class="items">
-        {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
-        <li><a href="{{.Permalink}}">{{.Title}}</a></li>
-        {{end}}
+        {{ if eq .Title "Tags" }}
+          {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+          <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+          {{end}}
+        {{ else if eq .Title "Categories" }}
+          {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+          <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+          {{end}}
+        {{ end }}
+
       </ul>
     </div>
   </article>
