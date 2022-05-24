@@ -1,0 +1,29 @@
+.breadcrumb {
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.breadcrumb li {
+  display: inline;
+  white-space: nowrap;
+  margin: 0;
+}
+
+.breadcrumb li + li:before {
+  content: "/";
+  padding: 0.3rem;
+}
+
+.breadcrumb a {
+  color: var(--text-middle);
+  font-size: 0.8rem;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:active {
+  color: var(--blue);
+  text-decoration: none;
+}

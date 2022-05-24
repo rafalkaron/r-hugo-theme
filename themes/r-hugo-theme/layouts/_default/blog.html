@@ -5,8 +5,7 @@
     {{ partial "_index.html" . }}
   {{ end }}
 
-  {{ partial "taxonomy_list.html" . }}
-
+  {{ partial "taxonomy_refs" . }}
 
   {{ range .Paginator.Pages }} {{ .Render "summary" }} {{ end }}
   
