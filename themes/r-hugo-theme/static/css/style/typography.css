@@ -1,12 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
 
-/* General */
 html {
-  scroll-behavior: smooth;
   font-size: calc(0.625 * var(--font-size));
-  margin: 0;
 }
 
 * {
@@ -14,11 +10,6 @@ html {
   line-height: var(--line-height);
   color: var(--text-dark);
   text-align: justify;
-}
-
-/* Prevent font scaling in landscape (iPhone fix)*/
-html {
-  -webkit-text-size-adjust: none;
 }
 
 /* Monospace */
@@ -29,13 +20,7 @@ pre * {
   font-family: "Source Code Pro", monospace;
 }
 
-/* Logo 
-header > a:first-child,
-div.footer-copyr > p > a {
-  font-family: "Gugi", sans-serif;
-}*/
-
-/* Font size */
+/* EXTENDED FORMATTING: Font size */
 .text_small {
   font-size: 0.8rem !important;
 }
@@ -46,7 +31,7 @@ div.footer-copyr > p > a {
   font-size: 1.6rem !important;
 }
 
-/* Colors */
+/* EXTENDED FORMATTING: Colors */
 .yellow,
 .yellow * {
   color: var(--yellow) !important;

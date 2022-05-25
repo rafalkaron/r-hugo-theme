@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+}
+
 main {
   display: block;
   margin: calc(var(--margin) * 1.25) var(--margin-large);

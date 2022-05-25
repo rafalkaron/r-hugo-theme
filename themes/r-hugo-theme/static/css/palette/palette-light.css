@@ -1,0 +1,23 @@
+:root {
+  /* semantic */
+  --accent: #f5bb00;
+  --link: #246eb9;
+  --header: #222222;
+  --footer: #222222;
+
+  --text-dark: #222222;
+  --text-middle: #464646;
+  --text-light: #f4f4f4;
+
+  --background-light: #f4f4f4;
+  --background-middle: #e0e0e0;
+  --background-dark: #222222;
+
+  /* font styling via classes in typography.css */
+  --yellow: #f5bb00;
+  --green: #85cb33;
+  --orange: #ed6a5a;
+  --purple: #7a3bdf;
+  --pink: #ef476f;
+  --blue: #246eb9;
+}

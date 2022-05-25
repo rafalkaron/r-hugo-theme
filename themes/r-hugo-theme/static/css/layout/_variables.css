@@ -1,15 +1,9 @@
 :root {
-  /* MARGINS */
   --margin: 1.6rem;
   --margin-large: 20rem;
 
-  /* DIMENSIONS */
   --font-size: 1.6rem;
   --line-height: 1.6em;
-
-  /* BORDERS */
-  --border-radius: 0.35rem;
-  --border-width: 0.5rem;
 }
 
 /* LARGE DEVICES */
