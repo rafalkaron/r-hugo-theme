@@ -1,4 +1,4 @@
 *::selection {
-  background-color: var(--background-dark);
-  color: var(--text-light);
+  background-color: var(--selection-background);
+  color: var(--selection-text);
 }

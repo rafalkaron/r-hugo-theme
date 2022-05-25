@@ -1,19 +1,29 @@
 :root {
-  /* semantic */
+  /* Layout */
   --accent: #f5bb00;
-  --link: #246eb9;
-  --header: #222222;
-  --footer: #222222;
+  --link: #55aaff;
+  --header-background: #383838;
+  --header-text: #f4f4f4;
+  --footer-background: #383838;
+  --footer-text: #f4f4f4;
 
-  --text-dark: #222222;
+  /* Content */
+  --code-background: #161616;
+  --code-text: #f4f4f4;
+  --selection-background: #f4f4f4;
+  --selection-text: #222222;
+  --table-header-background: #161616;
+  --table-header-text: #f4f4f4;
+
+  /* Generic */
+  --text-dark: #f4f4f4;
   --text-middle: #464646;
-  --text-light: #f4f4f4;
-
-  --background-light: #f4f4f4;
-  --background-middle: #e0e0e0;
+  --text-light: #222222;
+  --background-light: #222222;
+  --background-middle: #383838;
   --background-dark: #222222;
 
-  /* font styling via classes in typography.css */
+  /* Extended font styling via classes in typography.css */
   --yellow: #f5bb00;
   --green: #85cb33;
   --orange: #ed6a5a;

@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  border-bottom: solid calc(var(--border-width) * 0.2) var(--background-dark);
+  border-bottom: solid calc(var(--border-width) * 0.2) var(--text-dark);
 }
 
 .next-previous-page {

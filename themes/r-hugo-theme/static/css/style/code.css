@@ -3,15 +3,15 @@ code {
   display: inline;
   width: auto;
   padding: 0 0.25rem;
-  background-color: var(--background-dark);
+  background-color: var(--code-background);
   font-family: "Oxygen Mono", monospace;
-  color: var(--text-light);
+  color: var(--code-text);
   border-radius: var(--border-radius);
   font-size: 0.8rem;
 }
 code * {
   font-family: "Oxygen Mono", monospace;
-  color: var(--text-light);
+  color: var(--code-text);
   font-size: 0.8rem;
 }
 
