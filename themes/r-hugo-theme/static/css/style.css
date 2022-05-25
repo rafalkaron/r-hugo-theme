@@ -5,6 +5,7 @@
 @import "layout/blog.css";
 @import "layout/terms.css";
 @import "layout/header.css";
+@import "layout/light-dark-toggle.css";
 @import "layout/top-gutter.css";
 @import "layout/meta.css";
 @import "layout/subpages.css";
@@ -31,3 +32,4 @@
 
 /* PALETTE */
 @import "palette/palette-light.css";
+@import "palette/palette-dark.css";

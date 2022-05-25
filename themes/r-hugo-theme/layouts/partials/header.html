@@ -3,6 +3,7 @@
   <div id="site-title">
     <a href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }} </a>
   </div>
+  {{ partial "light-dark-toggle" . }}
   <nav>
     <div id="nav-primary">
       <ul>
