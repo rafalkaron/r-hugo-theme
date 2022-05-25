@@ -8,6 +8,11 @@ header {
   min-height: 4rem;
 }
 
+div.logo-nav-primary {
+  display: flex;
+  align-items: center;
+}
+
 header div#site-title a {
   color: var(--header-text);
   text-decoration: none;
