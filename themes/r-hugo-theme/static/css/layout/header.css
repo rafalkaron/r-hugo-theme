@@ -5,7 +5,10 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--margin-large) 0 var(--margin-large);
-  min-height: 4rem;
+}
+
+nav {
+  padding: calc(var(--margin) * 0.75) var(--margin);
 }
 
 div.logo-nav-primary {
@@ -19,11 +22,11 @@ header div#site-title a {
   font-weight: bold;
   font-size: 2rem;
   white-space: nowrap;
-  margin-right: 1rem;
 }
 
 #nav-primary ul {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #nav-secondary ul {
@@ -32,11 +35,12 @@ header div#site-title a {
 
 #nav-primary li {
   list-style: none;
-  padding: 0.5rem 0.75rem;
+  padding: 0 var(--margin) 0 0;
+  flex-shrink: 0;
 }
 #nav-primary li:last-of-type {
   list-style: none;
-  padding: 0.5rem 0 0.5rem 0.75rem;
+  padding: 0 0 0 0;
 }
 
 #nav-secondary li {
@@ -71,4 +75,8 @@ nav li a::after .active {
 #nav-primary a:active {
   text-decoration: none;
   color: var(--accent);
+}
+
+.theme-switch {
+  flex-shrink: 0;
 }

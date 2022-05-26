@@ -6,13 +6,13 @@
   margin-top: var(--margin);
 }
 
-#layout-blog h1.ref > a {
+h1.ref > a {
   color: var(--text-dark);
   text-decoration: none;
 }
 
-#layout-blog h1.ref > a:hover,
-#layout-blog h1.ref > a:active {
+h1.ref > a:hover,
+h1.ref > a:active {
   text-decoration: none;
   color: var(--link);
 }
