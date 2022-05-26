@@ -2,6 +2,7 @@
   text-decoration: none;
   color: var(--link);
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .content a:hover,

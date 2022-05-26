@@ -1,5 +1,8 @@
 {{ define "main" }}
 <main id="layout-chunked">
+  <div class="gutter top-gutter">
+    {{ partial "breadcrumbs" . }} 
+  </div>
   {{ if or .Title .Content }}
     {{ partial "_index.html" . }}
   {{ end }}

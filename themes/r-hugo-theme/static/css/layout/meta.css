@@ -62,7 +62,7 @@
 }
 
 .tag {
-  margin-right: 0.5rem;
+  margin-right: 0.6rem;
   font-size: 0.8rem;
 }
 
@@ -78,6 +78,7 @@
   font-weight: bold;
   text-decoration: none;
   color: var(--link);
+  white-space: nowrap;
 }
 
 .summary a:hover,

@@ -1,3 +1,12 @@
 #layout-terms .top-gutter {
   justify-content: flex-end;
 }
+
+#layout-terms .tag {
+  margin-right: 0.8rem;
+  font-size: 1rem;
+}
+
+#layout-terms .tags {
+  margin-top: var(--margin);
+}
