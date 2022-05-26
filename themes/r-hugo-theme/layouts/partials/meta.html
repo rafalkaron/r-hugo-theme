@@ -1,20 +1,20 @@
 <div class="meta">
-  <div class="meta-top">
+  <div class="meta-top-wrapper">
     
     {{ if .Date }}
-    <div class="datetime">
+    <div class="datetime-wrapper">
       <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006" }}</time>
     </div>
     {{ end }}
     
     {{ with .Params.author }}
-    <div class="author">
+    <div class="author-wrapper">
       <ph>{{ . }}</ph>
     </div>
     {{ end }}
   
     {{ with .Params.categories }}
-    <div class="categories">
+    <div class="categories-wrapper">
       {{ range . }}
       <span class="category"><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span>
       {{ end }}
@@ -23,10 +23,10 @@
   </div>
 
   {{ with .Params.tags }}
-  <div class="tags">
-    <ul class="items">
+  <div class="tags-wrapper">
+    <ul class="tags">
       {{ range . }}
-      <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+      <li class="tag"><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
       {{ end }}
     </ul>
   </div>

@@ -1,10 +1,10 @@
-div#back-to-top {
+.top-button {
   right: calc(var(--margin-large) * 0.5);
   background-color: var(--background-medium);
   border-radius: var(--border-radius);
 }
 
-div#back-to-top a {
+.top-button a {
   font-weight: bold;
   text-decoration: none;
 }

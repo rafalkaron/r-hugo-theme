@@ -21,38 +21,38 @@ pre * {
 }
 
 /* EXTENDED FORMATTING: Font size */
-.text_small {
+.content .text_small {
   font-size: 0.8rem !important;
 }
-.text_normal {
+.content .text_normal {
   font-size: 1.6rem !important;
 }
-.text_large {
+.content .text_large {
   font-size: 1.6rem !important;
 }
 
 /* EXTENDED FORMATTING: Colors */
-.yellow,
-.yellow * {
+.content .yellow,
+.content .yellow * {
   color: var(--yellow) !important;
 }
-.green,
-.green * {
+.content .green,
+.content .green * {
   color: var(--green) !important;
 }
-.orange,
-.orange * {
+.content .orange,
+.content .orange * {
   color: var(--orange) !important;
 }
-.purple,
-.purple * {
+.content .purple,
+.content .purple * {
   color: var(--purple) !important;
 }
-.pink,
-.pink * {
+.content .pink,
+.content .pink * {
   color: var(--pink) !important;
 }
-.blue,
-.blue * {
+.content .blue,
+.content .blue * {
   color: var(--link) !important;
 }

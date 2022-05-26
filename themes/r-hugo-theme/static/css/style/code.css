@@ -1,4 +1,4 @@
-code {
+.content code {
   word-wrap: break-word;
   display: inline;
   width: auto;
@@ -9,13 +9,13 @@ code {
   border-radius: var(--border-radius);
   font-size: 0.8rem;
 }
-code * {
+.content code * {
   font-family: "Oxygen Mono", monospace;
   color: var(--code-text);
   font-size: 0.8rem;
 }
 
-pre {
+.content pre {
   margin: var(--margin) 0;
   padding: 0;
   display: block;
@@ -24,7 +24,7 @@ pre {
 }
 
 @media screen {
-  pre {
+  .content pre {
     max-height: 70vh;
     overflow-y: auto;
     -ms-overflow-style: none;
@@ -32,14 +32,14 @@ pre {
     width: 100%;
   }
 }
-pre > code {
+.content pre > code {
   white-space: pre-wrap;
   padding: 1rem;
   display: block;
   line-height: 1.2em;
 }
 
-code *::selection {
+.content code *::selection {
   background-color: #e0e0e04d;
   color: inherit;
 }

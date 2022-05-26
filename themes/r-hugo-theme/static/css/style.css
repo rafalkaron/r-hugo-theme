@@ -6,11 +6,12 @@
 @import "layout/terms.css";
 @import "layout/header.css";
 @import "layout/light-dark-toggle.css";
-@import "layout/top-gutter.css";
+@import "layout/gutters.css";
 @import "layout/meta.css";
 @import "layout/subpages.css";
 @import "layout/single.css";
 @import "layout/columns.css";
+/* @import "layout/top-button.css"; */
 @import "layout/footer.css";
 @import "layout/pagination.css";
 
@@ -31,5 +32,5 @@
 @import "style/fn.css";
 
 /* PALETTE */
-@import "palette/palette-light.css";
-@import "palette/palette-dark.css";
+@import "palette/light.css";
+@import "palette/dark.css";

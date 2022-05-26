@@ -1,19 +1,19 @@
-main div.footnotes * {
+.content .footnotes * {
   font-size: 0.8rem;
 }
 
-main div.footnotes li {
+.content .footnotes li {
   margin: 0.25rem 1rem;
 }
 
-main div.footnotes li p {
+.content .footnotes li p {
   margin: 0;
 }
 
-main div.footnotes ol {
+.content .footnotes ol {
   margin-top: 0.8rem;
 }
 
-main div.footnotes a.footnote-backref {
+.content .footnotes a.footnote-backref {
   color: var(--link);
 }

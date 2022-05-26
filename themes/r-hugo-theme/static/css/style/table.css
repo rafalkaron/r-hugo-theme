@@ -1,52 +1,52 @@
-table {
+.content table {
   margin-top: var(--margin);
   table-layout: auto;
   border-collapse: collapse;
   border: none;
   width: 100%;
 }
-td,
-tr,
-th {
+.content td,
+.content tr,
+.content th {
   padding: 0.5em;
 }
-th,
-th * {
+.content th,
+.content th * {
   font-weight: bold;
   color: var(--table-header-text);
   background-color: var(--table-header-background);
 }
-tr:nth-child(odd) > td {
+.content tr:nth-child(odd) > td {
   background-color: transparent;
 }
-tr:nth-child(even) > td {
+.content tr:nth-child(even) > td {
   background-color: var(--background-middle);
 }
 
 /* CV */
-main table.cv-experience {
+.content table.cv-experience {
   border: none;
   width: 100%;
   margin-top: var(--margin);
   display: block;
 }
-main table.cv-experience thead {
+.content table.cv-experience thead {
   display: none;
 }
-main table.cv-experience tr > td {
+.content table.cv-experience tr > td {
   background-color: transparent;
   vertical-align: top;
 }
-main table.cv-experience tr > td:nth-child(1) {
+.content table.cv-experience tr > td:nth-child(1) {
   padding: 0.5rem 1.6rem 0.5rem 2rem;
 }
-main table.cv-experience tr > td:nth-child(2) {
+.content table.cv-experience tr > td:nth-child(2) {
   border-left: solid var(--border-width) var(--background-middle);
   padding: 0.5rem 1.6rem;
 }
-main table.cv-experience td {
+.content table.cv-experience td {
   color: var(--text-dark);
 }
-main table.cv-experience td strong {
+.content table.cv-experience td strong {
   color: var(--text-dark);
 }

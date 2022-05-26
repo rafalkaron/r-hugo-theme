@@ -1,51 +1,51 @@
-h1 {
+main h1 {
   font-size: 2rem;
   /* border-bottom: calc(var(--border-width) / 4) solid var(--text-dark); */
 }
 
-h2 {
+main h2 {
   font-size: 1.6rem;
 }
 
-h3 {
+main h3 {
   font-size: 1.4rem;
 }
 
-h4 {
+main h4 {
   font-size: 1.2rem;
 }
-h5 {
+main h5 {
   font-size: 1.1rem;
 }
-h6 {
+main h6 {
   font-size: 1rem;
 }
 
-h1 *,
-h2 *,
-h3 *,
-h4 *,
-h5 *,
-h6 * {
+main h1 *,
+main h2 *,
+main h3 *,
+main h4 *,
+main h5 *,
+main h6 * {
   font-size: inherit;
 }
 
 /*h1,*/
-h2,
-h3,
-h4,
-h5,
-h6 {
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
   margin-top: 0.75em;
 }
 
-a.heading-link {
+main a.heading-link {
   color: transparent;
   text-decoration: none;
 }
 
-a.heading-link:hover,
-a.heading-link:active {
+main a.heading-link:hover,
+main a.heading-link:active {
   color: var(--link);
   text-decoration: none;
 }

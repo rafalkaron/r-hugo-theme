@@ -1,37 +1,37 @@
-.two_column {
+.content .two_column {
   column-count: 2;
 }
 
-.three_column {
+.content .three_column {
   column-count: 3;
 }
 
-.four_column {
+.content .four_column {
   column-count: 4;
 }
 
 /* Style column classes */
-.two_column,
-.three_column,
-.four_column {
+.content .two_column,
+.content .three_column,
+.content .four_column {
   column-gap: var(--margin);
 }
 
 /* Avoid breaking some elements in columns */
-.two_column p,
-.three_column p,
-.four_column p,
-.two_column dt,
-.three_column dt,
-.four_column dt,
-.two_column dd,
-.three_column dd,
-.four_column dd,
-.two_column h1,
-.three_column h1,
-.four_column h1,
-.two_column h2,
-.three_column h2,
-.four_column h2 {
+.content .two_column p,
+.content .three_column p,
+.content .four_column p,
+.content .two_column dt,
+.content .three_column dt,
+.content .four_column dt,
+.content .two_column dd,
+.content .three_column dd,
+.content .four_column dd,
+.content .two_column h1,
+.content .three_column h1,
+.content .four_column h1,
+.content .two_column h2,
+.content .three_column h2,
+.content .four_column h2 {
   break-inside: avoid;
 }

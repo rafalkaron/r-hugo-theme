@@ -1,4 +1,4 @@
-main img {
+.content img {
   overflow: auto;
   padding: 0;
   margin-top: var(--margin);
@@ -7,35 +7,35 @@ main img {
   border-radius: var(--border-radius);
 }
 
-main figcaption {
+.content figcaption {
   font-weight: bold;
   color: var(--text-dark);
 }
 
-p.center {
+.content p.center {
   display: flex;
   justify-content: center;
 }
-p.left {
+.content p.left {
   display: flex;
   justify-content: flex-start;
 }
-p.right {
+.content p.right {
   display: flex;
   justify-content: flex-end;
 }
-p.tiny > img {
+.content p.tiny > img {
   max-width: 10rem;
 }
-p.small > img {
+.content p.small > img {
   max-width: 15rem;
 }
-p.medium > img {
+.content p.medium > img {
   max-width: 20rem;
 }
-p.large > img {
+.content p.large > img {
   max-width: 25rem;
 }
-p.huge > img {
+.content p.huge > img {
   max-width: 30rem;
 }
