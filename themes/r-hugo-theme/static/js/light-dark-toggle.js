@@ -7,6 +7,7 @@ const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 if (isSystemDark == true) {
   document.documentElement.setAttribute("data-theme", "dark");
   localStorage.setItem("theme", "dark");
+  toggleSwitch.checked = true;
 }
 
 if (currentTheme) {
