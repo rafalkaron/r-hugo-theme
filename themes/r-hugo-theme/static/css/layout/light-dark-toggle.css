@@ -20,7 +20,7 @@
 }
 
 .slider:before {
-  background-color: var(--background-dark);
+  background-color: var(--text-dark);
   bottom: 4px;
   content: "";
   height: 26px;
@@ -30,7 +30,7 @@
 }
 
 input:checked + .slider {
-  background-color: var(--background-middle);
+  background-color: var(--background-dark);
 }
 
 input:checked + .slider:before {

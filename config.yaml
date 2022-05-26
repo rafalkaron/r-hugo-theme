@@ -15,6 +15,18 @@ Params:
   linkedin: "https://linkedin.com/in/linkedin_id"
   twitter: "https://twitter.com/twitter_id"
   five_o_o_px: "https://500px.com/500px_id"
+  linkedin: https://linkedin.com/whoever
+
+
+# Languages
+defaultContentLanguage: en
+languages:
+  en:
+    title: "R"
+    weight: 1
+  pl:
+    title: "R"
+    weight: 2
 
 #Taxonomies:
 #  tag: "tags"
