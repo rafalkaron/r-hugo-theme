@@ -15,5 +15,11 @@
 }
 
 .content .footnotes a.footnote-backref {
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
+.content .footnotes a.footnote-backref:active,
+.content .footnotes a.footnote-backref:hover {
   color: var(--link);
 }

@@ -1,5 +1,6 @@
 .meta-top-wrapper {
   display: flex;
+  margin-top: calc(var(--margin) * 0.25);
 }
 
 .datetime-wrapper {
@@ -22,7 +23,6 @@
 
 .tags-wrapper > ul,
 .categories-wrapper > ul {
-  margin-top: 0.5rem;
   font-weight: bold;
 }
 
@@ -48,6 +48,8 @@
 .tags-wrapper a,
 .categories-wrapper a {
   color: var(--text-dark);
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .tags-wrapper a:hover,
@@ -59,6 +61,26 @@
   color: var(--link);
 }
 
+.tag {
+  margin-right: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.tag a::before {
+  content: "#";
+}
+
 .summary {
-  margin-top: calc(var(--margin) * 0.25);
+  margin-top: calc(var(--margin) * 0.5);
+}
+
+.summary a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--link);
+}
+
+.summary a:hover,
+.summary a:active {
+  text-decoration: underline;
 }

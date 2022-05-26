@@ -8,6 +8,7 @@ main#layout-blog article:first-of-type {
 
 h1.ref > a {
   color: var(--text-dark);
+  text-decoration: none;
 }
 
 h1.ref > a:hover,

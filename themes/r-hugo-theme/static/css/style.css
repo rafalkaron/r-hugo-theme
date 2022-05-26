@@ -4,6 +4,7 @@
 @import "layout/print.css"; /* TODO */
 @import "layout/blog.css";
 @import "layout/terms.css";
+@import "layout/taxonomy.css";
 @import "layout/header.css";
 @import "layout/light-dark-toggle.css";
 @import "layout/gutters.css";
@@ -15,21 +16,21 @@
 @import "layout/footer.css";
 @import "layout/pagination.css";
 
-/* STYLE */
-@import "style/_variables.css";
-@import "style/typography.css";
-@import "style/selection.css";
-@import "style/headings.css";
-@import "style/paragraph.css";
-@import "style/link.css";
-@import "style/list.css";
-@import "style/note.css";
-@import "style/quote.css";
-@import "style/code.css";
-@import "style/table.css";
-@import "style/image.css";
-@import "style/hr.css";
-@import "style/fn.css";
+/* CONTENT */
+@import "content/_variables.css";
+@import "content/typography.css";
+@import "content/selection.css";
+@import "content/headings.css";
+@import "content/paragraph.css";
+@import "content/link.css";
+@import "content/list.css";
+@import "content/note.css";
+@import "content/quote.css";
+@import "content/code.css";
+@import "content/table.css";
+@import "content/image.css";
+@import "content/hr.css";
+@import "content/fn.css";
 
 /* PALETTE */
 @import "palette/light.css";

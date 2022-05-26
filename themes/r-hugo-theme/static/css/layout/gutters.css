@@ -23,7 +23,7 @@
   display: block;
 }
 
-.previous-page {
+.next-page {
   margin-left: 0.5rem;
 }
 
@@ -54,10 +54,11 @@
 .gutter-item a {
   color: var(--text-dark);
   font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .gutter-item a:hover,
 .gutter-item a:active {
   color: var(--link);
-  text-decoration: none;
 }

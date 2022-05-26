@@ -9,12 +9,21 @@ li.subpages-list-item {
 
 a.subpages-list-link {
   font-size: 1.4rem;
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
 }
 
-main#layout-subpages div.description {
+a.subpages-list-link:hover,
+a.subpages-list-link:active {
+  color: var(--link);
+  text-decoration: underline;
+}
+
+#layout-subpages div.description {
   font-size: 0.8rem;
 }
 
-main#layout-subpages > article:first-child {
+#layout-subpages > article:first-child {
   margin-top: 0;
 }

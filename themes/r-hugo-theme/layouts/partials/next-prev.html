@@ -1,12 +1,12 @@
-<div class="next-previous-page">
-  <div class="next-page gutter-item">
-    {{ if .NextInSection }}
-    <a class="next-page-link" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">«</a>
-    {{ end }}
+<div class="next-previous-page gutter-item">
+  {{ if .NextInSection }}
+  <div class="previous-page ">
+    <a class="previous-page-link" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">« prev</a>
   </div>
-  <div class="previous-page gutter-item">
-    {{ if .PrevInSection }}
-    <a class="previous-page-link" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">»</a>
-    {{ end }}
+  {{ end }}
+  {{ if .PrevInSection }}
+  <div class="next-page">
+    <a class="next-page-link" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">next »</a>
   </div>
+  {{ end }}
 </div>

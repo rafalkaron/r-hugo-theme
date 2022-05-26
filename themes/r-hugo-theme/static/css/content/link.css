@@ -1,0 +1,10 @@
+.content a {
+  text-decoration: none;
+  color: var(--link);
+  font-weight: bold;
+}
+
+.content a:hover,
+.content a:active {
+  text-decoration: underline;
+}

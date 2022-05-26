@@ -5,15 +5,15 @@
   </div>
   <article>
     <h1>{{ .Title }}</h1>
-    <div class="terms tags categories">
-      <ul class="items">
+    <div class="terms tags categories tags-wrapper">
+      <ul class="tags">
         {{ if eq .Title "Tags" }}
           {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
-            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+            <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
           {{end}}
         {{ else if eq .Title "Categories" }}
           {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-            <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+            <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
           {{end}}
         {{ end }}
       </ul>
