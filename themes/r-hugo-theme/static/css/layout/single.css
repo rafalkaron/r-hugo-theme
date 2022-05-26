@@ -3,5 +3,5 @@
 } */
 
 main#layout-single div.description {
-  margin-top: calc(var(--margin) / 2);
+  margin-top: var(--margin);
 }
