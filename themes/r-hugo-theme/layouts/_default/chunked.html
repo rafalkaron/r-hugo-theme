@@ -3,9 +3,7 @@
   <div class="gutter top-gutter">
     {{ partial "breadcrumbs" . }} 
   </div>
-  {{ if or .Title .Content }}
-    {{ partial "_index.html" . }}
-  {{ end }}
+  {{ partial "_index.html" . }}
   {{ range sort .Paginator.Pages .Params.weight }}
     <article>
       <h1>{{ .Title }}</h1>

@@ -1,22 +1,26 @@
-main#layout-blog article {
+#layout-blog article {
   margin-top: calc(var(--margin) * 2);
 }
 
-main#layout-blog article:first-of-type {
+#layout-blog article:first-of-type {
   margin-top: var(--margin);
 }
 
-h1.ref > a {
+#layout-blog h1.ref > a {
   color: var(--text-dark);
   text-decoration: none;
 }
 
-h1.ref > a:hover,
-h1.ref > a:active {
+#layout-blog h1.ref > a:hover,
+#layout-blog h1.ref > a:active {
   text-decoration: none;
   color: var(--link);
 }
 
 #layout-blog .top-gutter {
   justify-content: flex-end;
+}
+
+#layout-blog h1.section-title {
+  display: none;
 }

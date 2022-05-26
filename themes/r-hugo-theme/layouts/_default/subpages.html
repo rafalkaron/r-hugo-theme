@@ -1,9 +1,7 @@
 {{ define "main" }}
 <main id="layout-subpages">
   <article>
-  {{ if or .Title .Content }}
     {{ partial "_index" . }}
-  {{ end }}
     <section class="_index">
       <ul class="subpages-list">
           {{ range .Paginator.Pages }} 
