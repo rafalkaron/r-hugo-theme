@@ -14,12 +14,16 @@
   margin-top: 0.8rem;
 }
 
-.content .footnotes a.footnote-backref {
+.content .footnotes a.footnote-backref,
+.content a.footnote-ref {
   color: var(--content-text-dark);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .content .footnotes a.footnote-backref:active,
-.content .footnotes a.footnote-backref:hover {
+.content .footnotes a.footnote-backref:hover,
+.content a.footnote-ref:active,
+.content a.footnote-ref:hover {
   color: var(--link);
 }

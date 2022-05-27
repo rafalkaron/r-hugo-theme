@@ -1,25 +1,20 @@
 {{ define "main"}}
-<main id="404">
-  <div>
+<main id="layout-404">
+  <article>
+    <div class="space-invader-container">
+      <pre class="space-invader">
+    ██          ██
+      ██      ██
+    ██████████████
+  ████  ██████  ████
+██████████████████████
+██  ██████████████  ██
+██  ██          ██  ██
+      ████  ████
+</pre
+      >
+    </div>
     <h1>404: Page not found</h1>
-    <h2><a href="{{ "/" | relURL }}">Take me home</a></h2>
-    <pre style="
-    white-space: pre;
-    font-family: 'Oxygen Mono', monospace;
-    font-size: 1.8rem;
-    display: inline-block;
-    font-weight: bold;
-    color: #222222;
-  ">
-    ##          ##
-      ##      ##
-    ##############
-  ####  ######  ####
-######################
-##  ##############  ##
-##  ##          ##  ##
-      ####  ####
-</pre>
-  </div>
+  </article>
 </main>
 {{ end }}

@@ -143,7 +143,7 @@ Lorem ipsum `@import` lorem ipsum
 
 ## Links
 
-[404](404)  
+[404](404.html)  
 [Google](https://www.google.com)  
 [Heading 3](#heading-3)
 
