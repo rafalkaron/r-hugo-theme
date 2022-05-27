@@ -44,8 +44,15 @@ main a.heading-link {
   text-decoration: none;
 }
 
-main a.heading-link:hover,
-main a.heading-link:active {
-  color: var(--link);
+main h2:hover a.heading-link,
+main h3:hover a.heading-link,
+main h4:hover a.heading-link,
+main h5:hover a.heading-link,
+main h6:hover a.heading-link,
+main h2:active a.heading-link,
+main h3:active a.heading-link,
+main h4:active a.heading-link,
+main h5:active a.heading-link {
   text-decoration: none;
+  color: var(--content-text-dark);
 }
