@@ -44,7 +44,8 @@
 .gutter-item li + li:before {
   font-size: 0.8rem;
 }
-.taxonomy-refs li + li:before {
+.taxonomy-refs li + li:before,
+.subpages li + li:before {
   content: " • ";
 }
 .breadcrumbs li + li:before {

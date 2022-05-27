@@ -27,7 +27,3 @@ body {
 article {
   margin-top: var(--margin);
 }
-
-#layout-home article {
-  margin-top: 0;
-}

@@ -1,0 +1,11 @@
+<div class="subpages gutter-item">
+{{ with .RegularPages }}
+<ul>
+  {{ range . }}
+    {{ if (not (in .Permalink "blog")) }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}
+</div>

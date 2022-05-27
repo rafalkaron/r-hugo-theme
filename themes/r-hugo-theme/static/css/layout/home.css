@@ -1,0 +1,7 @@
+#layout-home article {
+  margin-top: 0;
+}
+
+.home-heading {
+  border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
+}

@@ -1,6 +1,7 @@
 /* LAYOUT */
 @import "layout/_variables.css";
 @import "layout/base.css";
+@import "layout/home.css";
 @import "layout/blog.css";
 @import "layout/terms.css";
 @import "layout/taxonomy.css";
