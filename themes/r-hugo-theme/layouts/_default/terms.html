@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="layout-terms">
   <div class="top-gutter gutter">
-  {{ partial "back-to-blog" . }}
+  {{ partial "back-to-blog" . }} {{ partial "taxonomy-refs" . }}
   </div>
   <article>
     <h1>{{ .Title }}</h1>
