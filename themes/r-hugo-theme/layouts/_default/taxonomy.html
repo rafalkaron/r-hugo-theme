@@ -9,8 +9,9 @@
     <h1>#{{ . }}</h1>
     {{ end }}
   </article>
-
-  {{ range sort .Paginator.Pages .Params.weight }} {{ .Render "summary" }} {{
-  end }} {{ partial "layout/pagination" . }}
+  {{ range sort .Paginator.Pages .Params.weight }} 
+  {{ .Render "summary" }} 
+  {{ end }} 
+  {{ partial "layout/pagination" . }}
 </main>
 {{ end }}
