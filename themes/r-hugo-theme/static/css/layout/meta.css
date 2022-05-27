@@ -37,7 +37,7 @@
 }
 
 .categories-wrapper .category a {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
 }
 .categories-wrapper .category a:hover,
 .categories-wrapper .category a:active,
@@ -47,7 +47,7 @@
 }
 .tags-wrapper a,
 .categories-wrapper a {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
   font-weight: bold;
   text-decoration: none;
 }

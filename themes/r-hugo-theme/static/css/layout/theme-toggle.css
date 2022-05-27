@@ -10,7 +10,7 @@
 }
 
 .slider {
-  background-color: var(--background-middle);
+  background-color: var(--layout-text); /* light */
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -20,7 +20,7 @@
 }
 
 .slider:before {
-  background-color: var(--text-dark);
+  background-color: var(--content-text-dark); /* dot */
   bottom: 0.25rem;
   content: "";
   height: 1.125rem;
@@ -30,7 +30,7 @@
 }
 
 input:checked + .slider {
-  background-color: var(--background-dark);
+  background-color: var(--content-background-middle); /* dark */
 }
 
 input:checked + .slider:before {

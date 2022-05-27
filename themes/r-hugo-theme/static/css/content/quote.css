@@ -13,6 +13,6 @@
   width: fit-content;
   margin-top: var(--margin);
   padding: 0 0.5rem 0 1rem;
-  border-left: solid var(--border-width) var(--background-middle);
+  border-left: solid var(--border-width) var(--content-background-middle);
   font-size: 0.8rem;
 }

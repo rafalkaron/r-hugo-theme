@@ -9,7 +9,7 @@
 
 .content figcaption {
   font-weight: bold;
-  color: var(--text-dark);
+  color: var(--content-text-dark);
 }
 
 .content p.center {

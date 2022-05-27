@@ -13,14 +13,14 @@
 .content th,
 .content th * {
   font-weight: bold;
-  color: var(--table-header-text);
-  background-color: var(--table-header-background);
+  color: var(--layout-text);
+  background-color: var(--content-background-dark);
 }
 .content tr:nth-child(odd) > td {
   background-color: transparent;
 }
 .content tr:nth-child(even) > td {
-  background-color: var(--background-middle);
+  background-color: var(--content-background-middle);
 }
 
 /* CV */
@@ -41,12 +41,12 @@
   padding: 0.5rem 1.6rem 0.5rem 2rem;
 }
 .content table.cv-experience tr > td:nth-child(2) {
-  border-left: solid var(--border-width) var(--background-middle);
+  border-left: solid var(--border-width) var(--content-background-middle);
   padding: 0.5rem 1.6rem;
 }
 .content table.cv-experience td {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
 }
 .content table.cv-experience td strong {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
 }

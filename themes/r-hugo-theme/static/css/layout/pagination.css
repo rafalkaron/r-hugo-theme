@@ -1,6 +1,6 @@
 .pagination {
   margin-top: var(--margin);
-  border-top: solid calc(var(--border-width) * 0.2) var(--text-dark);
+  border-top: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   display: flex;
   justify-content: flex-end;
 }

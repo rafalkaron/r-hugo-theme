@@ -21,7 +21,7 @@ body {
   flex-direction: column;
   height: 100vh;
   min-height: -webkit-fill-available;
-  background-color: var(--background-light);
+  background-color: var(--content-background-light);
 }
 
 article {

@@ -22,15 +22,3 @@ function switchTheme(e) {
 }
 
 toggleSwitch.addEventListener("change", switchTheme, false);
-
-function getPreferredColorScheme() {
-  if (window.matchMedia) {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
-      return "light";
-    }
-  }
-  return "light";
-}
-console.log(getPreferredColorScheme());

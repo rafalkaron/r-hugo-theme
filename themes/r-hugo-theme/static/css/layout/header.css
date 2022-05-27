@@ -1,6 +1,6 @@
 header {
-  background-color: var(--header-background);
-  color: var(--text-light);
+  background-color: var(--layout-background);
+  color: var(--content-text-light);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +17,7 @@ div.logo-nav-primary {
 }
 
 header div#site-title a {
-  color: var(--header-text);
+  color: var(--layout-text);
   text-decoration: none;
   font-weight: bold;
   font-size: 2rem;
@@ -49,13 +49,13 @@ header div#site-title a {
 }
 
 #nav-primary li a {
-  color: var(--header-text);
+  color: var(--layout-text);
   text-decoration: none;
   font-weight: 600;
 }
 
 #nav-secondary li a {
-  color: var(--header-text);
+  color: var(--layout-text);
   text-decoration: none;
   font-weight: 600;
   font-size: 0.75rem;

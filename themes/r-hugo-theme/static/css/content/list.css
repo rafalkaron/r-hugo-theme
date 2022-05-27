@@ -17,8 +17,8 @@
   list-style: none;
   padding: 0.25em 0.75em;
   margin: 0rem 0.8rem 0.8rem 0;
-  background-color: var(--background-middle);
-  color: var(--text-dark);
+  background-color: var(--content-background-middle);
+  color: var(--content-text-dark);
   border-radius: var(--border-radius);
   width: auto;
   text-align: center;
@@ -43,7 +43,7 @@
 }
 .content dt,
 .content dd {
-  border-left: solid var(--border-width) var(--background-middle);
+  border-left: solid var(--border-width) var(--content-background-middle);
   padding: 0 0 0 0.5rem;
 }
 .content dt,

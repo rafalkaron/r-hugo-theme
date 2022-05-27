@@ -8,7 +8,7 @@ html {
 * {
   font-family: "Open Sans", sans-serif;
   line-height: var(--line-height);
-  color: var(--text-dark);
+  color: var(--content-text-dark);
   text-align: justify;
 }
 

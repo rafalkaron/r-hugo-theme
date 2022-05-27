@@ -5,14 +5,14 @@
 }
 
 .top-gutter {
-  border-bottom: solid calc(var(--border-width) * 0.2) var(--text-dark);
+  border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   justify-content: flex-start;
   justify-content: space-between;
 }
 
 .bottom-gutter {
   margin-top: var(--margin);
-  border-top: solid calc(var(--border-width) * 0.2) var(--text-dark);
+  border-top: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   justify-content: flex-end;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .gutter-item a {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;

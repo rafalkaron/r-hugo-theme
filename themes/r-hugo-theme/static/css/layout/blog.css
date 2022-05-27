@@ -7,7 +7,7 @@
 }
 
 h1.ref > a {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
   text-decoration: none;
 }
 

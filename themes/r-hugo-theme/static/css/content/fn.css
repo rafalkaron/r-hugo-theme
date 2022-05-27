@@ -15,7 +15,7 @@
 }
 
 .content .footnotes a.footnote-backref {
-  color: var(--text-dark);
+  color: var(--content-text-dark);
   text-decoration: none;
 }
 

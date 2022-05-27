@@ -17,7 +17,6 @@ Params:
   five_o_o_px: "https://500px.com/500px_id"
   linkedin: https://linkedin.com/whoever
 
-
 # Languages
 defaultContentLanguage: en
 languages:
@@ -27,9 +26,6 @@ languages:
   pl:
     title: "R"
     weight: 2
-
-#Taxonomies:
-#  tag: "tags"
 
 # Navigation
 Menus:
@@ -47,6 +43,9 @@ Menus:
     - Name: "Blog"
       URL: "/blog"
       weight: 4
+
+#Taxonomies:
+#  tag: "tags"
 
 # Rendering settings
 markup:
