@@ -1,12 +1,9 @@
 {{ define "main" }}
 <main id="layout-blog">
   <div class="top-gutter gutter">
-    {{ partial "taxonomy-refs" . }}
-    </div>
-  {{ partial "_index.html" . }}
-  {{ range (.Site.GetPage "section" "blog").Pages }}
-    {{ .Render "summary" }}
-  {{ end }}
-  {{ partial "pagination" . }}
+    {{ partial "layout/gutter/taxonomy-refs" . }}
+  </div>
+  {{ partial "_index.html" . }} {{ range (.Site.GetPage "section" "blog").Pages
+  }} {{ .Render "summary" }} {{ end }} {{ partial "layout/pagination" . }}
 </main>
 {{ end }}

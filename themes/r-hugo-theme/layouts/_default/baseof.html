@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
-	{{ partial "head" . }}
+	{{ partial "layout/head" . }}
 	<body>
-		{{ partial "header" . }}
+		{{ partial "layout/header" . }}
 		<script src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
 		{{ block "main" . }}{{ end }}
-		{{ partial "footer" . }}
+		{{ partial "layout/footer" . }}
 	</body>
 </html>

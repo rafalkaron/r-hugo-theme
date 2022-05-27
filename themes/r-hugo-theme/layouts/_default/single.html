@@ -1,20 +1,17 @@
 {{ define "main" }}
 <main id="layout-single">
   <div class="gutter top-gutter">
-  {{ partial "breadcrumbs" . }} 
+    {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
   <article>
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}
-      <p class="description">
-        {{ . }}
-      </p>
+    <p class="description">{{ . }}</p>
     {{ end }}
     <section class="content">{{ .Content }}</section>
   </article>
   <div class="gutter bottom-gutter">
-    {{ partial "next-prev" . }}
+    {{ partial "layout/gutter/next-prev" . }}
   </div>
-  
 </main>
 {{ end }}

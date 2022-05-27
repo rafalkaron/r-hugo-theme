@@ -1,21 +1,20 @@
 {{ define "main" }}
 <main id="layout-terms">
   <div class="top-gutter gutter">
-  {{ partial "back-to-blog" . }} {{ partial "taxonomy-refs" . }}
+    {{ partial "layout/gutter/back-to-blog" . }} {{ partial
+    "layout/gutter/taxonomy-refs" . }}
   </div>
   <article>
     <h1>{{ .Title }}</h1>
     <div class="terms tags categories tags-wrapper">
       <ul class="tags">
-        {{ if eq .Title "Tags" }}
-          {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
-            <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
-          {{end}}
-        {{ else if eq .Title "Categories" }}
-          {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
-            <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
-          {{end}}
-        {{ end }}
+        {{ if eq .Title "Tags" }} {{range ($.Site.GetPage "taxonomyTerm"
+        "tags").Pages }}
+        <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{end}} {{ else if eq .Title "Categories" }} {{range ($.Site.GetPage
+        "taxonomyTerm" "categories").Pages }}
+        <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
+        {{end}} {{ end }}
       </ul>
     </div>
   </article>

@@ -1,19 +1,14 @@
 {{ define "main" }}
 <main id="layout-chunked">
   <div class="gutter top-gutter">
-    {{ partial "breadcrumbs" . }} 
+    {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
-  {{ partial "_index.html" . }}
-  {{ range sort .Paginator.Pages .Params.weight }}
-    <article>
-      <h1>{{ .Title }}</h1>
-      {{ partial "meta" . }}
-      {{ if .Params.description }}
-        {{ .Params.description }}
-      {{ end }}
-      <section>{{ .Content }}</section>
-    </article>
-  {{ end }}
-  {{ partial "pagination.html" . }}
+  {{ partial "_index.html" . }} {{ range sort .Paginator.Pages .Params.weight }}
+  <article>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.description }} {{ .Params.description }} {{ end }}
+    <section>{{ .Content }}</section>
+  </article>
+  {{ end }} {{ partial "layout/pagination.html" . }}
 </main>
 {{ end }}

@@ -1,6 +1,6 @@
 <article>
 	<h1 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-	{{ partial "meta" . }}
+	{{ partial "blog/meta" . }}
 	<div class="summary">
 		{{ with .Params.description | truncate 500 }}
 			{{ . }}

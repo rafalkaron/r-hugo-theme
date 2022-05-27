@@ -1,6 +1,4 @@
 <header>
-  {{ partial "head" . }}
-
   <div class="logo-nav-primary">
   <div id="site-title">
     <a href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }} </a>
@@ -28,5 +26,5 @@
     </div> -->
   </nav>
 </div>
-  {{ partial "light-dark-toggle" . }}
+  {{ partial "layout/buttons/theme-toggle" . }}
 </header>

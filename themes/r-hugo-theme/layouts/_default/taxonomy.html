@@ -1,17 +1,16 @@
 {{ define "main" }}
 <main id="layout-taxonomy">
   <div class="top-gutter gutter">
-    {{ partial "back-to-blog" . }} {{ partial "taxonomy-refs" . }}
+    {{ partial "layout/gutter/back-to-blog" . }} {{ partial
+    "layout/gutter/taxonomy-refs" . }}
   </div>
   <article>
-  {{ with .Title }}
+    {{ with .Title }}
     <h1>#{{ . }}</h1>
-  {{ end }}
+    {{ end }}
   </article>
 
-  {{ range sort .Paginator.Pages .Params.weight }}
-    {{ .Render "summary" }}
-  {{ end }}
-  {{ partial "pagination" . }}
+  {{ range sort .Paginator.Pages .Params.weight }} {{ .Render "summary" }} {{
+  end }} {{ partial "layout/pagination" . }}
 </main>
 {{ end }}
