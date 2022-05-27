@@ -41,13 +41,16 @@
   margin: 0;
 }
 
-.gutter-item li + li:before {
+.gutter-item li + li:before,
+.subpages li + li:before {
   font-size: 0.8rem;
 }
 .taxonomy-refs li + li:before,
 .subpages li + li:before {
   content: " • ";
+  padding: 0 0.2rem;
 }
+
 .breadcrumbs li + li:before {
   content: " / ";
   padding-left: 0.2rem;
