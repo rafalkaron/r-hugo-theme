@@ -5,7 +5,11 @@
   </div>
   <article>
     <h1>{{ .Title }}</h1>
-    {{ partial "description" . }}
+    {{ with .Params.description }}
+      <p class="description">
+        {{ . }}
+      </p>
+    {{ end }}
     <section class="content">{{ .Content }}</section>
   </article>
   <div class="gutter bottom-gutter">

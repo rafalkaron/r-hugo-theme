@@ -1,0 +1,10 @@
+<li class="subpages-list-item">
+  <a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
+  <div class="description">
+    {{ with .Params.description }}
+      {{ . }}
+    {{ else }}
+      {{ .Summary | truncate 150 }}
+    {{ end }}
+  </div>
+</li>

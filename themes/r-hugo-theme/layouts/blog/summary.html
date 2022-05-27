@@ -2,9 +2,11 @@
 	<h1 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "meta" . }}
 	<div class="summary">
-		{{ .Summary }}
-		{{ if .Truncated }}
-			<a href="{{ .Permalink }}">Read more »</a>
+		{{ with .Params.description | truncate 500 }}
+			{{ . }}
+		{{ else }}
+			{{ .Summary }}
 		{{ end }}
+		<a href="{{ .Permalink }}">Read more »</a>
 	</div>
 </article>

@@ -3,6 +3,7 @@ title: Post B
 date: 2020-10-18
 tags: ["Tag a", "Tag B", "Tag C"]
 categories: ["Category a"]
+description: "This is custom description. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Dolor sint labore velit sint sunt in do. Nostrud pariatur laborum cillum cillum consequat veniam irure duis ex officia tempor qui. Fugiat id veniam laboris eiusmod incididunt velit enim mollit. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Dolor sint labore velit sint sunt in do. Nostrud pariatur laborum cillum cillum consequat veniam irure duis ex officia tempor qui. Fugiat id veniam laboris eiusmod incididunt velit enim mollit."
 ---
 
 Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Dolor sint labore velit sint sunt in do. Nostrud pariatur laborum cillum cillum consequat veniam irure duis ex officia tempor qui. Fugiat id veniam laboris eiusmod incididunt velit enim mollit.

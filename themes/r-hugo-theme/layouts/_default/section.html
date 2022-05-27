@@ -5,10 +5,7 @@
     <section>
       <ul class="subpages-list">
         {{ range .Paginator.Pages }}
-        <li class="subpages-list-item">
-          <a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
-          {{ partial "description" . }}
-        </li>
+          {{ .Render "summary" }}
         {{ end }}
       </ul>
     </section>

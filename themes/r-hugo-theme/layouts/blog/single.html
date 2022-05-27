@@ -7,7 +7,11 @@
   <article>
     <h1>{{ .Title }}</h1>
     {{ partial "meta" . }}
-    {{ partial "description" . }}
+    {{ with .Params.description }}
+      <p class="description">
+        {{ . }}
+      </p>
+    {{ end }}
     <section class="content">{{ .Content }}</section>
     {{ with .Site.DisqusShortname }}
     <div>{{ template "_internal/disqus.html" . }}</div>
