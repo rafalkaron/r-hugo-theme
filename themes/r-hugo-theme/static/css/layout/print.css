@@ -3,11 +3,6 @@
     margin: 3.5rem 5rem;
   }
 
-  main {
-    page-break-before: always;
-    break-before: always;
-  }
-
   .theme-switch,
   .theme-switch *,
   .top-button-wrapper,
@@ -19,6 +14,15 @@
   .footer-icon {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(87deg)
       brightness(100%) contrast(100%);
+  }
+
+  body {
+    margin: unset;
+    min-width: unset;
+    display: unset;
+    flex-direction: unset;
+    height: unset;
+    min-height: unset;
   }
 
   header {
