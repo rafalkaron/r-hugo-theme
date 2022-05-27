@@ -1,3 +1,8 @@
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .theme-switch {
   display: inline-block;
   height: 1.6rem;
