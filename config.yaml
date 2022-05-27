@@ -40,7 +40,6 @@ Menus:
     - Name: "Subpages"
       URL: "/subpages"
       weight: 2
-      another_level:
     - Name: "Chunked"
       URL: "/chunked"
       weight: 3
@@ -48,7 +47,6 @@ Menus:
     - Name: "Blog"
       URL: "/blog"
       weight: 4
-      layout: "blog"
 
 # Rendering settings
 markup:

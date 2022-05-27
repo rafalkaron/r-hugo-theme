@@ -1,0 +1,18 @@
+{{ define "main" }}
+<main id="layout-section">
+  <article>
+    {{ partial "_index" . }}
+    <section>
+      <ul class="subpages-list">
+        {{ range .Paginator.Pages }}
+        <li class="subpages-list-item">
+          <a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
+          {{ partial "description" . }}
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+  </article>
+  {{ partial "pagination" . }}
+</main>
+{{ end }}

@@ -2,11 +2,16 @@
 <main id="layout-single">
   <div class="gutter top-gutter">
   {{ partial "breadcrumbs" . }} 
+  {{ partial "taxonomy-refs" . }}
   </div>
   <article>
     <h1>{{ .Title }}</h1>
+    {{ partial "meta" . }}
     {{ partial "description" . }}
     <section class="content">{{ .Content }}</section>
+    {{ with .Site.DisqusShortname }}
+    <div>{{ template "_internal/disqus.html" . }}</div>
+    {{ end }}
   </article>
   <div class="gutter bottom-gutter">
     {{ partial "next-prev" . }}

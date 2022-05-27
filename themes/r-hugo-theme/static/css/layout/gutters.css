@@ -7,6 +7,7 @@
 .top-gutter {
   border-bottom: solid calc(var(--border-width) * 0.2) var(--text-dark);
   justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .bottom-gutter {

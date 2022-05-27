@@ -20,10 +20,10 @@ a.subpages-list-link:active {
   text-decoration: underline;
 }
 
-#layout-subpages div.description {
+#layout-section div.description {
   font-size: 0.8rem;
 }
 
-#layout-subpages > article:first-child {
+#layout-section > article:first-child {
   margin-top: 0;
 }

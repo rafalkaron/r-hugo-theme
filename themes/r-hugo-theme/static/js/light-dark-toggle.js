@@ -4,17 +4,15 @@ const toggleSwitch = document.querySelector(
 const currentTheme = localStorage.getItem("theme");
 const isSystemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
-if (isSystemDark == true) {
-  document.documentElement.setAttribute("data-theme", "dark");
-  localStorage.setItem("theme", "dark");
-  toggleSwitch.checked = true;
-}
-
-if (currentTheme) {
-  document.documentElement.setAttribute("data-theme", currentTheme);
-
-  if (currentTheme === "dark") {
+function initialTheme() {
+  if (isSystemDark) {
+    document.documentElement.setAttribute("data-theme", "dark");
+    localStorage.setItem("theme", "dark");
     toggleSwitch.checked = true;
+  } else {
+    document.documentElement.setAttribute("data-theme", "light");
+    localStorage.setItem("theme", "light");
+    toggleSwitch.checked = false;
   }
 }
 
@@ -28,4 +26,5 @@ function switchTheme(e) {
   }
 }
 
+initialTheme();
 toggleSwitch.addEventListener("change", switchTheme, false);
