@@ -1,0 +1,47 @@
+@media only print {
+  @page {
+    margin: 3.5rem 5rem;
+  }
+
+  main {
+    page-break-before: always;
+    break-before: always;
+  }
+
+  .theme-switch,
+  .theme-switch *,
+  .top-button-wrapper,
+  .gutter,
+  .pagination {
+    display: none;
+  }
+
+  .footer-icon {
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(87deg)
+      brightness(100%) contrast(100%);
+  }
+
+  header {
+    border-bottom: solid calc(var(--border-width) * 0.5)
+      var(--content-text-dark);
+  }
+
+  footer {
+    border-top: solid calc(var(--border-width) * 0.5) var(--content-text-dark);
+  }
+
+  /*** Avoid breaking elements - START */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img,
+  p,
+  ul,
+  ol {
+    break-inside: avoid;
+  }
+  /*** Avoid breaking elements - END */
+}

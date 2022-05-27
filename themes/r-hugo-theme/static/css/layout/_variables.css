@@ -41,3 +41,12 @@
     max-width: 315px !important;
   }
 }
+
+/* PRINT */
+@media only print {
+  :root {
+    --font-size: 1.2rem;
+    --margin: 1.2rem;
+    --margin-large: 0rem;
+  }
+}

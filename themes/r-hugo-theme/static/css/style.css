@@ -1,7 +1,6 @@
 /* LAYOUT */
 @import "layout/_variables.css";
 @import "layout/base.css";
-@import "layout/print.css"; /* TODO */
 @import "layout/blog.css";
 @import "layout/terms.css";
 @import "layout/taxonomy.css";
@@ -16,6 +15,7 @@
 /* @import "layout/top-button.css"; */
 @import "layout/footer.css";
 @import "layout/pagination.css";
+@import "layout/print.css";
 
 /* CONTENT */
 @import "content/_variables.css";
@@ -36,3 +36,4 @@
 /* PALETTE */
 @import "palette/light.css";
 @import "palette/dark.css";
+@import "palette/print.css";
