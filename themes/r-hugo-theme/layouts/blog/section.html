@@ -4,6 +4,9 @@
     {{ partial "layout/gutter/taxonomy-refs" . }}
   </div>
   {{ partial "_index.html" . }} {{ range (.Site.GetPage "section" "blog").Pages
-  }} {{ .Render "summary" }} {{ end }} {{ partial "layout/pagination" . }}
+  }} {{ .Render "summary" }} {{ end }} 
+  <div class="gutter bottom-gutter">
+  {{ partial "layout/gutter/pagination" . }}
+</div>
 </main>
 {{ end }}

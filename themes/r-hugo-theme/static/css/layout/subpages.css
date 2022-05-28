@@ -27,3 +27,7 @@ a.subpages-list-link:active {
 #layout-section > article:first-child {
   margin-top: 0;
 }
+
+#layout-section .top-gutter {
+  justify-content: flex-start;
+}
