@@ -10,10 +10,9 @@
 @import "layout/theme-switch.css";
 @import "layout/gutters.css";
 @import "layout/meta.css";
-@import "layout/subpages.css";
+@import "layout/section.css";
 @import "layout/single.css";
 @import "layout/columns.css";
-/* @import "layout/top-button.css"; */
 @import "layout/footer.css";
 @import "layout/print.css";
 

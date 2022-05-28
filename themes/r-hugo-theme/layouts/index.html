@@ -4,5 +4,8 @@
     <h1 class="home-heading">{{ .Title }}</h1>
     <section class="content">{{ .Content }}</section>
   </article>
+  <div class="gutter bottom-gutter">
+    {{ partial "layout/gutter/top-button" . }}
+  </div>
 </main>
 {{ end }}
