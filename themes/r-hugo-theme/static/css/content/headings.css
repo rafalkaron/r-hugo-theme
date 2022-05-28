@@ -42,6 +42,7 @@ main h6 {
 main a.heading-link {
   color: transparent;
   text-decoration: none;
+  border: none;
 }
 
 main h2:hover a.heading-link,
@@ -55,4 +56,5 @@ main h4:active a.heading-link,
 main h5:active a.heading-link {
   text-decoration: none;
   color: var(--content-text-dark);
+  background-color: transparent;
 }

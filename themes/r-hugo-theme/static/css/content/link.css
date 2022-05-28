@@ -1,11 +1,12 @@
 .content a {
   text-decoration: none;
-  color: var(--link);
   font-weight: bold;
   white-space: nowrap;
+  border-bottom: solid 0.075rem var(--content-text-dark);
 }
 
 .content a:hover,
 .content a:active {
-  text-decoration: underline;
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }
