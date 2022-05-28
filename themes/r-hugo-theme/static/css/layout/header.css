@@ -10,11 +10,6 @@ header {
   padding: 0 var(--margin-large) 0 var(--margin-large);
 }
 
-#header-bottom {
-  margin: 0 var(--margin-large) 0 var(--margin-large);
-  background-color: var(--content-background-light);
-}
-
 .logo-nav-primary {
   display: flex;
   align-items: center;
@@ -50,31 +45,6 @@ header {
   font-weight: 600;
 }
 
-#nav-secondary ul {
-  display: flex;
-  flex-wrap: wrap;
-  border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
-}
-#nav-secondary li {
-  list-style: none;
-  padding: 0;
-  flex-shrink: 0;
-}
-#nav-secondary li:last-of-type {
-  list-style: none;
-  padding: 0;
-}
-#nav-secondary li a {
-  color: var(--text-dark);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 0.75rem;
-}
-
-#nav-secondary li::before {
-  content: "• ";
-}
-
 /* Indicate active sites */
 nav li a::after .active {
   content: ".";
@@ -86,9 +56,7 @@ nav li a::after .active {
 }
 
 #nav-primary a:hover,
-#nav-primary a:active,
-#nav-secondary a:hover,
-#nav-secondary a:active {
+#nav-primary a:active {
   text-decoration: none;
   color: var(--accent);
 }

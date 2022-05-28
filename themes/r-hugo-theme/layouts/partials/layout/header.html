@@ -4,7 +4,6 @@
     <div id="site-title">
       <a href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }} </a>
     </div>
-  
     <nav id="nav-primary">
         <ul>
           {{ $current := . }}
@@ -18,19 +17,4 @@
     </nav>
     {{ partial "layout/buttons/theme-switch" . }}
   </div>
-
-  <!-- {{ with .RegularPages }}
-  <div id="header-bottom">
-    <nav id="nav-secondary">
-      <ul>
-        {{ range . }}
-          {{ if (not (in .Permalink "blog")) }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-          {{ end }}
-        {{ end }}
-      </ul>
-    </nav>
-  </div>
-  {{ end }} -->
-  
 </header>
