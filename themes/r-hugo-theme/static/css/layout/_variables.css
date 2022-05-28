@@ -1,6 +1,6 @@
 :root {
   --margin: 1.6rem;
-  --margin-large: 50rem;
+  --margin-large: 45rem;
 
   --font-size: 1.6rem;
   --line-height: 1.6em;
@@ -25,14 +25,14 @@
   :root {
     --font-size: 1.6rem;
     --margin: 1.5rem;
-    --margin-large: 25rem;
+    --margin-large: 20rem;
   }
 }
 @media only screen and (max-width: 1400px) {
   :root {
     --font-size: 1.6rem;
     --margin: 1.5rem;
-    --margin-large: 20rem;
+    --margin-large: 15rem;
   }
 }
 
