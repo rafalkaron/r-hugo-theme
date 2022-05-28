@@ -1,7 +1,7 @@
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
 <div class="related-links-wrapper">
-  <h2>See also</h2>
+  <h2 id="see-also">See also</h2>
   <ul class="related-links-list">
     {{ range . }}
     <li class="related-link"><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
