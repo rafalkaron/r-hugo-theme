@@ -89,3 +89,7 @@
 .gutter-item a:active {
   color: var(--link);
 }
+
+.gutter-group .gutter-item {
+  margin-right: 0.25rem;
+}
