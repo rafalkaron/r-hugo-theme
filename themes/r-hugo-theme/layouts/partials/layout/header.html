@@ -6,11 +6,13 @@
     </div>
     <nav id="nav-primary">
         <ul>
-          {{ $current := . }}
+          {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
-            <li class="nav-item {{ if eq $current.RelPermalink .URL }}active{{ end }}">
-              <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
+            {{ $menu_item_url := .URL | relLangURL }}
+            {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
+              <li class="nav-item">
+                <a class="nav-link{{ if eq $page_url $menu_item_url }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+              </li>
           {{ end }}
         </ul>
       </div>

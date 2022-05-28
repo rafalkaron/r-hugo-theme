@@ -46,13 +46,8 @@ header {
 }
 
 /* Indicate active sites */
-nav li a::after .active {
-  content: ".";
-  display: flex;
-  justify-content: center;
+#nav-primary li a.active {
   color: var(--accent);
-  line-height: 0;
-  margin-top: -0.25rem;
 }
 
 #nav-primary a:hover,

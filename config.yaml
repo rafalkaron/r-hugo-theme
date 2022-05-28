@@ -34,16 +34,17 @@ related:
   toLower: false
 
 # Navigation
+# End each URL with "/" to make active pages work
 Menus:
   main:
     - Name: "Home"
       URL: "/"
       weight: 1
     - Name: "Subpages"
-      URL: "/subpages"
+      URL: "/subpages/"
       weight: 2
     - Name: "Blog"
-      URL: "/blog"
+      URL: "/blog/"
       weight: 3
 
 #Taxonomies:
