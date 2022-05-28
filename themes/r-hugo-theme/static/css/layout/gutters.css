@@ -1,40 +1,27 @@
+/* Gutters */
 .gutter {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
 }
-
-.gutter-group {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-}
-
 .top-gutter {
   border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   justify-content: flex-start;
   justify-content: space-between;
 }
-
 .bottom-gutter {
   margin-top: var(--margin);
   border-top: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   justify-content: space-between;
 }
 
-.next-previous-page {
+/* Gutter group*/
+.gutter-group {
   display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
   flex-direction: row;
 }
-.next-parent-previous-page a {
-  display: block;
-}
-
-.next-page {
-  margin-left: 0.5rem;
-}
-
 .gutter-item {
   list-style: none;
   display: flex;
@@ -42,54 +29,63 @@
   align-items: center;
   font-size: 0.8rem;
 }
-
 .gutter-item li {
   display: inline;
   white-space: nowrap;
   margin: 0;
 }
-
-.gutter-item li + li:before,
-.subpages li + li:before {
-  font-size: 0.8rem;
-}
-.taxonomy-refs li + li:before,
-.subpages li + li:before {
-  content: " • ";
-  padding: 0 0.2rem;
-}
-
-.breadcrumbs li + li:before {
-  content: " / ";
-  padding-left: 0.2rem;
-}
-
-.breadcrumbs + .subpages::before {
-  content: " / ";
-  padding: 0 0.2rem;
-}
-
-.pagination {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.pagination-counter {
-  margin: 0 0.5rem;
-}
-
 .gutter-item a {
   color: var(--content-text-dark);
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
 }
-
 .gutter-item a:hover,
 .gutter-item a:active {
   color: var(--link);
 }
 
-.gutter-group .gutter-item {
-  margin-right: 0.25rem;
+/* Specific gutter items */
+.next-previous-page {
+  display: flex;
+  flex-direction: row;
+}
+.next-parent-previous-page a {
+  display: block;
+}
+.next-page {
+  margin-left: 0.5rem;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.pagination-counter {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.pagination-next-link {
+  margin-left: 0.2rem;
+}
+.pagination-prev-link {
+  margin-right: 0.2rem;
+}
+
+.gutter-item li + li:before,
+.subpages li + li:before,
+.gutter-group .gutter-item + .gutter-item::before {
+  font-size: 0.8rem;
+}
+.taxonomy-refs li + li:before,
+.subpages li + li:before,
+.gutter-group .gutter-item + .gutter-item::before {
+  content: "• ";
+  padding: 0 0.1rem;
+}
+
+.breadcrumbs li + li:before {
+  content: " / ";
+  padding-left: 0.2rem;
 }
