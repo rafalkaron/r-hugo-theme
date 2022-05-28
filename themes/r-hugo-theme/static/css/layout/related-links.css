@@ -1,0 +1,13 @@
+ul.related-links-list {
+  margin: 0 0 0 2rem;
+}
+
+li.related-link a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li.related-link a:hover,
+li.related-link a:active {
+  color: var(--link);
+}

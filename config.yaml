@@ -25,6 +25,14 @@ languages:
     title: "R"
     weight: 2
 
+# See alsos
+related:
+  indices:
+    - name: keywords
+      weight: 100
+  threshold: 80
+  toLower: false
+
 # Navigation
 Menus:
   main:

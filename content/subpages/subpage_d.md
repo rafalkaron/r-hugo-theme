@@ -1,6 +1,7 @@
 ---
 title: Subpage D
 weight: 3
+keywords: "keyword2"
 draft: false
 ---
 
