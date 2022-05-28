@@ -11,7 +11,11 @@
     <section class="content">{{ .Content }}</section>
   </article>
   <div class="gutter bottom-gutter">
+    <div class="gutter-group">
+    {{ partial "layout/gutter/top-button" . }}
+    {{ partial "layout/gutter/print-button" . }}
+    </div>
     {{ partial "layout/gutter/next-prev" . }}
-  </div>
+    </div>
 </main>
 {{ end }}

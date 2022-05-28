@@ -4,6 +4,13 @@
   flex-wrap: wrap;
 }
 
+.gutter-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
 .top-gutter {
   border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   justify-content: flex-start;

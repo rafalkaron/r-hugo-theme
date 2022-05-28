@@ -12,6 +12,12 @@
   {{ range sort .Paginator.Pages .Params.weight }} 
   {{ .Render "summary" }} 
   {{ end }} 
-  {{ partial "layout/pagination" . }}
+  <div class="gutter bottom-gutter">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top-button" . }}
+      {{ partial "layout/gutter/print-button" . }}
+    </div>
+      {{ partial "layout/gutter/pagination" . }}
+  </div>
 </main>
 {{ end }}

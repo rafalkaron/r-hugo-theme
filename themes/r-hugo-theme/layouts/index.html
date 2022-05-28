@@ -5,7 +5,10 @@
     <section class="content">{{ .Content }}</section>
   </article>
   <div class="gutter bottom-gutter">
-    {{ partial "layout/gutter/top-button" . }}
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top-button" . }}
+      {{ partial "layout/gutter/print-button" . }}
+    </div>
   </div>
 </main>
 {{ end }}
