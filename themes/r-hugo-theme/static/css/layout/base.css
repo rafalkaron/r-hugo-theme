@@ -27,3 +27,7 @@ body {
 article {
   margin-top: var(--margin);
 }
+
+.print {
+  display: none;
+}

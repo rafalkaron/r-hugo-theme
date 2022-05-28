@@ -3,16 +3,14 @@
     margin: 3.5rem 5rem;
   }
 
-  .theme-switch,
-  .theme-switch *,
+  .theme-switch-wrapper,
   .top-button-wrapper,
   .gutter,
-  .pagination {
+  .web {
     display: none;
   }
-
-  .footer-icon {
-    filter: invert(100%);
+  .print {
+    display: block;
   }
 
   body {
@@ -33,7 +31,6 @@
     border-top: solid calc(var(--border-width) * 0.5) var(--content-text-dark);
   }
 
-  /*** Avoid breaking elements - START */
   h1,
   h2,
   h3,
@@ -45,6 +42,6 @@
   ul,
   ol {
     break-inside: avoid;
+    page-break-inside: avoid;
   }
-  /*** Avoid breaking elements - END */
 }
