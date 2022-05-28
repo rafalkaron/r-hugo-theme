@@ -48,7 +48,7 @@ a.footer-image-link {
 footer a:hover,
 footer a:active {
   text-decoration: none;
-  color: var(--accent);
+  border-bottom: solid 0.075rem var(--layout-text);
 }
 
 img.footer-icon {
