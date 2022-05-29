@@ -6,7 +6,7 @@
   </div>
   <article class="content">
     {{ partial "_index.html" . }} 
-    {{ range (.Site.GetPage "section" "blog").Pages}} 
+    {{ range (.Site.GetPage "section" "blog").Paginator.Pages}} 
       {{ .Render "summary" }} 
     {{ end }} 
   </article>
