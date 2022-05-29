@@ -1,5 +1,5 @@
-<li class="subpages-list-item">
-  <a class="subpages-list-link" href="{{ .Permalink }}">{{ .Title }}</a>
+<section class="subpage">
+  <h2><a class="subpage-ref" href="{{ .Permalink }}">{{ .Title }}</a></h2>
   <div class="description">
     {{ with .Params.description }}
       {{ . }}
@@ -7,4 +7,4 @@
       {{ .Summary | truncate 150 }}
     {{ end }}
   </div>
-</li>
+</section>

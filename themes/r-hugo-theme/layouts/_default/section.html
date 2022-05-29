@@ -5,13 +5,9 @@
   </div>
   <article class="content">
     {{ partial "_index" . }}
-    <section>
-      <ul class="subpages-list">
         {{ range .Paginator.Pages }}
           {{ .Render "summary" }}
         {{ end }}
-      </ul>
-    </section>
   </article>
   <div class="gutter bottom-gutter">
   <div class="gutter-group">

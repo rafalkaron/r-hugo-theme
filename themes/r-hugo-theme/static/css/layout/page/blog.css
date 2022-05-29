@@ -37,6 +37,7 @@
   font-weight: bold;
   text-decoration: none;
   white-space: nowrap;
+  border: none;
 }
 .post .summary a:hover,
 .post .summary a:active,
