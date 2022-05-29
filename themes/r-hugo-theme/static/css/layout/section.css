@@ -10,14 +10,17 @@ li.subpages-list-item {
 a.subpages-list-link {
   font-size: 1.4rem;
   text-decoration: none;
-  color: var(--link);
   font-weight: bold;
+}
+
+a.subpages-list-link::after {
+  content: " »";
 }
 
 a.subpages-list-link:hover,
 a.subpages-list-link:active {
-  color: var(--link);
-  text-decoration: underline;
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }
 
 #layout-section div.description {

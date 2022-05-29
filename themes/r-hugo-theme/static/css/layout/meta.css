@@ -42,7 +42,6 @@
 .categories-wrapper .category a:hover,
 .categories-wrapper .category a:active,
 .categories-wrapper .category a:focus {
-  color: var(--link);
   text-decoration: none;
 }
 .tags-wrapper a,
@@ -58,7 +57,8 @@
 .categories-wrapper a:hover,
 .categories-wrapper a:active,
 .categories-wrapper a:focus {
-  color: var(--link);
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }
 
 .tag {
@@ -77,11 +77,11 @@
 .summary a {
   font-weight: bold;
   text-decoration: none;
-  color: var(--link);
   white-space: nowrap;
 }
 
 .summary a:hover,
 .summary a:active {
-  text-decoration: underline;
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }

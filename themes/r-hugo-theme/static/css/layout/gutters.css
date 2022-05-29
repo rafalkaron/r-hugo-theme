@@ -42,7 +42,8 @@
 }
 .gutter-item a:hover,
 .gutter-item a:active {
-  color: var(--link);
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }
 
 /* Specific gutter items */

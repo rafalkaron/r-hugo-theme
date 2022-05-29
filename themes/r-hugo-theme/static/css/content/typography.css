@@ -54,5 +54,5 @@ pre * {
 }
 .content .blue,
 .content .blue * {
-  color: var(--link) !important;
+  color: var(--blue) !important;
 }

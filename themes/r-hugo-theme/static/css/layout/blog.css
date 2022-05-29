@@ -14,7 +14,8 @@ h1.ref > a {
 h1.ref > a:hover,
 h1.ref > a:active {
   text-decoration: none;
-  color: var(--link);
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }
 
 #layout-blog .top-gutter {
