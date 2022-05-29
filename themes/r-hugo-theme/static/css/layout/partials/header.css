@@ -14,10 +14,6 @@ header {
   display: flex;
   align-items: center;
 }
-#nav-primary {
-  padding: 1.2rem 1.6rem;
-}
-
 #site-title a {
   color: var(--layout-text);
   text-decoration: none;
@@ -25,7 +21,9 @@ header {
   font-size: 2rem;
   white-space: nowrap;
 }
-
+#nav-primary {
+  padding: 1.2rem 1.6rem;
+}
 #nav-primary ul {
   display: flex;
   flex-wrap: wrap;
@@ -44,12 +42,6 @@ header {
   text-decoration: none;
   font-weight: bold;
 }
-
-/* Indicate active sites */
-#nav-primary li a.active {
-  border-bottom: solid calc(var(--border-width) * 0.2) var(--layout-text);
-}
-
 #nav-primary a:hover,
 #nav-primary a:active,
 #nav-primary a:focus {
@@ -58,6 +50,11 @@ header {
   color: var(--layout-background);
 }
 
-.theme-switch {
+/* Indicate active sites */
+#nav-primary li a.active {
+  border-bottom: solid calc(var(--border-width) * 0.2) var(--layout-text);
+}
+
+.theme-switch-wrapper {
   flex-shrink: 0;
 }

@@ -1,10 +1,15 @@
 {{ define "main" }}
 <main id="layout-blog">
   <div class="top-gutter gutter">
+    {{ partial "layout/gutter/back-to-blog" . }} 
     {{ partial "layout/gutter/taxonomy-refs" . }}
   </div>
-  {{ partial "_index.html" . }} {{ range (.Site.GetPage "section" "blog").Pages
-  }} {{ .Render "summary" }} {{ end }} 
+  <article>
+    {{ partial "_index.html" . }} 
+    {{ range (.Site.GetPage "section" "blog").Pages}} 
+      {{ .Render "summary" }} 
+    {{ end }} 
+  </article>
   <div class="gutter bottom-gutter">
     <div class="gutter-group">
     {{ partial "layout/gutter/top-button" . }}

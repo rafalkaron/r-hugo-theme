@@ -1,28 +1,45 @@
-#layout-blog article {
+/* Make more space between articles */
+#layout-blog section {
   margin-top: calc(var(--margin) * 2);
 }
-
-#layout-blog article:first-of-type {
+#layout-blog section:first-of-type {
   margin-top: var(--margin);
 }
 
-h1.ref > a {
+/* Hide "Blogs" */
+#layout-blog h1.section-title {
+  display: none;
+}
+
+#layout-blog h2.ref {
+  font-size: 2rem;
+}
+
+/* Style headings-links*/
+h2.ref > a {
   color: var(--content-text-dark);
   text-decoration: none;
 }
-
-h1.ref > a:hover,
-h1.ref > a:active,
-h1.ref > a:focus {
+h2.ref > a:hover,
+h2.ref > a:active,
+h2.ref > a:focus {
   text-decoration: none;
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
 
-#layout-blog .top-gutter {
-  justify-content: flex-end;
+/* Summary */
+.post .summary {
+  margin-top: calc(var(--margin) * 0.5);
 }
-
-#layout-blog h1.section-title {
-  display: none;
+.post .summary a {
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.post .summary a:hover,
+.post .summary a:active,
+.post .summary a:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }

@@ -1,5 +1,5 @@
-<article>
-	<h1 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+<section class="post">
+	<h2 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
 	<div class="summary">
 		{{ with .Params.description | truncate 500 }}
@@ -9,4 +9,4 @@
 		{{ end }}
 		<a href="{{ .Permalink }}">Read more »</a>
 	</div>
-</article>
+</section>

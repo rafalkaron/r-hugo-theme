@@ -18,11 +18,11 @@ footer a {
   text-decoration: none;
   font-weight: bold;
 }
-
 .footer-column {
   display: flex;
 }
 
+/* Copyrights */
 .footer-copyr {
   flex-shrink: 0;
   font-weight: bold;
@@ -38,6 +38,7 @@ footer a {
   color: var(--layout-background);
 }
 
+/* Social media buttons */
 .footer-contact {
   flex-wrap: wrap;
   align-items: center;

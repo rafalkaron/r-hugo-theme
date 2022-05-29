@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 .bottom-gutter {
-  margin-top: var(--margin);
+  margin-top: calc(var(--margin) * 1.25);
   border-top: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
   justify-content: space-between;
 }

@@ -3,15 +3,14 @@ ul.related-links-list {
   list-style: none;
 }
 
+/* Style related links */
 li.related-link a {
   font-weight: bold;
   text-decoration: none;
 }
-
 li.related-link a::after {
   content: " »";
 }
-
 li.related-link a:hover,
 li.related-link a:active,
 li.related-link a:focus {

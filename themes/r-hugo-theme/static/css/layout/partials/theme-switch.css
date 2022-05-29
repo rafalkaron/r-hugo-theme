@@ -3,17 +3,18 @@
   align-items: center;
 }
 
+/* Pill */
 .theme-switch {
   display: inline-block;
   height: 1.6rem;
   position: relative;
   width: 3rem;
 }
-
 .theme-switch input {
   display: none;
 }
 
+/* Slider */
 .slider {
   background-color: var(--layout-text); /* light */
   bottom: 0;
@@ -23,7 +24,6 @@
   right: 0;
   top: 0;
 }
-
 .slider:before {
   background-color: var(--content-text-dark); /* dot */
   bottom: 0.25rem;
@@ -33,19 +33,15 @@
   position: absolute;
   width: 1.125rem;
 }
-
 input:checked + .slider {
   background-color: var(--content-background-middle); /* dark */
 }
-
 input:checked + .slider:before {
   transform: translateX(1.375rem);
 }
-
 .slider.round {
   border-radius: 34px;
 }
-
 .slider.round:before {
   border-radius: 50%;
 }

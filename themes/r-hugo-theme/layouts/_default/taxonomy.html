@@ -1,7 +1,7 @@
 {{ define "main" }}
 <main id="layout-taxonomy">
   <div class="top-gutter gutter">
-    {{ partial "layout/gutter/back-to-blog" . }} {{ partial
+    {{ partial "layout/gutter/back-to-blog" . }}{{ partial
     "layout/gutter/taxonomy-refs" . }}
   </div>
   <article>
@@ -10,7 +10,7 @@
     {{ end }}
   </article>
   {{ range sort .Paginator.Pages .Params.weight }} 
-  {{ .Render "summary" }} 
+    {{ .Render "summary" }} 
   {{ end }} 
   <div class="gutter bottom-gutter">
     <div class="gutter-group">
