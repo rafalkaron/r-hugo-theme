@@ -18,7 +18,8 @@ a.subpages-list-link::after {
 }
 
 a.subpages-list-link:hover,
-a.subpages-list-link:active {
+a.subpages-list-link:active,
+a.subpages-list-link:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

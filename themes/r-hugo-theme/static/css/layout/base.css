@@ -1,3 +1,4 @@
+/* Reset margins */
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +29,7 @@ article {
   margin-top: var(--margin);
 }
 
+/* Hide print-specific items */
 .print {
   display: none;
 }

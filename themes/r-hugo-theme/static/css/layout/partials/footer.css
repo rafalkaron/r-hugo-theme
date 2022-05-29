@@ -31,7 +31,8 @@ footer a {
   margin: 0.8rem 0.8rem 0 0;
 }
 .footer-copyr a:hover,
-.footer-copyr a:active {
+.footer-copyr a:active,
+.footer-copyr a:focus {
   text-decoration: none;
   background-color: var(--layout-text);
   color: var(--layout-background);

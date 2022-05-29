@@ -51,7 +51,8 @@ header {
 }
 
 #nav-primary a:hover,
-#nav-primary a:active {
+#nav-primary a:active,
+#nav-primary a:focus {
   text-decoration: none;
   background-color: var(--layout-text);
   color: var(--layout-background);

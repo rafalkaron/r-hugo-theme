@@ -41,7 +41,8 @@
   text-decoration: none;
 }
 .gutter-item a:hover,
-.gutter-item a:active {
+.gutter-item a:active,
+.gutter-item a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
@@ -96,6 +97,7 @@
 }
 
 .print-button-link:hover,
-.print-button-link:active {
+.print-button-link:active,
+.print-button-link:focus {
   cursor: pointer;
 }

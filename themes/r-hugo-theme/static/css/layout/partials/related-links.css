@@ -13,7 +13,8 @@ li.related-link a::after {
 }
 
 li.related-link a:hover,
-li.related-link a:active {
+li.related-link a:active,
+li.related-link a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

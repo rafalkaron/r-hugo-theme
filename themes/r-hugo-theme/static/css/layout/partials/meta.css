@@ -81,7 +81,8 @@
 }
 
 .summary a:hover,
-.summary a:active {
+.summary a:active,
+.summary a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

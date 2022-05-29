@@ -12,7 +12,8 @@ h1.ref > a {
 }
 
 h1.ref > a:hover,
-h1.ref > a:active {
+h1.ref > a:active,
+h1.ref > a:focus {
   text-decoration: none;
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
