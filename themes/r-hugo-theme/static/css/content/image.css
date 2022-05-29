@@ -6,12 +6,12 @@
   display: block;
   border-radius: var(--border-radius);
 }
-
 .content figcaption {
   font-weight: bold;
   color: var(--content-text-dark);
 }
 
+/* Add classes for manipulating images position */
 .content p.center {
   display: flex;
   justify-content: center;
@@ -24,6 +24,8 @@
   display: flex;
   justify-content: flex-end;
 }
+
+/* Add classes for manipulating images size */
 .content p.tiny > img {
   max-width: 10rem;
 }

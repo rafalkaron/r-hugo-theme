@@ -10,6 +10,8 @@
   border-radius: var(--border-radius);
   width: 100%;
 }
+
+/* Set note captions */
 .content .note::before,
 .content .note_warning::before,
 .content .note_caution::before,
@@ -32,6 +34,7 @@
   content: "TIP: ";
 }
 
+/* Set  notes colors */
 .content .note {
   border-color: #6c99bb;
 }

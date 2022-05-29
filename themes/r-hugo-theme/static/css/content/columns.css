@@ -1,11 +1,10 @@
+/* Define column classes */
 .content .two_column {
   column-count: 2;
 }
-
 .content .three_column {
   column-count: 3;
 }
-
 .content .four_column {
   column-count: 4;
 }

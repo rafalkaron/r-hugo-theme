@@ -2,11 +2,12 @@
   margin: 0.8rem 0 0 2rem;
 }
 
+/* Bold ordered list numbers */
 .content ol > li::marker {
   font-weight: bold;
 }
 
-/* Items */
+/* Add a class for pill-shaped list items */
 .content ul.items {
   display: flex;
   flex-wrap: wrap;

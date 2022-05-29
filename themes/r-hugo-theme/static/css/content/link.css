@@ -4,9 +4,9 @@
   white-space: nowrap;
   border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
 }
-
 .content a:hover,
-.content a:active {
+.content a:active,
+.content a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

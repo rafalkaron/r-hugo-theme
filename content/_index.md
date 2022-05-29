@@ -116,7 +116,7 @@ Title B
 | **01.2020 – present** <br> Company | **Role** |
 | **01.2020 – 01.2020** <br> Company | **Role** |
 | **01.2020 – 01.2020** <br> Company | **Role** |  
-{.cv-experience}
+{.cv}
 
 ## Code
 

@@ -1,3 +1,4 @@
+/* Style regular tables */
 .content table {
   margin-top: var(--margin);
   table-layout: auto;
@@ -23,30 +24,30 @@
   background-color: var(--content-background-middle);
 }
 
-/* CV */
-.content table.cv-experience {
+/* Add a cv class for special kind of tables */
+.content table.cv {
   border: none;
   width: 100%;
   margin-top: var(--margin);
   display: block;
 }
-.content table.cv-experience thead {
+.content table.cv thead {
   display: none;
 }
-.content table.cv-experience tr > td {
+.content table.cv tr > td {
   background-color: transparent;
   vertical-align: top;
 }
-.content table.cv-experience tr > td:nth-child(1) {
+.content table.cv tr > td:nth-child(1) {
   padding: 0.5rem 1.6rem 0.5rem 2rem;
 }
-.content table.cv-experience tr > td:nth-child(2) {
+.content table.cv tr > td:nth-child(2) {
   border-left: solid var(--border-width) var(--content-background-middle);
   padding: 0.5rem 1.6rem;
 }
-.content table.cv-experience td {
+.content table.cv td {
   color: var(--content-text-dark);
 }
-.content table.cv-experience td strong {
+.content table.cv td strong {
   color: var(--content-text-dark);
 }
