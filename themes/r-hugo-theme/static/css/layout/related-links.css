@@ -1,5 +1,6 @@
 ul.related-links-list {
   margin: 0 0 0 2rem;
+  list-style: none;
 }
 
 li.related-link a {
@@ -7,7 +8,12 @@ li.related-link a {
   text-decoration: none;
 }
 
+li.related-link a::after {
+  content: " »";
+}
+
 li.related-link a:hover,
 li.related-link a:active {
-  color: var(--link);
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
 }

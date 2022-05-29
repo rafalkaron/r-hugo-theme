@@ -1,9 +1,9 @@
 <footer>
   <div class="footer-column footer-copyr">
-    <p>
+    <div class="footer-year-home-link">
       &copy; {{ now.Year }}
-      <a title="Home" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
-    </p>
+      <a class="footer-home-link" title="Home" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
+    </div>
   </div>
   <div class="footer-column footer-contact">
     {{ if .Site.Params.email }}
