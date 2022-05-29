@@ -1,20 +1,19 @@
 /* LAYOUT */
 @import "layout/_variables.css";
 @import "layout/base.css";
-@import "layout/home.css";
-@import "layout/blog.css";
-@import "layout/terms.css";
-@import "layout/taxonomy.css";
-@import "layout/404.css";
-@import "layout/header.css";
-@import "layout/theme-switch.css";
-@import "layout/gutters.css";
-@import "layout/meta.css";
-@import "layout/section.css";
-@import "layout/single.css";
-@import "layout/columns.css";
-@import "layout/related-links.css";
-@import "layout/footer.css";
+@import "layout/page/home.css";
+@import "layout/page/blog.css";
+@import "layout/page/terms.css";
+@import "layout/page/taxonomy.css";
+@import "layout/page/404.css";
+@import "layout/page/section.css";
+@import "layout/page/single.css";
+@import "layout/partials/header.css";
+@import "layout/partials/theme-switch.css";
+@import "layout/partials/gutters.css";
+@import "layout/partials/meta.css";
+@import "layout/partials/related-links.css";
+@import "layout/partials/footer.css";
 @import "layout/print.css";
 
 /* CONTENT */
@@ -32,6 +31,7 @@
 @import "content/image.css";
 @import "content/hr.css";
 @import "content/fn.css";
+@import "content/columns.css";
 
 /* PALETTE */
 @import "palette/light.css";
