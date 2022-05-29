@@ -1,19 +1,23 @@
-ul.related-links-list {
+.related-links-wrapper ul.related-links-list {
   margin: 0 0 0 var(--margin);
   list-style: none;
 }
 
 /* Style related links */
-li.related-link a {
+.related-links-wrapper li.related-link {
+  margin: 0.25rem 0 0 0;
+}
+.related-links-wrapper li.related-link a {
   font-weight: bold;
   text-decoration: none;
+  border: none;
 }
-li.related-link a::after {
+.related-links-wrapper li.related-link a::after {
   content: " »";
 }
-li.related-link a:hover,
-li.related-link a:active,
-li.related-link a:focus {
+.related-links-wrapper li.related-link a:hover,
+.related-links-wrapper li.related-link a:active,
+.related-links-wrapper li.related-link a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

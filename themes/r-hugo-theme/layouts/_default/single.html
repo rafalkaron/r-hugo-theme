@@ -3,12 +3,12 @@
   <div class="gutter top-gutter">
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
-  <article>
+  <article class="content">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}
     <p class="description">{{ . }}</p>
     {{ end }}
-    <section class="content">{{ .Content }}</section>
+    {{ .Content }}
     {{ partial "layout/related-links" . }}
   </article>
   <div class="gutter bottom-gutter">

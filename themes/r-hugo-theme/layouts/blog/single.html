@@ -4,12 +4,12 @@
     {{ partial "layout/gutter/back-to-blog" . }} {{ partial
     "layout/gutter/taxonomy-refs" . }}
   </div>
-  <article>
+  <article class="content">
     <h1>{{ .Title }}</h1>
     {{ partial "blog/meta" . }} {{ with .Params.description }}
     <p class="description">{{ . }}</p>
     {{ end }}
-    <section class="content">{{ .Content }}</section>
+    {{ .Content }}
     {{ with .Site.DisqusShortname }}
     <div>{{ template "_internal/disqus.html" . }}</div>
     {{ end }}
