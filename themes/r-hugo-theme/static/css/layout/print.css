@@ -29,11 +29,10 @@
 
   /* Separate the header and footer from content */
   header {
-    border-bottom: solid calc(var(--border-width) * 0.5)
-      var(--content-text-dark);
+    border-bottom: solid var(--border-width-medium) var(--content-text-dark);
   }
   footer {
-    border-top: solid calc(var(--border-width) * 0.5) var(--content-text-dark);
+    border-top: solid var(--border-width-medium) var(--content-text-dark);
   }
 
   /* Avoid breaking certain elements */

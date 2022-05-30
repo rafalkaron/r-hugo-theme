@@ -3,5 +3,5 @@
 }
 
 .home-heading {
-  border-bottom: solid calc(var(--border-width) * 0.2) var(--content-text-dark);
+  border-bottom: solid var(--border-width-thin) var(--content-text-dark);
 }

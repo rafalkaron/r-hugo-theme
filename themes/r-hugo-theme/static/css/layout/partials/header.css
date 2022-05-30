@@ -52,7 +52,7 @@ header {
 
 /* Indicate active sites */
 #nav-primary li a.active {
-  border-bottom: solid calc(var(--border-width) * 0.2) var(--layout-text);
+  border-bottom: solid var(--border-width-thin) var(--layout-text);
 }
 
 .theme-switch-wrapper {
