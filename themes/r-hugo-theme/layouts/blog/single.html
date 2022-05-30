@@ -6,8 +6,9 @@
   </div>
   <article class="content">
     <h1>{{ .Title }}</h1>
-    {{ partial "blog/meta" . }} {{ with .Params.description }}
-    <p class="description">{{ . }}</p>
+    {{ partial "blog/meta" . }} 
+    {{ with .Params.description }}
+      <p class="description">{{ . }}</p>
     {{ end }}
     {{ .Content }}
     {{ with .Site.DisqusShortname }}

@@ -1,3 +1,12 @@
+/* Divide posts */
+.post {
+  margin-top: calc(var(--margin) * 1.25);
+  border-top: solid var(--border-width-thin) var(--content-background-dark);
+}
+main .post:first-of-type {
+  border: none;
+}
+
 /* Top info */
 .meta .meta-top-wrapper {
   display: flex;
