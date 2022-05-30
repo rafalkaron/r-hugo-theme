@@ -1,4 +1,4 @@
 .content hr {
   margin-top: var(--margin);
-  border: var(--content-background-middle) calc(var(--border-width) * 0.2) solid;
+  border: var(--content-background-middle) var(--border-width-thin) solid;
 }
