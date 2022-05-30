@@ -1,7 +1,7 @@
 /* Top info */
 .meta .meta-top-wrapper {
   display: flex;
-  margin-top: calc(var(--margin) * 0.25);
+  margin-top: calc(var(--margin) / 4);
 }
 .meta .datetime-wrapper,
 .meta .author-wrapper,

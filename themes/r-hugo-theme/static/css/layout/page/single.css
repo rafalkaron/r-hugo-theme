@@ -1,4 +1,0 @@
-/* Add the same margin for description as for paragraph */
-#layout-single .description {
-  margin-top: var(--margin);
-}
