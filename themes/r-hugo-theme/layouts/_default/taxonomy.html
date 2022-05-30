@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main id="layout-blog" class="layout-taxonomy">
-  <div class="top-gutter gutter">
+  <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/back-to-blog" . }}{{ partial
     "layout/gutter/taxonomy-refs" . }}
   </div>
@@ -12,7 +12,7 @@
   {{ range sort .Paginator.Pages .Params.weight }} 
     {{ .Render "summary" }} 
   {{ end }} 
-  <div class="gutter bottom-gutter">
+  <div class="gutter bottom-gutter not-selectable">
     <div class="gutter-group">
       {{ partial "layout/gutter/top-button" . }}
       {{ partial "layout/gutter/print-button" . }}

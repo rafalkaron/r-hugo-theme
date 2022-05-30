@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main id="layout-section">
-  <div class="top-gutter gutter">
+  <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/subpages" . }}
   </div>
   <article class="content">
@@ -9,7 +9,7 @@
           {{ .Render "summary" }}
         {{ end }}
   </article>
-  <div class="gutter bottom-gutter">
+  <div class="gutter bottom-gutter not-selectable">
   <div class="gutter-group">
   {{ partial "layout/gutter/top-button" . }}
   {{ partial "layout/gutter/print-button" . }}

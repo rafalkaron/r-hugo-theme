@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main id="layout-single">
-  <div class="gutter top-gutter">
+  <div class="gutter top-gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
   <article class="content">
@@ -11,7 +11,7 @@
     {{ .Content }}
     {{ partial "layout/related-links" . }}
   </article>
-  <div class="gutter bottom-gutter">
+  <div class="gutter bottom-gutter not-selectable">
     <div class="gutter-group">
     {{ partial "layout/gutter/top-button" . }}
     {{ partial "layout/gutter/print-button" . }}
