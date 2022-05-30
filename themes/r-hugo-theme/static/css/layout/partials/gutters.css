@@ -69,10 +69,10 @@
   font-weight: bold;
 }
 .pagination-next-link {
-  margin-left: 0.2rem;
+  margin-left: 0.25rem;
 }
 .pagination-prev-link {
-  margin-right: 0.2rem;
+  margin-right: 0.25rem;
 }
 
 .gutter-item li + li:before,
@@ -85,6 +85,12 @@
 .gutter-group .gutter-item + .gutter-item::before {
   content: "• ";
   padding: 0 0.1rem;
+}
+.gutter-group .gutter-item + .gutter-item {
+  margin-left: 0.1rem;
+}
+.gutter-group .gutter-item + .gutter-item::before {
+  margin-right: 0.1rem;
 }
 
 .breadcrumbs li + li:before {
