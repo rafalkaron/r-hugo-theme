@@ -14,14 +14,16 @@
 /* Divide posts */
 #layout-blog .post {
   margin-top: calc(var(--margin) * 1.25);
+  padding-top: calc(var(--margin) * 0.75);
   border-top: solid var(--border-width-thin) var(--content-text-dark);
 }
 #layout-blog .post:first-of-type {
   border: none;
+  padding-top: 0;
 }
 #layout-blog h2.ref {
   font-size: 2rem;
-  margin-top: calc(var(--margin));
+  margin-top: 0;
 }
 
 /* Style headings-links*/
