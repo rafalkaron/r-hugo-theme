@@ -76,12 +76,12 @@
 }
 
 .gutter-item li + li:before,
-.subpages li + li:before,
+.gutter-subpages li + li:before,
 .gutter-group .gutter-item + .gutter-item::before {
   font-size: 0.8rem;
 }
 .taxonomy-refs li + li:before,
-.subpages li + li:before,
+.gutter-subpages li + li:before,
 .gutter-group .gutter-item + .gutter-item::before {
   content: "• ";
   padding: 0 0.1rem;
