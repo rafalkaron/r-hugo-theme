@@ -26,3 +26,21 @@
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
+
+#layout-section h2 {
+  margin-top: 0;
+}
+
+.subpages {
+  margin-top: var(--margin);
+  column-count: 2;
+  column-gap: var(--margin);
+}
+
+.subpage {
+  break-inside: avoid;
+}
+
+.subpage + .subpage {
+  margin-top: calc(var(--margin) * 0.25);
+}

@@ -5,9 +5,11 @@
   </div>
   <article class="content">
     {{ partial "_index" . }}
+    <div class="subpages">
         {{ range .Paginator.Pages }}
           {{ .Render "summary" }}
         {{ end }}
+    </div>
   </article>
   <div class="gutter bottom-gutter not-selectable">
   <div class="gutter-group">

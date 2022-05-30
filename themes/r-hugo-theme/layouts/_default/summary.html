@@ -4,7 +4,7 @@
     {{ with .Params.description }}
       {{ . }}
     {{ else }}
-      {{ .Summary | truncate 150 }}
+      {{ .Summary | truncate 120 }}
     {{ end }}
   </div>
 </section>
