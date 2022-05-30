@@ -1,5 +1,4 @@
 /* LAYOUT */
-@import "layout/_variables.css";
 @import "layout/base.css";
 @import "layout/page/home.css";
 @import "layout/page/blog.css";
@@ -15,9 +14,9 @@
 @import "layout/partials/related-links.css";
 @import "layout/partials/footer.css";
 @import "layout/print.css";
+@import "layout/_variables.css";
 
 /* CONTENT */
-@import "content/_variables.css";
 @import "content/typography.css";
 @import "content/selection.css";
 @import "content/headings.css";
@@ -32,6 +31,7 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/columns.css";
+@import "content/_variables.css";
 
 /* PALETTE */
 @import "palette/light.css";

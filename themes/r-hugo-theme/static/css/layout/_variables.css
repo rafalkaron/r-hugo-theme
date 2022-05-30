@@ -70,6 +70,9 @@
   p.huge > img {
     max-width: 315px !important;
   }
+  .subpages {
+    column-count: 1;
+  }
 }
 
 /* PRINT */
