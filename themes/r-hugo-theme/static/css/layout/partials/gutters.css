@@ -3,7 +3,9 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin: calc(var(--margin) * 1.25) var(--margin-large);
 }
+
 .top-gutter {
   border-bottom: solid var(--border-width-thin) var(--content-text-dark);
   justify-content: flex-start;

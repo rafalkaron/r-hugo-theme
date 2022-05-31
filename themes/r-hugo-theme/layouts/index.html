@@ -4,11 +4,11 @@
     <h1 class="home-heading">{{ .Title }}</h1>
     {{ .Content }}
   </article>
-  <div class="gutter bottom-gutter">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top-button" . }}
-      {{ partial "layout/gutter/print-button" . }}
-    </div>
-  </div>
 </main>
+<div class="gutter bottom-gutter">
+  <div class="gutter-group">
+    {{ partial "layout/gutter/top-button" . }}
+    {{ partial "layout/gutter/print-button" . }}
+  </div>
+</div>
 {{ end }}

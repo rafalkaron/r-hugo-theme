@@ -3,7 +3,7 @@
   margin-top: calc(var(--margin) * 2);
 }
 #layout-blog .post:first-of-type {
-  margin-top: var(--margin);
+  margin-top: 0;
 }
 
 /* Hide "Blogs" */

@@ -21,12 +21,16 @@ body {
 }
 
 main {
-  margin: calc(var(--margin) * 1.25) var(--margin-large);
+  margin: 0 var(--margin-large);
   margin-bottom: auto;
 }
 
 article {
   margin-top: var(--margin);
+}
+
+article.content {
+  margin-top: 0;
 }
 
 /* Hide print-specific items */
