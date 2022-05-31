@@ -1,7 +1,6 @@
 /* Top info */
 .meta .meta-top-wrapper {
   display: flex;
-  margin-top: calc(var(--margin) / 4);
 }
 .meta .datetime-wrapper,
 .meta .author-wrapper,
@@ -18,7 +17,6 @@
 }
 .meta .categories-wrapper .category a {
   color: var(--content-text-dark);
-  font-weight: bold;
   text-decoration: none;
   border: none;
 }
@@ -37,11 +35,9 @@
 .meta .tags-wrapper li.tag {
   list-style: none;
   flex-shrink: 0;
-  font-weight: bold;
 }
 .meta .tags-wrapper li.tag a {
-  color: var(--content-text-dark);
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
   border: none;
 }

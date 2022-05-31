@@ -41,9 +41,11 @@
 }
 
 /* Summary */
-.post .summary {
-  margin-top: calc(var(--margin) / 4);
+.post .summary,
+main .meta + p {
+  margin-top: calc(var(--margin) / 2);
 }
+
 .post .summary a {
   font-weight: bold;
   text-decoration: none;

@@ -10,8 +10,7 @@ main h2 + p,
 main h3 + p,
 main h4 + p,
 main h5 + p,
-main h6 + p,
-main .meta + p {
+main h6 + p {
   margin-top: calc(var(--margin) / 4);
 }
 
