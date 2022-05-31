@@ -1,8 +1,31 @@
-#layout-terms .tag {
+#layout-terms .tags-wrapper ul.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--margin);
+}
+#layout-terms .tags-wrapper li.tag {
+  list-style: none;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+#layout-terms .tags-wrapper li.tag a {
+  color: var(--content-text-dark);
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+}
+#layout-terms .tags-wrapper li.tag a:hover,
+#layout-terms .tags-wrapper li.tag a:active,
+#layout-terms .tags-wrapper li.tag a:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+}
+#layout-terms .tags-wrapper li.tag {
+  margin: 0 0.5rem 0 0;
+  font-size: 0.8rem;
   margin-right: 0.8rem;
   font-size: 1rem;
 }
-
-#layout-terms .tags {
-  margin-top: var(--margin);
+#layout-terms .tags-wrapper li.tag a::before {
+  content: "#";
 }

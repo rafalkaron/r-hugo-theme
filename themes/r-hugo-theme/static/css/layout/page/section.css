@@ -8,6 +8,7 @@
 
 #layout-section .description {
   font-size: 0.8rem;
+  color: var(--content-text-middle);
 }
 
 /* Style links */
