@@ -8,11 +8,13 @@
   border-bottom: solid var(--border-width-thin) var(--content-text-dark);
   justify-content: flex-start;
   justify-content: space-between;
+  padding-bottom: 0.25rem;
 }
 .bottom-gutter {
   margin-top: calc(var(--margin) * 1.25);
   border-top: solid var(--border-width-thin) var(--content-text-dark);
   justify-content: space-between;
+  padding-top: 0.25rem;
 }
 
 /* Gutter group*/

@@ -11,10 +11,8 @@ html {
 }
 
 main {
-  display: block;
   margin: calc(var(--margin) * 1.25) var(--margin-large);
 }
-
 body {
   margin: 0;
   min-width: 375px;
