@@ -15,9 +15,11 @@ function switchTheme(e) {
   if (e.target.checked) {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
+    document.querySelector(".material-icons").innerHTML = "light_mode";
   } else {
     document.documentElement.setAttribute("data-theme", "light");
     localStorage.setItem("theme", "light");
+    document.querySelector(".material-icons").innerHTML = "dark_mode";
   }
 }
 
