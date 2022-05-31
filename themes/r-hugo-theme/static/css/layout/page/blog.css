@@ -1,8 +1,8 @@
 /* Make more space between articles */
-#layout-blog section {
+#layout-blog .post {
   margin-top: calc(var(--margin) * 2);
 }
-#layout-blog section:first-of-type {
+#layout-blog .post:first-of-type {
   margin-top: var(--margin);
 }
 

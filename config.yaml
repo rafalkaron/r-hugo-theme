@@ -40,8 +40,8 @@ Menus:
     - Name: "Home"
       URL: "/"
       weight: 1
-    - Name: "Subpages"
-      URL: "/subpages/"
+    - Name: "Section"
+      URL: "/section/"
       weight: 2
     - Name: "Blog"
       URL: "/blog/"

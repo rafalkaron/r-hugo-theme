@@ -10,9 +10,6 @@ html {
   -webkit-text-size-adjust: none;
 }
 
-main {
-  margin: calc(var(--margin) * 1.25) var(--margin-large);
-}
 body {
   margin: 0;
   min-width: 375px;
@@ -21,6 +18,10 @@ body {
   height: 100vh;
   min-height: -webkit-fill-available;
   background-color: var(--content-background-light);
+}
+
+main {
+  margin: calc(var(--margin) * 1.25) var(--margin-large);
 }
 
 article {
