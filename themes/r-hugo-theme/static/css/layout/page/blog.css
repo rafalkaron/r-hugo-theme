@@ -15,7 +15,7 @@
 #layout-blog .post {
   margin-top: calc(var(--margin) * 1.25);
   padding-top: calc(var(--margin) * 0.75);
-  border-top: solid var(--border-width-thin) var(--content-text-dark);
+  border-top: solid var(--border-width-thin) var(--content-background-middle);
 }
 #layout-blog .post:first-of-type {
   border: none;

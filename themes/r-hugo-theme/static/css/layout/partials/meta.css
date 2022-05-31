@@ -44,6 +44,7 @@
   font-weight: bold;
   text-decoration: none;
   border: none;
+  color: rgb(87, 87, 87);
 }
 .tags-wrapper li.tag a:hover,
 .tags-wrapper li.tag a:active,
