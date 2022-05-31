@@ -8,6 +8,9 @@ if (currentTheme) {
 
   if (currentTheme === "dark") {
     toggleSwitch.checked = true;
+    document.querySelector(".material-icons").innerHTML = "light_mode";
+  } else {
+    document.querySelector(".material-icons").innerHTML = "dark_mode";
   }
 }
 
