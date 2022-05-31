@@ -6,6 +6,7 @@
 .meta .author-wrapper,
 .meta .categories-wrapper {
   font-weight: bold;
+  font-size: 0.8rem;
 }
 .meta .author-wrapper,
 .meta .categories-wrapper {
@@ -13,7 +14,7 @@
 }
 .meta .categories-wrapper .category::before,
 .meta .author-wrapper::before {
-  content: " • ";
+  content: " | ";
 }
 .meta .categories-wrapper .category a {
   color: var(--content-text-dark);

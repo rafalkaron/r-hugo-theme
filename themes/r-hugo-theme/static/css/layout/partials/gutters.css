@@ -87,8 +87,9 @@
 .taxonomy-refs li + li:before,
 .gutter-subpages li + li:before,
 .gutter-group .gutter-item + .gutter-item::before {
-  content: "• ";
+  content: "┃ ";
   padding: 0 0.1rem;
+  color: var(--content-text-middle);
 }
 .gutter-group .gutter-item + .gutter-item {
   margin-left: 0.1rem;
