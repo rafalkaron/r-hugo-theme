@@ -22,6 +22,7 @@ body {
 
 main {
   margin: calc(var(--margin) * 1.25) var(--margin-large);
+  margin-bottom: auto;
 }
 
 article {
