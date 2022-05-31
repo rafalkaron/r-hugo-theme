@@ -4,9 +4,7 @@
 }
 
 .theme-switch {
-  display: inline-block;
-  height: 1.6rem;
-  position: relative;
+  line-height: 0;
 }
 .theme-switch input {
   display: none;
