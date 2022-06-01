@@ -23,7 +23,8 @@ pre * {
 }
 
 .gutter,
-.gutter * {
+.gutter *,
+#on-this-page a {
   letter-spacing: -0.025em;
 }
 

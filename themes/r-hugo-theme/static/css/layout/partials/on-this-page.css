@@ -26,3 +26,19 @@
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
+
+/* Move to right for not phones */
+@media only screen and (min-width: 992px) {
+  main {
+    position: relative;
+  }
+  .on-this-page-wrapper {
+    position: fixed;
+    width: 10rem;
+    top: 7.5rem;
+    right: calc(var(--margin-large) - 12rem);
+    margin: 0;
+    padding-left: 1rem;
+    border-left: solid var(--border-width-thin) var(--content-background-middle);
+  }
+}
