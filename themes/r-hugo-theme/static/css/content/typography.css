@@ -22,6 +22,11 @@ pre * {
   font-family: "Source Code Pro", monospace;
 }
 
+.gutter,
+.gutter * {
+  letter-spacing: -0.025em;
+}
+
 /* Add classes for text formatting */
 .content .text_small {
   font-size: 0.8rem !important;
