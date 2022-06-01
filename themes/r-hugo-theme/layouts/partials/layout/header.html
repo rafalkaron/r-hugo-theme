@@ -8,10 +8,8 @@
         <ul>
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
-            {{ $menu_item_url := .URL | relLangURL }}
-            {{ $page_url:= $currentPage.RelPermalink | relLangURL }}
               <li class="nav-item">
-                <a class="nav-link{{ if eq $page_url $menu_item_url }} active{{end}}" href="{{ .URL }}">{{ .Name }}</a>
+                <a class="nav-link {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
               </li>
           {{ end }}
         </ul>
