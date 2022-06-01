@@ -3,8 +3,8 @@
 <div class="gutter top-gutter not-selectable">
   {{ partial "layout/gutter/breadcrumbs" . }}
 </div>
-{{ partial "layout/on-this-page" . }}
 <main id="layout-single">
+  {{ partial "layout/on-this-page" . }}
   <article class="content">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}

@@ -1,5 +1,5 @@
 .on-this-page-wrapper {
-  margin: 0 var(--margin-large) var(--margin) var(--margin-large);
+  margin: 0 0 var(--margin) 0;
 }
 
 #on-this-page .on-this-page-caption {
@@ -78,5 +78,11 @@
   }
   #on-this-page .on-this-page-caption {
     font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  #layout-home .on-this-page-wrapper {
+    display: none;
   }
 }
