@@ -2,3 +2,7 @@
   border: none;
   margin-top: 0;
 }
+
+.home-heading {
+  border-bottom: solid var(--border-width-thin) var(--content-text-dark);
+}
