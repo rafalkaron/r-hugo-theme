@@ -47,11 +47,11 @@
   }
   .on-this-page-wrapper {
     position: fixed;
-    width: 12rem;
+    width: calc(var(--margin-large) * 0.75);
     top: 9.3rem;
     max-height: 68vh;
     overflow: scroll;
-    right: calc(var(--margin-large) - 13rem);
+    right: calc(var(--margin-large) - calc(var(--margin-large) * 0.8));
     margin: 0;
     padding-left: 1rem;
     border-left: solid var(--border-width-thin) var(--content-background-middle);
