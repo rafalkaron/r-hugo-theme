@@ -2,8 +2,9 @@
   margin: 0 var(--margin-large) var(--margin) var(--margin-large);
 }
 
-.on-this-page-caption {
+#on-this-page .on-this-page-caption {
   font-weight: bold;
+  font-size: 0.9rem;
 }
 
 #on-this-page li {
@@ -12,8 +13,12 @@
   text-align: left;
 }
 
-#on-this-page li + li {
-  padding-top: 0.25rem;
+#on-this-page li {
+  padding-top: 0.15rem;
+}
+
+#on-this-page li:first-of-type {
+  padding-top: 0;
 }
 
 #on-this-page li li {
@@ -27,7 +32,7 @@
 }
 #on-this-page a:hover,
 #on-this-page a:active,
-#on-this-page a:focus {
+#on-this-page li a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
@@ -57,5 +62,8 @@
   }
   #on-this-page li > ul {
     display: unset;
+  }
+  #on-this-page .on-this-page-caption {
+    font-size: 0.8rem;
   }
 }
