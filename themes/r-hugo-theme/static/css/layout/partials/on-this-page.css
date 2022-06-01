@@ -40,8 +40,21 @@
   display: none;
 }
 
+#on-this-page .on-this-page-caption-dynamic {
+  display: none;
+}
+#on-this-page .on-this-page-caption-static {
+  display: unset;
+}
+
 /* Move to right for not phones */
 @media only screen and (min-width: 992px) {
+  #on-this-page .on-this-page-caption-dynamic {
+    display: unset;
+  }
+  #on-this-page .on-this-page-caption-static {
+    display: none;
+  }
   main {
     position: relative;
   }
