@@ -1,7 +1,4 @@
-#layout-home article {
-  margin-top: calc(var(--margin) * 1.25);
-}
-
-.home-heading {
-  border-bottom: solid var(--border-width-thin) var(--content-text-dark);
+#gutter-home {
+  border: none;
+  margin-top: 0;
 }
