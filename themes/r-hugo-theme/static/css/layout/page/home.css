@@ -1,8 +1,7 @@
 #layout-home article {
-  margin-top: 0;
+  margin-top: calc(var(--margin) * 1.25);
 }
 
 .home-heading {
-  margin-top: calc(var(--margin) * 1.25);
   border-bottom: solid var(--border-width-thin) var(--content-text-dark);
 }
