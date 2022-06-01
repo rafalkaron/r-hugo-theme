@@ -17,6 +17,10 @@
     display: block;
   }
 
+  .home-heading {
+    border-bottom: none;
+  }
+
   /* Reset body props inherited from base style */
   body {
     margin: unset;
@@ -30,9 +34,11 @@
   /* Separate the header and footer from content */
   header {
     border-bottom: solid var(--border-width-medium) var(--content-text-dark);
+    margin-bottom: calc(var(--margin) * 1.25);
   }
   footer {
     border-top: solid var(--border-width-medium) var(--content-text-dark);
+    margin-top: calc(var(--margin) * 1.25);
   }
 
   /* Avoid breaking certain elements */
