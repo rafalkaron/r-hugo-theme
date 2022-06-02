@@ -1,50 +1,20 @@
 <aside class="side-menu-wrapper not-selectable web">
   <nav id="side-menu">
-    {{ template "structure-menu" (dict "currentLevel" $.Site "currentPage" .Page "level" 0 ) }}
-    {{ define "structure-menu" }}
-    {{ $level := .level }}
-  
-    {{ $currentLevel := .currentLevel }}
-    {{ $currentPage := .currentPage }}
-    {{ $children := .currentLevel.Sections }}
-    
-    {{ if $currentLevel.Pages }} 
-      {{ range $currentLevel.Pages }}
-        {{ if not (eq 0 $level) }}
-          {{ $children = $children | append . }}
-        {{ else }}
-          {{ if and ( eq .Section "") ( not .IsHome )  }}
-          {{ $children = $children | append . }}
-          {{ end }}
+    {{ with .Site.GetPage (print "/" .Section "/_index.md") }}
+
+    {{ $.Scratch.Set "haschildren" "" }}
+    {{ range .RegularPages }}
+        {{ $urlparts := split (print .File.Dir .File.BaseFileName) "/" }}
+        {{ range $index, $value := (first (len $urlparts) $urlparts) }}
+            {{ $.Scratch.Add "haschildren" (print " " (delimit (first $index $urlparts) "/") "/") }}
         {{ end }}
-      {{ end }}
     {{ end }}
-    
-    
-    {{ $url := "#" }}
-    {{if gt $level 0}}
-    {{$url = $currentLevel.Permalink}}
-    {{ else }}
-    {{ $url = $currentLevel.BaseURL }}
-    {{ end }}
-    <a href="{{$url}}" class="{{ if eq $currentLevel $currentPage }}active{{ end }}">{{$currentLevel.Title}}
-    </a>
-        
-    {{ if $children }}
-    <ol>
-      {{ range $children }}
-      <li>
-        {{if .IsNode}}
-          {{ template "structure-menu" (dict "currentLevel" . "currentPage" $currentPage "level" (add 1 $level)) }}
-        {{ else }}
-          <a href="{{.Permalink}}" class="{{ if eq . $currentPage }}active{{ end }}">{{.Title}}</a>
-        {{ end }}
-      </li>
-      {{ end }}
-    </ol>
-    {{ end }}
-  
-  <!-- End template -->
-  {{ end }}
-</nav>
+    {{ $.Scratch.Set "haschildren" (uniq (split ($.Scratch.Get "haschildren") " ")) }}
+
+    <ul class="nestedmenu">
+        {{ partial "layout/nested-menu-partial.html" (dict "context" . "pagecontext" $.Page "regularpages" .RegularPages) }}
+    </ul>
+
+{{ end }}
+  </nav>
 </aside>
