@@ -1,5 +1,5 @@
 ---
-title: Subpages
+title: Section
 draft: false
 ---
 

@@ -1,29 +1,50 @@
 <aside class="side-menu-wrapper not-selectable web">
   <nav id="side-menu">
-    <ul>
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.main }}
-          {{ if .HasChildren }}
-              <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
-                  <a href="#">
-                      { .Name }}
-                  </a>
-              </li>
-              <ul class="sub-menu">
-                  {{ range .Children }}
-                      <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
-                          <a href="{{ .URL }}">{{ .Name }}</a>
-                      </li>
-                  {{ end }}
-              </ul>
-          {{ else }}
-              <li>
-                  <a href="{{ .URL }}">
-                      {{ .Name }}
-                  </a>
-              </li>
+    {{ template "structure-menu" (dict "currentLevel" $.Site "currentPage" .Page "level" 0 ) }}
+    {{ define "structure-menu" }}
+    {{ $level := .level }}
+  
+    {{ $currentLevel := .currentLevel }}
+    {{ $currentPage := .currentPage }}
+    {{ $children := .currentLevel.Sections }}
+    
+    {{ if $currentLevel.Pages }} 
+      {{ range $currentLevel.Pages }}
+        {{ if not (eq 0 $level) }}
+          {{ $children = $children | append . }}
+        {{ else }}
+          {{ if and ( eq .Section "") ( not .IsHome )  }}
+          {{ $children = $children | append . }}
           {{ end }}
+        {{ end }}
       {{ end }}
-  </ul>
+    {{ end }}
+    
+    
+    {{ $url := "#" }}
+    {{if gt $level 0}}
+    {{$url = $currentLevel.Permalink}}
+    {{ else }}
+    {{ $url = $currentLevel.BaseURL }}
+    {{ end }}
+    <a href="{{$url}}" class="{{ if eq $currentLevel $currentPage }}active{{ end }}">{{$currentLevel.Title}}
+    </a>
+        
+    {{ if $children }}
+    <ol>
+      {{ range $children }}
+      <li>
+        {{if .IsNode}}
+          {{ template "structure-menu" (dict "currentLevel" . "currentPage" $currentPage "level" (add 1 $level)) }}
+        {{ else }}
+          <a href="{{.Permalink}}" class="{{ if eq . $currentPage }}active{{ end }}">{{.Title}}</a>
+        {{ end }}
+      </li>
+      {{ end }}
+    </ol>
+    {{ end }}
+  
+  <!-- End template -->
+  {{ end }}
 </nav>
 </aside>
