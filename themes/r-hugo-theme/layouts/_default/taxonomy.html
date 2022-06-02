@@ -6,7 +6,7 @@
 <main id="layout-blog" class="layout-taxonomy">
   <article class="content">
     {{ with .Title }}
-    <h1>#{{ . }}</h1>
+    <h1 class="taxonomy-name">#{{ . }}</h1>
     {{ end }}
   </article>
   {{ range sort .Paginator.Pages .Params.weight }} 
