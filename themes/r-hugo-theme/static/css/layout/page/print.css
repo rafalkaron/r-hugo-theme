@@ -35,6 +35,11 @@
   header {
     border-bottom: solid var(--border-width-medium) var(--content-text-dark);
     margin-bottom: calc(var(--margin) * 1.25);
+    position: static;
+  }
+  #header-top,
+  footer {
+    padding: 0;
   }
   footer {
     border-top: solid var(--border-width-medium) var(--content-text-dark);
