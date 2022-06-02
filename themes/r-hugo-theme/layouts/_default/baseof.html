@@ -4,6 +4,7 @@
 	<body>
 		{{ partial "layout/header" . }}
 		<script src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
+		<script src="{{ "js/hide-navbar.js" | relURL }}"></script> 
 		{{ block "main" . }}{{ end }}
 		{{ partial "layout/footer" . }}
 	</body>
