@@ -1,13 +1,13 @@
 {{ define "main" }}
 <div class="top-gutter gutter not-selectable">
-  {{ partial "layout/gutter/subpages" . }}
+  {{ partial "layout/gutter/breadcrumbs" . }}
 </div>
 <main id="layout-section">
   {{ partial "layout/side-menu" . }}
   <article class="content">
     {{ partial "_index" . }}
     <div class="subpages">
-      {{ range .Paginator.Pages }} {{ .Render "summary" }} {{ end }}
+      {{ range .Pages }} {{ .Render "summary" }} {{ end }}
     </div>
   </article>
 </main>

@@ -6,8 +6,7 @@
           {{ if .HasChildren }}
               <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
                   <a href="#">
-                      {{ .Pre }}
-                      <span>{{ .Name }}</span>
+                      { .Name }}
                   </a>
               </li>
               <ul class="sub-menu">
@@ -20,8 +19,7 @@
           {{ else }}
               <li>
                   <a href="{{ .URL }}">
-                      {{ .Pre }}
-                      <span>{{ .Name }}</span>
+                      {{ .Name }}
                   </a>
               </li>
           {{ end }}
