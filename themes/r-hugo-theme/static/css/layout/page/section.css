@@ -39,7 +39,7 @@
 }
 
 .subpage {
-  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
 }
 
 .subpage + .subpage {
