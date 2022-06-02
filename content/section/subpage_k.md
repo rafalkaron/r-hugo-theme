@@ -1,9 +1,7 @@
 ---
-title: Subpage D
+title: Subpage K
 weight: 3
-keywords: "keyword2"
 draft: false
-description: "Description"
 ---
 
 ## Heading 2

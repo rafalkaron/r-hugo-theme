@@ -6,7 +6,7 @@
 <main id="layout-blog">
   <article class="content">
     {{ partial "_index.html" . }} 
-    {{ range (.Site.GetPage "section" "blog").Paginator.Pages}} 
+    {{ range .Paginator.Pages}} 
       {{ .Render "summary" }} 
     {{ end }} 
   </article>

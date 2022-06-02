@@ -7,15 +7,15 @@
   <article class="content">
     {{ partial "_index" . }}
     <div class="subpages">
-      {{ range .Pages }} {{ .Render "summary" }} {{ end }}
+      {{ range .Pages }} 
+        {{ .Render "summary" }} 
+      {{ end }}
     </div>
   </article>
 </main>
 <div class="gutter bottom-gutter not-selectable">
   <div class="gutter-group">
-    {{ partial "layout/gutter/top-button" . }} {{ partial
-    "layout/gutter/print-button" . }}
+    {{ partial "layout/gutter/top-button" . }} {{ partial "layout/gutter/print-button" . }}
   </div>
-  {{ partial "layout/gutter/pagination" . }}
 </div>
 {{ end }}
