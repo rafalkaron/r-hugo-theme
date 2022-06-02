@@ -24,7 +24,8 @@ pre * {
 
 .gutter,
 .gutter *,
-#on-this-page a {
+#on-this-page a
+#side-menu a {
   letter-spacing: -0.025em;
 }
 
