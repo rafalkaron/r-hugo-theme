@@ -1,5 +1,5 @@
 /* LAYOUT */
-@import "layout/base.css";
+@import "layout/baseof.css";
 @import "layout/page/home.css";
 @import "layout/page/blog.css";
 @import "layout/page/terms.css";
@@ -14,8 +14,8 @@
 @import "layout/partials/meta.css";
 @import "layout/partials/related-links.css";
 @import "layout/partials/footer.css";
-@import "layout/print.css";
-@import "layout/_variables.css";
+@import "layout/page/print.css";
+@import "layout/_variables-breakpoints.css";
 
 /* CONTENT */
 @import "content/typography.css";

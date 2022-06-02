@@ -8,10 +8,10 @@
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: none;
+  height: auto;
 }
 
 body {
-  margin: 0;
   min-width: 375px;
   display: flex;
   flex-direction: column;
