@@ -13,3 +13,9 @@
 .theme-switch .material-icons {
   color: var(--layout-text);
 }
+
+.theme-switch:hover,
+.theme-switch:active,
+.theme-switch:focus {
+  cursor: pointer;
+}
