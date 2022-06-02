@@ -5,6 +5,7 @@
 </div>
 <main id="layout-single">
   {{ partial "layout/on-this-page" . }}
+  {{ partial "layout/side-menu" . }}
   <article class="content">
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}

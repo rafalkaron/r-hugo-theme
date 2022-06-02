@@ -54,6 +54,9 @@
   #layout-home .on-this-page-wrapper {
     display: none;
   }
+  .side-menu-wrapper {
+    display: none;
+  }
 }
 /* Move to right for not phones */
 @media only screen and (min-width: 992px) {
@@ -83,6 +86,23 @@
   }
   #on-this-page .on-this-page-caption {
     font-size: 0.8rem;
+  }
+
+  .side-menu-wrapper {
+    position: fixed;
+    width: calc(var(--margin-large) * 0.75);
+    top: 9.3rem;
+    max-height: 68vh;
+    overflow: scroll;
+    left: calc(var(--margin-large) - calc(var(--margin-large) * 0.8));
+    margin: 0;
+    padding-left: 1rem;
+    border-right: solid var(--border-width-thin)
+      var(--content-background-middle);
+  }
+  #side-menu a,
+  #side-menu li {
+    font-size: 0.7rem;
   }
 }
 
