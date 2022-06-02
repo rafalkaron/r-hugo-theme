@@ -1,20 +1,7 @@
 <aside class="side-menu-wrapper not-selectable web">
   <nav id="side-menu">
-    {{ with .Site.GetPage (print "/" .Section "/_index.md") }}
-
-    {{ $.Scratch.Set "haschildren" "" }}
-    {{ range .RegularPages }}
-        {{ $urlparts := split (print .File.Dir .File.BaseFileName) "/" }}
-        {{ range $index, $value := (first (len $urlparts) $urlparts) }}
-            {{ $.Scratch.Add "haschildren" (print " " (delimit (first $index $urlparts) "/") "/") }}
-        {{ end }}
+    {{ range .Pages }}
+  <li><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}
-    {{ $.Scratch.Set "haschildren" (uniq (split ($.Scratch.Get "haschildren") " ")) }}
-
-    <ul class="nestedmenu">
-        {{ partial "layout/nested-menu-partial.html" (dict "context" . "pagecontext" $.Page "regularpages" .RegularPages) }}
-    </ul>
-
-{{ end }}
   </nav>
 </aside>
