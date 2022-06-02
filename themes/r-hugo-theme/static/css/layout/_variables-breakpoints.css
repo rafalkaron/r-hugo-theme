@@ -76,7 +76,7 @@
   }
   #on-this-page {
     border-left: solid var(--border-width-thin) var(--content-background-middle);
-    margin-right: calc(var(--margin-large) * 0.1);
+    margin-right: 2.5rem;
     padding-left: calc(var(--margin-large) * 0.1);
   }
   #on-this-page a,
@@ -104,7 +104,7 @@
   #side-menu {
     border-right: solid var(--border-width-thin)
       var(--content-background-middle);
-    margin-left: calc(var(--margin-large) * 0.1);
+    margin-left: 2.5rem;
     padding-right: calc(var(--margin-large) * 0.1);
   }
   #side-menu a,
