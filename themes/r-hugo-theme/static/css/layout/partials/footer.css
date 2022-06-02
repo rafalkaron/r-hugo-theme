@@ -8,7 +8,7 @@ footer {
   align-items: center;
   justify-content: space-between;
   min-height: 4rem;
-  padding: 0 var(--margin-large) 0.8rem var(--margin-large);
+  padding: 0 2.5rem 0.8rem 2.5rem;
 }
 footer * {
   color: var(--layout-text);

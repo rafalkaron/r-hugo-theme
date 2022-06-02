@@ -7,7 +7,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--layout-background);
-  padding: 0 var(--margin-large) 0 var(--margin-large);
+  padding: 0 2.5rem;
 }
 
 .logo-nav-primary {
