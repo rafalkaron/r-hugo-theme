@@ -87,6 +87,9 @@
   #on-this-page .on-this-page-caption {
     font-size: 0.8rem;
   }
+  #side-menu .side-menu-caption {
+    font-size: 0.8rem;
+  }
 
   .side-menu-wrapper {
     position: fixed;

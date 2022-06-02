@@ -1,5 +1,6 @@
 <aside class="side-menu-wrapper not-selectable web">
   <nav id="side-menu">
+  <li><a href="{{ .Parent.Permalink }}" class=side-menu-caption>{{ .Parent.Title }}</a></li>
     {{ range .Pages }}
   <li><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
     {{ end }}

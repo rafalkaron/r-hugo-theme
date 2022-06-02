@@ -1,0 +1,12 @@
+<aside class="side-menu-wrapper not-selectable web">
+  
+  <nav id="side-menu">
+    <ul>
+    <li><a href="{{ .Parent.Permalink }}"class=side-menu-caption>{{ .Parent.Title }}</a></li>
+  </ul>
+    {{ $currentPage := . }}
+    {{ range .CurrentSection.Pages }}
+      <li><a class="side-menu-link {{ if eq $currentPage.Permalink .Permalink }}active{{ end }}"title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </nav>
+</aside>

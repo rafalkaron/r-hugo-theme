@@ -2,6 +2,12 @@
   margin: 0 0 var(--margin) 0;
 }
 
+#side-menu .side-menu-caption {
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+}
+
 #side-menu li {
   list-style: none;
   font-size: 0.8rem;
@@ -25,9 +31,18 @@
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }
+
+#side-menu .side-menu-link.active {
+  font-weight: bold;
+  color: var(--content-text-dark);
+}
+
 #side-menu a:hover,
 #side-menu a:active,
-#side-menu li a:focus {
+#side-menu li a:focus,
+#side-menu .side-menu-link.active:hover,
+#side-menu .side-menu-link.active:active,
+#side-menu li .side-menu-link.active:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
