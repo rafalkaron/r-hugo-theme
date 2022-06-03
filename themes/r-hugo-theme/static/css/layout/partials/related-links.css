@@ -6,11 +6,13 @@
 /* Style related links */
 .related-links-wrapper li.related-link {
   margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
 }
 .related-links-wrapper li.related-link a {
   font-weight: normal;
   text-decoration: none;
   border: none;
+  font-size: 0.8rem;
 }
 .related-links-wrapper li.related-link a::after {
   content: " »";
