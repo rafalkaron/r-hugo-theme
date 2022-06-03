@@ -1,4 +1,4 @@
-.layout-taxonomy h1.taxonomy-name {
+#layout-blog.layout-taxonomy .taxonomy-name {
   margin-bottom: var(--margin);
 }
 
