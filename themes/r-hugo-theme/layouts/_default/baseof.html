@@ -2,7 +2,7 @@
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
 	{{ partial "layout/head" . }}
 	<body>
-		{{ partial "layout/header" . }}
+		{{ partial "layout/navigation/header" . }}
 		<script src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
 		<script src="{{ "js/hide-navbar.js" | relURL }}"></script> 
 		{{ block "main" . }}{{ end }}

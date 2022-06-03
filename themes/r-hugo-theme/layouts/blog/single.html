@@ -1,10 +1,9 @@
 {{ define "main" }}
 <main id="layout-single">
   <div class="gutter top-gutter not-selectable">
-    {{ partial "layout/gutter/back-to-blog" . }} {{ partial
-    "layout/gutter/taxonomy-refs" . }}
+    {{ partial "layout/gutter/back-to-blog" . }} {{ partial "layout/gutter/taxonomy-refs" . }}
   </div>
-  {{ partial "layout/on-this-page" . }}
+  {{ partial "layout/navigation/on-this-page" . }}
   <article class="content">
     <h1>{{ .Title }}</h1>
     {{ partial "blog/meta" . }} 
