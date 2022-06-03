@@ -12,12 +12,16 @@ html {
 }
 
 body {
-  min-width: 375px;
+  min-width: 360px;
   display: flex;
   flex-direction: column;
   height: 100vh;
   min-height: -webkit-fill-available;
   background-color: var(--content-background-light);
+}
+
+header {
+  min-width: 360px;
 }
 
 main {

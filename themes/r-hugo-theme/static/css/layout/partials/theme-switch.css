@@ -2,20 +2,18 @@
   display: flex;
   align-items: center;
 }
-
-.theme-switch {
+.theme-switch-wrapper .theme-switch {
   line-height: 0;
 }
-.theme-switch input {
+.theme-switch-wrapper .theme-switch input {
   display: none;
 }
-
-.theme-switch .material-icons {
+.theme-switch-wrapper .theme-switch .material-icons {
   color: var(--layout-text);
 }
 
-.theme-switch:hover,
-.theme-switch:active,
-.theme-switch:focus {
+.theme-switch-wrapper .theme-switch:hover,
+.theme-switch-wrapper .theme-switch:active,
+.theme-switch-wrapper .theme-switch:focus {
   cursor: pointer;
 }

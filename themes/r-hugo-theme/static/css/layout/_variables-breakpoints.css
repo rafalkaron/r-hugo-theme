@@ -129,7 +129,7 @@
     --margin-large: 2.5rem;
   }
   p.huge > img {
-    max-width: 315px !important;
+    max-width: 300px !important;
   }
   .subpages {
     column-count: 1;
