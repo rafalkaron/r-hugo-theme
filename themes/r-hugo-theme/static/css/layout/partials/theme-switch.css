@@ -1,6 +1,7 @@
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 .theme-switch-wrapper .theme-switch {
   line-height: 0;

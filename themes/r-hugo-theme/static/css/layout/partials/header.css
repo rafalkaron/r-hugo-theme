@@ -1,65 +1,60 @@
 header {
   color: var(--layout-text);
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
-  height: 4rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.3s;
 }
-
-#header-top {
+header .header-items-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: var(--layout-background);
   padding: 0 2.5rem;
+  min-height: 4rem;
 }
-
-.logo-nav-primary {
+header .title-nav-wrapper {
   display: flex;
   align-items: center;
 }
-#site-title a {
+
+header a.site-title {
   color: var(--layout-text);
   text-decoration: none;
   font-weight: bold;
   font-size: 2rem;
   white-space: nowrap;
 }
-#nav-primary {
-  padding: 1.2rem 1.6rem;
+header .nav-primary {
+  padding: 0 1.6rem;
 }
-#nav-primary ul {
+header ul.nav-primary-items {
   display: flex;
   flex-wrap: wrap;
 }
-#nav-primary li {
+header li.nav-primary-item {
   list-style: none;
   padding: 0 var(--margin) 0 0;
   flex-shrink: 0;
 }
-#nav-primary li:last-of-type {
+header li.nav-primary-item:last-of-type {
   list-style: none;
   padding: 0;
 }
-#nav-primary li a {
+header a.nav-primary-link {
   color: var(--layout-text);
   text-decoration: none;
   font-weight: bold;
 }
-#nav-primary a:hover,
-#nav-primary a:active,
-#nav-primary a:focus {
+header a.nav-primary-link:hover,
+header a.nav-primary-link:active,
+header a.nav-primary-link:focus {
   text-decoration: none;
   background-color: var(--layout-text);
   color: var(--layout-background);
 }
 
 /* Indicate active sites */
-#nav-primary li a.active {
+header li a.nav-primary-link.active {
   border-bottom: solid var(--border-width-thin) var(--layout-text);
-}
-
-.theme-switch-wrapper {
-  flex-shrink: 0;
 }
