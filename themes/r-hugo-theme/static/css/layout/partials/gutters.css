@@ -3,7 +3,6 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin: calc(var(--margin) * 1.25) var(--margin-large);
 }
 
 .top-gutter {
@@ -11,13 +10,13 @@
   justify-content: flex-start;
   justify-content: space-between;
   padding-bottom: 0.25rem;
-  margin-top: calc(calc(var(--margin) * 1.25) + 4rem);
+  margin-bottom: calc(var(--margin) * 1.25);
 }
 .bottom-gutter {
-  margin-top: calc(var(--margin) * 1.25);
   border-top: solid var(--border-width-thin) var(--content-text-dark);
   justify-content: space-between;
   padding-top: 0.25rem;
+  margin: calc(var(--margin) * 1.25) 0;
 }
 
 /* Gutter group*/

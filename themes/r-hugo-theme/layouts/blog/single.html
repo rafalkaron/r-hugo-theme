@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="gutter top-gutter not-selectable">
-  {{ partial "layout/gutter/back-to-blog" . }} {{ partial
-  "layout/gutter/taxonomy-refs" . }}
-</div>
 <main id="layout-single">
+  <div class="gutter top-gutter not-selectable">
+    {{ partial "layout/gutter/back-to-blog" . }} {{ partial
+    "layout/gutter/taxonomy-refs" . }}
+  </div>
   {{ partial "layout/on-this-page" . }}
   <article class="content">
     <h1>{{ .Title }}</h1>
@@ -16,12 +16,12 @@
     <div>{{ template "_internal/disqus.html" . }}</div>
     {{ end }}
   </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+    {{ partial "layout/gutter/top-button" . }}
+    {{ partial "layout/gutter/print-button" . }}
+    </div>
+    {{ partial "layout/gutter/next-prev" . }}
+    </div>
 </main>
-<div class="gutter bottom-gutter not-selectable">
-  <div class="gutter-group">
-  {{ partial "layout/gutter/top-button" . }}
-  {{ partial "layout/gutter/print-button" . }}
-  </div>
-  {{ partial "layout/gutter/next-prev" . }}
-  </div>
 {{ end }}

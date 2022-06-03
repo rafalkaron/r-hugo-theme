@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="top-gutter gutter not-selectable">
-  {{ partial "layout/gutter/back-to-blog" . }} 
-  {{ partial "layout/gutter/taxonomy-refs" . }}
-</div>
 <main id="layout-terms">
+  <div class="top-gutter gutter not-selectable">
+    {{ partial "layout/gutter/back-to-blog" . }} 
+    {{ partial "layout/gutter/taxonomy-refs" . }}
+  </div>
   <article class="content">
     <h1>{{ .Title }}</h1>
     <div class="terms tags categories tags-wrapper">
@@ -18,11 +18,11 @@
       </ul>
     </div>
   </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top-button" . }}
+      {{ partial "layout/gutter/print-button" . }}
+    </div>
 </main>
-<div class="gutter bottom-gutter not-selectable">
-  <div class="gutter-group">
-    {{ partial "layout/gutter/top-button" . }}
-    {{ partial "layout/gutter/print-button" . }}
-  </div>
 </div>
 {{ end }}

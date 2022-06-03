@@ -21,8 +21,8 @@ body {
 }
 
 main {
-  margin: 0 var(--margin-large);
-  margin-bottom: auto;
+  margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--margin-large) auto
+    var(--margin-large);
 }
 
 article {
