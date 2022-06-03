@@ -2,9 +2,7 @@
 {{ with .RegularPages }}
 <ul>
   {{ range . }}
-    {{ if (not (in .Permalink "blog")) }}
   <li><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
-    {{ end }}
   {{ end }}
 </ul>
 {{ end }}
