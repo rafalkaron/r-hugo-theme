@@ -16,7 +16,6 @@
   .print {
     display: block;
   }
-
   .home-heading {
     border-bottom: none;
   }
@@ -60,4 +59,10 @@
     break-inside: avoid;
     page-break-inside: avoid;
   }
+}
+
+/* Fix colors in code */
+.content code,
+.content code * {
+  color: var(--content-text-light);
 }
