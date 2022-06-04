@@ -36,7 +36,12 @@
     margin-bottom: calc(var(--margin) * 1.25);
     position: static;
   }
-  #header-top,
+
+  main {
+    margin-top: calc(var(--margin) * 1.25);
+  }
+
+  header .header-items-wrapper,
   footer {
     padding: 0;
   }
