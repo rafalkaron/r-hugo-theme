@@ -33,9 +33,6 @@
   overflow: scroll;
 }
 
-#nav-hamburger ul {
-}
-
 #nav-hamburger li {
   justify-content: right;
   list-style: none;
@@ -52,4 +49,17 @@
 
 #menu-toggle:checked ~ #nav-hamburger {
   display: unset;
+}
+
+#nav-hamburger a.nav-primary-link {
+  color: var(--layout-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+#nav-hamburger a:hover,
+#nav-hamburger a:active,
+#nav-hamburger a:focus {
+  text-decoration: none;
+  background-color: var(--layout-text);
+  color: var(--layout-background);
 }
