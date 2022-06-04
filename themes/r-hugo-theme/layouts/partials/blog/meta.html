@@ -3,13 +3,17 @@
     
     {{ if .Date }}
     <div class="datetime-wrapper">
-      <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006" }}</time>
+      <ph><time title="Published date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "02.01.2006" }}</time>
+      {{ with .Params.edit }}
+      {{ $editTime := printf . | time }}
+      (<time title="Edited date">{{ $editTime.Format "02.01.2006" }}</time>)
+      {{ end }}
+      </ph>
     </div>
     {{ end }}
-    
     {{ with .Params.author }}
-    <div class="author-wrapper">
-      <ph>{{ . }}</ph>
+    <div title="Author" class="author-wrapper">
+      <ph>by {{ . }}</ph>
     </div>
     {{ end }}
   
