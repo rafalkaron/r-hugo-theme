@@ -4,7 +4,8 @@ weight: 3
 keywords: ["keyword", "keyword2"]
 draft: false
 ---
-
+![Mountain](/images/mountain.jpg)
+{.tiny}
 ## Heading 2
 
 Enim laborum nisi in anim culpa. Aute mollit aliqua irure occaecat nostrud proident.

@@ -9,7 +9,8 @@ description: "This is an optional short description. If it's not added, the firs
 ## Heading 2
 
 Ex fugiat sint Lorem reprehenderit. Et in ex esse consequat dolore occaecat culpa amet ullamco aliquip magna excepteur.
-
+![Mountain](/images/mountain.jpg)
+{.tiny}
 Irure ea sit duis eu deserunt. Occaecat eiusmod magna excepteur elit minim ut. Sit eiusmod sit et dolore elit ad cillum anim. Deserunt aute minim aliqua voluptate fugiat. Ad officia culpa magna duis non enim ullamco excepteur nisi.
 
 Voluptate dolor amet voluptate dolore excepteur enim ut deserunt nulla commodo excepteur. Eu aute qui ullamco reprehenderit velit incididunt anim dolor deserunt mollit do culpa in. Laborum tempor proident eiusmod minim culpa do. Labore esse id aute ut laborum. Magna ut et consequat eu minim tempor est exercitation cillum fugiat. Ut deserunt excepteur consequat commodo aute occaecat magna. Ullamco sunt fugiat consequat irure magna nostrud nostrud.
