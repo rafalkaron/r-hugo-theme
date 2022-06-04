@@ -8,6 +8,7 @@
 	{{ with .Site.Params.author }}
 		<meta name="author" content="{{ . }}">
 	{{ end }}
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 	<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 	<link rel="icon" type="image/ico" href="{{ .Site.Params.favicon_href | relURL | default "img/favicon.svg" }}">
 	{{ with .OutputFormats.Get "RSS" -}}
