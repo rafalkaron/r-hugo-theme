@@ -3,7 +3,9 @@
   align-items: center;
   flex-shrink: 0;
 }
-
+.hamburger-wrapper input {
+  display: none;
+}
 .hamburger-wrapper .material-icons {
   color: var(--layout-text);
   font-size: 2rem;
@@ -11,8 +13,8 @@
   align-items: center;
 }
 
-.hamburger-wrapper:hover,
-.hamburger-wrapper:active,
-.hamburger-wrapper:focus {
+.hamburger-wrapper .hamburger-container:hover,
+.hamburger-wrapper .hamburger-container:active,
+.hamburger-wrapper .hamburger-container:focus {
   cursor: pointer;
 }
