@@ -69,9 +69,9 @@
   .on-this-page-wrapper {
     position: fixed;
     width: calc(var(--margin-large) * 0.9);
-    top: 7.5rem;
+    top: 5.75rem;
     right: 0;
-    bottom: 6rem;
+    bottom: 5.75rem;
     overflow: scroll;
   }
   #on-this-page {
@@ -105,9 +105,9 @@
   .side-menu-wrapper {
     position: fixed;
     width: calc(var(--margin-large) * 0.9);
-    top: 7.5rem;
+    top: 5.75rem;
     left: 0;
-    bottom: 6rem;
+    bottom: 5.75rem;
     overflow: scroll;
   }
   #side-menu {
