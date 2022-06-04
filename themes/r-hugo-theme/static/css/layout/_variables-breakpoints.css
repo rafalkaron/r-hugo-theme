@@ -127,12 +127,22 @@
   }
 }
 
+.hamburger-wrapper {
+  display: none;
+}
 /* TABLETS */
 @media only screen and (max-width: 768px) {
   :root {
     --font-size: 1.3rem;
     --margin: 1.3rem;
     --margin-large: 5rem;
+  }
+
+  #nav-primary {
+    display: none;
+  }
+  .hamburger-wrapper {
+    display: unset;
   }
 }
 /* PORTRAIT PHONES */

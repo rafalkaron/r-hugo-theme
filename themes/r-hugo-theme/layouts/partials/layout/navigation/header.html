@@ -15,6 +15,9 @@
         </ul>
       </div>
     </nav>
-    {{ partial "layout/theme-switch" . }}
+    <div class="header-buttons-wrapper">
+      {{ partial "layout/theme-switch" . }}
+      {{ partial "layout/navigation/hamburger" . }}
+    </div>
   </div>
 </header>

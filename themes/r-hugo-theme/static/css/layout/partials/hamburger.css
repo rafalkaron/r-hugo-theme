@@ -1,0 +1,16 @@
+.hamburger-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.hamburger-wrapper .material-icons {
+  line-height: 0;
+  color: var(--layout-text);
+}
+
+.hamburger-wrapper:hover,
+.hamburger-wrapper:active,
+.hamburger-wrapper:focus {
+  cursor: pointer;
+}

@@ -18,6 +18,14 @@ header .title-nav-wrapper {
   align-items: center;
 }
 
+header .header-buttons-wrapper {
+  display: flex;
+  align-items: center;
+}
+header .header-button {
+  padding-left: var(--margin);
+}
+
 header a.site-title {
   color: var(--layout-text);
   text-decoration: none;
