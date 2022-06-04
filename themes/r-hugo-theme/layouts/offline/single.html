@@ -8,16 +8,14 @@
     <h1>{{ .Title }}</h1>
     {{ with .Params.description }}
     <p class="description">{{ . }}</p>
-    {{ end }}
-    {{ .Content }}
-    {{ partial "layout/related-links" . }}
+    {{ end }} {{ .Content }} {{ partial "layout/related-links" . }}
   </article>
 </main>
 <div class="gutter bottom-gutter not-selectable">
   <div class="gutter-group">
-  {{ partial "layout/gutter/top-button" . }}
-  {{ partial "layout/gutter/print-button" . }}
+    {{ partial "layout/gutter/top-button" . }} {{ partial
+    "layout/gutter/print-button" . }}
   </div>
-  {{ partial "layout/gutter/next-prev" . }}
+  {{ partial "layout/gutter/next-prev-single-page" . }}
 </div>
 {{ end }}
