@@ -18,3 +18,34 @@
 .hamburger-wrapper .hamburger-container:focus {
   cursor: pointer;
 }
+
+#nav-hamburger {
+  display: none;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  background-color: var(--layout-background);
+  text-align: right;
+  padding: var(--margin) var(--padding-main);
+  border-top: solid var(--border-width-thin) var(--content-background-middle);
+}
+
+#nav-hamburger ul {
+}
+
+#nav-hamburger li {
+  justify-content: right;
+  list-style: none;
+  padding: 0.2rem;
+  text-align: right;
+}
+
+#nav-hamburger a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#menu-toggle:checked ~ #nav-hamburger {
+  display: unset;
+}
