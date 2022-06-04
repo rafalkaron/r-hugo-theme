@@ -38,15 +38,6 @@ article.content {
   margin-top: 0;
 }
 
-/* Fix anchors hidden behind navbar */
-[id]::before {
-  content: "";
-  display: block;
-  height: 4rem;
-  margin-top: -4rem;
-  visibility: hidden;
-}
-
 /* Hide print-specific items */
 .print {
   display: none;
