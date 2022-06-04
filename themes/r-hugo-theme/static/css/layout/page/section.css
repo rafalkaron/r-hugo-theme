@@ -34,15 +34,19 @@
 }
 
 #layout-section .subpages {
-  margin-top: var(--margin);
-  column-count: 2;
-  column-gap: calc(var(--margin) * 1.5);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: calc(var(--margin) * 0.5);
+  width: 100%;
 }
 
 #layout-section .subpage {
   break-inside: avoid;
+  width: 48%;
 }
 
-#layout-section .subpage + .subpage {
+#layout-section .subpage {
   margin-top: calc(var(--margin) * 0.5);
 }

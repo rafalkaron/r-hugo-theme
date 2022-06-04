@@ -148,8 +148,8 @@
   p.huge > img {
     max-width: 300px !important;
   }
-  #layout-section .subpages {
-    column-count: 1;
+  #layout-section .subpage {
+    width: 100%;
   }
   #nav-primary {
     display: none;
