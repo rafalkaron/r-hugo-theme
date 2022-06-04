@@ -4,7 +4,7 @@
     <div class="site-title-wrapper">
       <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
     </div>
-    <nav class="nav-primary">
+    <nav id="nav-primary">
         <ul class="nav-primary-items">
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}

@@ -25,7 +25,7 @@ header a.site-title {
   font-size: 2rem;
   white-space: nowrap;
 }
-header .nav-primary {
+header #nav-primary {
   padding: 0 1.6rem;
 }
 header ul.nav-primary-items {
