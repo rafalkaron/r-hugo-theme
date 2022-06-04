@@ -38,7 +38,7 @@
   }
 }
 
-/* LARGE DEVICES */
+/* Laptops */
 @media only screen and (max-width: 1200px) {
   :root {
     --font-size: 1.5rem;
@@ -46,28 +46,26 @@
     --margin-large: 15rem;
   }
 }
-/* LAPTOPS */
+/* Tablets */
 @media only screen and (max-width: 992px) {
   :root {
     --font-size: 1.4rem;
     --margin: 1.4rem;
     --margin-large: 10rem;
   }
+  /* Hide on this page for home/index */
   #layout-home .on-this-page-wrapper {
     display: none;
   }
+  /* Hide side menu */
   .side-menu-wrapper {
     display: none;
   }
 }
-/* Move to right for not phones */
+
+/* Float side-menu and on-this-page to side-margins */
 @media only screen and (min-width: 992px) {
-  #on-this-page .on-this-page-caption-dynamic {
-    display: unset;
-  }
-  #on-this-page .on-this-page-caption-static {
-    display: none;
-  }
+  /* On this page */
   .on-this-page-wrapper {
     position: fixed;
     width: calc(var(--margin-large) * 0.9);
@@ -81,20 +79,29 @@
     margin-right: var(--padding-main);
     padding-left: calc(var(--margin-large) * 0.1);
   }
+  /* Show level-1 link (h1) for non-mobile */
+  #on-this-page .on-this-page-caption-dynamic {
+    display: unset;
+  }
+  /* Hide caption for non-mobile */
+  #on-this-page .on-this-page-caption-static {
+    display: none;
+  }
+  /* Style caption */
+  #on-this-page .on-this-page-caption {
+    font-size: 0.8rem;
+  }
+  /* Show level-2 links (H2) */
+  #on-this-page li > ul {
+    display: unset;
+  }
+  /* Style list items/links */
   #on-this-page a,
   #on-this-page li {
     font-size: 0.7rem;
   }
-  #on-this-page li > ul {
-    display: unset;
-  }
-  #on-this-page .on-this-page-caption {
-    font-size: 0.8rem;
-  }
-  #side-menu .side-menu-caption {
-    font-size: 0.8rem;
-  }
 
+  /* Side menu */
   .side-menu-wrapper {
     position: fixed;
     width: calc(var(--margin-large) * 0.9);
@@ -109,6 +116,11 @@
     margin-left: var(--padding-main);
     padding-right: calc(var(--margin-large) * 0.1);
   }
+  /* Style caption */
+  #side-menu .side-menu-caption {
+    font-size: 0.8rem;
+  }
+  /* Style items/links */
   #side-menu a,
   #side-menu li {
     font-size: 0.7rem;
