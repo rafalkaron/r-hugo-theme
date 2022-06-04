@@ -5,8 +5,10 @@
 }
 
 .hamburger-wrapper .material-icons {
-  line-height: 0;
   color: var(--layout-text);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .hamburger-wrapper:hover,

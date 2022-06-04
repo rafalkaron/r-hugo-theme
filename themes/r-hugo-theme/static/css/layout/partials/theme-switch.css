@@ -3,14 +3,14 @@
   align-items: center;
   flex-shrink: 0;
 }
-.theme-switch-wrapper .theme-switch {
-  line-height: 0;
-}
 .theme-switch-wrapper .theme-switch input {
   display: none;
 }
 .theme-switch-wrapper .theme-switch .material-icons {
   color: var(--layout-text);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
 }
 
 .theme-switch-wrapper .theme-switch:hover,
