@@ -11,11 +11,10 @@
       </ph>
     </div>
     {{ end }}
-    {{ with .Params.author }}
+
     <div title="Author" class="author-wrapper">
-      <ph>{{ . }}</ph>
+      <ph>{{ .Params.Author | default .Site.Params.author }}</ph>
     </div>
-    {{ end }}
   
     {{ with .Params.categories }}
     <div class="categories-wrapper">
