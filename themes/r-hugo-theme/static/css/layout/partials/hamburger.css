@@ -36,22 +36,23 @@
 #nav-hamburger li {
   justify-content: right;
   list-style: none;
-  padding: 0.5rem;
-  text-align: right;
 }
 
 #nav-hamburger a {
   font-weight: bold;
   text-decoration: none;
   font-size: 1.5rem;
+  padding: 0.5rem;
   color: var(--layout-text);
+  display: block;
+  text-align: right;
 }
 
 #menu-toggle:checked ~ #nav-hamburger {
   display: unset;
 }
 
-#nav-hamburger a.nav-primary-link {
+#nav-hamburger a span {
   color: var(--layout-text);
   text-decoration: none;
   font-weight: bold;
@@ -61,5 +62,20 @@
 #nav-hamburger a:focus {
   text-decoration: none;
   background-color: var(--layout-text);
+}
+#nav-hamburger a:hover span,
+#nav-hamburger a:active span,
+#nav-hamburger a:focus span {
+  text-decoration: none;
+  background-color: var(--layout-text);
   color: var(--layout-background);
+}
+
+#nav-hamburger a.active span {
+  border-bottom: solid var(--border-width-thin) var(--layout-text);
+}
+#nav-hamburger a.active:hover span,
+#nav-hamburger a.active:active span,
+#nav-hamburger a.active:focus span {
+  border-bottom: solid var(--border-width-thin) var(--layout-background);
 }
