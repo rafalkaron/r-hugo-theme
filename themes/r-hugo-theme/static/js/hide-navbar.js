@@ -5,6 +5,7 @@ window.onscroll = function () {
     document.getElementById("navbar").style.top = "0";
   } else {
     document.getElementById("navbar").style.top = "-4rem";
+    document.getElementById("menu-toggle").checked = false;
   }
   prevScrollpos = currentScrollPos;
 };
