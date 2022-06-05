@@ -73,6 +73,7 @@
     right: 0;
     bottom: 5.75rem;
     overflow: scroll;
+    border-bottom: none;
   }
   #on-this-page {
     border-left: solid var(--border-width-thin) var(--content-background-middle);
