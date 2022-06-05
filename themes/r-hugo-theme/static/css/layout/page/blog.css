@@ -59,3 +59,7 @@
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
+
+#layout-blog .description-image {
+  margin-top: calc(var(--margin) / 2);
+}

@@ -2,11 +2,18 @@
 	<h2 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
 	<div class="summary">
-		{{ with .Params.description | truncate 500 }}
-			{{ . }}
-		{{ else }}
-			{{ .Summary }}
+		<div class="description">
+			{{ with .Params.description | truncate 500 }}
+				{{ . }}
+			{{ else }}
+				{{ .Summary }}
+			{{ end }}
+			<a class="read-more" title="{{ .Title }} | {{ .ReadingTime }} minutes read" href="{{ .Permalink }}">Read more »</a>
+		</div>
+		{{ with .Params.image }}
+			<div class="description-image-container">
+				<img class="description-image" src="{{ . | relURL }}"></img>
+			</div>
 		{{ end }}
-		<a class="read-more" title="{{ .Title }} | {{ .ReadingTime }} minutes read" href="{{ .Permalink }}">Read more »</a>
 	</div>
 </section>
