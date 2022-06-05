@@ -1,9 +1,10 @@
 {{ define "main" }}
 <main id="layout-terms">
   <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/all-posts" . }} 
-    {{ partial "layout/gutter/taxonomy-refs" . }}
-  </div>
+    {{ partial "layout/gutter/breadcrumbs" . }}
+    <div class="gutter-group">{{ partial "layout/gutter/all-posts" . }} {{ partial
+      "layout/gutter/taxonomy-refs" . }}</div>
+</div>
   <article class="content">
     <h1>{{ .Title }}</h1>
     <div class="terms tags categories tags-wrapper">
