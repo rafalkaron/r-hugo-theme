@@ -1,8 +1,2 @@
 #layout-blog.layout-taxonomy .taxonomy-name {
-  margin-bottom: var(--margin);
-}
-
-#layout-blog.layout-taxonomy .post:first-of-type {
-  padding-top: calc(var(--margin) * 0.75);
-  border-top: solid var(--border-width-thin) var(--content-background-middle);
 }

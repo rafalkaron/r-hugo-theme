@@ -9,8 +9,10 @@
     <h1 class="taxonomy-name">#{{ . }}</h1>
     {{ end }}
   </article>
+  <div class="posts">
   {{ range sort .Paginator.Pages .Params.weight }} {{ .Render "summary" }} {{
   end }}
+</div>
   <div class="gutter bottom-gutter not-selectable">
     <div class="gutter-group">
       {{ partial "layout/gutter/top-button" . }} {{ partial
