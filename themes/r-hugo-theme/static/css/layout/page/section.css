@@ -1,14 +1,26 @@
-#layout-section > article:first-child {
-  margin-top: 0;
+#layout-section .subpages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: calc(var(--margin) * 0.5);
+  width: 100%;
 }
-/* Move gutter items to the left */
-#layout-section .top-gutter {
-  justify-content: flex-start;
+#layout-section .subpage {
+  break-inside: avoid;
+  width: 48%;
+  margin-top: calc(var(--margin) * 0.5);
 }
 
-#layout-section .description {
-  font-size: 0.8rem;
-  color: var(--content-text-middle);
+#layout-section .subpage-heading {
+  margin-top: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: baseline;
+}
+
+#layout-section .material-icons {
+  font-size: 1.2rem;
 }
 
 /* Style links */
@@ -23,30 +35,15 @@
 }
 #layout-section a.subpage-ref:hover,
 #layout-section a.subpage-ref:active,
-#layout-section a.subpage-ref:focus {
+#layout-section a.subpage-ref:focus,
+#layout-section a.material-icons:hover .material-icons,
+#layout-section a.material-icons:active .material-icons,
+#layout-section a.material-icons:focus .material-icons {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
 
-#layout-section .subpage-heading {
-  margin-top: 0;
-  font-size: 1.2rem;
-}
-
-#layout-section .subpages {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: calc(var(--margin) * 0.5);
-  width: 100%;
-}
-
-#layout-section .subpage {
-  break-inside: avoid;
-  width: 48%;
-}
-
-#layout-section .subpage {
-  margin-top: calc(var(--margin) * 0.5);
+#layout-section .description {
+  font-size: 0.8rem;
+  color: var(--content-text-middle);
 }
