@@ -7,9 +7,17 @@
   {{ partial "layout/navigation/on-this-page" . }}
   <article class="content">
     <h1>{{ .Title }}</h1>
-    {{ partial "blog/meta" . }} {{ with .Params.description }}
+    {{ partial "blog/meta" . }} 
+    {{ with .Params.description }}
     <p class="description">{{ . }}</p>
-    {{ end }} {{ .Content }} {{ with .Site.DisqusShortname }}
+    {{ end }} 
+    {{ with .Params.image }}
+    <div class="description-image-container">
+      <img class="description-image" src="{{ . | relURL }}"></img>
+    </div>
+    {{ end }}
+    {{ .Content }} 
+    {{ with .Site.DisqusShortname }}
     <div>{{ template "_internal/disqus.html" . }}</div>
     {{ end }}
   </article>
