@@ -12,14 +12,18 @@
   margin-top: calc(var(--margin) * 0.5);
 }
 
-#layout-section .subpage-heading {
-  margin-top: 0;
-  font-size: 1.2rem;
+#layout-section .subpage-heading-container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 }
 
 #layout-section .material-icons {
+  font-size: 1.2rem;
+  padding-right: 0.2em;
+}
+
+#layout-section .subpage-heading {
+  margin-top: 0;
   font-size: 1.2rem;
 }
 

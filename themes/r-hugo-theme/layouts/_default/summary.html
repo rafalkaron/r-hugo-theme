@@ -1,15 +1,14 @@
 <section class="subpage">
-  <h2 class="subpage-heading"><a class="subpage-ref" href="{{ .Permalink }}">
+  <div class="subpage-heading-container">
     {{ with .Params.icon }}
-      <span class="material-icons">{{.}}</span>
+    <span class="material-icons">{{.}}</span>
     {{ end }}
-      {{ .Title }}
-    </a></h2>
+    <h2 class="subpage-heading">
+      <a class="subpage-ref" href="{{ .Permalink }}"> {{ .Title }} </a>
+    </h2>
+  </div>
   <div class="description">
-    {{ with .Params.description }}
-      {{ . }}
-    {{ else }}
-      {{ .Summary | truncate 120 }}
-    {{ end }}
+    {{ with .Params.description }} {{ . }} {{ else }} {{ .Summary | truncate 120
+    }} {{ end }}
   </div>
 </section>
