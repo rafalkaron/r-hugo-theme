@@ -43,3 +43,10 @@
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }
+
+#layout-section .description-image-container {
+}
+
+#layout-section .description-image {
+  margin-top: calc(var(--margin) / 4);
+}

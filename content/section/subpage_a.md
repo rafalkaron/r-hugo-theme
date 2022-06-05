@@ -4,6 +4,7 @@ draft: false
 weight: 1
 keywords: "keyword"
 icon: light_mode
+image: /images/mountain.jpg
 description: "This is an optional short description. If it's not added, the first paragraph gets truncated."
 ---
 
