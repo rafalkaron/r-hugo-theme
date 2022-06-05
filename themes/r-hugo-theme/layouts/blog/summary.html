@@ -1,5 +1,5 @@
 <section class="post">
-	<h2 class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
 	<div class="summary">
 		{{ with .Params.image }}
