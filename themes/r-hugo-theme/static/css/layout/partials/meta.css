@@ -1,6 +1,9 @@
 /* Top info */
 .meta .meta-top-wrapper {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .meta .datetime-wrapper,
 .meta .author-wrapper,
