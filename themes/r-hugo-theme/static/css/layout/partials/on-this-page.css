@@ -1,7 +1,7 @@
 .on-this-page-wrapper {
   margin: 0 0 var(--margin) 0;
 }
-#on-this-page .on-this-page-caption {
+.on-this-page-caption {
   font-weight: bold;
   font-size: 0.9rem;
   color: var(--content-text-dark);
@@ -40,6 +40,7 @@
   text-decoration: none;
   font-size: 0.8rem;
   color: var(--content-text-middle);
+  display: block;
 }
 #on-this-page a:hover,
 #on-this-page a:active,
