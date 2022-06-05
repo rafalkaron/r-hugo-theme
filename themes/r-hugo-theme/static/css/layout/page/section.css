@@ -3,13 +3,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: calc(var(--margin) * 0.5);
   width: 100%;
+  row-gap: var(--margin);
+  margin-top: var(--margin);
 }
 #layout-section .subpage {
   break-inside: avoid;
-  width: 48%;
-  margin-top: calc(var(--margin) * 0.5);
+  width: 48.5%;
+  background-color: var(--content-background-middle);
+  border: transparent 1px solid;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+  padding: var(--margin);
 }
 
 #layout-section .material-icons {
@@ -40,6 +45,7 @@
 }
 
 #layout-section .description {
+  margin-top: calc(var(--margin) / 4);
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }
@@ -48,5 +54,5 @@
 }
 
 #layout-section .description-image {
-  margin-top: calc(var(--margin) / 4);
+  margin-top: calc(var(--margin) / 2);
 }
