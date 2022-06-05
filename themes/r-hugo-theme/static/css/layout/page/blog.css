@@ -52,6 +52,7 @@
   text-decoration: none;
   white-space: nowrap;
   border: none;
+  font-size: 1.2rem;
 }
 #layout-blog a.read-more:hover,
 #layout-blog a.read-more:active,
@@ -60,6 +61,15 @@
   color: var(--content-text-light);
 }
 
-#layout-blog .description-image {
+#layout-blog .description,
+#layout-blog .description-image,
+#layout-single .description,
+#layout-single .description-image {
   margin-top: calc(var(--margin) / 2);
+}
+
+.read-more-container {
+  display: flex;
+  justify-content: right;
+  margin-top: calc(var(--margin) / 4);
 }
