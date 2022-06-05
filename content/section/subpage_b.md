@@ -3,6 +3,7 @@ title: Subpage B
 draft: false
 weight: 2
 icon: check_box
+image: /images/mountain.jpg
 keywords: "keyword"
 description: "This is an optional short description. If it's not added, the first paragraph gets truncated."
 ---
