@@ -8,7 +8,6 @@
   margin-top: var(--margin);
 }
 #layout-section .subpage {
-  break-inside: avoid;
   width: 48.5%;
   /*border: var(--content-background-middle) var(--border-width-medium) solid;*/
   background-color: var(--content-background-middle);

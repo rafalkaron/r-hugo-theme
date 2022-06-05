@@ -64,6 +64,18 @@
     break-inside: avoid;
     page-break-inside: avoid;
   }
+
+  article,
+  div {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  #layout-section .subpage,
+  #layout-blog .post {
+    border: var(--content-background-middle) var(--border-width-medium) solid;
+    background-color: transparent;
+  }
 }
 
 /* Fix colors in code */
