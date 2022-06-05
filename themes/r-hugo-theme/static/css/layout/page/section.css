@@ -13,7 +13,7 @@
 }
 
 #layout-section .material-icons {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   padding-right: 0.25em;
 }
 
@@ -28,10 +28,10 @@
   text-decoration: none;
   font-weight: bold;
   border: none;
+  display: flex;
+  align-items: center;
 }
-#layout-section a.subpage-ref::after {
-  content: " »";
-}
+
 #layout-section a.subpage-ref:hover span,
 #layout-section a.subpage-ref:active span,
 #layout-section a.subpage-ref:focus span {
