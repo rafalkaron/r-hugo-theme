@@ -81,11 +81,12 @@
   }
   /* Show level-1 link (h1) for non-mobile */
   #on-this-page .on-this-page-caption-dynamic {
-    display: none;
+    display: unset;
+    display: block;
   }
   /* Hide caption for non-mobile */
   #on-this-page .on-this-page-caption-static {
-    display: unset;
+    display: none;
   }
   /* Style caption */
   .on-this-page-caption {
