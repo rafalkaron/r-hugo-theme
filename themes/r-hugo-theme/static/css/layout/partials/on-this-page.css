@@ -14,11 +14,12 @@
 
 /* Hide level-1 link (h1) for mobile */
 #on-this-page .on-this-page-caption-dynamic {
-  display: none;
+  display: unset;
+  display: block;
 }
 /* Show caption for mobile */
 #on-this-page .on-this-page-caption-static {
-  display: unset;
+  display: none;
 }
 
 /* List items */
