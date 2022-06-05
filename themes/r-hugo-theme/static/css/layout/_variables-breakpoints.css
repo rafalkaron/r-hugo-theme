@@ -125,19 +125,6 @@
   #side-menu li {
     font-size: 0.7rem;
   }
-  /* Fix anchors hidden behind navbar */
-  .content [id] {
-    padding-top: 4rem;
-    margin-top: -4rem !important;
-  }
-  .content h2[id],
-  .content h3[id],
-  .content h4[id],
-  .content h5[id],
-  .content h6[id] {
-    padding-top: 4rem;
-    margin-top: calc(0.75em - 4rem) !important;
-  }
 }
 
 /* TABLETS */

@@ -27,7 +27,7 @@ Qui laborum deserunt pariatur veniam et est laborum.
 
 ### Builtin
 
-**Bold**  
+**Bold**
 *Italic*  
 ~~strikethrough~~  
 

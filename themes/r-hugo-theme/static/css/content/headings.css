@@ -57,3 +57,13 @@ main h5:active a.heading-link {
   color: var(--content-text-dark);
   background-color: transparent;
 }
+
+/* Fix anchors hidden behind navbar */
+.content h2[id],
+.content h3[id],
+.content h4[id],
+.content h5[id],
+.content h6[id] {
+  padding-top: 4rem;
+  margin-top: calc(0.75em - 4rem);
+}

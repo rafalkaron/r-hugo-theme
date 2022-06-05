@@ -25,3 +25,9 @@
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
+
+/* Fix anchors hidden behind navbar */
+.content sup[id] {
+  padding-top: 4rem;
+  margin-top: -4rem;
+}
