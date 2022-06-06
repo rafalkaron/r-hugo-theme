@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on R</title>
-    <link>https://rafalkaron.github.io/r-hugo-theme/categories/</link>
+    <link>https://rafalkaron.github.io/r-hugo-theme/categories.html</link>
     <description>Recent content in Categories on R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rafalkaron.github.io/r-hugo-theme/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Category a</title>
-      <link>https://rafalkaron.github.io/r-hugo-theme/categories/category-a/</link>
+      <link>https://rafalkaron.github.io/r-hugo-theme/categories/category-a.html</link>
       <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rafalkaron.github.io/r-hugo-theme/categories/category-a/</guid>
+      <guid>https://rafalkaron.github.io/r-hugo-theme/categories/category-a.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Category b</title>
-      <link>https://rafalkaron.github.io/r-hugo-theme/categories/category-b/</link>
+      <link>https://rafalkaron.github.io/r-hugo-theme/categories/category-b.html</link>
       <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rafalkaron.github.io/r-hugo-theme/categories/category-b/</guid>
+      <guid>https://rafalkaron.github.io/r-hugo-theme/categories/category-b.html</guid>
       <description></description>
     </item>
     
