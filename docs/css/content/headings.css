@@ -1,0 +1,69 @@
+/* Set headings sizes */
+main h1 {
+  font-size: 2rem;
+}
+main h2 {
+  font-size: 1.6rem;
+}
+main h3 {
+  font-size: 1.4rem;
+}
+main h4 {
+  font-size: 1.2rem;
+}
+main h5 {
+  font-size: 1.1rem;
+}
+main h6 {
+  font-size: 1rem;
+}
+/* Inherit headings sizes in child elements */
+main h1 *,
+main h2 *,
+main h3 *,
+main h4 *,
+main h5 *,
+main h6 * {
+  font-size: inherit;
+}
+
+/* Add margin before headings */
+/*h1,*/
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  margin-top: 0.75em;
+}
+
+/* Style heading links # */
+main a.heading-link {
+  color: transparent;
+  text-decoration: none;
+  border: none;
+}
+/* Show heading links # only on hover */
+main h2:hover a.heading-link,
+main h3:hover a.heading-link,
+main h4:hover a.heading-link,
+main h5:hover a.heading-link,
+main h6:hover a.heading-link,
+main h2:active a.heading-link,
+main h3:active a.heading-link,
+main h4:active a.heading-link,
+main h5:active a.heading-link {
+  text-decoration: none;
+  color: var(--content-text-dark);
+  background-color: transparent;
+}
+
+/* Fix anchors hidden behind navbar */
+.content h2[id],
+.content h3[id],
+.content h4[id],
+.content h5[id],
+.content h6[id] {
+  padding-top: 4rem;
+  margin-top: calc(0.75em - 4rem);
+}
