@@ -11,11 +11,15 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  border: transparent;
+  border-radius: 50%;
+  background-clip: border-box;
 }
 
 .theme-switch-wrapper .theme-switch:hover .material-icons,
 .theme-switch-wrapper .theme-switch:active .material-icons,
 .theme-switch-wrapper .theme-switch:focus .material-icons {
   cursor: pointer;
-  color: var(--layout-text-active);
+  background-color: var(--layout-text);
+  color: var(--layout-background);
 }
