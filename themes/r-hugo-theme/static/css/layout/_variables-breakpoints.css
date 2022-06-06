@@ -103,6 +103,9 @@
     font-size: 0.7rem;
     display: block;
   }
+  #on-this-page a {
+    padding: 0 0.5rem;
+  }
 
   /* Side menu */
   .side-menu-wrapper {
@@ -127,6 +130,9 @@
   #side-menu a,
   #side-menu li {
     font-size: 0.7rem;
+  }
+  #side-menu a {
+    padding: 0 0.5em;
   }
 }
 
