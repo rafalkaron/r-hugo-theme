@@ -91,7 +91,7 @@
   }
   /* Style caption */
   .on-this-page-caption {
-    font-size: 0.8rem;
+    font-size: 0.9rem !important;
   }
   /* Show level-2 links (H2) */
   #on-this-page li > ul {
@@ -124,7 +124,7 @@
   }
   /* Style caption */
   #side-menu .side-menu-caption {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
   /* Style items/links */
   #side-menu a,
@@ -132,7 +132,7 @@
     font-size: 0.7rem;
   }
   #side-menu a {
-    padding: 0 0.5em;
+    padding: 0 0.5rem;
   }
 }
 
