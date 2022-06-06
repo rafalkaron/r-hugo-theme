@@ -29,7 +29,7 @@
   <div class="tags-wrapper">
     <ul class="tags">
       {{ range . }}
-      <li class="tag"><a title="All blog posts tagged with {{ . }}" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+      <li class="tag"><a title="All blog posts tagged with {{ . }}" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
       {{ end }}
     </ul>
   </div>
