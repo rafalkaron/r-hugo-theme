@@ -1,6 +1,7 @@
-baseURL: "https://github.com/rafalkaron/r-hugo-theme/"
+baseURL: "https://rafalkaron.github.io/r-hugo-theme/"
 languageCode: "en-us"
 theme: "r-hugo-theme"
+publishDir: "docs"
 
 Params:
   title: "R"
