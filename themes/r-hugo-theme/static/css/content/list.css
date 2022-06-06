@@ -16,7 +16,7 @@
 }
 .content ul.items > li {
   list-style: none;
-  padding: 0.25em 0.75em;
+  padding: 0.25em 0.5em;
   margin: 0rem 0.8rem 0.8rem 0;
   background-color: var(--content-background-middle);
   color: var(--content-text-dark);
