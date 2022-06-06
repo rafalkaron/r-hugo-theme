@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/rafalkaron/r-hugo-theme/pl/categories/</loc>
+    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/rafalkaron/r-hugo-theme/categories/"
+                href="https://rafalkaron.github.io/r-hugo-theme/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://github.com/rafalkaron/r-hugo-theme/pl/categories/"
+                href="https://rafalkaron.github.io/r-hugo-theme/pl/categories/"
                 />
   </url><url>
-    <loc>https://github.com/rafalkaron/r-hugo-theme/pl/</loc>
+    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/rafalkaron/r-hugo-theme/"
+                href="https://rafalkaron.github.io/r-hugo-theme/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://github.com/rafalkaron/r-hugo-theme/pl/"
+                href="https://rafalkaron.github.io/r-hugo-theme/pl/"
                 />
   </url><url>
-    <loc>https://github.com/rafalkaron/r-hugo-theme/pl/tags/</loc>
+    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://github.com/rafalkaron/r-hugo-theme/tags/"
+                href="https://rafalkaron.github.io/r-hugo-theme/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://github.com/rafalkaron/r-hugo-theme/pl/tags/"
+                href="https://rafalkaron.github.io/r-hugo-theme/pl/tags/"
                 />
   </url>
 </urlset>
