@@ -4,7 +4,7 @@ weight: 3
 keywords: ["keyword", "keyword2"]
 draft: false
 ---
-![Mountain](/images/mountain.jpg)
+![Mountain](images/mountain.jpg)
 {.tiny}
 ## Heading 2
 
