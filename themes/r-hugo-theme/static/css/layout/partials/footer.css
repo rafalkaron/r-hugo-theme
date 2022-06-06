@@ -34,6 +34,15 @@ footer .footer-copyr a:focus {
 footer .footer-year-home-link {
   margin-right: 0.8rem;
 }
+
+footer .footer-home-link {
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+  display: inline-block;
+  padding: var(--padding-small) var(--padding);
+}
+
 /* Social media buttons */
 footer .footer-contact {
   flex-wrap: wrap;

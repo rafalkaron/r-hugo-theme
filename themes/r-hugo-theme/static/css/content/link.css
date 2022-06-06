@@ -9,4 +9,7 @@
 .content a:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
