@@ -1,0 +1,84 @@
+.hamburger-wrapper {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.hamburger-wrapper input {
+  display: none;
+}
+.hamburger-wrapper .material-icons {
+  color: var(--layout-text);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-wrapper .hamburger-container:hover,
+.hamburger-wrapper .hamburger-container:active,
+.hamburger-wrapper .hamburger-container:focus {
+  cursor: pointer;
+}
+
+#nav-hamburger {
+  display: none;
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  background-color: var(--layout-background);
+  text-align: right;
+  padding: var(--margin) var(--padding-main);
+  border-top: solid var(--border-width-thin) var(--content-background-middle);
+  max-height: calc(100vh - 4rem);
+  overflow: scroll;
+}
+
+#nav-hamburger li {
+  justify-content: right;
+  list-style: none;
+}
+
+#nav-hamburger a {
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  color: var(--layout-text);
+  display: block;
+  text-align: right;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+}
+
+#menu-toggle:checked ~ #nav-hamburger {
+  display: unset;
+}
+
+#nav-hamburger a span {
+  color: var(--layout-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+#nav-hamburger a:hover,
+#nav-hamburger a:active,
+#nav-hamburger a:focus {
+  text-decoration: none;
+  background-color: var(--layout-text);
+}
+#nav-hamburger a:hover span,
+#nav-hamburger a:active span,
+#nav-hamburger a:focus span {
+  text-decoration: none;
+  background-color: var(--layout-text);
+  color: var(--layout-background);
+}
+
+#nav-hamburger a.active span {
+  border-bottom: solid var(--border-width-thin) var(--layout-text);
+}
+#nav-hamburger a.active:hover span,
+#nav-hamburger a.active:active span,
+#nav-hamburger a.active:focus span {
+  border-bottom: solid var(--border-width-thin) var(--layout-background);
+}

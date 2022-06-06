@@ -1,0 +1,85 @@
+@media only print {
+  /* Set margins */
+  @page {
+    margin: 3.5rem 5rem;
+  }
+
+  /* Hide web-specific elements */
+  .theme-switch-wrapper,
+  .top-button-wrapper,
+  .gutter,
+  .web {
+    display: none;
+  }
+
+  /* Show print-specific elements */
+  .print {
+    display: block;
+  }
+  .home-heading {
+    border-bottom: none;
+  }
+
+  /* Reset body props inherited from base style */
+  body {
+    margin: unset;
+    min-width: unset;
+    display: unset;
+    flex-direction: unset;
+    height: unset;
+    min-height: unset;
+  }
+
+  /* Separate the header and footer from content */
+  header {
+    border-bottom: solid var(--border-width-medium) var(--content-text-dark);
+    margin-bottom: calc(var(--margin) * 1.25);
+    position: static;
+  }
+
+  main {
+    margin-top: calc(var(--margin) * 1.25);
+  }
+
+  header .header-items-wrapper,
+  footer {
+    padding: 0;
+  }
+  footer {
+    border-top: solid var(--border-width-medium) var(--content-text-dark);
+    margin-top: calc(var(--margin) * 1.25);
+  }
+
+  /* Avoid breaking certain elements */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  img,
+  p,
+  ul,
+  ol {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  article,
+  div {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
+  #layout-section .subpage,
+  #layout-blog .post {
+    border: var(--content-background-middle) var(--border-width-medium) solid;
+    background-color: transparent;
+  }
+}
+
+/* Fix colors in code */
+.content code,
+.content code * {
+  color: var(--content-text-light);
+}
