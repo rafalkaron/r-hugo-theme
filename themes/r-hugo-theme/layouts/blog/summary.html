@@ -1,0 +1,20 @@
+<section class="post">
+	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	{{ partial "blog/meta" . }}
+	<div class="summary">
+		{{ with .Params.image }}
+		<div class="description-image-container">
+			<img class="description-image" src="{{ . | relURL }}"></img>
+		</div>
+	{{ end }}
+		<div class="description">
+			{{ with .Params.description | truncate 500 }}
+				{{ . }}
+			{{ else }}
+				{{ .Summary }}
+			{{ end }}
+			<div class="read-more-container">
+			<a class="read-more" title="{{ .Title }} | {{ .ReadingTime }} minutes read" href="{{ .Permalink }}">Read more »</a></div>
+		</div>
+	</div>
+</section>

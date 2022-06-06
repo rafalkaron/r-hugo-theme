@@ -1,0 +1,37 @@
+<div class="meta">
+  <div class="meta-top-wrapper">
+    
+    {{ if .Date }}
+    <div class="datetime-wrapper">
+      <ph><time title="Published date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}">{{ .Date.Format "02.01.2006" }}</time>
+      {{ with .Params.edit }}
+      {{ $editTime := printf . | time }}
+      (<time title="Edited date">{{ $editTime.Format "02.01.2006" }}</time>)
+      {{ end }}
+      </ph>
+    </div>
+    {{ end }}
+
+    <div title="Author" class="author-wrapper">
+      <ph>{{ .Params.Author | default .Site.Params.author }}</ph>
+    </div>
+  
+    {{ with .Params.categories }}
+    <div class="categories-wrapper">
+      {{ range . }}
+      <span class="category"><a title="All blog posts about {{ . }}" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+
+  {{ with .Params.tags }}
+  <div class="tags-wrapper">
+    <ul class="tags">
+      {{ range . }}
+      <li class="tag"><a title="All blog posts tagged with {{ . }}" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</div>

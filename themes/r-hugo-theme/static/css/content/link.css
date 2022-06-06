@@ -1,22 +1,15 @@
-main a {
+.content a {
   text-decoration: none;
-  color: var(--secondary-color);
   font-weight: bold;
+  white-space: nowrap;
+  border-bottom: solid var(--border-width-thin) var(--content-text-dark);
 }
-
-a > abbr {
-  text-decoration: inherit;
-  color: inherit;
-}
-
-a:hover,
-a:active,
-a:focus {
-  text-decoration: underline;
-}
-
-a:hover > abbr,
-a:active > abbr,
-a:focus > abbr {
-  color: inherit;
+.content a:hover,
+.content a:active,
+.content a:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }

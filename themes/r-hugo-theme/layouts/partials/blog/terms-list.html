@@ -1,0 +1,18 @@
+<div class="taxonomy-list">
+  <div class="categories">
+    <h2>Categories</h2>
+    <ul class="items categories">
+      {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+      <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+      {{end}}
+    </ul>
+  </div>
+  <div class="tags">
+    <h2>Tags</h2>
+    <ul class="items tags">
+      {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+      <li><a href="{{.Permalink}}">{{.Title}}</a></li>
+      {{end}}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+#layout-terms .tags-wrapper ul.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: var(--margin);
+}
+#layout-terms .tags-wrapper li.tag {
+  list-style: none;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+#layout-terms .tags-wrapper li.tag a {
+  padding: 0.25em 0.5em;
+  font-weight: normal;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border: transparent;
+  border-radius: var(--border-radius);
+  color: var(--content-text-dark);
+  background-color: var(--content-background-middle);
+}
+#layout-terms .tags-wrapper li.tag a:hover,
+#layout-terms .tags-wrapper li.tag a:active,
+#layout-terms .tags-wrapper li.tag a:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+}
+#layout-terms .tags-wrapper li.tag {
+  margin: 0rem 0.8rem 0.8rem 0;
+  font-size: 0.8rem;
+  font-size: 1rem;
+}

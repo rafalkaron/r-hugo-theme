@@ -1,0 +1,23 @@
+<header id="navbar" class="not-selectable">
+  <div class="header-items-wrapper">
+    <div class="title-nav-wrapper">
+    <div class="site-title-wrapper">
+      <a class="site-title" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
+    </div>
+    <nav id="nav-primary">
+        <ul class="nav-primary-items">
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+              <li class="nav-primary-item">
+                <a class="nav-primary-link {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+              </li>
+          {{ end }}
+        </ul>
+      </div>
+    </nav>
+    <div class="header-buttons-wrapper">
+      {{ partial "layout/theme-switch" . }}
+      {{ partial "layout/navigation/hamburger" . }}
+    </div>
+  </div>
+</header>

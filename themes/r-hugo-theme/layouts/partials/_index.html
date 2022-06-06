@@ -1,0 +1,8 @@
+{{ if .Params.Title }}
+  <h1 class="_index-title">{{ .Params.Title }}</h1>
+{{ else if .Name }} 
+  <h1 class="section-title">{{ .Name }}</h1>
+{{ end }}
+{{ with .Content }}
+  {{ . }}
+{{ end }}

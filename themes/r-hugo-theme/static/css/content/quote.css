@@ -1,22 +1,21 @@
-main cite {
+/* Style quotes and cites */
+.content q,
+.content cite {
   font-style: italic;
 }
-main q {
-  font-style: italic;
-}
-main q::before,
-main q::after {
+
+/* Add quotation marks before and after quote elements */
+.content q::before,
+.content q::after {
   content: '"';
   font-style: inherit;
 }
-main blockquote {
+
+/* Style blockquotes */
+.content blockquote {
   width: fit-content;
-  margin: 1.6rem 0;
-  padding: 0 0.5rem 0 1.2rem;
-  font-size: 1.3rem;
-  border-left: solid 0.5rem #5f0f40;
-  border-color: #e0e0e0;
-}
-main blockquote * {
-  font-size: 1.3rem;
+  margin-top: var(--margin);
+  padding: 0 0.5rem 0 1rem;
+  border-left: solid var(--border-width) var(--content-background-middle);
+  font-size: 0.8rem;
 }

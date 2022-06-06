@@ -1,0 +1,58 @@
+#layout-section .subpages {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  row-gap: var(--margin);
+  margin-top: var(--margin);
+}
+#layout-section .subpage {
+  width: 48.5%;
+  /*border: var(--content-background-middle) var(--border-width-medium) solid;*/
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+  padding: var(--margin);
+}
+
+#layout-section .material-icons {
+  font-size: 1.5rem;
+  padding-right: 0.25em;
+}
+
+#layout-section .subpage-heading {
+  margin-top: 0;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+
+/* Style links */
+#layout-section a.subpage-ref {
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+#layout-section a.subpage-ref:hover span,
+#layout-section a.subpage-ref:active span,
+#layout-section a.subpage-ref:focus span {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+}
+
+#layout-section .description {
+  margin-top: calc(var(--margin) / 4);
+  font-size: 0.8rem;
+  color: var(--content-text-middle);
+}
+
+#layout-section .description-image {
+  margin-top: calc(var(--margin) / 2);
+}

@@ -1,67 +1,74 @@
 ---
-title: Site
+title: Home
 draft: false
 ---
  
-## Header 2
+## Heading 2 {#custom-id}
 
 Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
 
-### Header 3
+### Heading 3
 
 Et ipsum irure minim adipisicing quis qui anim.
 
-#### Header 4
+#### Heading 4
 
 Quis sint labore sunt et cupidatat excepteur amet aute.
 
-##### Header 5
+##### Heading 5
 
 Ut adipisicing excepteur id consequat sunt laborum eu nostrud et excepteur exercitation minim.
 
-##### Header 6
+##### Heading 6
 
 Qui laborum deserunt pariatur veniam et est laborum.
 
-# Header 1B
+## Formatting
 
-Laboris minim pariatur magna excepteur amet quis elit est minim est.
+### Builtin
 
-# Header 1C
-
-Laboris minim pariatur magna excepteur amet quis elit est minim est.
-
-# Formatting
-
-## Basic
-
-**Bold**  
+**Bold**
 *Italic*  
-~~strikethrough~~
+~~strikethrough~~  
 
-## Extended
+***
+
+### Extended
 
 Large text
-{: .text_large}
+{.text_large}
 
 Small text
-{: .text_small}
+{.text_small}
 
-# Lists
+**yellow**
+{.yellow}
+**green**
+{.green}
+**orange**
+{.orange}
+**purple**
+{.purple}
+**pink**
+{.pink}
+**blue**
+{.blue}
 
-## Unordered list
+## Lists
+
+### Unordered list
 
 - Item A
 - Item B
 - Item C
 
-## Ordered list
+### Ordered list
 
 1. Item A
 2. Item B
 3. Item C
 
-## Definition list
+### Definition list
 
 Title A
 : Description A
@@ -74,30 +81,50 @@ Title B
 - Item A
 - Item B
 - Item C
-{:.items}
+- Item D
+- Item E
+- Item F
+- Item G
+- Item H
+- Item I
+- Item J
+- Item K
+- Item L
+- Item M
+- Item N
+{.items}
 
-# Tables
+## Task list
 
-## Table with a header
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
 
-|Header text|
-|-|-|
+## Table
+
+### Regular
+
+|Header A|Header B|
+|--------|--------|
 | Item A | Item B |
 | Item C | Item D |
 
-## Table without a header
+### CV
 
-|-|-|
-| Item A | Item B |
-| Item C | Item D |
+|     |
+|-:|:-|
+| **01.2020 – present** <br> Company | **Role** |
+| **01.2020 – 01.2020** <br> Company | **Role** |
+| **01.2020 – 01.2020** <br> Company | **Role** |  
+{.cv}
 
-# Code
+## Code
 
-## Inline code
+### Inline code
 
-`@import`
+Lorem ipsum `@import` lorem ipsum
 
-## Codeblock
+### Codeblock
 
 ```scss
 /* Style note containers */
@@ -112,83 +139,92 @@ Title B
     font-size: 1.4rem;
     border-radius: $border-radius;
 }
-
-/* Style note captions */
-.note::before,
-.note_warning::before,
-.note_caution::before,
-.note_tip::before {
-    white-space: pre;
-    font-size: inherit;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-/* Provide note captions */
-.note::before {
-    content: "NOTE: ";
-}
-
-.note_warning::before {
-    content: "WARNING: ";
-}
-
-.note_caution::before {
-    content: "CAUTION: ";
-}
-
-.note_tip::before {
-    content: "TIP: ";
-}
 ```
 
-# Links
+## Links
 
-[404](404)  
-[Google](https://www.google.com)
+[404](404.html)  
+[Google](https://www.google.com)  
+[Heading 3](#heading-3)
 
-# Images
+## Images
 
-bike](assets/bicycle.jpg){: width="350px"}
+### Tiny
 
-# Notes
+![Mountain](/images/mountain.jpg)
+{.tiny}
+
+### Tiny Center
+
+![Mountain](/images/mountain.jpg)
+{.tiny .center}
+
+### Tiny Right
+
+![Mountain](/images/mountain.jpg)
+{.tiny .right}
+
+### Small
+
+![Mountain](/images/mountain.jpg)
+{.small}
+
+### Medium
+
+![Mountain](/images/mountain.jpg)
+{.medium}
+
+### Large
+
+![Mountain](/images/mountain.jpg)
+{.large}
+
+### Huge
+
+![Mountain](/images/mountain.jpg)
+{.huge}
 
 Laboris anim cupidatat do tempor fugiat qui aute magna nostrud sint reprehenderit cupidatat.
-{:.note}
+{.note}
 
 Irure nulla aliquip officia enim ut dolor adipisicing non adipisicing.
-{:.note_tip}
+{.note_tip}
 
 Officia quis eu Lorem quis ex dolore non veniam ex ad.
-{:.note_warning}
+{.note_warning}
 
 Minim officia esse nulla consectetur ut non et officia tempor consequat tempor.
-{:.note_caution}
+{.note_caution}
 
-# Abbreviations
+## Footnotes
 
-SME
+Footnote a[^1], Footnote b[^footnote_b]
 
-# Quote
+[^1]: Laboris anim cupidatat do tempor fugiat
+
+[^footnote_b]: Laboris anim cupidatat do tempor fugiat
+
+    Indent paragraphs to include them in the footnote.
+
+## Quote
 
 > block quote line  
 > block quote line  
 > block quote line
 
-# Columns
+## Columns
 
-## Two columns
+### Two columns
 
 Cillum sint nisi voluptate ad est adipisicing enim mollit fugiat aliqua nostrud aute sit mollit. Ex cillum in minim culpa veniam deserunt. Ullamco ad anim commodo qui eiusmod exercitation aliqua id amet tempor. Minim ex amet incididunt ad adipisicing ut aliqua cillum quis amet. Incididunt dolor aliquip non tempor duis occaecat amet nulla reprehenderit. Ullamco ea consectetur cillum nulla fugiat deserunt.
-{:.two_column}
+{.two_column}
 
-## Three columns
+### Three columns
 
 Sunt voluptate ex elit ullamco cillum reprehenderit ea sunt proident et adipisicing sunt qui. Pariatur laboris adipisicing adipisicing fugiat commodo aliquip mollit incididunt magna. Exercitation ullamco nisi cupidatat Lorem fugiat deserunt sit nulla sit voluptate sunt. Sunt sunt proident id proident ad cupidatat quis anim do. Mollit exercitation commodo do ullamco occaecat ex eu deserunt excepteur reprehenderit dolor sunt. Id deserunt ad pariatur mollit laborum deserunt duis ullamco proident enim culpa aliqua. Aute consequat in proident enim ullamco aliquip quis.
-{:.three_column}
+{.three_column}
 
-## Four columns
+### Four columns
 
 Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco. Ut est sit voluptate esse non sunt ea mollit. Anim est cillum sit deserunt pariatur nostrud esse nulla. Irure est eiusmod officia incididunt sit voluptate sunt. Ad dolor commodo nostrud id et ipsum proident commodo sit velit ullamco.
-{:.four_column}
+{.four_column}

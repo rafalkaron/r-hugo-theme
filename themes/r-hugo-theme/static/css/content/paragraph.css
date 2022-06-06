@@ -1,13 +1,20 @@
+/* Add top margin for paragraphs */
 main p {
-  margin: 1.6rem 0 0 0;
+  margin: var(--margin) 0 0 0;
   display: block;
-  font-size: 1.6rem;
 }
+
+/* Reduce top margin for paragraphs that directly follow headings */
 main h1 + p,
 main h2 + p,
 main h3 + p,
 main h4 + p,
 main h5 + p,
 main h6 + p {
-  margin-top: 0.8rem;
+  margin-top: calc(var(--margin) / 4);
+}
+
+/* Remove top-margin for paragraphs in lists */
+main li p {
+  margin: 0;
 }

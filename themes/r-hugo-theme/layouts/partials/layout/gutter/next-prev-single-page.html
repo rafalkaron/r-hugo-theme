@@ -1,0 +1,12 @@
+<div class="next-prev-single-page gutter-item">
+  {{ if .NextInSection }}
+  <div class="previous-page ">
+    <a class="previous-page-link" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">« prev</a>
+  </div>
+  {{ end }}
+  {{ if .PrevInSection }}
+  <div class="next-page">
+    <a class="next-page-link" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">next »</a>
+  </div>
+  {{ end }}
+</div>

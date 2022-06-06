@@ -1,25 +1,23 @@
 {{ define "main" }}
-	<main>
-		<article>
-			<h1>{{ .Title }}</h1>
-			<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-			<div>
-				{{ .Content }}
-			</div>
-			{{ with .Params.tags }}
-			<div>
-				<ul id="tags">
-					{{ range . }}
-					<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-					{{ end }}
-				</ul>
-			</div>
-			{{ end }}
-			{{ with .Site.DisqusShortname }}
-			<div>
-				{{ template "_internal/disqus.html" . }}
-			</div>
-			{{ end }}
-		</article>
-	</main>
+
+<main id="layout-single">
+  <div class="gutter top-gutter not-selectable">
+    {{ partial "layout/gutter/breadcrumbs" . }}
+  </div>
+  {{ partial "layout/navigation/on-this-page" . }} {{ partial
+  "layout/navigation/side-menu-single" . }}
+  <article class="content">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="description">{{ . }}</p>
+    {{ end }} {{ .Content }} {{ partial "layout/related-links" . }}
+  </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top-button" . }} {{ partial
+      "layout/gutter/print-button" . }}
+    </div>
+    {{ partial "layout/gutter/next-prev-single-page" . }}
+  </div>
+</main>
 {{ end }}

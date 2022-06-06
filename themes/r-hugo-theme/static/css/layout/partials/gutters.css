@@ -1,0 +1,117 @@
+/* Gutters */
+.gutter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-gutter {
+  border-bottom: solid var(--border-width-thin) var(--content-text-dark);
+  justify-content: flex-start;
+  justify-content: space-between;
+  padding-bottom: 0.25rem;
+  margin-bottom: var(--margin);
+}
+.bottom-gutter {
+  border-top: solid var(--border-width-thin) var(--content-text-dark);
+  justify-content: space-between;
+  padding-top: 0.25rem;
+  margin: var(--margin) 0 calc(var(--margin) * 1.25) 0;
+}
+
+/* Gutter group */
+.gutter .gutter-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+.gutter .gutter-item {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 0.8rem;
+}
+.gutter .gutter-item li {
+  display: inline;
+  white-space: nowrap;
+  margin: 0;
+}
+.gutter .gutter-item a {
+  color: var(--content-text-dark);
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: var(--padding-small) var(--padding-small);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+}
+.gutter .gutter-item a:hover,
+.gutter .gutter-item a:active,
+.gutter .gutter-item a:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+}
+
+/* Next prev */
+.gutter .next-prev-single-page {
+  display: flex;
+  flex-direction: row;
+}
+.gutter .next-parent-previous-page a {
+  display: block;
+}
+.gutter .next-page {
+  margin-left: 0.5rem;
+}
+.gutter .pagination {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+.gutter .pagination-counter {
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.gutter .pagination-next-link {
+  margin-left: 0.25rem;
+}
+.gutter .pagination-prev-link {
+  margin-right: 0.25rem;
+}
+
+/* Gutter items */
+.gutter .gutter-item li + li:before,
+.gutter .gutter-subpages li + li:before,
+.gutter .gutter-group .gutter-item + .gutter-item::before {
+  font-size: 0.8rem;
+}
+.gutter .taxonomy-refs li + li:before,
+.gutter .gutter-subpages li + li:before,
+.gutter .gutter-group .gutter-item + .gutter-item::before {
+  content: "┃ ";
+  color: var(--content-text-middle);
+}
+.gutter .gutter-group .gutter-item + .gutter-item {
+  margin-left: 0.1rem;
+}
+.gutter .gutter-group .gutter-item + .gutter-item::before {
+  margin-right: 0.1rem;
+}
+
+/* Breadcrumbs */
+.gutter .breadcrumbs li + li:before {
+  content: " / ";
+  padding-left: 0.2rem;
+}
+
+/* Print */
+.gutter .print-button-link {
+  cursor: default;
+}
+.gutter .print-button-link:hover,
+.gutter .print-button-link:active,
+.gutter .print-button-link:focus {
+  cursor: pointer;
+}

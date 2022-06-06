@@ -1,0 +1,29 @@
+{{ define "main" }}
+<main id="layout-terms">
+  <div class="top-gutter gutter not-selectable">
+    {{ partial "layout/gutter/breadcrumbs" . }}
+    <div class="gutter-group">{{ partial "layout/gutter/all-posts" . }} {{ partial
+      "layout/gutter/taxonomy-refs" . }}</div>
+</div>
+  <article class="content">
+    <h1>{{ .Title }}</h1>
+    <div class="terms tags categories tags-wrapper">
+      <ul class="tags">
+        {{ if eq .Title "Tags" }} {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
+          <li class="tag"><a href="{{.Permalink}}">#{{.Title}}</a></li>
+          {{ end }} 
+          {{ else if eq .Title "Categories" }} {{range ($.Site.GetPage "taxonomyTerm" "categories").Pages }}
+          <li class="tag"><a href="{{.Permalink}}">{{.Title}}</a></li>
+          {{ end }} 
+        {{ end }}
+      </ul>
+    </div>
+  </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top-button" . }}
+      {{ partial "layout/gutter/print-button" . }}
+    </div>
+</main>
+</div>
+{{ end }}

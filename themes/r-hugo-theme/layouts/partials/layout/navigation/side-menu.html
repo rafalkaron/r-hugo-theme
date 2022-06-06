@@ -1,0 +1,12 @@
+<aside class="side-menu-wrapper not-selectable web">
+  <nav id="side-menu">
+  {{ if eq .Parent.RelPermalink "/" }}
+  <a href="{{ .Permalink }}" class=side-menu-caption>{{ .Title }}</a>
+  {{ else }}
+  <a href="{{ .Parent.Permalink }}" class=side-menu-caption>{{ .Parent.Title }}</a>
+  {{ end }}
+    {{ range .Pages }}
+  <li><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </nav>
+</aside>

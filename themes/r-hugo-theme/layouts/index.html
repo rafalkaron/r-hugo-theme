@@ -1,8 +1,15 @@
 {{ define "main" }}
-<main>
-  <article>
-    <h1>{{ .Title }}</h1>
-    <div>{{ .Content }}</div>
+<main id="layout-home">
+  {{ partial "layout/navigation/on-this-page" . }}
+  <article class="content">
+    <h1 class="home-heading">{{ .Title }}</h1>
+    {{ .Content }}
   </article>
+  <div class="gutter bottom-gutter">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top-button" . }} {{ partial
+      "layout/gutter/print-button" . }}
+    </div>
 </main>
+</div>
 {{ end }}

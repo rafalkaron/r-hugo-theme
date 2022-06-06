@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<div class="gutter top-gutter not-selectable">
+  {{ partial "layout/gutter/breadcrumbs" . }}
+</div>
+<main id="layout-single">
+  <article class="content">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p class="description">{{ . }}</p>
+    {{ end }} {{ .Content }} {{ partial "layout/related-links" . }}
+  </article>
+</main>
+{{ end }}

@@ -1,0 +1,36 @@
+<footer class="not-selectable">
+  <div class="footer-column footer-copyr">
+    <div class="footer-year-home-link">
+      &copy; {{ now.Year }}
+      <a class="footer-home-link" title="Home" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
+    </div>
+  </div>
+  <div class="footer-column footer-contact">
+    {{ if .Site.Params.email }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.footer.email }}" title="Email">
+      <img alt="Email icon" class="footer-icon web" src="{{ "img/email.svg" | relURL }}" />
+      <img alt="Email icon" class="footer-icon print" src="{{ "img/email_dark.svg" | relURL }}" />
+    </a>
+    {{ end }} {{ if .Site.Params.github }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.github }}" title="GitHub">
+      <img alt="GitHub icon" class="footer-icon web" src="{{ "img/github.svg" | relURL }}" />
+      <img alt="GitHub icon" class="footer-icon print" src="{{ "img/github_dark.svg" | relURL }}" />
+    </a>
+    {{ end }} {{ if .Site.Params.linkedin }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.linkedin }}" title="LinkedIn">
+      <img alt="LinkedIn icon" class="footer-icon web" src="{{ "img/linkedin.svg" | relURL }}" />
+      <img alt="LinkedIn icon" class="footer-icon print" src="{{ "img/linkedin_dark.svg" | relURL }}" />
+    </a>
+    {{ end }} {{ if .Site.Params.twitter }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.twitter }}" title="Twitter">
+      <img alt="Twitter icon" class="footer-icon web" src="{{ "img/twitter.svg" | relURL }}" />
+      <img alt="Twitter icon" class="footer-icon print" src="{{ "img/twitter_dark.svg" | relURL }}" />
+    </a>
+    {{ end }} {{ if .Site.Params.five_o_o_px }}
+    <a target="blank" class="footer-image-link" href="{{ .Site.Params.five_o_o_px }}" title="500px">
+      <img alt="500px icon" class="footer-icon web" src="{{ "img/500px.svg" | relURL }}" />
+      <img alt="500px icon" class="footer-icon print" src="{{ "img/500px_dark.svg" | relURL }}" />
+    </a>
+    {{ end }}
+  </div>
+</footer>

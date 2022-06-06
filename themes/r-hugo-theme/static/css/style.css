@@ -1,27 +1,40 @@
-@import "variables.css";
-
 /* LAYOUT */
-@import "layout/base.css";
-@import "layout/header.css";
-@import "layout/footer.css";
-@import "layout/columns.css";
+@import "layout/baseof.css";
+@import "layout/page/home.css";
+@import "layout/page/blog.css";
+@import "layout/page/terms.css";
+@import "layout/page/404.css";
+@import "layout/page/section.css";
+@import "layout/partials/header.css";
+@import "layout/partials/theme-switch.css";
+@import "layout/partials/hamburger.css";
+@import "layout/partials/gutters.css";
+@import "layout/partials/on-this-page.css";
+@import "layout/partials/side-menu.css";
+@import "layout/partials/meta.css";
+@import "layout/partials/related-links.css";
+@import "layout/partials/footer.css";
+@import "layout/page/print.css";
+@import "layout/_variables-breakpoints.css";
 
 /* CONTENT */
+@import "content/typography.css";
+@import "content/selection.css";
 @import "content/headings.css";
-@import "content/code.css";
-@import "content/table.css";
-@import "content/images.css";
+@import "content/paragraph.css";
 @import "content/link.css";
 @import "content/list.css";
-@import "content/quote.css";
 @import "content/note.css";
-@import "content/formatting.css";
+@import "content/quote.css";
+@import "content/code.css";
+@import "content/table.css";
+@import "content/image.css";
+@import "content/hr.css";
+@import "content/fn.css";
+@import "content/columns.css";
+@import "content/_variables.css";
 
-/* STYLING */
-@import "styling/typography.css";
-@import "styling/hide_scrollbar.css";
-@import "styling/smooth_scroll.css";
-@import "styling/animations.css";
-@import "styling/selection.css";
-@import "styling/shadow.css";
-@import "styling/button.css";
+/* PALETTE */
+@import "palette/light.css";
+@import "palette/dark.css";
+@import "palette/print.css";

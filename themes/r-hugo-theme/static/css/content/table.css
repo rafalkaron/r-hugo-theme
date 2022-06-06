@@ -1,56 +1,53 @@
-main table {
-  margin: 1.6rem 0;
+/* Style regular tables */
+.content table {
+  margin-top: var(--margin);
   table-layout: auto;
   border-collapse: collapse;
   border: none;
-  border-top: 0.25rem solid var(--background-dark);
-  border-bottom: 0.25rem solid var(--background-dark);
+  width: 100%;
 }
-main table:has(thead) {
-  border-top: none;
-}
-main td,
-main tr,
-main th {
+.content td,
+.content tr,
+.content th {
   padding: 0.5em;
 }
-main th,
-main th * {
+.content th,
+.content th * {
   font-weight: bold;
-  color: var(--background-middle);
-  background-color: var(--background-dark);
+  color: var(--layout-text);
+  background-color: var(--content-background-dark);
 }
-main tr:nth-child(odd) > td {
+.content tr:nth-child(odd) > td {
   background-color: transparent;
 }
-main tr:nth-child(even) > td {
-  background-color: var(--background-middle);
+.content tr:nth-child(even) > td {
+  background-color: var(--content-background-middle);
 }
-main table.cv-experience {
+
+/* Add a cv class for special kind of tables */
+.content table.cv {
   border: none;
   width: 100%;
-  margin-top: 1.6rem;
+  margin-top: var(--margin);
   display: block;
 }
-main table.cv-experience thead {
+.content table.cv thead {
   display: none;
 }
-main table.cv-experience tr > td {
+.content table.cv tr > td {
   background-color: transparent;
   vertical-align: top;
 }
-main table.cv-experience tr > td:nth-child(1) {
-  padding: 0.75rem 2.5rem 0.75rem 0;
+.content table.cv tr > td:nth-child(1) {
+  padding: 0.5rem 1.6rem 0.5rem 2rem;
 }
-main table.cv-experience tr > td:nth-child(2) {
-  border-left: solid 0.25rem var(--text-dark);
-  padding: 0.75rem 0 0.75rem 2.5rem;
+.content table.cv tr > td:nth-child(2) {
+  border-left: solid var(--border-width) var(--content-background-middle);
+  padding: 0.5rem 1.6rem;
 }
-main table.cv-experience td {
-  color: var(--text-dark);
-  font-size: 1.4rem;
+.content table.cv td {
+  color: var(--content-text-dark);
 }
-main table.cv-experience td strong {
-  color: var(--text-dark);
-  font-size: 1.6rem;
+.content table.cv td strong {
+  color: var(--content-text-dark);
 }
