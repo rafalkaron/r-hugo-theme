@@ -28,8 +28,7 @@ footer .footer-copyr {
 footer .footer-copyr a:hover,
 footer .footer-copyr a:active,
 footer .footer-copyr a:focus {
-  background-color: var(--layout-text);
-  color: var(--layout-background);
+  color: var(--layout-text-active);
 }
 footer .footer-year-home-link {
   margin-right: 0.8rem;
