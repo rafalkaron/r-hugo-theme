@@ -1,0 +1,26 @@
+.related-links-wrapper ul.related-links-list {
+  margin: 0 0 0 1.6rem;
+  list-style: none;
+}
+
+/* Style related links */
+.related-links-wrapper li.related-link {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.8rem;
+}
+.related-links-wrapper li.related-link a {
+  font-weight: normal;
+  text-decoration: none;
+  border: none;
+  font-size: 0.8rem;
+  padding: 0 var(--padding);
+}
+.related-links-wrapper li.related-link a::after {
+  content: " »";
+}
+.related-links-wrapper li.related-link a:hover,
+.related-links-wrapper li.related-link a:active,
+.related-links-wrapper li.related-link a:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+}

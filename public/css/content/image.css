@@ -1,0 +1,43 @@
+.content img {
+  overflow: auto;
+  padding: 0;
+  margin-top: var(--margin);
+  max-width: 100%;
+  display: block;
+  border-radius: var(--border-radius);
+}
+.content figcaption {
+  font-weight: bold;
+  color: var(--content-text-dark);
+}
+
+/* Add classes for manipulating images position */
+.content p.center {
+  display: flex;
+  justify-content: center;
+}
+.content p.left {
+  display: flex;
+  justify-content: flex-start;
+}
+.content p.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Add classes for manipulating images size */
+.content p.tiny > img {
+  max-width: 10rem;
+}
+.content p.small > img {
+  max-width: 15rem;
+}
+.content p.medium > img {
+  max-width: 20rem;
+}
+.content p.large > img {
+  max-width: 25rem;
+}
+.content p.huge > img {
+  max-width: 30rem;
+}

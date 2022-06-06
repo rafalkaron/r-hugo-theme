@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+#layout-404 .space-invader-container {
+  text-align: center;
+}
+
+#layout-404 .space-invader {
+  display: inline-block;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  margin-top: calc(var(--margin) * 2);
+}
+
+#layout-404 h1 {
+  text-align: center;
+  font-weight: bold;
+  margin-top: calc(var(--margin) * 2);
+  font-family: "Press Start 2P", monospace;
+}
