@@ -15,7 +15,9 @@
 .meta .categories-wrapper {
   margin-left: 0.25rem;
 }
-.meta .categories-wrapper .category::before,
+.meta .categories-wrapper {
+  margin-left: 0.24rem;
+}
 .meta .author-wrapper::before {
   content: " | ";
 }
@@ -23,6 +25,10 @@
   color: var(--content-text-dark);
   text-decoration: none;
   border: none;
+  padding: 0 var(--padding-small);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 .meta .categories-wrapper .category a:hover,
 .meta .categories-wrapper .category a:active,
@@ -44,6 +50,10 @@
   font-weight: normal;
   text-decoration: none;
   border: none;
+  padding: 0 var(--padding-small);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 .meta .tags-wrapper li.tag a:hover,
 .meta .tags-wrapper li.tag a:active,
@@ -52,7 +62,7 @@
   color: var(--content-text-light);
 }
 .meta .tags-wrapper li.tag {
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.3rem 0 0;
   font-size: 0.8rem;
 }
 .meta .tags-wrapper li.tag a::before {

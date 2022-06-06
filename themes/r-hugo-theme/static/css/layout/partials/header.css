@@ -42,7 +42,7 @@ header ul.nav-primary-items {
 }
 header li.nav-primary-item {
   list-style: none;
-  padding: 0 var(--margin) 0 0;
+  padding: 0 calc(var(--margin) - var(--padding-small)) 0 0;
   flex-shrink: 0;
 }
 header li.nav-primary-item:last-of-type {
@@ -53,6 +53,10 @@ header a.nav-primary-link {
   color: var(--layout-text);
   text-decoration: none;
   font-weight: bold;
+  padding: var(--padding-small) var(--padding);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 header a.nav-primary-link:hover,
 header a.nav-primary-link:active,
@@ -61,8 +65,9 @@ header a.nav-primary-link:focus {
   color: var(--layout-background);
 }
 
-/* Indicate active sites */
+/* Indicate active sites 
 header #nav-primary a.nav-primary-link.active,
 header #nav-primary a.nav-hamburger-link.active {
   border-bottom: solid var(--border-width-thin) var(--layout-text);
 }
+*/

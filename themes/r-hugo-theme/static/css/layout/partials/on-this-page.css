@@ -44,6 +44,9 @@
   font-size: 0.8rem;
   color: var(--content-text-middle);
   display: inline-block;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 #on-this-page a:hover,
 #on-this-page a:active,

@@ -46,6 +46,9 @@
   color: var(--layout-text);
   display: block;
   text-align: right;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 
 #menu-toggle:checked ~ #nav-hamburger {

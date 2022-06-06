@@ -27,6 +27,9 @@
   font-size: 0.8rem;
   color: var(--content-text-middle);
   display: block;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 #side-menu .side-menu-link.active {
   font-weight: bold;

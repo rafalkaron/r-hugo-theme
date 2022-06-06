@@ -31,7 +31,9 @@
 #layout-blog h2.ref > a {
   color: var(--content-text-dark);
   text-decoration: none;
-  border: none;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 #layout-blog h2.ref > a:hover,
 #layout-blog h2.ref > a:active,
@@ -53,6 +55,10 @@
   white-space: nowrap;
   border: none;
   font-size: 1.2rem;
+  padding: 0 var(--padding-small);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 #layout-blog a.read-more:hover,
 #layout-blog a.read-more:active,
