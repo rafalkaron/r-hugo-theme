@@ -11,9 +11,6 @@ categories: ["Category a", "Category b"]
 Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit. Dolor sint labore velit sint sunt in do.  ![Mountain](/images/mountain.jpg)
 {.tiny}Nostrud pariatur laborum cillum cillum consequat veniam irure duis ex officia tempor qui. Fugiat id veniam laboris eiusmod incididunt velit enim mollit.
 
-![Mountain](/images/mountain.jpg)
-![Mountain](/images/mountain.jpg)
-
 Commodo ex labore do qui adipisicing. Sunt laboris ea ipsum labore sit veniam eiusmod laboris occaecat sint in. Reprehenderit dolore magna ea nisi Lorem enim incididunt ea et. Nulla eiusmod reprehenderit ullamco tempor occaecat ut.
 
 ## Lorem enim ex ut dolore sint velit incididunt ipsum id
