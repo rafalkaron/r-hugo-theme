@@ -15,7 +15,7 @@
 @import "layout/partials/related-links.css";
 @import "layout/partials/footer.css";
 @import "layout/page/print.css";
-@import "layout/_variables-breakpoints.css";
+@import "layout/variables-breakpoints.css";
 
 /* CONTENT */
 @import "content/typography.css";
@@ -32,7 +32,7 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/columns.css";
-@import "content/_variables.css";
+@import "content/variables.css";
 
 /* PALETTE */
 @import "palette/light.css";
