@@ -47,6 +47,7 @@
   border: transparent;
   border-radius: var(--border-radius);
   background-clip: border-box;
+  text-align: start;
 }
 #on-this-page a:hover,
 #on-this-page a:active,

@@ -30,6 +30,7 @@
   border: transparent;
   border-radius: var(--border-radius);
   background-clip: border-box;
+  text-align: start;
 }
 #side-menu .side-menu-link.active {
   font-weight: bold;
