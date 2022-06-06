@@ -56,10 +56,11 @@ header a.nav-primary-link {
 }
 header a.nav-primary-link:hover,
 header a.nav-primary-link:active,
-header a.nav-primary-link:focus {
-  text-decoration: none;
-  background-color: var(--layout-text);
-  color: var(--layout-background);
+header a.nav-primary-link:focus,
+header a.site-title:hover,
+header a.site-title:active,
+header a.site-title:focus {
+  color: var(--layout-text-active);
 }
 
 /* Indicate active sites */

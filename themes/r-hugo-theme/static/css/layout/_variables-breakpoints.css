@@ -101,6 +101,7 @@
   #on-this-page a,
   #on-this-page li {
     font-size: 0.7rem;
+    display: block;
   }
 
   /* Side menu */

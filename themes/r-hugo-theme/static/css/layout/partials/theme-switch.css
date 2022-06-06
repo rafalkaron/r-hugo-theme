@@ -13,8 +13,9 @@
   align-items: center;
 }
 
-.theme-switch-wrapper .theme-switch:hover,
-.theme-switch-wrapper .theme-switch:active,
-.theme-switch-wrapper .theme-switch:focus {
+.theme-switch-wrapper .theme-switch:hover .material-icons,
+.theme-switch-wrapper .theme-switch:active .material-icons,
+.theme-switch-wrapper .theme-switch:focus .material-icons {
   cursor: pointer;
+  color: var(--layout-text-active);
 }
