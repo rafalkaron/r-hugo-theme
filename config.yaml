@@ -3,7 +3,6 @@ languageCode: "en-us"
 theme: "r-hugo-theme"
 publishDir: "docs"
 relativeURLs: true
-uglyURLs: true
 
 Params:
   title: "R"
