@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/categories/</loc>
+    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/categories.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rafalkaron.github.io/r-hugo-theme/categories/"
+                href="https://rafalkaron.github.io/r-hugo-theme/categories.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://rafalkaron.github.io/r-hugo-theme/pl/categories/"
+                href="https://rafalkaron.github.io/r-hugo-theme/pl/categories.html"
                 />
   </url><url>
     <loc>https://rafalkaron.github.io/r-hugo-theme/pl/</loc>
@@ -26,16 +26,16 @@
                 href="https://rafalkaron.github.io/r-hugo-theme/pl/"
                 />
   </url><url>
-    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/tags/</loc>
+    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/tags.html</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rafalkaron.github.io/r-hugo-theme/tags/"
+                href="https://rafalkaron.github.io/r-hugo-theme/tags.html"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://rafalkaron.github.io/r-hugo-theme/pl/tags/"
+                href="https://rafalkaron.github.io/r-hugo-theme/pl/tags.html"
                 />
   </url>
 </urlset>
