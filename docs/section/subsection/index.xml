@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Subsection on R</title>
+    <link>https://rafalkaron.github.io/r-hugo-theme/section/subsection/</link>
+    <description>Recent content in Subsection on R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://rafalkaron.github.io/r-hugo-theme/section/subsection/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Subsubpage A</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/section/subsection/subsubpage_a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/section/subsection/subsubpage_a/</guid>
+      <description>Heading 2 #Ex fugiat sint Lorem reprehenderit. Et in ex esse consequat dolore occaecat culpa amet ullamco aliquip magna excepteur.
+Irure ea sit duis eu deserunt. Occaecat eiusmod magna excepteur elit minim ut. Sit eiusmod sit et dolore elit ad cillum anim. Deserunt aute minim aliqua voluptate fugiat. Ad officia culpa magna duis non enim ullamco excepteur nisi.
+Voluptate dolor amet voluptate dolore excepteur enim ut deserunt nulla commodo excepteur. Eu aute qui ullamco reprehenderit velit incididunt anim dolor deserunt mollit do culpa in.</description>
+    </item>
+    
+    <item>
+      <title>Subsubpage B</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/section/subsection/subsubpage_b/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/section/subsection/subsubpage_b/</guid>
+      <description>Heading 2 #Ex fugiat sint Lorem reprehenderit. Et in ex esse consequat dolore occaecat culpa amet ullamco aliquip magna excepteur.
+Irure ea sit duis eu deserunt. Occaecat eiusmod magna excepteur elit minim ut. Sit eiusmod sit et dolore elit ad cillum anim. Deserunt aute minim aliqua voluptate fugiat. Ad officia culpa magna duis non enim ullamco excepteur nisi.
+Voluptate dolor amet voluptate dolore excepteur enim ut deserunt nulla commodo excepteur. Eu aute qui ullamco reprehenderit velit incididunt anim dolor deserunt mollit do culpa in.</description>
+    </item>
+    
+  </channel>
+</rss>

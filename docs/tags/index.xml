@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on R</title>
+    <link>https://rafalkaron.github.io/r-hugo-theme/tags/</link>
+    <description>Recent content in Tags on R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 18 Nov 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rafalkaron.github.io/r-hugo-theme/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tag a</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-a/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag B</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-b/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-b/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag C</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-c/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag d</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-d/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag e</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-e/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-e/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag f</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-f/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-f/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag g</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-g/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-g/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag h</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-h/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-h/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag i</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-i/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-i/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag j</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-j/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-j/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag k</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-k/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-k/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag l</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-l/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-l/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tag m</title>
+      <link>https://rafalkaron.github.io/r-hugo-theme/tags/tag-m/</link>
+      <pubDate>Wed, 18 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rafalkaron.github.io/r-hugo-theme/tags/tag-m/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

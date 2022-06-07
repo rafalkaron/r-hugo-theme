@@ -1,0 +1,52 @@
+/* Reset margins */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: none;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  min-height: -webkit-fill-available;
+  background-color: var(--content-background-light);
+}
+
+body,
+header,
+footer {
+  min-width: 360px;
+}
+
+main {
+  margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--margin-large) auto
+    var(--margin-large);
+}
+
+article {
+  margin-top: var(--margin);
+}
+
+article.content {
+  margin-top: 0;
+}
+
+/* Hide print-specific items */
+.print {
+  display: none;
+}
+
+.not-selectable,
+.not-selectable * {
+  -webkit-user-select: none; /* Chrome all / Safari all */
+  -moz-user-select: none; /* Firefox all */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Likely future */
+}

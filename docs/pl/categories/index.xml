@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on R</title>
+    <link>https://rafalkaron.github.io/r-hugo-theme/pl/categories/</link>
+    <description>Recent content in Categories on R</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://rafalkaron.github.io/r-hugo-theme/pl/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

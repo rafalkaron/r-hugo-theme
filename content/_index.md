@@ -151,37 +151,37 @@ Lorem ipsum `@import` lorem ipsum
 
 ### Tiny
 
-![Mountain](/images/mountain.jpg)
+![Mountain](images/mountain.jpg)
 {.tiny}
 
 ### Tiny Center
 
-![Mountain](/images/mountain.jpg)
+![Mountain2](images/mountain.jpg)
 {.tiny .center}
 
 ### Tiny Right
 
-![Mountain](/images/mountain.jpg)
+![Mountain3](images/mountain.jpg)
 {.tiny .right}
 
 ### Small
 
-![Mountain](/images/mountain.jpg)
+![Mountain4](images/mountain.jpg)
 {.small}
 
 ### Medium
 
-![Mountain](/images/mountain.jpg)
+![Mountain5](images/mountain.jpg)
 {.medium}
 
 ### Large
 
-![Mountain](/images/mountain.jpg)
+![Mountain6](images/mountain.jpg)
 {.large}
 
 ### Huge
 
-![Mountain](/images/mountain.jpg)
+![Mountain7](images/mountain.jpg)
 {.huge}
 
 Laboris anim cupidatat do tempor fugiat qui aute magna nostrud sint reprehenderit cupidatat.
