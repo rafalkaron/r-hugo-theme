@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/categories/</loc>
+    <loc>file:///Users/rafalkaron/Git/r-hugo-theme/docs/pl/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rafalkaron.github.io/r-hugo-theme/categories/"
+                href="#ZgotmplZ"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://rafalkaron.github.io/r-hugo-theme/pl/categories/"
+                href="#ZgotmplZ"
                 />
   </url><url>
-    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/</loc>
+    <loc>file:///Users/rafalkaron/Git/r-hugo-theme/docs/pl/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rafalkaron.github.io/r-hugo-theme/"
+                href="#ZgotmplZ"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://rafalkaron.github.io/r-hugo-theme/pl/"
+                href="#ZgotmplZ"
                 />
   </url><url>
-    <loc>https://rafalkaron.github.io/r-hugo-theme/pl/tags/</loc>
+    <loc>file:///Users/rafalkaron/Git/r-hugo-theme/docs/pl/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://rafalkaron.github.io/r-hugo-theme/tags/"
+                href="#ZgotmplZ"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="pl"
-                href="https://rafalkaron.github.io/r-hugo-theme/pl/tags/"
+                href="#ZgotmplZ"
                 />
   </url>
 </urlset>
