@@ -2,7 +2,6 @@ baseURL: "https://rafalkaron.github.io/r-hugo-theme/"
 languageCode: "en-us"
 theme: "r-hugo-theme"
 publishDir: "docs"
-uglyURLs: true
 
 Params:
   title: "R"
