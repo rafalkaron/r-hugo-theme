@@ -19,7 +19,7 @@
     {{ with .Params.categories }}
     <div class="categories-wrapper">
       {{ range . }}
-      <span class="category"><a title="All blog posts about {{ . }}" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></span>
+      <span class="category"><a title="All blog posts about {{ . }}" href="{{ "{{ .Site.BaseURL }}categories/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></span>
       {{ end }}
     </div>
     {{ end }}
@@ -29,7 +29,7 @@
   <div class="tags-wrapper">
     <ul class="tags">
       {{ range . }}
-      <li class="tag"><a title="All blog posts tagged with {{ . }}" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a></li>
+      <li class="tag"><a title="All blog posts tagged with {{ . }}" href="{{ "{{ .Site.BaseURL }}/tags/" | relLangURL }}{{ . | urlize }}/">#{{ . }}</a></li>
       {{ end }}
     </ul>
   </div>
