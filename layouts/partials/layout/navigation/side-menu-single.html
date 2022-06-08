@@ -1,3 +1,5 @@
+{{ if eq .Parent.Permalink .Site.BaseURL}}
+{{ else }}
 <aside class="side-menu-wrapper not-selectable web">
   <nav id="side-menu">
     <a title="{{ with .Parent.Params.description }}{{ . }}{{ else }}{{ .Parent.Summary | truncate 150 }}{{ end }}" href="{{ .Parent.Permalink }}"class=side-menu-caption>{{ .Parent.Title }}</a>
@@ -7,3 +9,4 @@
     {{ end }}
   </nav>
 </aside>
+{{ end }}
