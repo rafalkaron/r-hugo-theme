@@ -1,5 +1,5 @@
 # r-hugo-theme
-A simple theme for Hugo static site generator suitable for a portfolio, documentation library, and blog.
+A simple Hugo theme suitable for a portfolio, documentation library, and blog.
 
 [r-hugo-theme-demo](https://rafalkaron.github.io/r-hugo-theme-demo)
 
@@ -21,12 +21,12 @@ A simple theme for Hugo static site generator suitable for a portfolio, document
 ## Quick start
 
 ### Prerequisites
-* Install Git. See [](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* Install Hugo. See [](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo)
+* [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+* [Install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo).
 
 ### Procedure
 3. In the terminal, create a new site by entering `hugo new site {site_name}`  
-Where: {site_name} is the name of the site that you want to create.
+**Where:** `{site_name}` is the name of the site that you want to create.
 4. Enter the Hugo site directory by entering `cd {site_name}`
 5. Initialize a Git repository by entering `git init`
 6. Add the theme by entering `git submodule add https://rafalkaron.github.io/r-hugo-theme`
@@ -34,6 +34,7 @@ Where: {site_name} is the name of the site that you want to create.
 8. Run a local Hugo webserver by entering: `hugo server`
 
 ### Postrequisites
-* Preview your website by opening [](http://localhost:1313/)
+* Preview your website by opening [http://localhost:1313/](http://localhost:1313/)
 
 ## Theme customization
+IN PROGRESS
