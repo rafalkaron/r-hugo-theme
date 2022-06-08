@@ -19,10 +19,11 @@ A simple Hugo theme suitable for a portfolio, documentation library, and blog.
   * Estimated reading time
 
 ## Quick start
+Set up a simple website that uses r-hug-theme with sample content.
 
 ### Prerequisites
-* [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
-* [Install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo).
+* [Install Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+* [Install Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo)
 
 ### Procedure
 3. In the terminal, create a new site by entering `hugo new site {site_name}`  
@@ -31,10 +32,12 @@ A simple Hugo theme suitable for a portfolio, documentation library, and blog.
 5. Initialize a Git repository by entering `git init`
 6. Add the theme by entering `git submodule add https://rafalkaron.github.io/r-hugo-theme`
 7. Move the files and folders from the `exampleSite` directory into the root folder of your site.
-8. Run a local Hugo webserver by entering: `hugo server`
+8. Run a local Hugo webserver by entering `hugo server`
 
 ### Postrequisites
 * Preview your website by opening [http://localhost:1313/](http://localhost:1313/)
 
 ## Theme customization
-IN PROGRESS
+You can customize the site by editing the `config.yaml` file. For reference, see the `# comments` in the `config.yaml` file.
+
+For advanced customizations, feel free to fork the repository.
