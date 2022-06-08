@@ -1,5 +1,5 @@
 # r-hugo-theme
-A simple Hugo theme suitable for a portfolio, documentation library, and blog.
+A simple Hugo theme suitable for a portfolio, documentation library, or blog.
 
 [r-hugo-theme-demo](https://rafalkaron.github.io/r-hugo-theme-demo)
 
