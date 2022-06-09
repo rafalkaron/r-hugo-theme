@@ -3,7 +3,7 @@ main h1 {
   font-size: 2rem;
 }
 main h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 main h3 {
   font-size: 1.4rem;
@@ -24,7 +24,7 @@ main h6 {
 .content h4[id],
 .content h5[id],
 .content h6[id] {
-  padding-top: calc(var(--header-height) + 1.25em);
+  padding-top: calc(var(--header-height) + 1.15em);
   margin-top: var(--header-height-negative);
 }
 
