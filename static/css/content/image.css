@@ -37,3 +37,12 @@
 .content p.huge > img {
   max-width: 30rem;
 }
+.content p.three-fourth > img {
+  max-width: 75%;
+}
+.content p.half > img {
+  max-width: 50%;
+}
+.content p.quarter > img {
+  max-width: 25%;
+}
