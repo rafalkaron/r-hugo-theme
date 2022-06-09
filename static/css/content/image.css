@@ -6,10 +6,6 @@
   display: block;
   border-radius: var(--border-radius);
 }
-.content figcaption {
-  font-weight: bold;
-  color: var(--content-text-dark);
-}
 
 /* Add classes for manipulating images position */
 .content p.center {
