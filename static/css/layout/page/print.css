@@ -50,6 +50,12 @@
     margin-top: calc(var(--margin) * 1.25);
   }
 
+  article,
+  div {
+    break-inside: auto;
+    page-break-inside: auto;
+  }
+
   /* Avoid breaking certain elements */
   h1,
   h2,
@@ -60,15 +66,12 @@
   img,
   p,
   ul,
-  ol {
+  ol,
+  .post,
+  .subpage {
     break-inside: avoid;
     page-break-inside: avoid;
-  }
-
-  article,
-  div {
-    break-inside: auto;
-    page-break-inside: auto;
+    -webkit-column-break-inside: avoid;
   }
 
   #layout-section .subpage,
