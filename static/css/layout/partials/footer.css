@@ -6,7 +6,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 4rem;
+  min-height: var(--footer-height);
   padding: 0 var(--padding-main);
 }
 footer * {

@@ -8,6 +8,11 @@
 
   --font-size: 1.6rem;
   --line-height: 1.6em;
+
+  --header-height: 4rem;
+  --header-height-negative: -4rem;
+  --footer-height: 4rem;
+  --footer-height-negative: -4rem;
 }
 
 /* 4K */
