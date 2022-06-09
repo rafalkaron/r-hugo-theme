@@ -11,7 +11,7 @@ html {
   font-family: "Open Sans", sans-serif;
   line-height: var(--line-height);
   color: var(--content-text-dark);
-  text-align: justify;
+  text-align: left;
 }
 
 /* Monospace */
