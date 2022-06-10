@@ -7,10 +7,14 @@
   {{ partial "layout/navigation/on-this-page" . }} {{ partial
   "layout/navigation/side-menu-single" . }}
   <article class="content">
-    <h1>{{ .Title }}</h1>
-    {{ with .Params.description }}
-    <p class="description">{{ . }}</p>
-    {{ end }} {{ .Content }} {{ partial "layout/related-links" . }}
+    <section class="introduction">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}
+      <p class="description">{{ . }}</p>
+      {{ end }} 
+    </section>
+    {{ partial "layout/bodytext.html" . }} 
+    {{ partial "layout/related-links" . }}
   </article>
   <div class="gutter bottom-gutter not-selectable">
     <div class="gutter-group">

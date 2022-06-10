@@ -2,13 +2,18 @@
 <main id="layout-home">
   {{ partial "layout/navigation/on-this-page" . }}
   <article class="content">
-    <h1 class="home-heading">{{ .Title }}</h1>
-    {{ .Content }}
+    <section class="introduction">
+      <h1 class="home-heading">{{ .Title }}</h1>
+      {{ with .Params.description }}
+      <p class="description">{{ . }}</p>
+      {{ end }} 
+    </section>
+    {{ partial "layout/bodytext.html" . }} 
   </article>
   <div class="gutter bottom-gutter">
     <div class="gutter-group">
-      {{ partial "layout/gutter/top-button" . }} {{ partial
-      "layout/gutter/print-button" . }}
+      {{ partial "layout/gutter/top-button" . }} 
+      {{ partial "layout/gutter/print-button" . }}
     </div>
 </main>
 </div>
