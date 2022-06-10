@@ -1,6 +1,6 @@
 .content a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   white-space: nowrap;
   border-bottom: solid var(--border-width-thin) var(--content-text-dark);
 }
