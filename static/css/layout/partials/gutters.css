@@ -91,7 +91,8 @@
 .gutter .gutter-subpages li + li:before,
 .gutter .gutter-group .gutter-item + .gutter-item::before {
   content: "┃ ";
-  color: var(--content-text-middle);
+  font-weight: 700;
+  color: var(--content-text-dark);
 }
 .gutter .gutter-group .gutter-item + .gutter-item {
   margin-left: 0.1rem;
@@ -104,6 +105,7 @@
 .gutter .breadcrumbs li + li:before {
   content: " / ";
   padding-left: 0.2rem;
+  font-weight: 700;
 }
 
 /* Print */

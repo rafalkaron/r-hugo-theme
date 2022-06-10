@@ -38,8 +38,11 @@ footer a {
 }
 
 /* Add classes for text formatting */
-.content .text_small {
+.content .text_smaller {
   font-size: 0.8rem !important;
+}
+.content .text_small {
+  font-size: 0.9rem !important;
 }
 .content .text_normal {
   font-size: 1.6rem !important;

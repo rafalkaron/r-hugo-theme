@@ -18,3 +18,7 @@ main h6 + p {
 main li p {
   margin: 0;
 }
+
+.content ul.items + p {
+  margin-top: calc(var(--margin) / 2);
+}

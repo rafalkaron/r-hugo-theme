@@ -45,7 +45,7 @@
 .content dt,
 .content dd {
   border-left: solid var(--border-width) var(--content-background-middle);
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 1em;
 }
 .content dt,
 .content dt * {
