@@ -14,7 +14,7 @@ footer * {
 }
 footer a {
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 footer .footer-column {
   display: flex;
@@ -23,7 +23,7 @@ footer .footer-column {
 /* Copyrights */
 footer .footer-copyr {
   flex-shrink: 0;
-  font-weight: bold;
+  font-weight: 600;
 }
 footer .footer-copyr a:hover,
 footer .footer-copyr a:active,

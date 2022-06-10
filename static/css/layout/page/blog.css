@@ -50,11 +50,11 @@
 }
 
 #layout-blog .summary a.read-more {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0 var(--padding-small);
   border: transparent;
   border-radius: var(--border-radius);

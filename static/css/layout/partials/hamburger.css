@@ -58,7 +58,7 @@
 #nav-hamburger a span {
   color: var(--layout-text);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
 }
 #nav-hamburger a:hover,
 #nav-hamburger a:active,

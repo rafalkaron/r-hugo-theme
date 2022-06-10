@@ -19,7 +19,7 @@
   white-space: pre;
   font-size: inherit;
   display: inline-block;
-  font-weight: bold;
+  font-weight: 600;
 }
 .content .note::before {
   content: "NOTE: ";

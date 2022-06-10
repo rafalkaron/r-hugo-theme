@@ -13,7 +13,7 @@
 }
 .content th,
 .content th * {
-  font-weight: bold;
+  font-weight: 600;
   color: var(--layout-text);
   background-color: var(--content-background-dark);
 }

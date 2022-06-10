@@ -3,8 +3,8 @@
   padding-bottom: var(--margin);
   border-bottom: solid var(--border-width-thin) var(--content-background-middle);
 }
-.on-this-page-caption {
-  font-weight: bold;
+#on-this-page .on-this-page-caption {
+  font-weight: 700;
   font-size: 0.9rem;
   color: var(--content-text-dark);
 }

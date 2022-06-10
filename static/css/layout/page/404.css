@@ -14,7 +14,7 @@
 
 #layout-404 h1 {
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: calc(var(--margin) * 2);
   font-family: "Press Start 2P", monospace;
 }

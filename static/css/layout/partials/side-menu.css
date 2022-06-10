@@ -33,7 +33,7 @@
   text-align: start;
 }
 #side-menu .side-menu-link.active {
-  font-weight: bold;
+  font-weight: 700;
   color: var(--content-text-dark);
 }
 #side-menu a:hover,

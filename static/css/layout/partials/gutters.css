@@ -40,7 +40,7 @@
 .gutter .gutter-item a {
   color: var(--content-text-dark);
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   padding: var(--padding-small) var(--padding-small);
   border: transparent;
@@ -72,7 +72,7 @@
 }
 .gutter .pagination-counter {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .gutter .pagination-next-link {
   margin-left: 0.25rem;

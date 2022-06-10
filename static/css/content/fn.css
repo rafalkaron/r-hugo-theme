@@ -13,7 +13,7 @@
 .content a.footnote-ref {
   color: var(--content-text-dark);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
   border: none;
 }
 .content .footnotes a.footnote-backref:active,

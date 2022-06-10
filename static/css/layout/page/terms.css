@@ -6,7 +6,7 @@
 #layout-terms .tags-wrapper li.tag {
   list-style: none;
   flex-shrink: 0;
-  font-weight: bold;
+  font-weight: 600;
 }
 #layout-terms .tags-wrapper li.tag a {
   padding: 0.25em 0.5em;
