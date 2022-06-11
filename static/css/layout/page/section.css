@@ -49,6 +49,9 @@
 
 #layout-section .description {
   margin-top: calc(var(--margin) / 4);
+}
+
+#layout-section .subpage .description {
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }

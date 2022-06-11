@@ -4,6 +4,9 @@
 {{ else if .Name }} 
   <h1 class="section-title">{{ .Name }}</h1>
 {{ end }}
+{{ with .Params.description }}
+  <p class="description">{{ . }}</p>
+{{ end }} 
 {{ with .Content }}
   {{ . }}
 {{ end }}
