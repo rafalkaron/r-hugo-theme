@@ -4,7 +4,7 @@
         {{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }} »</span></a>
   </h2>
   <div class="description">
-    {{ with .Params.description }} {{ . }} {{ else }} {{ .Summary | truncate 160 }} {{ end }}
+    {{ with .Params.description }} {{ . | markdownify }} {{ else }} {{ .Summary | truncate 160 }} {{ end }}
   </div>
   {{ with .Params.image }}
   <div class="description-image-container">

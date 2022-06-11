@@ -16,7 +16,7 @@
     </div>
     {{ end }}
     {{ with .Params.description }}
-    <p class="description">{{ . }}</p>
+    <p class="description">{{ .  | markdownify }}</p>
     {{ end }} 
     </section>
     {{ partial "layout/bodytext.html" . }}
