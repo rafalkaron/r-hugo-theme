@@ -18,8 +18,7 @@
   content: " »";
 }
 .related-links-wrapper li.related-link a:hover,
-.related-links-wrapper li.related-link a:active,
-.related-links-wrapper li.related-link a:focus {
+.related-links-wrapper li.related-link a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

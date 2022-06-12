@@ -50,8 +50,7 @@
   text-align: start;
 }
 #on-this-page a:hover,
-#on-this-page a:active,
-#on-this-page li a:focus {
+#on-this-page a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

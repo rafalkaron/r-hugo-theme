@@ -36,8 +36,7 @@
   background-clip: border-box;
 }
 #layout-blog h2.ref > a:hover,
-#layout-blog h2.ref > a:active,
-#layout-blog h2.ref > a:focus {
+#layout-blog h2.ref > a:active {
   text-decoration: none;
   background-color: var(--content-text-dark);
   color: var(--content-text-light);

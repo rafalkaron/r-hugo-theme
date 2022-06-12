@@ -61,14 +61,12 @@
   font-weight: 600;
 }
 #nav-hamburger a:hover,
-#nav-hamburger a:active,
-#nav-hamburger a:focus {
+#nav-hamburger a:active {
   text-decoration: none;
   background-color: var(--layout-text);
 }
 #nav-hamburger a:hover span,
-#nav-hamburger a:active span,
-#nav-hamburger a:focus span {
+#nav-hamburger a:active span {
   text-decoration: none;
   background-color: var(--layout-text);
   color: var(--layout-background);

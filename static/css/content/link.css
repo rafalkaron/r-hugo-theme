@@ -5,8 +5,7 @@
   border-bottom: solid var(--border-width-thin) var(--content-text-dark);
 }
 .content a:hover,
-.content a:active,
-.content a:focus {
+.content a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
   border: transparent;

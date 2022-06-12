@@ -19,8 +19,7 @@
   background-color: var(--content-background-middle);
 }
 #layout-terms .tags-wrapper li.tag a:hover,
-#layout-terms .tags-wrapper li.tag a:active,
-#layout-terms .tags-wrapper li.tag a:focus {
+#layout-terms .tags-wrapper li.tag a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

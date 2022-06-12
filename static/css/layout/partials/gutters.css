@@ -48,8 +48,7 @@
   background-clip: border-box;
 }
 .gutter .gutter-item a:hover,
-.gutter .gutter-item a:active,
-.gutter .gutter-item a:focus {
+.gutter .gutter-item a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

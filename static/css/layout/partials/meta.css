@@ -31,8 +31,7 @@
   background-clip: border-box;
 }
 .meta .categories-wrapper .category a:hover,
-.meta .categories-wrapper .category a:active,
-.meta .categories-wrapper .category a:focus {
+.meta .categories-wrapper .category a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
@@ -56,8 +55,7 @@
   background-clip: border-box;
 }
 .meta .tags-wrapper li.tag a:hover,
-.meta .tags-wrapper li.tag a:active,
-.meta .tags-wrapper li.tag a:focus {
+.meta .tags-wrapper li.tag a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
