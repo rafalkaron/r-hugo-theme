@@ -36,7 +36,7 @@ main h6 {
 .content h4[id],
 .content h5[id],
 .content h6[id] {
-  padding-top: calc(var(--header-height) + 1.15em);
+  padding-top: calc(var(--header-height) + 1.6em);
   margin-top: var(--header-height-negative);
 }
 

@@ -17,9 +17,9 @@
 #side-menu li:first-of-type {
   padding-top: 0;
 }
-#side-menu li li {
+/* #side-menu li li {
   margin-left: 0.5rem;
-}
+} */
 
 /* Links */
 #side-menu a {

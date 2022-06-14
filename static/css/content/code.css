@@ -14,7 +14,7 @@
 }
 
 .content pre {
-  margin: var(--margin) 0;
+  margin-top: var(--margin);
   padding: 0;
   display: block;
   width: fit-content;

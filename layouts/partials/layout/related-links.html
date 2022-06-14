@@ -2,7 +2,7 @@
 {{ $related_external := .Params.keywords_external }}
 
 {{ if or $related $related_external }}
-<div class="related-links-wrapper">
+<section class="related-links-wrapper article-section">
   <h2 id="see-also">See also</h2>
   <ul class="related-links-list">
     {{ with $related }}
@@ -16,7 +16,7 @@
       {{ end }}
     {{ end }}
   </ul>
-</div>
+</section>
 {{ end }}
 
 

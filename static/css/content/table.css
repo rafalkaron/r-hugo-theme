@@ -39,11 +39,11 @@
   vertical-align: top;
 }
 .content table.cv tr > td:nth-child(1) {
-  padding: 0.5rem 1.6rem 0.5rem 2rem;
+  padding: 0.55em 1.2em;
 }
 .content table.cv tr > td:nth-child(2) {
   border-left: solid var(--border-width) var(--content-background-middle);
-  padding: 0.5rem 1.6rem;
+  padding: 0.55em 1.2em;
 }
 .content table.cv td {
   color: var(--content-text-dark);

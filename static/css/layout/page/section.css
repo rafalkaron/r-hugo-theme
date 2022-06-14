@@ -9,7 +9,6 @@
 }
 #layout-section .subpage {
   width: 48.5%;
-  /*border: var(--content-background-middle) var(--border-width-medium) solid;*/
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;
