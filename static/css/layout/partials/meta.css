@@ -69,7 +69,7 @@
   font-size: 0.8rem;
 }
 
-#layout-single .meta + .description {
-  border-top: solid var(--border-width-thin) var(--content-background-middle);
-  padding-top: calc(var(--margin) / 2);
+#layout-single .meta {
+  border-left: solid var(--border-width) var(--content-background-middle);
+  padding: 0 0 0 0.5em;
 }
