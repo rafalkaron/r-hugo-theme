@@ -25,11 +25,16 @@
   color: var(--content-text-dark);
   text-decoration: none;
   border: none;
-  padding: 0 var(--padding-small);
+  padding: 0;
   border: transparent;
   border-radius: var(--border-radius);
   background-clip: border-box;
 }
+
+.meta .categories-wrapper .category:before {
+  content: " • ";
+}
+
 .meta .categories-wrapper .category a:hover,
 .meta .categories-wrapper .category a:active {
   background-color: var(--content-text-dark);
@@ -62,4 +67,9 @@
 .meta .tags-wrapper li.tag {
   margin: 0 0.3rem 0 0;
   font-size: 0.8rem;
+}
+
+#layout-single .meta + .description {
+  border-top: solid var(--border-width-thin) var(--content-background-middle);
+  padding-top: calc(var(--margin) / 2);
 }
