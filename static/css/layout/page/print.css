@@ -65,10 +65,12 @@
   h6,
   img,
   p,
-  ul,
-  ol,
+  li,
   .post,
-  .subpage {
+  .subpage,
+  pre,
+  code,
+  footer {
     break-inside: avoid;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
