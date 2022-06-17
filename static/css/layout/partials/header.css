@@ -65,8 +65,8 @@ header a.nav-primary-link:focus {
   background-clip: border-box;
 }
 
-/* Indicate active sites */
+/* Indicate active sites 
 header #nav-primary a.nav-primary-link.active,
 header #nav-primary a.nav-hamburger-link.active {
   border-bottom: solid var(--border-width-thin) var(--layout-text);
-}
+}*/

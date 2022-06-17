@@ -54,3 +54,7 @@
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
+
+#on-this-page a.active {
+  font-weight: 600;
+}

@@ -3,12 +3,16 @@
     <a class="subpage-ref" href="{{ .Permalink }}"> 
         {{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }} »</span></a>
   </h2>
+  {{ with .Params.description }}
   <div class="description">
-    {{ with .Params.description }} {{ . | markdownify }} {{ else }} {{ .Summary | truncate 160 }} {{ end }}
+    {{ . | markdownify }} 
+    {{ else }} 
+    {{ .Summary | truncate 160 }}
   </div>
+  {{ end }}
   {{ with .Params.image }}
   <div class="description-image-container">
-    <img class="description-image" src="{{ . | relURL }}"></img>
+    <img class="description-image" src="{{ . | relURL }}" />
   </div>
   {{ end }}
 </section>
