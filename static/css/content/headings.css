@@ -51,7 +51,7 @@ main h6 * {
 }
 
 /* Style heading links # */
-main a.heading-link {
+main article.content a.heading-link {
   color: transparent;
   text-decoration: none;
   border: none;
