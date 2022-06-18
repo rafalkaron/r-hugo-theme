@@ -1,5 +1,5 @@
 <section class="post">
-	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a class="animation" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
 	<div class="summary">
 		{{ with .Params.image }}
@@ -14,7 +14,7 @@
 				{{ .Summary }}
 			{{ end }}
 			<div class="read-more-container">
-			<a class="read-more" title="{{ .Title }} | {{ .ReadingTime }} minutes read" href="{{ .Permalink }}">Read more »</a></div>
+			<a class="read-more animation" title="{{ .Title }} | {{ .ReadingTime }} minutes read" href="{{ .Permalink }}">Read more »</a></div>
 		</div>
 	</div>
 </section>

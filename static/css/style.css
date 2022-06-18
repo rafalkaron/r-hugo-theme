@@ -34,6 +34,9 @@
 @import "content/columns.css";
 @import "content/variables.css";
 
+/* EXTRAS */
+@import "extras/animations.css";
+
 /* PALETTE */
 @import "palette/light.css";
 @import "palette/dark.css";

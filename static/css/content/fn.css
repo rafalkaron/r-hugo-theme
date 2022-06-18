@@ -28,6 +28,6 @@
 
 /* Fix anchors hidden behind navbar */
 .content sup[id] {
-  padding-top: 4rem;
-  margin-top: -4rem;
+  padding-top: var(--header-height);
+  margin-top: var(--header-height-negative);
 }

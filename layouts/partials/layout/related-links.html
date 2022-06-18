@@ -7,7 +7,7 @@
   <ul class="related-links-list">
     {{ with $related }}
       {{ range . }}
-    <li class="related-link"><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    <li class="related-link"><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     {{ end }}
     {{ with $related_external }}

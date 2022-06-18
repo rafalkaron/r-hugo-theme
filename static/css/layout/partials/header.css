@@ -54,15 +54,15 @@ header a.nav-primary-link {
   text-decoration: none;
   font-weight: 700;
   padding: var(--padding-small) var(--padding);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 header a.nav-primary-link:hover,
 header a.nav-primary-link:active,
 header a.nav-primary-link:focus {
   background-color: var(--layout-text);
   color: var(--layout-background);
-  border: transparent;
-  border-radius: var(--border-radius);
-  background-clip: border-box;
 }
 
 /* Indicate active sites 

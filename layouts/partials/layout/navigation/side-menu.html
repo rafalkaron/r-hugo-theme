@@ -3,13 +3,13 @@
   <ul>
     <li>
       {{ if eq .Parent.RelPermalink "/" }}
-      <a href="{{ .Permalink }}" class=side-menu-caption>{{ .Title }}</a>
+      <a href="{{ .Permalink }}" class="side-menu-caption animation">{{ .Title }}</a>
       {{ else }}
-      <a href="{{ .Parent.Permalink }}" class=side-menu-caption>{{ .Parent.Title }}</a>
+      <a href="{{ .Parent.Permalink }}" class="side-menu-caption animation">{{ .Parent.Title }}</a>
       {{ end }}
       <ul>
         {{ range .Pages }}
-        <li><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
+        <li><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
       </ul>
     </li>

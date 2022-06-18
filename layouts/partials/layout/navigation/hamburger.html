@@ -8,7 +8,7 @@
           {{ $currentPage := . }}
           {{ range .Site.Menus.main }}
               <li class="nav-hamburger-item">
-                <a class="nav-hamburger-link {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}" href="{{ .URL }}"><span>{{ .Name }}</span></a>
+                <a class="nav-hamburger-link animation {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
               </li>
           {{ end }}
         </ul>

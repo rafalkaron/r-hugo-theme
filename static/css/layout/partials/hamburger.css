@@ -55,7 +55,7 @@
   display: unset;
 }
 
-#nav-hamburger a span {
+#nav-hamburger a {
   color: var(--layout-text);
   text-decoration: none;
   font-weight: 600;
@@ -65,18 +65,18 @@
   text-decoration: none;
   background-color: var(--layout-text);
 }
-#nav-hamburger a:hover span,
-#nav-hamburger a:active span {
+#nav-hamburger a:hover,
+#nav-hamburger a:active {
   text-decoration: none;
   background-color: var(--layout-text);
   color: var(--layout-background);
 }
 
-#nav-hamburger a.active span {
+/* #nav-hamburger a.active span {
   border-bottom: solid var(--border-width-thin) var(--layout-text);
 }
 #nav-hamburger a.active:hover span,
 #nav-hamburger a.active:active span,
 #nav-hamburger a.active:focus span {
   border-bottom: solid var(--border-width-thin) var(--layout-background);
-}
+} */

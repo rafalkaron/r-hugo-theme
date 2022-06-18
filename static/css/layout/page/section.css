@@ -17,7 +17,7 @@
 
 #layout-section .material-icons {
   font-size: 1.5rem;
-  padding-right: 0.25em;
+  padding-right: 0.16em;
 }
 
 #layout-section .subpage-heading {
@@ -32,8 +32,12 @@
   text-decoration: none;
   font-weight: 700;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   border: none;
+}
+
+#layout-section a.subpage-ref span.material-icons {
+  font-size: 1.6em;
 }
 
 #layout-section a.subpage-ref:hover span,
