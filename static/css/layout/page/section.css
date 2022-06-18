@@ -34,20 +34,24 @@
   display: flex;
   align-items: stretch;
   border: none;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
 }
 
 #layout-section a.subpage-ref span.material-icons {
   font-size: 1.6em;
 }
 
+#layout-section a.subpage-ref:hover,
+#layout-section a.subpage-ref:active,
+#layout-section a.subpage-ref:focus {
+  background-color: var(--content-text-dark);
+}
 #layout-section a.subpage-ref:hover span,
 #layout-section a.subpage-ref:active span,
 #layout-section a.subpage-ref:focus span {
-  background-color: var(--content-text-dark);
   color: var(--content-text-light);
-  border: transparent;
-  border-radius: var(--border-radius);
-  background-clip: border-box;
 }
 
 #layout-section .description {

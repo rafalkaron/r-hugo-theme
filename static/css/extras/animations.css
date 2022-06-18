@@ -1,8 +1,8 @@
 @media (hover: hover) and (pointer: fine) {
   .animation:hover,
   .animation,
-  .animation *:hover,
-  .animation *,
+  .animation:hover span,
+  .animation span,
   #on-this-page a,
   #on-this-page a:hover,
   a.footnote-ref,
