@@ -3,9 +3,9 @@
   font-weight: 600;
   white-space: nowrap;
   border-bottom: solid calc(var(--border-width-thin) * 0.75)
-    var(--content-text-dark);
+    var(--content-background-middle);
 }
 .content a:hover,
 .content a:active {
-  border-bottom: solid calc(var(--border-width-medium)) var(--content-text-dark);
+  border-color: var(--content-background-dark);
 }
