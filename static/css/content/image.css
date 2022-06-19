@@ -45,3 +45,7 @@
 .content p.quarter > img {
   max-width: 25%;
 }
+
+.content p.border > img {
+  border: solid var(--border-width-thin) var(--content-background-middle);
+}
