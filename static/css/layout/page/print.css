@@ -81,10 +81,10 @@
     border: var(--content-background-middle) var(--border-width-medium) solid;
     background-color: transparent;
   }
-}
 
-/* Fix colors in code */
-.content code,
-.content code * {
-  color: var(--content-text-light);
+  /* Fix colors in code */
+  .content code,
+  .content code * {
+    color: var(--content-text-light) !important;
+  }
 }
