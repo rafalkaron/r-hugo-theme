@@ -3,7 +3,7 @@
 .content .note_caution,
 .content .note_tip {
   margin-top: var(--margin);
-  padding: 0.5rem 1rem;
+  padding: 0.5em 1em;
   display: block;
   border-left: solid var(--border-width) var(--content-background-dark);
   background-color: var(--content-background-middle);
