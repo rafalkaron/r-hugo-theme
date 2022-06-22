@@ -81,6 +81,8 @@
     bottom: 5.75rem;
     overflow: scroll;
     border-bottom: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   #on-this-page {
     border-left: solid var(--border-width-thin) var(--content-background-middle);
@@ -122,6 +124,8 @@
     left: 0;
     bottom: 5.75rem;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
   #side-menu {
     border-right: solid var(--border-width-thin)
