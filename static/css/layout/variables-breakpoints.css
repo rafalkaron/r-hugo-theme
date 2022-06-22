@@ -83,6 +83,7 @@
     border-bottom: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-bottom: 0;
   }
   .on-this-page-wrapper::-webkit-scrollbar {
     display: none;
