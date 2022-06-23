@@ -169,9 +169,10 @@
 /* PORTRAIT PHONES */
 @media only screen and (max-width: 576px) {
   :root {
-    --font-size: 1.2rem;
-    --margin: 1.2rem;
-    --margin-large: 2.5rem;
+    --font-size: 1.3rem;
+    --margin: 1.3rem;
+    --margin-large: 1.5rem;
+    --padding-main: 1.5rem;
   }
   p.huge > img {
     max-width: 300px !important;
