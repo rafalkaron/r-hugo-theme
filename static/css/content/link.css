@@ -1,7 +1,6 @@
 .content a {
   text-decoration: none;
   font-weight: 600;
-  white-space: nowrap;
   border-bottom: solid calc(var(--border-width-thin) * 0.75)
     var(--content-background-middle);
 }
