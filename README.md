@@ -1,8 +1,10 @@
 # r-hugo-theme
 
-A simple Hugo theme suitable for a portfolio, documentation library, or blog. See [r-hugo-theme-demo](https://rafalkaron.github.io/r-hugo-theme-demo).
-<img width="920" alt="r-hugo-theme-desktop-light" src="https://user-images.githubusercontent.com/45826759/175793931-f7810c7e-1ce9-438c-98f7-ee9c9a75536b.png"><img width="320" alt="r-hugo-theme-mobile-dark" src="https://user-images.githubusercontent.com/45826759/175793933-db7448a7-fd96-474c-8073-c05a09d6b7db.png">
-<img width="320" alt="r-hugo-theme-mobile-light" src="https://user-images.githubusercontent.com/45826759/175793934-9d00a991-8e40-4c5d-8149-540c93b462cf.png">
+A simple Hugo theme suitable for a portfolio, documentation library, or blog. See [r-hugo-theme-demo](https://rafalkaron.github.io/r-hugo-theme-demo).  
+
+<img width="920" alt="r-hugo-theme-desktop-light" src="https://user-images.githubusercontent.com/45826759/175793931-f7810c7e-1ce9-438c-98f7-ee9c9a75536b.png">  
+
+<img width="320" alt="r-hugo-theme-mobile-dark" src="https://user-images.githubusercontent.com/45826759/175793933-db7448a7-fd96-474c-8073-c05a09d6b7db.png"><img width="320" alt="r-hugo-theme-mobile-light" src="https://user-images.githubusercontent.com/45826759/175793934-9d00a991-8e40-4c5d-8149-540c93b462cf.png">
 
 
 ## Key features
