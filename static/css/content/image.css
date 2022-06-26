@@ -1,7 +1,6 @@
 .content img {
   overflow: auto;
   padding: 0;
-  max-width: 100%;
   display: block;
   border-radius: var(--border-radius);
 }
@@ -22,28 +21,32 @@
 
 /* Add classes for manipulating images size */
 .content p.tiny > img {
-  max-width: 10rem;
+  width: 10rem;
 }
 .content p.small > img {
-  max-width: 15rem;
+  width: 15rem;
 }
 .content p.medium > img {
-  max-width: 20rem;
+  width: 20rem;
 }
 .content p.large > img {
-  max-width: 25rem;
+  width: 25rem;
 }
 .content p.huge > img {
-  max-width: 30rem;
+  width: 30rem;
 }
 .content p.three-fourth > img {
-  max-width: 75%;
+  width: 75%;
 }
 .content p.half > img {
-  max-width: 50%;
+  width: 50%;
 }
 .content p.quarter > img {
-  max-width: 25%;
+  width: 25%;
+}
+
+.content p > img {
+  max-width: 100%;
 }
 
 .content p.border > img {

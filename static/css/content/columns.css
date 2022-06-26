@@ -16,6 +16,12 @@
   column-gap: var(--margin);
 }
 
+.content .two_column *,
+.content .three_column *,
+.content .four_column * {
+  max-width: 100%;
+}
+
 /* Avoid breaking some elements in columns */
 .content .two_column p,
 .content .three_column p,
