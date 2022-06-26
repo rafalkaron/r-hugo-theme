@@ -2,8 +2,61 @@
   break-inside: avoid;
   width: auto;
   margin-top: var(--margin);
+  background-color: var(--content-background-dark);
+  border-radius: var(--border-radius);
 }
 
+/* Add code lg caption */
+.content .code-lg-container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: var(--margin);
+}
+.content .code-lg {
+  font-variant: small-caps;
+  padding: 0 0.6rem;
+  font-size: 0.8rem;
+  color: var(--layout-text);
+  font-weight: 600;
+}
+.content .code-lg-container + .highlight > pre {
+  margin-top: 0;
+}
+.content .code-lg-container + .highlight > pre > code {
+  padding-top: 0;
+}
+
+/* Style pre wrapper */
+.content pre {
+  padding: 0;
+  display: block;
+  width: fit-content;
+  border-radius: var(--border-radius);
+  overscroll-behavior: none;
+}
+/* Always expand codeblocks for printed media */
+@media screen {
+  .content pre {
+    max-height: 70vh;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    width: 100%;
+  }
+}
+/* Fix background color for mobile */
+.highlight pre {
+  background-color: var(--content-background-dark) !important;
+}
+
+/* Style code */
+.content pre > code {
+  white-space: pre-wrap;
+  padding: var(--margin);
+  display: block;
+  line-height: 1.2em;
+}
 .content code {
   word-wrap: break-all;
   display: inline;
@@ -18,61 +71,8 @@
   font-size: 0.8rem;
 }
 
-.content pre {
-  padding: 0;
-  display: block;
-  width: fit-content;
-  border-radius: var(--border-radius);
-  overscroll-behavior: none;
-}
-
-@media screen {
-  .content pre {
-    max-height: 70vh;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    width: 100%;
-  }
-}
-.content pre > code {
-  white-space: pre-wrap;
-  padding: 1rem;
-  display: block;
-  line-height: 1.2em;
-}
-
-/* Fix background color for mobile */
-.highlight pre {
-  background-color: var(--content-background-dark) !important;
-}
-
+/* Overwrite default text-selection */
 .content code *::selection {
   background-color: #e0e0e04d;
   color: inherit;
-}
-
-/* Add code lg caption */
-.content .code-lg-container {
-  margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--content-background-dark);
-  border-top-left-radius: var(--border-radius);
-  border-top-right-radius: var(--border-radius);
-}
-.content .code-lg {
-  font-variant: small-caps;
-  padding: 0.25rem 0.5rem 0.125rem 0.5rem;
-  font-size: 0.8rem;
-  color: var(--layout-text);
-  font-weight: 600;
-}
-.content .code-lg-container + .highlight > pre {
-  margin-top: 0;
-  padding-top: 0.125rem;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-.content .code-lg-container + .highlight > pre > code {
-  padding-top: 0;
 }
