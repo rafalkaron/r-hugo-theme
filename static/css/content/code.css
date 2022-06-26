@@ -23,6 +23,7 @@
   display: block;
   width: fit-content;
   border-radius: var(--border-radius);
+  overscroll-behavior: none;
 }
 
 @media screen {
@@ -61,13 +62,14 @@
 }
 .content .code-lg {
   font-variant: small-caps;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.25rem 0.5rem 0.125rem 0.5rem;
   font-size: 0.8rem;
   color: var(--layout-text);
   font-weight: 600;
 }
 .content .code-lg-container + .highlight > pre {
   margin-top: 0;
+  padding-top: 0.125rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
