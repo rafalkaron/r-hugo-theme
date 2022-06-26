@@ -67,6 +67,7 @@
     padding-left: 1rem;
     border-left: solid var(--border-width-thin) var(--content-background-middle);
     max-width: 16rem;
+    width: fit-content;
   }
   /* Show level-1 link (h1) for non-mobile */
   #on-this-page .on-this-page-caption-dynamic {
@@ -120,6 +121,7 @@
   }
   #side-menu > ul {
     max-width: 16rem;
+    width: fit-content;
   }
   /* Style caption */
   #side-menu .side-menu-caption {
