@@ -18,7 +18,8 @@ html {
 code,
 code *,
 pre,
-pre * {
+pre *,
+.code-lg {
   font-family: "Source Code Pro", monospace;
 }
 

@@ -40,3 +40,31 @@
   background-color: #e0e0e04d;
   color: inherit;
 }
+
+.content .code-lg-container {
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--content-background-dark);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+  /* border-bottom: solid var(--border-width-thin) var(--content-background-middle); */
+}
+
+.content .code-lg {
+  font-variant: small-caps;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 0.8rem;
+  color: var(--layout-text);
+  font-weight: 600;
+}
+
+.content .code-lg-container + .highlight > pre {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.content .code-lg-container + .highlight > pre > code {
+  padding-top: 0;
+}
