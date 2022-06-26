@@ -1,13 +1,11 @@
-{{ $class := .Attributes.class | default ""    }}
+{{ $class := .Attributes.class | default "codeblock" }}
 {{ $lang  := .Attributes.lang  | default .Type }}
-{{ if transform.CanHighlight $lang }}
 
-<div class="{{ $class }}">
-  <div class="code-lg-container"><span class="code-lg">{{ $lang }}</span></div>
-  {{ highlight .Inner $lang }}
-</div>
+{{ if transform.CanHighlight $lang }}
+  <div class="{{ $class }}">
+    <div class="code-lg-container"><span class="code-lg">{{ $lang }}</span></div>
+    {{ highlight .Inner $lang }}
+  </div>
 {{else}}
-<pre>
-  <code class="{{ $class }}">{{.Inner}}</code>
-</pre>
+  <pre class="{{ $class }}"><code>{{.Inner}}</code></pre>
 {{end}}

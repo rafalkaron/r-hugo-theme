@@ -1,12 +1,17 @@
+.content .codeblock {
+  break-inside: avoid;
+  width: auto;
+  margin-top: var(--margin);
+}
+
 .content code {
   word-wrap: break-word;
   display: inline;
-  width: auto;
-  padding: 0 0.25rem;
   background-color: var(--content-background-dark);
   color: var(--layout-text);
   border-radius: var(--border-radius);
   font-size: 0.8rem;
+  padding: 0 0.25rem;
 }
 .content code * {
   color: var(--layout-text);
@@ -14,7 +19,6 @@
 }
 
 .content pre {
-  margin-top: var(--margin);
   padding: 0;
   display: block;
   width: fit-content;
