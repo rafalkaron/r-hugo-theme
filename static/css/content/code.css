@@ -40,6 +40,11 @@
   line-height: 1.2em;
 }
 
+/* Fix background color for mobile */
+.highlight pre {
+  background-color: var(--content-background-dark) !important;
+}
+
 .content code *::selection {
   background-color: #e0e0e04d;
   color: inherit;
