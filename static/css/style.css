@@ -14,7 +14,6 @@
 @import "layout/partials/meta.css";
 @import "layout/partials/related-links.css";
 @import "layout/partials/footer.css";
-@import "layout/page/print.css";
 
 /* CONTENT */
 @import "content/typography.css";
@@ -43,3 +42,6 @@
 @import "palette/light.css";
 @import "palette/dark.css";
 @import "palette/print.css";
+
+/* PRINT */
+@import "layout/page/print.css";

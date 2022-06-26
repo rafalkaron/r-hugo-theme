@@ -84,10 +84,24 @@
   }
 
   /* Fix colors in code */
-  .content .codeblock,
-  .content .codeblock *,
+
+  .content .codeblock {
+    border: var(--content-background-middle) var(--border-width-medium) solid;
+    background-color: transparent !important;
+  }
+
+  .content pre > code,
+  .highlight pre {
+    color: var(--content-text-dark) !important;
+    background-color: transparent !important;
+  }
+
   .content code,
   .content code * {
-    color: var(--content-text-light) !important;
+    color: var(--content-text-dark) !important;
+  }
+
+  .content code {
+    background-color: var(--content-background-middle);
   }
 }
