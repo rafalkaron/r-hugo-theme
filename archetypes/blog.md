@@ -7,4 +7,5 @@ date: yyyy-mm-dd
 tags: ["Tag a", "Tag b", "Tag c"]
 categories: "Category a"
 # image: "path/to/description-image"
+# draft: true
 ---

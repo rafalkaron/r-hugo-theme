@@ -5,4 +5,5 @@ weight: 1
 # keywords: ["keyword", "keyword2"]
 # image: "path/to/description-image"
 # icon: "Google-font icon, for example 'check-box'"
+# draft: true
 ---
