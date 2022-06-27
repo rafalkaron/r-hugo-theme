@@ -65,4 +65,5 @@
 
 #layout-section .description-image {
   margin-top: calc(var(--margin) / 2);
+  max-width: 100%;
 }
