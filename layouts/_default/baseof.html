@@ -4,7 +4,10 @@
 	<body>
 		{{ partial "layout/navigation/header" . }}
 		<script src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
-		<script src="{{ "js/hide-navbar.js" | relURL }}"></script> 
+		<script src="{{ "js/hide-navbar.js" | relURL }}"></script>
+		{{ if (findRE "<pre" .Content 1) }}
+			<script src="{{ "js/copy-text.js" | relURL }}"></script> 
+		{{ end }}
 		{{ block "main" . }}{{ end }}
 		{{ partial "layout/footer" . }}
 	</body>

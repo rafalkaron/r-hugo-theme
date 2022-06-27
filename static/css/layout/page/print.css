@@ -91,9 +91,14 @@
   }
 
   .content pre > code,
-  .highlight pre {
+  .highlight pre,
+  .content .code-lg-container {
     color: var(--content-text-dark) !important;
     background-color: transparent !important;
+  }
+
+  .content .code-lg-container {
+    justify-content: flex-end;
   }
 
   .content code,

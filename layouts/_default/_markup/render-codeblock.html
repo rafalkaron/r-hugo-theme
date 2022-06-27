@@ -7,5 +7,7 @@
     {{ highlight .Inner $lang }}
   </div>
 {{else}}
-  <pre class="{{ $class }}"><code>{{.Inner}}</code></pre>
+<div class="{{ $class }}">
+  <pre><code>{{.Inner}}</code></pre>
+</div>
 {{end}}

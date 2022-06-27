@@ -19,7 +19,8 @@ code,
 code *,
 pre,
 pre *,
-.code-lg {
+.code-lg,
+.copy-code-button {
   font-family: "Source Code Pro", monospace;
 }
 
