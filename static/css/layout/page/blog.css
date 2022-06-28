@@ -72,6 +72,11 @@
   margin-top: calc(var(--margin) / 2);
 }
 
+#layout-blog .description-image,
+#layout-single .description-image {
+  width: 100%;
+}
+
 .read-more-container {
   display: flex;
   justify-content: right;

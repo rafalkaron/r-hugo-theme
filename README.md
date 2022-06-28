@@ -39,7 +39,7 @@ Set up a simple website that uses r-hug-theme with sample content.
 4. Enter the Hugo site directory by entering `cd {site_name}`
 5. Initialize a Git repository by entering `git init`
 6. Add the theme by entering `git submodule add https://rafalkaron.github.io/r-hugo-theme`
-7. Move the files and folders from the `example-site` directory into the root folder of your site.
+7. Move the files and folders from the `example-site-english` or `example-site-multilingual` directory into the root folder of your site.
 8. Run a local Hugo webserver by entering `hugo server`
 
 ### Postrequisites
