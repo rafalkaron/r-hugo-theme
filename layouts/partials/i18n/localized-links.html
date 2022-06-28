@@ -1,0 +1,12 @@
+{{ if .IsTranslated }}
+<section class="translation-links-wrapper article-section">
+<h2>{{ i18n "translations" }}</h2>
+<ul class="translation-links-list">
+  {{ range .Translations }}
+  <li>
+    <a class="translation-link" href="{{ .Permalink }}">{{ .Lang }}: {{ .Title }}{{ if .IsPage }} ({{ i18n "wordCount" . }}){{ end }}</a>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+</section>
