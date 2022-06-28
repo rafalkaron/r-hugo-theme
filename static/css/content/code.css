@@ -15,13 +15,14 @@
   align-items: flex-start;
   height: var(--margin);
   background-color: var(--content-background-dark);
+  color: var(--layout-text) !important;
 }
 .content .code-lg,
 .content .copy-code-button {
   font-variant: small-caps;
   padding: var(--padding-small) 0.5rem;
   font-size: 0.8rem;
-  color: var(--layout-text);
+  color: var(--layout-text) !important;
   font-weight: 600;
 }
 
