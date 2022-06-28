@@ -31,6 +31,7 @@ main h6 {
 }
 
 /* Fix anchors hidden behind navbar */
+.content h1[id],
 .content h2[id],
 .content h3[id],
 .content h4[id],
@@ -57,15 +58,18 @@ main article.content a.heading-link {
   border: none;
 }
 /* Show heading links # only on hover */
+main h1:hover a.heading-link,
 main h2:hover a.heading-link,
 main h3:hover a.heading-link,
 main h4:hover a.heading-link,
 main h5:hover a.heading-link,
 main h6:hover a.heading-link,
+main h1:active a.heading-link,
 main h2:active a.heading-link,
 main h3:active a.heading-link,
 main h4:active a.heading-link,
-main h5:active a.heading-link {
+main h5:active a.heading-link,
+main h6:active a.heading-link {
   color: var(--content-background-middle);
   background-color: transparent;
 }
