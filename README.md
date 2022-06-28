@@ -6,7 +6,6 @@ A simple Hugo theme suitable for a portfolio, documentation library, or blog. Se
 
 <img width="320" alt="r-hugo-theme-mobile-dark" src="https://user-images.githubusercontent.com/45826759/175793933-db7448a7-fd96-474c-8073-c05a09d6b7db.png"><img width="320" alt="r-hugo-theme-mobile-light" src="https://user-images.githubusercontent.com/45826759/175793934-9d00a991-8e40-4c5d-8149-540c93b462cf.png">
 
-
 ## Key features
 
 * Responsive layout for desktops, tablets, mobile, and print
@@ -39,7 +38,7 @@ Set up a simple website that uses r-hug-theme with sample content.
 4. Enter the Hugo site directory by entering `cd {site_name}`
 5. Initialize a Git repository by entering `git init`
 6. Add the theme by entering `git submodule add https://rafalkaron.github.io/r-hugo-theme`
-7. Move the files and folders from the `example-site-english` or `example-site-multilingual` directory into the root folder of your site.
+7. Move the files and folders from the `example-site` or `example-site-multilingual` directory into the root folder of your site.
 8. Run a local Hugo webserver by entering `hugo server`
 
 ### Postrequisites
