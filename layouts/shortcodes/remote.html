@@ -2,6 +2,6 @@
 {{ $remote_url := .Get 0 }}
 {{ $json := getJSON $remote_url }} <!-- JSON that returns MD data. -->
 
-<section class="remote">
-{{ $json.content | base64Decode | markdownify }}
+<section class="remote article-section">
+  {{ $json.content | base64Decode | markdownify }}
 </section>
