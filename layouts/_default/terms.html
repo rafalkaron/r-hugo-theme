@@ -6,8 +6,14 @@
   </div>
 </div>
   <article class="content">
-    <h1>{{ .Title }}</h1>
-    <div class="terms tags categories tags-wrapper">
+    {{ if eq .Title "Tags" }} 
+      <h1>{{ i18n "tags" | title }}</h1>
+    {{ else if eq .Title "Categories" }}
+      <h1>{{ i18n "categories" | title }}</h1>
+    {{ else }}
+      <h1>{{ .Title}}</h1>
+    {{ end }} 
+    <section class="terms tags categories tags-wrapper">
       <ul class="tags">
         {{ if eq .Title "Tags" }} 
           {{range ($.Site.GetPage "taxonomyTerm" "tags").Pages }}
@@ -18,7 +24,7 @@
           {{ end }} 
         {{ end }}
       </ul>
-    </div>
+    </section>
   </article>
   <div class="gutter bottom-gutter not-selectable">
     <div class="gutter-group">

@@ -1,0 +1,41 @@
+error_404:
+  other: "404: Page not found"
+
+# navigation
+see_also:
+  other: "See also"
+on_this_page:
+  other: "On this page"
+
+# blog
+posts:
+  other: posts
+tags:
+  other: tags
+categories:
+  other: categories
+published_date:
+  other: "Published date"
+edited_date:
+  other: "Edited date"
+all_posts:
+  other: "All blog posts"
+all_tags:
+  other: "All blog tags"
+all_categories: "All blog categories"
+
+# next-prev-single-page, pagination
+next_site:
+  other: "next »"
+prev_site:
+  other: "« prev"
+
+# gutter
+print:
+  other: print
+print_current_page:
+  other: "print current page"
+top:
+  other: top
+scroll_to_top:
+  other: "scroll to top"

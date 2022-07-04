@@ -1,0 +1,41 @@
+error_404:
+  other: "404: Nie znaleziono strony"
+
+# navigation
+see_also:
+  other: "Zobacz również"
+on_this_page:
+  other: "Na tej stronie"
+
+# blog
+posts:
+  other: posty
+tags:
+  other: tagi
+categories:
+  other: kategorie
+published_date:
+  other: "Data publikacji"
+edited_date:
+  other: "Data edycji"
+all_posts:
+  other: "Wszystkie posty"
+all_tags:
+  other: "Wszystkie tagi"
+all_categories: "Wszystkie kategorie"
+
+# next-prev-single-page, pagination
+next_site:
+  other: "dalej »"
+prev_site:
+  other: "« wstecz"
+
+# gutter
+print:
+  other: drukuj
+print_current_page:
+  other: "drukuj aktualną stronę"
+top:
+  other: góra
+scroll_to_top:
+  other: "wróć na górę strony"
