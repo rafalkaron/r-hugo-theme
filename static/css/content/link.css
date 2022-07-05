@@ -6,5 +6,5 @@
 }
 .content a:hover,
 .content a:active {
-  border-color: var(--content-background-dark);
+  border-color: var(--content-text-dark);
 }
