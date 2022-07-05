@@ -1,0 +1,40 @@
+
+{{ define "main" }}
+<main id="layout-archive">
+  <div class="top-gutter gutter not-selectable">
+    {{ partial "layout/gutter/breadcrumbs" . }}
+    <div class="gutter-group">
+      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
+    </div>
+</div>
+  <article class="content">
+    <section class="introduction">
+      <h1>{{ .Title }}</h1>
+      {{ .Content }}
+    </section>
+    <section class="archive">
+        {{ $blog_posts := .CurrentSection.RegularPages }}
+        {{ range ($blog_posts.GroupByDate "2006") }}
+          {{ if not (in .Key "0001") }}
+          <div class="archive-year">
+            <h2>{{ .Key }}</h2>
+            <ul class="archive-list">
+                {{ range .Pages }}
+                  {{ if not (in .Params.type "blog/archive") }}
+                    <li class="archive-list-item"><time>{{ .PublishDate.Format "02 January" }}: </time><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    </li>
+                {{ end }}
+                {{end }}
+            </ul>
+          </div>
+          {{ end }}
+        {{ end }}
+    </section>
+  </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+    </div>
+  </div>
+</main>
+{{ end }}

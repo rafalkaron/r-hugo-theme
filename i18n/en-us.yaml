@@ -22,7 +22,12 @@ all_posts:
   other: "All blog posts"
 all_tags:
   other: "All blog tags"
-all_categories: "All blog categories"
+all_categories:
+  other: "All blog categories"
+archive:
+  other: "archive"
+archive_desc:
+  other: "Posts archive"
 
 # next-prev-single-page, pagination
 next_site:

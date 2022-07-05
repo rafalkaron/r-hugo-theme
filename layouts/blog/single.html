@@ -2,7 +2,9 @@
 <main id="layout-single">
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
-    <div class="gutter-group">{{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }}</div>
+    <div class="gutter-group">
+      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
+    </div>
 </div>
   {{ partial "layout/navigation/on-this-page" . }}
   <article class="content">

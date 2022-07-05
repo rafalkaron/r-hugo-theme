@@ -22,7 +22,12 @@ all_posts:
   other: "Wszystkie posty"
 all_tags:
   other: "Wszystkie tagi"
-all_categories: "Wszystkie kategorie"
+all_categories:
+  other: "Wszystkie kategorie"
+archive:
+  other: "archiwum"
+archive_desc:
+  other: "Archiwum postów"
 
 # next-prev-single-page, pagination
 next_site:

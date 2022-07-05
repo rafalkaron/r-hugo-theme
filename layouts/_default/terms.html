@@ -2,8 +2,9 @@
 <main id="layout-terms">
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
-    <div class="gutter-group">{{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }}
-  </div>
+    <div class="gutter-group">
+      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
+    </div>
 </div>
   <article class="content">
     {{ if eq .Title "Tags" }} 
