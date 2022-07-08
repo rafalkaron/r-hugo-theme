@@ -4,8 +4,8 @@
     <li>
       {{ if eq .Parent.RelPermalink "/" }}
       <a href="{{ .Permalink }}" class="side-menu-caption animation">{{ .Title }}</a>
-      {{ else }}
-      <a href="{{ .Parent.Permalink }}" class="side-menu-caption animation">{{ .Parent.Title }}</a>
+      {{ else if (in .Parent .Section) }}
+      <a href="{{ .Permalink }}" class="side-menu-caption animation">{{ .Title }}</a>
       {{ end }}
       <ul>
         {{ range .Pages }}
