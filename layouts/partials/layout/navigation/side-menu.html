@@ -2,13 +2,7 @@
   <nav id="side-menu">
   <ul>
     <li>
-      {{ if eq .Parent.RelPermalink "/" }}
       <a href="{{ .Permalink }}" class="side-menu-caption animation">{{ .Title }}</a>
-      {{ else if (in .Parent .Section) }}
-      <a href="{{ .Permalink }}" class="side-menu-caption animation">{{ .Title }}</a>
-      {{ else }}
-      <a href="{{ .Parent.Permalink }}" class="side-menu-caption animation">{{ .Parent.Title }}</a>
-      {{ end }}
       <ul>
         {{ range .Pages }}
         <li><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .Permalink }}">{{ .Title }}</a></li>
