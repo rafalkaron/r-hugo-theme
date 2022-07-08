@@ -49,12 +49,18 @@
   background-clip: border-box;
   text-align: start;
 }
-#on-this-page a:hover,
-#on-this-page a:active {
-  background-color: var(--content-text-dark);
-  color: var(--content-text-light);
+
+#on-this-page ul > li.active > a:first-of-type {
+  background-color: var(--content-background-middle);
 }
 
-#on-this-page a.active {
-  font-weight: 600;
+#on-this-page ul > li.active:only-child > a:first-of-type,
+#on-this-page ul > li.active ~ li.active > a {
+  background-color: transparent;
+}
+
+#on-this-page a:hover,
+#on-this-page a:active {
+  background-color: var(--content-text-dark) !important;
+  color: var(--content-text-light) !important;
 }
