@@ -1,0 +1,19 @@
+{{ define "main" }}
+<main id="layout-section">
+  <div class="top-gutter gutter not-selectable">
+    {{ partial "layout/gutter/breadcrumbs" . }}
+  </div>
+  {{ partial "layout/navigation/side-menu" . }}
+  <article class="content">
+    {{ partial "_index" . }}
+    <section class="subpages">
+      {{ range .Pages }} {{ .Render "summary" }} {{ end }}
+    </section>
+  </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+    </div>
+  </div>
+</main>
+{{ end }}

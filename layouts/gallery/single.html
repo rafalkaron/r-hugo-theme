@@ -1,0 +1,24 @@
+{{ define "main" }}
+<main id="layout-single">
+  <div class="gutter top-gutter not-selectable">
+    {{ partial "layout/gutter/breadcrumbs" . }}
+  </div>
+  {{ partial "layout/navigation/side-menu-single" . }}
+  <article class="content">
+    <section class="introduction">
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}
+      <p class="description">{{ . | markdownify }}</p>
+      {{ end }}
+    </section>
+    {{ partial "layout/bodytext.html" . }}
+    {{ partial "layout/navigation/related-links" . }}
+  </article>
+  <div class="gutter bottom-gutter not-selectable">
+    <div class="gutter-group">
+      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+    </div>
+    {{ partial "layout/gutter/next-prev-single-page" . }}
+  </div>
+</main>
+{{ end }}

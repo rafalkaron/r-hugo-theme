@@ -23,7 +23,7 @@
 }
 @media only screen and (min-width: 3840px) {
   #layout-section .subpage {
-    width: 32.15%;
+    width: calc(33.1% - var(--margin) / 2);
   }
 }
 
@@ -33,7 +33,7 @@
     --padding-main: 2.5rem;
   }
   #layout-section .subpage {
-    width: 48.5%;
+    width: calc(50% - var(--margin) / 2);
   }
 }
 
