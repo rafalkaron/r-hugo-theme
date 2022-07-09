@@ -22,8 +22,9 @@
   }
 }
 @media only screen and (min-width: 3840px) {
-  #layout-section .subpage {
-    width: 32.15%;
+  #layout-section .subpage,
+  #layout-single-gallery .gallery-items-container figure {
+    width: calc(33.1% - var(--margin) / 2);
   }
 }
 
@@ -32,8 +33,9 @@
   :root {
     --padding-main: 2.5rem;
   }
-  #layout-section .subpage {
-    width: 48.5%;
+  #layout-section .subpage,
+  #layout-single-gallery .gallery-items-container figure {
+    width: calc(50% - var(--margin) / 2);
   }
 }
 
@@ -173,7 +175,8 @@
     --margin-large: 1.5rem;
     --padding-main: 1.5rem;
   }
-  #layout-section .subpage {
+  #layout-section .subpage,
+  #layout-single-gallery .gallery-items-container figure {
     width: 100%;
   }
   #nav-primary {

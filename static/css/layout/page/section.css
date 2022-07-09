@@ -2,13 +2,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 100%;
-  row-gap: var(--margin);
+  gap: var(--margin);
   margin-top: var(--margin);
 }
 #layout-section .subpage {
-  width: 48.5%;
+  width: calc(50% - var(--margin) / 2);
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;
@@ -66,4 +65,16 @@
 #layout-section .description-image {
   margin-top: calc(var(--margin) / 2);
   max-width: 100%;
+}
+
+#layout-section .subpage.gallery .subpage-heading {
+  margin-top: calc(var(--margin) / 2);
+}
+
+#layout-section .subpage.gallery .description-image {
+  margin: 0;
+}
+
+#layout-section .subpage.gallery .description {
+  margin: 0;
 }

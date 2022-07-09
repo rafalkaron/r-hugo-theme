@@ -1,0 +1,15 @@
+<section class="subpage gallery" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
+  {{ with .Params.image }}
+  <div class="description-image-container">
+    <img class="description-image" src="{{ . | relURL }}" />
+  </div>
+  {{ end }}
+  <div class="description-wrapper">
+    <h6>{{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }}</span></h6>
+    <p class="description">
+    {{ with .Params.description }}
+    {{ . | markdownify }} 
+    {{ end }}
+    </p>
+  </div>
+</section>
