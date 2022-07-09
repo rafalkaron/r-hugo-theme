@@ -9,21 +9,17 @@ images.forEach((img) => {
     imgModal(imgSrc);
   });
 });
-//creating the modal
+
+//managing the modal
 let imgModal = (src) => {
-  const modal = document.createElement("div");
-  modal.setAttribute("class", "modal");
-  //add the modal to the main section or the parent element
-  document.querySelector("body").append(modal);
-  //adding image to modal
-  const newImage = document.createElement("img");
-  newImage.setAttribute("src", src);
-  //creating the close button
-  const closeBtn = document.createElement("i");
-  closeBtn.setAttribute("class", "fas fa-times closeBtn");
+  const modal = document.querySelector(".modal");
+  modal.style.display = "flex";
+
+  //add image src to modal
+  popupImage = document.querySelector("img.to-popup");
+  popupImage.setAttribute("src", src);
   //close function
   modal.onclick = () => {
-    modal.remove();
+    modal.style.display = "none";
   };
-  modal.append(newImage);
 };
