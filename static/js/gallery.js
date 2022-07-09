@@ -18,6 +18,9 @@ let imgModal = (src) => {
   popupImage = document.querySelector("img.to-popup");
   popupImage.setAttribute("src", src);
 
+  downloadIcon = document.querySelector("a.download.icon");
+  downloadIcon.setAttribute("href", src);
+
   // Close on click
   modal.onclick = () => {
     modal.style.display = "none";

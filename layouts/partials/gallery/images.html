@@ -2,7 +2,7 @@
     {{ with .Params.images }}
       {{ range . }}
       <figure class="gallery-item">
-          <img class="popup" alt=" {{ .alt }}" src="{{ .src | absURL }}" style="cursor: pointer;"/>
+          <img class="popup" alt="{{ .alt }}" src="{{ .src | absURL }}" style="cursor: pointer;"/>
         <figcaption>
           <div class="figcaption-group">
             <h6>{{ .title }}</h6>

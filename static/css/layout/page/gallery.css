@@ -57,14 +57,14 @@
 /* MODAL */
 .modal {
   position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  top: 0rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
   display: none;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.849);
+  background-color: var(--content-background-dark);
   animation: fadein 0.2s;
   z-index: 2;
 }
@@ -78,6 +78,23 @@
 }
 
 .modal img {
-  width: 75%;
+  width: 70%;
   object-fit: cover;
+}
+
+.modal .icon-group {
+  z-index: 2;
+  position: absolute;
+  margin: var(--margin) var(--padding-main);
+  top: 0;
+  right: 0;
+}
+
+.modal .icon {
+  cursor: pointer;
+  margin-right: calc(var(--margin) / 4);
+}
+
+.modal .icon:last-of-type {
+  margin-right: 0;
 }
