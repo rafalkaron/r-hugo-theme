@@ -1,3 +1,15 @@
+#layout-section.layout-gallery section.subpages {
+  gap: calc(var(--margin) / 2);
+}
+
+#layout-section.layout-gallery .subpage.gallery {
+  width: calc(50% - var(--margin) / 2);
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+  padding: calc(var(--margin) / 2);
+}
+
 #layout-single-gallery .gallery-items-container {
   display: flex;
   flex-direction: row;
