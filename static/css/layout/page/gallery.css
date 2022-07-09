@@ -63,12 +63,25 @@
   right: 0rem;
   left: 0rem;
   display: none;
-  justify-content: center;
-  align-items: center;
   background-color: var(--content-background-dark);
   animation: fadein 0.2s;
   z-index: 2;
 }
+
+#layout-single-gallery .modal-body {
+  padding: var(--margin);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0rem;
+  bottom: 0rem;
+  right: 0rem;
+  left: 0rem;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
 @keyframes fadein {
   from {
     opacity: 0;
