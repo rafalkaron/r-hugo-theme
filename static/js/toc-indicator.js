@@ -15,7 +15,7 @@ if (document.documentElement.clientWidth >= 992) {
           }
         });
       },
-      { rootMargin: "-15% 0px 0px 0px" }
+      { rootMargin: "-50% 0px 0px 0px" }
     );
 
     document.querySelectorAll("section.article-section").forEach((section) => {
