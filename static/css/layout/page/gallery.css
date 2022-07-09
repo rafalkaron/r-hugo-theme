@@ -10,8 +10,33 @@
 
 #layout-single-gallery .gallery-items-container figure {
   width: calc(50% - var(--margin) / 2);
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+  padding: calc(var(--margin) / 2);
 }
 
 #layout-single-gallery .gallery-items-container figure img {
   width: 100%;
+}
+
+#layout-single-gallery .description {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+#layout-single-gallery figcaption {
+  margin-top: calc(var(--margin) / 3);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#layout-single-gallery figcaption .figcaption-group {
+  display: block;
+}
+
+#layout-single-gallery .material-icons,
+#layout-single-gallery a.icon:hover {
+  border: none;
 }

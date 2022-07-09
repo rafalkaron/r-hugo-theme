@@ -2,9 +2,15 @@
     {{ with .Params.images }}
       {{ range . }}
       <figure>
-          <img src="{{ . | absURL }}" onclick="window.open('{{ . | absURL }}');" style="cursor: pointer;"/>
+          <img alt=" {{ .alt }}" src="{{ .src | absURL }}" onclick="window.open('{{ .src | absURL }}');" style="cursor: pointer;"/>
         <figcaption>
-          <h4></h4>
+          <div class="figcaption-group">
+            <h6>{{ .title }}</h6>
+            <p class="description">{{ .desc }}</p>
+          </div>
+          <div class="figcaption-group">
+            <a class="icon" href="{{ .src | absURL }}" download="{{ .src | .File.LogicalName }}"><span class="material-icons">download</span></a>
+          </div>
         </figcaption>
       </figure>
       {{ end }}
