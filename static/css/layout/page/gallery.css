@@ -53,3 +53,31 @@
 #layout-single-gallery a.icon:hover {
   border: none;
 }
+
+/*Image modal*/
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.849);
+  animation: fadein 0.2s;
+  z-index: 2;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal img {
+  width: 75%;
+  object-fit: cover;
+}
