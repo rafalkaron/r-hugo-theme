@@ -2,7 +2,7 @@
 {{ $related_external := .Params.keywords_external }}
 
 {{ if or $related $related_external }}
-<section class="related-links-wrapper article-section">
+<section class="related-links-wrapper">
   <h2 id="see-also">{{ i18n "see_also" }}</h2>
   <ul class="related-links-list">
     {{ with $related }}
