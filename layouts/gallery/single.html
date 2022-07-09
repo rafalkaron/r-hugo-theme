@@ -1,5 +1,5 @@
 {{ define "main" }}
-<main id="layout-single">
+<main id="layout-single-gallery">
   <div class="gutter top-gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
@@ -11,7 +11,9 @@
       <p class="description">{{ . | markdownify }}</p>
       {{ end }}
     </section>
+    <section class="gallery-items-container">
     {{ partial "layout/bodytext.html" . }}
+    </section>
     {{ partial "layout/navigation/related-links" . }}
   </article>
   <div class="gutter bottom-gutter not-selectable">
