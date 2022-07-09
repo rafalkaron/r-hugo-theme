@@ -3,14 +3,13 @@
   <div class="description-image-container">
     <img class="description-image" src="{{ . | relURL }}" />
   </div>
-{{ end }}
-<h2 class="subpage-heading">{{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }}</span></h2>
-
-  <div class="description">
+  {{ end }}
+  <div class="description-wrapper">
+    <h6>{{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }}</span></h6>
+    <p class="description">
     {{ with .Params.description }}
     {{ . | markdownify }} 
-    {{ else }} 
-    {{ .Summary | truncate 160 }}
     {{ end }}
+    </p>
   </div>
 </section>
