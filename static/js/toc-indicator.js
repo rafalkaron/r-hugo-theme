@@ -3,7 +3,7 @@ if (document.documentElement.clientWidth >= 992) {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const id = entry.target.querySelector("h2, h3").getAttribute("id");
+          const id = entry.target.querySelector("h2").getAttribute("id");
           if (entry.intersectionRatio > 0) {
             document
               .querySelector(`nav li a[href="#${id}"]`)
@@ -21,5 +21,31 @@ if (document.documentElement.clientWidth >= 992) {
     document.querySelectorAll("section.article-section").forEach((section) => {
       observer.observe(section);
     });
+  });
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          const id = entry.target.getAttribute("id");
+          if (entry.intersectionRatio > 0) {
+            document
+              .querySelector(`nav li a[href="#${id}"]`)
+              .parentElement.classList.add("active");
+          } else {
+            document
+              .querySelector(`nav li a[href="#${id}"]`)
+              .parentElement.classList.remove("active");
+          }
+        });
+      },
+      { rootMargin: "-5% 0px 0px 0px" }
+    );
+
+    document
+      .querySelectorAll("section.article-section h3")
+      .forEach((section) => {
+        observer.observe(section);
+      });
   });
 }

@@ -50,12 +50,15 @@
   text-align: start;
 }
 
-#on-this-page ul > li.active > a:first-of-type {
+#on-this-page ul > li.active > a:first-of-type,
+#on-this-page ul > li.active > ul > li.active > a:first-of-type {
   background-color: var(--content-background-middle);
 }
 
 #on-this-page ul > li.active:only-child > a:first-of-type,
-#on-this-page ul > li.active ~ li.active > a {
+#on-this-page ul > li.active ~ li.active > a,
+#on-this-page ul > li.active ~ li.active > ul > li.active > a,
+#on-this-page ul > li.active > ul > li.active ~ li.active > a {
   background-color: transparent;
 }
 
