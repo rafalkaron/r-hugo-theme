@@ -120,5 +120,9 @@
 }
 
 #layout-single-gallery .modal-figure {
-  width: 65%;
+}
+
+#layout-single-gallery .modal-figure img {
+  max-width: 75vw;
+  max-height: 80vh;
 }
