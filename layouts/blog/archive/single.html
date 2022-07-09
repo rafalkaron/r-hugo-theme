@@ -21,7 +21,7 @@
             <ul class="archive-list">
                 {{ range .Pages }}
                   {{ if not (in .Params.type "blog/archive") }}
-                    <li class="archive-list-item"><time>{{ .PublishDate.Format "02 January" }}: </time><a title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <li class="archive-list-item"><time>{{ .PublishDate.Format "02 January" }}: </time><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
                     </li>
                 {{ end }}
                 {{end }}
