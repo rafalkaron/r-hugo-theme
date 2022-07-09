@@ -10,10 +10,9 @@
       {{ with .Params.description }}
       <p class="description">{{ . | markdownify }}</p>
       {{ end }}
+      {{ partial "layout/bodytext.html" . }}
     </section>
-    <section class="gallery-items-container">
-    {{ partial "layout/bodytext.html" . }}
-    </section>
+    {{ partial "gallery/images.html" . }}
     {{ partial "layout/navigation/related-links" . }}
   </article>
   <div class="gutter bottom-gutter not-selectable">

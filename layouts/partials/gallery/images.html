@@ -1,0 +1,12 @@
+<section class="gallery-items-container">
+    {{ with .Params.images }}
+      {{ range . }}
+      <figure>
+          <img src="{{ . | absURL }}" onclick="window.open('{{ . | absURL }}');" style="cursor: pointer;"/>
+        <figcaption>
+          <h4></h4>
+        </figcaption>
+      </figure>
+      {{ end }}
+    {{ end }}
+</section>

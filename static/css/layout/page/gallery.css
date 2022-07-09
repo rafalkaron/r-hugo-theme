@@ -2,20 +2,16 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-items: flex-start;
   width: 100%;
-  gap: var(--margin);
+  gap: calc(var(--margin) / 2);
   margin-top: var(--margin);
 }
 
-#layout-single-gallery .gallery-items-container p,
-#layout-single-gallery .gallery-items-container figure,
-#layout-single-gallery .gallery-items-container p > a > img {
+#layout-single-gallery .gallery-items-container figure {
   width: calc(50% - var(--margin) / 2);
-  border: none;
-  margin: 0;
-  padding: 0;
 }
 
-#layout-single-gallery .gallery-items-container p > img,
-#layout-single-gallery .gallery-items-container figure > img {
+#layout-single-gallery .gallery-items-container figure img {
+  width: 100%;
 }
