@@ -6,10 +6,17 @@
   {{ end }}
   <div class="description-wrapper">
     <h6>{{ .Title }}</span></h6>
-    <p class="description">
-    {{ with .Params.description }}
-    {{ . | markdownify }} 
-    {{ end }}
-    </p>
+    <div class="description-group">
+      <p class="description">
+      {{ with .Params.description }}
+      {{ . | markdownify }} 
+      {{ end }}
+      </p>
+      <p class="counter description">
+        {{ with .Params.images }}
+           #{{ len . }}
+        {{ end }}
+      </p>
+    </div>
   </div>
 </section>

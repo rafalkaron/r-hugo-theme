@@ -26,6 +26,13 @@
   color: var(--content-text-middle);
 }
 
+#layout-gallery .subpage .description-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  row-gap: var(--padding);
+}
+
 #layout-single-gallery .modal-description,
 #layout-single-gallery .modal-title {
   color: var(--layout-text);
