@@ -5,7 +5,7 @@
 </style>
 <div class="modal">
   <div class="modal-body">
-    <!-- <a title="Previous photo" class="icon navicon modal-prev web"><span class="material-icons">arrow_back_ios_new</span></a> -->
+    <a title="Previous photo" class="not-selectable icon navicon modal-prev web"><span class="material-icons">arrow_back_ios_new</span></a>
     <figure class="modal-figure">
       <img alt="" class="to-popup" />
       <figcaption>
@@ -14,7 +14,7 @@
           <p class="modal-description description"></p>
           <p class="web modal-description counter description"><span class="modal-no"></span>/<span class="modal-counter"></span></p>
         </div>
-        <div class="icon-group figcaption-group web">
+        <div class="icon-group figcaption-group web not-selectable">
           <a title="Download" class="icon modal-download" download=""><span class="material-icons">download</span></a>
           <a title="Location" target="_blank" class="icon modal-location" style="display: none" download=""><span class="material-icons">location_on</span></a>
           <a class="icon modal-print" title='{{ i18n "print_current_page" }}' onClick="window.print()"><span class="material-icons">print</span></a>
@@ -22,6 +22,6 @@
         </div>
       </figcaption>
     </figure>
-    <!-- <a title="Next photo" class="icon navicon modal-next web"><span class="material-icons">arrow_forward_ios</span></a> -->
+    <a title="Next photo" class="not-selectable icon navicon modal-next web"><span class="material-icons">arrow_forward_ios</span></a>
   </div>
 </div>
