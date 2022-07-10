@@ -26,6 +26,11 @@
   color: var(--content-text-middle);
 }
 
+#layout-single-gallery .modal-description,
+#layout-single-gallery .modal-title {
+  color: var(--layout-text);
+}
+
 #layout-gallery .description-image {
   margin: 0;
   max-width: 100%;
@@ -107,6 +112,10 @@
 #layout-single-gallery .modal .icon {
   cursor: pointer;
   margin-right: calc(var(--margin) / 4);
+}
+
+#layout-single-gallery .modal .icon span {
+  color: var(--layout-text);
 }
 
 #layout-single-gallery .modal .icon:last-of-type {
