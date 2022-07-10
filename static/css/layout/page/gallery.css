@@ -35,6 +35,7 @@
 
 #layout-single-gallery .modal-description,
 #layout-single-gallery .modal-counter,
+#layout-single-gallery .modal-no,
 #layout-single-gallery .modal-title {
   color: var(--layout-text);
 }
