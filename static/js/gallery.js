@@ -39,7 +39,7 @@ let imgModal = (src, title, desc, location, alt) => {
   if (location !== null) {
     modalLocation.style.display = "inline";
   } else {
-    modalLocation.style.display = "hidden";
+    modalLocation.style.display = "none";
   }
 
   modalClose = document.querySelector(".modal-close");

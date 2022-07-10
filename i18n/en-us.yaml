@@ -9,9 +9,9 @@ on_this_page:
 
 # blog
 posts:
-  other: posts
+  other: Posts
 tags:
-  other: tags
+  other: Tags
 categories:
   other: categories
 published_date:
@@ -25,7 +25,7 @@ all_tags:
 all_categories:
   other: "All blog categories"
 archive:
-  other: "archive"
+  other: "Archive"
 archive_desc:
   other: "Posts archive"
 
@@ -39,8 +39,8 @@ prev_site:
 print:
   other: print
 print_current_page:
-  other: "print current page"
+  other: "Print current page"
 top:
   other: top
 scroll_to_top:
-  other: "scroll to top"
+  other: "Scroll to top"

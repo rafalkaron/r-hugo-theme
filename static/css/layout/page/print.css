@@ -109,4 +109,13 @@
   .content code {
     background-color: var(--content-background-middle);
   }
+
+  #layout-single-gallery .modal-body,
+  #layout-single-gallery .modal {
+    background-color: #ffffff;
+  }
+
+  #layout-single-gallery .modal-body {
+    border: var(--content-background-middle) var(--border-width-medium) solid;
+  }
 }

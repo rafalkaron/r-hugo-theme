@@ -1,28 +1,26 @@
+<style type="text/css" media="print">
+  @page {
+    size: landscape;
+  }
+</style>
 <div class="modal">
   <div class="modal-body">
+    <a title="Close" class="icon navicon modal-next web"><span class="material-icons">arrow_back_ios_new</span></a>
     <figure class="modal-figure">
       <img alt="" class="to-popup" />
-      <figcaption class="modal-figcaption">
-        <h6 class="modal-title"></h6>
-        <p class="modal-description"></p>
+      <figcaption>
+        <div class="figcaption-group">
+          <h6 class="modal-title"></h6>
+          <p class="modal-description description"></p>
+        </div>
+        <div class="icon-group figcaption-group web">
+          <a title="Download" class="icon modal-download" download=""><span class="material-icons">download</span></a>
+          <a title="Location" target="_blank" class="icon modal-location" style="display: none" download=""><span class="material-icons">location_on</span></a>
+          <a class="icon modal-print" title='{{ i18n "print_current_page" }}' onClick="window.print()"><span class="material-icons">print</span></a>
+          <a title="Close" class="icon modal-close web"><span class="material-icons">close</span></a>
+        </div>
       </figcaption>
     </figure>
-
-    <div class="icon-group">
-      <a title="Download" class="icon modal-download" download=""
-        ><span class="material-icons">download</span></a
-      >
-      <a
-        title="Location"
-        target="_blank"
-        class="icon modal-location"
-        style="display: none;"
-        download=""
-        ><span class="material-icons">location_on</span></a
-      >
-      <a title="Close" class="icon modal-close"
-        ><span class="material-icons">close</span></a
-      >
-    </div>
+    <a title="Close" class="icon navicon modal-next web"><span class="material-icons">arrow_forward_ios</span></a>
   </div>
 </div>
