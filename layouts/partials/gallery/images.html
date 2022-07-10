@@ -1,8 +1,12 @@
-<section class="gallery-items-container">
+<section class="gallery-items-container not-selectable">
     {{ with .Params.images }}
       {{ range . }}
       <figure class="gallery-item">
-          <img class="popup" alt="{{ .alt }}" src="{{ .src | absURL }}" style="cursor: pointer;"/>
+        {{ if .thumb }}
+          <img class="popup" alt="{{ .alt }}" full="{{ .src | absURL }}" src="{{ .thumb | absURL }}" style="cursor: pointer;"/>
+        {{ else }}
+          <img class="popup" alt="{{ .alt }}" full="{{ .src | absURL }}" src="{{ .src | absURL }}" style="cursor: pointer;"/>
+        {{ end }}
         <figcaption>
           <div class="figcaption-group">
             <h6>{{ .title }}</h6>
@@ -11,6 +15,8 @@
           <div class="figcaption-group">
             {{ with .loc }}
               <a title="Location" class="icon location" target="_blank" href="{{ . }}"><span class="material-icons">location_on</span></a>
+              {{ else }}
+              <span class="location" style="display: none;"></span>
             {{ end }}
             <a title="Download" class="icon download" href="{{ .src | absURL }}" download="{{ .src | .File.LogicalName }}"><span class="material-icons">download</span></a>
           </div>

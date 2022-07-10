@@ -3,12 +3,10 @@ let imgSrc;
 // Get image src on click
 images.forEach((img) => {
   img.addEventListener("click", (e) => {
-    imgSrc = e.target.src;
+    imgSrc = e.target.getAttribute("full");
     imgTitle = e.target.parentElement.querySelector("h6").innerText;
     imgDesc = e.target.parentElement.querySelector(".description").innerText;
-    imgLocation = e.target.parentElement
-      .querySelector(".location")
-      .getAttribute("href");
+    imgLocation = e.target.parentElement.querySelector(".location").getAttribute("href");
     imgAlt = e.target.alt;
     // Display the modal
     imgModal(imgSrc, imgTitle, imgDesc, imgLocation, imgAlt);
@@ -37,6 +35,12 @@ let imgModal = (src, title, desc, location, alt) => {
 
   modalLocation = document.querySelector(".modal-location");
   modalLocation.setAttribute("href", location);
+
+  if (location !== null) {
+    modalLocation.style.display = "inline";
+  } else {
+    modalLocation.style.display = "hidden";
+  }
 
   modalClose = document.querySelector(".modal-close");
 

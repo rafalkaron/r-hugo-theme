@@ -6,7 +6,7 @@
   {{ partial "layout/navigation/side-menu" . }}
   <article class="content">
     {{ partial "_index" . }}
-    <section class="subpages">
+    <section class="subpages not-selectable">
       {{ range .Pages }} {{ .Render "summary" }} {{ end }}
     </section>
   </article>

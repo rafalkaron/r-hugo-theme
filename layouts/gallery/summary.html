@@ -5,7 +5,7 @@
   </div>
   {{ end }}
   <div class="description-wrapper">
-    <h6>{{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }}</span></h6>
+    <h6>{{ .Title }}</span></h6>
     <p class="description">
     {{ with .Params.description }}
     {{ . | markdownify }} 
