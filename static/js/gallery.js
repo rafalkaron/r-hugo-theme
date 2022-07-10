@@ -9,19 +9,22 @@ images.forEach((img) => {
     imgLocation = e.target.parentElement
       .querySelector(".location")
       .getAttribute("href");
+    imgAlt = e.target.alt;
     // Display the modal
-    imgModal(imgSrc, imgTitle, imgDesc, imgLocation);
+    imgModal(imgSrc, imgTitle, imgDesc, imgLocation, imgAlt);
   });
 });
 
 // Display the modal
-let imgModal = (src, title, desc, location) => {
+let imgModal = (src, title, desc, location, alt) => {
   const modal = document.querySelector(".modal");
   modal.style.display = "flex";
 
-  // Add current image src
   popupImage = document.querySelector(".to-popup");
   popupImage.setAttribute("src", src);
+
+  popupImage = document.querySelector(".to-popup");
+  popupImage.setAttribute("alt", alt);
 
   downloadIcon = document.querySelector(".modal-download");
   downloadIcon.setAttribute("href", src);
