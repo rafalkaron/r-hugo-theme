@@ -3,7 +3,7 @@
 <section class="gallery-items-container not-selectable">
       {{ range .Params.images }}
       {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-      <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}">
+      <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}">
         {{ if .thumb }}
           <img class="popup" alt="{{ .alt }}" full="{{ .src | absURL }}" src="{{ .thumb | absURL }}" style="cursor: pointer;"/>
         {{ else }}

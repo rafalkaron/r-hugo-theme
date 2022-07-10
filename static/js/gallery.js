@@ -10,13 +10,15 @@ images.forEach((img) => {
       .querySelector(".location")
       .getAttribute("href");
     imgAlt = e.target.alt;
+    imgNo = e.target.parentElement.getAttribute("data-item");
+    imgTotal = e.target.parentElement.getAttribute("data-total");
     // Display the modal
-    imgModal(imgSrc, imgTitle, imgDesc, imgLocation, imgAlt);
+    imgModal(imgSrc, imgTitle, imgDesc, imgLocation, imgAlt, imgNo, imgTotal);
   });
 });
 
 // Display the modal
-let imgModal = (src, title, desc, location, alt, next) => {
+let imgModal = (src, title, desc, location, alt, imgNo, imgTotal) => {
   const modal = document.querySelector(".modal");
   modal.style.display = "flex";
 
@@ -37,6 +39,12 @@ let imgModal = (src, title, desc, location, alt, next) => {
 
   modalLocation = document.querySelector(".modal-location");
   modalLocation.setAttribute("href", location);
+
+  modalNumber = document.querySelector(".modal-no");
+  modalNumber.textContent = imgNo;
+
+  modalCounter = document.querySelector(".modal-counter");
+  modalCounter.textContent = imgTotal;
 
   if (location !== null) {
     modalLocation.style.display = "inline";
