@@ -6,7 +6,9 @@ images.forEach((img) => {
     imgSrc = e.target.getAttribute("full");
     imgTitle = e.target.parentElement.querySelector("h6").innerText;
     imgDesc = e.target.parentElement.querySelector(".description").innerText;
-    imgLocation = e.target.parentElement.querySelector(".location").getAttribute("href");
+    imgLocation = e.target.parentElement
+      .querySelector(".location")
+      .getAttribute("href");
     imgAlt = e.target.alt;
     // Display the modal
     imgModal(imgSrc, imgTitle, imgDesc, imgLocation, imgAlt);
@@ -14,7 +16,7 @@ images.forEach((img) => {
 });
 
 // Display the modal
-let imgModal = (src, title, desc, location, alt) => {
+let imgModal = (src, title, desc, location, alt, next) => {
   const modal = document.querySelector(".modal");
   modal.style.display = "flex";
 
@@ -43,6 +45,12 @@ let imgModal = (src, title, desc, location, alt) => {
   }
 
   modalClose = document.querySelector(".modal-close");
+
+  modalNext = document.querySelector(".modal-next");
+  modalNext.setAttribute("href", next);
+
+  modalPrev = document.querySelector(".modal-prev");
+  modalPrev.setAttribute("href", "test");
 
   body = document.querySelector("body");
   body.setAttribute("class", "modal-on");
