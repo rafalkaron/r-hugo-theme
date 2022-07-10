@@ -1,6 +1,7 @@
 @media only print {
   /* Set margins */
   @page {
+    size: A4;
     margin: 3.5rem 5rem;
   }
 
@@ -71,6 +72,7 @@
   .post,
   .subpage,
   .codeblock,
+  .gallery-item,
   footer {
     break-inside: avoid;
     page-break-inside: avoid;
@@ -78,9 +80,16 @@
   }
 
   #layout-section .subpage,
+  #layout-gallery .subpage,
+  #layout-single-gallery figure.gallery-item,
   #layout-blog .post {
     border: var(--content-background-middle) var(--border-width-medium) solid;
     background-color: transparent;
+  }
+
+  #layout-single-gallery .icon,
+  #layout-galler .icon {
+    border: none;
   }
 
   /* Fix colors in code */
@@ -117,5 +126,19 @@
 
   #layout-single-gallery .modal-body {
     border: var(--content-background-middle) var(--border-width-medium) solid;
+  }
+
+  #layout-single-gallery .modal figcaption {
+    justify-content: center;
+    margin-top: var(--margin);
+  }
+
+  #layout-single-gallery .modal-figure {
+    max-width: 85%;
+  }
+
+  #layout-single-gallery .modal-description,
+  #layout-single-gallery .modal-title {
+    color: var(--content-text-middle);
   }
 }

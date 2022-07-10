@@ -1,4 +1,9 @@
 {{ define "main" }}
+<style type="text/css" media="print">
+  @page {
+    size: A4 landscape;
+  }
+</style>
 <main id="layout-gallery">
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
