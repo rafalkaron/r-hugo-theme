@@ -46,11 +46,11 @@ let imgModal = (src, title, desc, location, alt, next) => {
 
   modalClose = document.querySelector(".modal-close");
 
-  modalNext = document.querySelector(".modal-next");
-  modalNext.setAttribute("href", next);
+  // // modalNext = document.querySelector(".modal-next");
+  // // modalNext.setAttribute("href", next);
 
-  modalPrev = document.querySelector(".modal-prev");
-  modalPrev.setAttribute("href", "test");
+  // // modalPrev = document.querySelector(".modal-prev");
+  // // modalPrev.setAttribute("href", "test");
 
   body = document.querySelector("body");
   body.setAttribute("class", "modal-on");
