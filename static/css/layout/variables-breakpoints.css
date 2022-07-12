@@ -23,7 +23,7 @@
 }
 @media only screen and (min-width: 3840px) {
   #layout-section .subpage,
-  #layout-gallery .subpage.gallery,
+  #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
     width: calc(33.1% - var(--margin) / 2);
   }
@@ -35,7 +35,7 @@
     --padding-main: 2.5rem;
   }
   #layout-section .subpage,
-  #layout-gallery .subpage.gallery,
+  #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
     width: calc(50% - var(--margin) / 2);
   }
@@ -178,7 +178,7 @@
     --padding-main: 1.5rem;
   }
   #layout-section .subpage,
-  #layout-gallery .subpage.gallery,
+  #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
     width: 100%;
   }
