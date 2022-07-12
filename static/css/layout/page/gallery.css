@@ -107,6 +107,7 @@
 #layout-single-gallery .modal-figure img {
   max-width: 90vw;
   max-height: 90vh;
+  min-width: 360px;
 }
 
 #layout-single-gallery .modal-figure .meta {
@@ -114,6 +115,7 @@
   bottom: var(--margin);
   left: var(--padding-main);
   max-width: 60vw;
+  min-width: 240px;
 }
 #layout-single-gallery .modal-figure .counter-control {
   position: fixed;
