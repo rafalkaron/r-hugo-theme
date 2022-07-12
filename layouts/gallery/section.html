@@ -11,7 +11,7 @@
   {{ partial "layout/navigation/side-menu" . }}
   <article class="content">
     {{ partial "_index" . }}
-    <section class="subpages not-selectable">
+    <section class="subpages gallery-items-container not-selectable">
       {{ range .Pages }} {{ .Render "summary" }} {{ end }}
     </section>
   </article>

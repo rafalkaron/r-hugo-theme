@@ -1,3 +1,4 @@
+/* Main layout */
 #layout-section .subpages {
   display: flex;
   flex-direction: row;
@@ -14,67 +15,34 @@
   padding: var(--margin);
 }
 
-#layout-section .material-icons {
+/* Style headings */
+#layout-section .subpage-heading {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: stretch;
+}
+#layout-section .subpage-heading-title {
+  font-size: 1.2rem;
+}
+#layout-section .subpage-heading .material-icons {
+  display: flex;
+  line-height: 0;
+  align-items: center;
   font-size: 1.5rem;
   padding-right: 0.16em;
 }
 
-#layout-section .subpage-heading {
-  margin-top: 0;
-  font-size: 1.2rem;
-  display: inline-block;
-}
-
-/* Style links */
-#layout-section a.subpage-ref {
-  font-size: 1.2rem;
-  text-decoration: none;
-  font-weight: 700;
-  display: flex;
-  align-items: stretch;
-  border: none;
-  border: transparent;
-  border-radius: var(--border-radius);
-  background-clip: border-box;
-}
-
-#layout-section a.subpage-ref span.material-icons {
-  font-size: 1.6em;
-}
-
-#layout-section a.subpage-ref:hover,
-#layout-section a.subpage-ref:active,
-#layout-section a.subpage-ref:focus {
-  background-color: var(--content-text-dark);
-}
-#layout-section a.subpage-ref:hover span,
-#layout-section a.subpage-ref:active span,
-#layout-section a.subpage-ref:focus span {
-  color: var(--content-text-light);
-}
-
+/* Style descriptions */
 #layout-section .description {
   margin-top: calc(var(--margin) / 4);
 }
-
 #layout-section .subpage .description {
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }
-
 #layout-section .description-image {
   margin-top: calc(var(--margin) / 2);
   max-width: 100%;
-}
-
-#layout-section .subpage.gallery .subpage-heading {
-  margin-top: calc(var(--margin) / 2);
-}
-
-#layout-section .subpage.gallery .description-image {
-  margin: 0;
-}
-
-#layout-section .subpage.gallery .description {
-  margin: 0;
 }

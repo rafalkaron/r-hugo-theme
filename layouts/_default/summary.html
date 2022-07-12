@@ -1,7 +1,6 @@
-<section class="subpage">
+<section class="subpage" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
   <h2 class="subpage-heading">
-    <a class="subpage-ref animation" href="{{ .Permalink }}"> 
-        {{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span>{{ .Title }} »</span></a>
+        {{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end }}<span class="subpage-heading-title">{{ .Title }}</span>
   </h2>
   <div class="description">
     {{ with .Params.description }}
