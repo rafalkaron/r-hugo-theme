@@ -11,7 +11,7 @@
   .gutter,
   .web,
   .heading-link {
-    display: none;
+    display: none !important;
   }
 
   /* Show print-specific elements */
