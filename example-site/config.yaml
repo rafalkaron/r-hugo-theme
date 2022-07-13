@@ -1,5 +1,6 @@
 baseURL: "https://rafalkaron.github.io/r-hugo-theme-demo/"
 languageCode: "en-us"
+defaultContentLanguage: "en-us"
 theme: "r-hugo-theme"
 
 Params:
@@ -24,9 +25,12 @@ Menus:
     - Name: "Section"
       URL: "/section/"
       weight: 2
+    - Name: "Gallery"
+      URL: "/gallery/"
+      weight: 3
     - Name: "Blog"
       URL: "/blog/"
-      weight: 3
+      weight: 4
 
 # Enable related links/see alsos
 related:
