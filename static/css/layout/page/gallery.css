@@ -56,15 +56,18 @@
   width: 100%;
 }
 
-#layout-single-gallery figcaption {
-  margin-top: calc(var(--margin) / 4);
+#layout-single-gallery .figcaption-group.title-group {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  flex-shrink: 0;
+  align-items: center;
 }
 
+#layout-single-gallery figcaption {
+  margin-top: calc(var(--margin) / 4);
+  width: 100%;
+}
+
+#layout-single-gallery a.icon,
 #layout-single-gallery a.icon:hover {
   border: none;
 }
@@ -105,9 +108,9 @@
 }
 
 #layout-single-gallery .modal-figure img {
-  max-width: 90vw;
-  max-height: 90vh;
-  min-width: 360px;
+  max-width: 80vw;
+  max-height: 80vh;
+  min-width: 180px;
 }
 
 #layout-single-gallery .modal-figure .meta {
@@ -115,7 +118,6 @@
   bottom: var(--margin);
   left: var(--padding-main);
   max-width: 60vw;
-  min-width: 240px;
 }
 #layout-single-gallery .modal-figure .counter-control {
   position: fixed;
@@ -133,34 +135,32 @@
   align-items: center;
   flex-direction: row;
 }
-#layout-single-gallery .modal-figure .meta,
-#layout-single-gallery .modal-figure .counter-control,
-#layout-single-gallery .modal-figure .operations {
-  background-color: #22222226;
-  background-clip: border-box;
-  border-radius: var(--border-radius);
-  border: transparent;
-  padding: 0 var(--padding);
+
+#layout-single-gallery .modal-figure .meta *,
+#layout-single-gallery .modal-figure .counter-control *,
+#layout-single-gallery .modal-figure .operations * {
+  text-shadow: 0px 0px 0.25rem rgba(34, 34, 34, 1);
 }
 
 #layout-single-gallery .modal .icon {
   cursor: pointer;
   margin-right: calc(var(--margin) / 4);
 }
-#layout-single-gallery .modal .icon span {
+#layout-single-gallery .modal .icon span,
+#layout-single-gallery .counter span {
   color: var(--layout-text);
 }
 #layout-single-gallery .modal .figcaption-group .icon:last-of-type {
   margin-right: 0;
 }
-#layout-single-gallery .modal .navicon {
+#layout-single-gallery .modal .modal-body .figcaption-group .navicon.icon {
   cursor: pointer;
   margin: 0 calc(var(--margin) / 4);
 }
 
-#layout-single-gallery .counter span,
-#layout-single-gallery .counter {
+#layout-single-gallery .counter span {
   font-size: 1rem;
+  font-weight: 600;
 }
 
 #layout-single-gallery .material-icons {

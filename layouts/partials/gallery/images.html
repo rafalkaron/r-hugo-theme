@@ -10,17 +10,19 @@
           <img class="popup" alt="{{ .alt }}" full="{{ .src | absURL }}" src="{{ .src | absURL }}" style="cursor: pointer;"/>
         {{ end }}
         <figcaption>
-          <div class="figcaption-group">
+          <div class="figcaption-group title-group">
             <h6>{{ .title }}</h6>
-            <p class="description">{{ .desc }}</p>
-          </div>
-          <div class="figcaption-group">
             {{ with .loc }}
-              <a title="Location" class="icon location" target="_blank" href="{{ . }}"><span class="material-icons">location_on</span></a>
-              {{ else }}
-              <span class="location" style="display: none;"></span>
+            <div class="icon-group">
+            <a title="Location" class="icon location" target="_blank" href="{{ . }}"><span class="material-icons">location_on</span></a>
+            {{ else }}
+            <span class="location" style="display: none;"></span>
             {{ end }}
             <a title="Download" class="icon download" href="{{ .src | absURL }}" download="{{ .src | .File.LogicalName }}"><span class="material-icons">download</span></a>
+            </div>
+          </div>
+          <div class="figcaption-group">
+            <p class="description">{{ .desc }}</p>
           </div>
         </figcaption>
       </figure>

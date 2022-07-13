@@ -128,17 +128,20 @@
     border: var(--content-background-middle) var(--border-width-medium) solid;
   }
 
-  #layout-single-gallery .modal figcaption {
+  #layout-single-gallery .modal-figure .meta *,
+  #layout-single-gallery .modal-figure .counter-control *,
+  #layout-single-gallery .modal-figure .operations * {
+    text-shadow: unset;
+  }
+
+  #layout-single-gallery .modal-figure .meta {
+    position: fixed;
+    bottom: 6vh;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: var(--margin);
-  }
-
-  #layout-single-gallery .modal-figure {
-    max-width: 85%;
-  }
-
-  #layout-single-gallery .modal-description,
-  #layout-single-gallery .modal-title {
-    color: var(--content-text-middle);
+    max-width: unset;
   }
 }

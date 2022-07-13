@@ -1,6 +1,6 @@
 <style type="text/css" media="print">
   @page {
-    size: A4 landscape;
+    size: landscape;
   }
 </style>
 <div class="modal">
@@ -10,17 +10,17 @@
       <figcaption>
         <div class="figcaption-group meta">
           <h6 class="modal-title"></h6>
-          <p class="modal-description description"></p>
+          <p class="modal-description description web"></p>
         </div>
         <div class="figcaption-group counter-control web">
           <a title="Previous photo" class="not-selectable navicon icon modal-prev web"><span class="material-icons">arrow_back_ios_new</span></a>
-          <p class="web modal-description counter description"><span class="modal-no"></span>/<span class="modal-counter"></span></p>
+          <p class="web modal-description counter description"><span class="modal-no"></span><span class="separator">/</span><span class="modal-counter"></span></p>
           <a title="Next photo" class="not-selectable navicon icon modal-next web"><span class="material-icons">arrow_forward_ios</span></a>
         </div>
         <div class="figcaption-group operations web">
-          <a title="Download" class="icon modal-download" download=""><span class="material-icons">download</span></a>
+          <a title="Download" class="icon modal-download web" download=""><span class="material-icons">download</span></a>
           <a title="Location" target="_blank" class="icon modal-location" style="display: none" download=""><span class="material-icons">location_on</span></a>
-          <a class="icon modal-print" title='{{ i18n "print_current_page" }}' onClick="window.print()"><span class="material-icons">print</span></a>
+          <a class="icon modal-print web" title='{{ i18n "print_current_page" }}' onClick="window.print()"><span class="material-icons">print</span></a>
           <a title="Close" class="icon modal-close web"><span class="material-icons">close</span></a>
         </div>
         </div>
