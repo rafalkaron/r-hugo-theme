@@ -1,19 +1,5 @@
 const images = document.querySelectorAll(".popup");
 
-function findImgSrcs(imgs) {
-  var imgSrcs = [];
-
-  for (var i = 0; i < imgs.length; i++) {
-    imgSrcs.push(imgs[i].src);
-  }
-
-  return imgSrcs;
-}
-
-let img_srcs = findImgSrcs(images);
-
-preloadImages(img_srcs);
-
 // Create img modals on click
 images.forEach((img) => {
   let imgObj = {
@@ -132,23 +118,3 @@ let displayImgModal = (imgObj) => {
     }
   });
 };
-
-function preloadImages(array) {
-  if (!preloadImages.list) {
-    preloadImages.list = [];
-  }
-  var list = preloadImages.list;
-  for (var i = 0; i < array.length; i++) {
-    var img = new Image();
-    img.onload = function () {
-      var index = list.indexOf(this);
-      if (index !== -1) {
-        // remove image from the array once it's loaded
-        // for memory consumption reasons
-        list.splice(index, 1);
-      }
-    };
-    list.push(img);
-    img.src = array[i];
-  }
-}
