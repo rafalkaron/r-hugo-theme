@@ -1,7 +1,8 @@
+{{ $gallery_root := .Site.Params.gallery_root | absURL }}
 <section class="subpage gallery-item" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
   {{ with .Params.image }}
   <div class="description-image-container">
-    <img class="description-image" src="{{ . | relURL }}" />
+    <img class="description-image" src="{{$gallery_root}}/{{.}}" />
   </div>
   {{ end }}
   <div class="description-wrapper">

@@ -1,30 +1,28 @@
 {{ $.Scratch.Set "counter" 0 }}
+{{ $gallery_root := .Site.Params.gallery_root | absURL }}
+
 {{ $total := (len .Params.images) }}
 <section class="gallery-items-container not-selectable">
       {{ range .Params.images }}
-      {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-      <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}">
-        {{ if .thumb }}
-          <img class="popup" alt="{{ .alt }}" full="{{ .src | absURL }}" src="{{ .thumb | absURL }}" style="cursor: pointer;"/>
-        {{ else }}
-          <img class="popup" alt="{{ .alt }}" full="{{ .src | absURL }}" src="{{ .src | absURL }}" style="cursor: pointer;"/>
-        {{ end }}
-        <figcaption>
-          <div class="figcaption-group title-group">
-            <h6>{{ .title }}</h6>
-            {{ with .loc }}
-            <div class="icon-group">
-            <a title="Location" class="icon location" target="_blank" href="{{ . }}"><span class="material-icons">location_on</span></a>
-            {{ else }}
-            <span class="location" style="display: none;"></span>
-            {{ end }}
-            <a title="Download" class="icon download" href="{{ .src | absURL }}" download="{{ .src | .File.LogicalName }}"><span class="material-icons">download</span></a>
+        {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}">
+            <img class="popup" alt="{{ .alt }}" full="{{$gallery_root}}/{{ .src }}" src="{{ if .thumb }}{{$gallery_root}}/{{ .thumb }}{{else}}{{$gallery_root}}{{ .src }}{{end}}" style="cursor: pointer;"/>
+          <figcaption>
+            <div class="figcaption-group title-group">
+              <h6>{{ .title }}</h6>
+              {{ with .loc }}
+              <div class="icon-group">
+              <a title="Location" class="icon location" target="_blank" href="{{ . }}"><span class="material-icons">location_on</span></a>
+              {{ else }}
+              <span class="location" style="display: none;"></span>
+              {{ end }}
+              <a title="Download" class="icon download" href="{{ .src | absURL }}" download="{{ .src | .File.LogicalName }}"><span class="material-icons">download</span></a>
+              </div>
             </div>
-          </div>
-          <div class="figcaption-group">
-            <p class="description">{{ .desc }}</p>
-          </div>
-        </figcaption>
-      </figure>
+            <div class="figcaption-group">
+              <p class="description">{{ .desc }}</p>
+            </div>
+          </figcaption>
+        </figure>
       {{ end }}
 </section>
