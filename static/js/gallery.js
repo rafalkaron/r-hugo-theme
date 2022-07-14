@@ -1,61 +1,65 @@
 const images = document.querySelectorAll(".popup");
 
+function findImgSrcs(imgs) {
+  var imgSrcs = [];
+
+  for (var i = 0; i < imgs.length; i++) {
+    imgSrcs.push(imgs[i].src);
+  }
+
+  return imgSrcs;
+}
+
+let img_srcs = findImgSrcs(images);
+
+preloadImages(img_srcs);
+
 // Create img modals on click
 images.forEach((img) => {
-  img.addEventListener("click", (e) => {
-    imgModalFromElem(e.target);
+  let imgObj = {
+    src: img.getAttribute("full"),
+    title: img.parentElement.querySelector("h6").innerText,
+    desc: img.parentElement.querySelector(".description").innerText,
+    location: img.parentElement.querySelector(".location").getAttribute("href"),
+    alt: img.alt,
+    no: img.parentElement.getAttribute("data-item"),
+    total: img.parentElement.getAttribute("data-total"),
+  };
+
+  img.addEventListener("click", (img) => {
+    displayImgModal(imgObj);
   });
 });
 
-let imgModalFromElem = (e) => {
-  imgSrc = e.getAttribute("full");
-  imgTitle = e.parentElement.querySelector("h6").innerText;
-  imgDesc = e.parentElement.querySelector(".description").innerText;
-  imgLocation = e.parentElement.querySelector(".location").getAttribute("href");
-  imgAlt = e.alt;
-  imgNo = e.parentElement.getAttribute("data-item");
-  imgTotal = e.parentElement.getAttribute("data-total");
-  displayImgModal(
-    imgSrc,
-    imgTitle,
-    imgDesc,
-    imgLocation,
-    imgAlt,
-    imgNo,
-    imgTotal
-  );
-  preloadImages(imgSrc, true);
-};
-
-let displayImgModal = (src, title, desc, location, alt, imgNo, imgTotal) => {
+let displayImgModal = (imgObj) => {
   const modal = document.querySelector(".modal");
   modal.style.display = "flex";
 
   popupImage = document.querySelector(".to-popup");
-  popupImage.setAttribute("src", src);
+  popupImage.setAttribute("src", imgObj.src);
 
   popupImage = document.querySelector(".to-popup");
-  popupImage.setAttribute("alt", alt);
+  popupImage.setAttribute("alt", imgObj.alt);
 
   downloadIcon = document.querySelector(".modal-download");
-  downloadIcon.setAttribute("href", src);
+  downloadIcon.setAttribute("href", imgObj.src);
 
   modalTitle = document.querySelector(".modal-title");
-  modalTitle.textContent = title;
+  modalTitle.textContent = imgObj.title;
 
   modalDesc = document.querySelector(".modal-description");
-  modalDesc.textContent = desc;
+  modalDesc.textContent = imgObj.title;
 
   modalLocation = document.querySelector(".modal-location");
-  modalLocation.setAttribute("href", location);
+  modalLocation.setAttribute("href", imgObj.location);
 
   modalNumber = document.querySelector(".modal-no");
-  modalNumber.textContent = imgNo;
+  modalNumber.textContent = imgObj.no;
 
   modalCounter = document.querySelector(".modal-counter");
-  modalCounter.textContent = imgTotal;
+  modalCounter.textContent = imgObj.total;
 
-  if (location !== null) {
+  if (imgObj.location !== null) {
     modalLocation.style.display = "inline";
   } else {
     modalLocation.style.display = "none";
@@ -78,23 +82,48 @@ let displayImgModal = (src, title, desc, location, alt, imgNo, imgTotal) => {
     body.removeAttribute("class", "modal-on");
   };
   // NEXT PREV buttons
-  nextModalNo = parseInt(imgNo) + 1;
+  nextModalNo = parseInt(imgObj.no) + 1;
   modalNext = document.querySelector(`#item-${nextModalNo} img`);
+  //refactor
   modalNextButton = document.querySelector(".modal-next");
   modalNextButton.onclick = () => {
     if (modalNext !== null) {
-      imgModalFromElem(modalNext);
+      modalNextObj = {
+        src: modalNext.getAttribute("full"),
+        title: modalNext.parentElement.querySelector("h6").innerText,
+        desc: modalNext.parentElement.querySelector(".description").innerText,
+        location: modalNext.parentElement
+          .querySelector(".location")
+          .getAttribute("href"),
+        alt: modalNext.alt,
+        no: modalNext.parentElement.getAttribute("data-item"),
+        total: modalNext.parentElement.getAttribute("data-total"),
+      };
+      displayImgModal(modalNextObj);
     }
   };
 
-  prevModalNo = parseInt(imgNo) - 1;
+  prevModalNo = parseInt(imgObj.no) - 1;
   modalprev = document.querySelector(`#item-${prevModalNo} img`);
+  //refactor
   modalprevButton = document.querySelector(".modal-prev");
   modalprevButton.onclick = () => {
     if (modalprev !== null) {
-      imgModalFromElem(modalprev);
+      modalPrevObj = {
+        src: modalprev.getAttribute("full"),
+        title: modalprev.parentElement.querySelector("h6").innerText,
+        desc: modalprev.parentElement.querySelector(".description").innerText,
+        location: modalprev.parentElement
+          .querySelector(".location")
+          .getAttribute("href"),
+        alt: modalprev.alt,
+        no: modalprev.parentElement.getAttribute("data-item"),
+        total: modalprev.parentElement.getAttribute("data-total"),
+      };
+      displayImgModal(modalPrevObj);
     }
   };
+
   // Close on ESC
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
@@ -104,46 +133,22 @@ let displayImgModal = (src, title, desc, location, alt, imgNo, imgTotal) => {
   });
 };
 
-function preloadImages(array, waitForOtherResources, timeout) {
-  var loaded = false,
-    list = preloadImages.list,
-    imgs = array.slice(0),
-    t = timeout || 15 * 1000,
-    timer;
+function preloadImages(array) {
   if (!preloadImages.list) {
     preloadImages.list = [];
   }
-  if (!waitForOtherResources || document.readyState === "complete") {
-    loadNow();
-  } else {
-    window.addEventListener("load", function () {
-      clearTimeout(timer);
-      loadNow();
-    });
-    // in case window.addEventListener doesn't get called (sometimes some resource gets stuck)
-    // then preload the images anyway after some timeout time
-    timer = setTimeout(loadNow, t);
-  }
-
-  function loadNow() {
-    if (!loaded) {
-      loaded = true;
-      for (var i = 0; i < imgs.length; i++) {
-        var img = new Image();
-        img.onload =
-          img.onerror =
-          img.onabort =
-            function () {
-              var index = list.indexOf(this);
-              if (index !== -1) {
-                // remove image from the array once it's loaded
-                // for memory consumption reasons
-                list.splice(index, 1);
-              }
-            };
-        list.push(img);
-        img.src = imgs[i];
+  var list = preloadImages.list;
+  for (var i = 0; i < array.length; i++) {
+    var img = new Image();
+    img.onload = function () {
+      var index = list.indexOf(this);
+      if (index !== -1) {
+        // remove image from the array once it's loaded
+        // for memory consumption reasons
+        list.splice(index, 1);
       }
-    }
+    };
+    list.push(img);
+    img.src = array[i];
   }
 }
