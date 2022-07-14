@@ -89,6 +89,30 @@ let displayImgModal = (imgObj) => {
     }
   };
 
+  // Next on left arrow
+  document.addEventListener("keydown", (e) => {
+    e = e || window.event;
+    if (e.key === "ArrowRight") {
+      {
+        if (modalNext !== null) {
+          modalNextObj = {
+            src: modalNext.getAttribute("full"),
+            title: modalNext.parentElement.querySelector("h6").innerText,
+            desc: modalNext.parentElement.querySelector(".description")
+              .innerText,
+            location: modalNext.parentElement
+              .querySelector(".location")
+              .getAttribute("href"),
+            alt: modalNext.alt,
+            no: modalNext.parentElement.getAttribute("data-item"),
+            total: modalNext.parentElement.getAttribute("data-total"),
+          };
+          displayImgModal(modalNextObj);
+        }
+      }
+    }
+  });
+
   prevModalNo = parseInt(imgObj.no) - 1;
   modalprev = document.querySelector(`#item-${prevModalNo} img`);
   //refactor
@@ -109,6 +133,30 @@ let displayImgModal = (imgObj) => {
       displayImgModal(modalPrevObj);
     }
   };
+
+  // Prev on left arrow
+  document.addEventListener("keydown", (e) => {
+    e = e || window.event;
+    if (e.key === "ArrowLeft") {
+      {
+        if (modalprev !== null) {
+          modalPrevObj = {
+            src: modalprev.getAttribute("full"),
+            title: modalprev.parentElement.querySelector("h6").innerText,
+            desc: modalprev.parentElement.querySelector(".description")
+              .innerText,
+            location: modalprev.parentElement
+              .querySelector(".location")
+              .getAttribute("href"),
+            alt: modalprev.alt,
+            no: modalprev.parentElement.getAttribute("data-item"),
+            total: modalprev.parentElement.getAttribute("data-total"),
+          };
+          displayImgModal(modalPrevObj);
+        }
+      }
+    }
+  });
 
   // Close on ESC
   document.addEventListener("keydown", function (event) {
