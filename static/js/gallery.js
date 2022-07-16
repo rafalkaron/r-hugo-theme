@@ -16,6 +16,7 @@ class galleryItem {
   }
 
   initModal() {
+    this.body.setAttribute("class", "modal-on");
     this.modal.style.display = "flex";
     this.popupImage.setAttribute("src", this.src);
     this.popupImage.setAttribute("alt", this.alt);
@@ -44,11 +45,11 @@ class galleryItem {
       modalLocation.style.display = "none";
     }
 
-    this.body.setAttribute("class", "modal-on");
-
     this.closeModal();
     this.nextModal();
+    this.lastModal();
     this.prevModal();
+    this.firstModal();
   }
 
   nextModal() {
@@ -74,6 +75,20 @@ class galleryItem {
     });
   }
 
+  lastModal() {
+    let lastGalleryImage = document.querySelector(`#item-${this.total} img`);
+
+    document.addEventListener("keydown", (e) => {
+      e = e || window.event;
+      if (e.key === "ArrowUp" && lastGalleryImage !== null) {
+        {
+          let lastGalleryItem = new galleryItem(lastGalleryImage);
+          lastGalleryItem.initModal();
+        }
+      }
+    });
+  }
+
   prevModal() {
     let prevModalNo = parseInt(this.no) - 1;
     let prevGalleryImage = document.querySelector(`#item-${prevModalNo} img`);
@@ -92,6 +107,20 @@ class galleryItem {
         {
           let prevGalleryItem = new galleryItem(prevGalleryImage);
           prevGalleryItem.initModal();
+        }
+      }
+    });
+  }
+
+  firstModal() {
+    let firstGalleryImage = document.querySelector(`#item-1 img`);
+
+    document.addEventListener("keydown", (e) => {
+      e = e || window.event;
+      if (e.key === "ArrowDown" && firstGalleryImage !== null) {
+        {
+          let firstGalleryItem = new galleryItem(firstGalleryImage);
+          firstGalleryItem.initModal();
         }
       }
     });
