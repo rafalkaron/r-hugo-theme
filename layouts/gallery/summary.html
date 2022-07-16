@@ -7,10 +7,10 @@
   {{ end }}
   <div class="description-wrapper">
     <h6>{{ .Title }}</span></h6>
+    {{ with .Params.description }}
         <p class="description">
-          {{ with .Params.description }}
             {{ . | markdownify }} 
-          {{ end }}
         </p>
+        {{ end }}
   </div>
 </section>

@@ -5,8 +5,9 @@
 <section class="gallery-items-container not-selectable">
       {{ range .Params.images }}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+        {{ $root_src := (printf "%s%s%s" $gallery_root "/" .src ) }}
         <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}">
-            <img class="popup preload" alt="{{ .alt }}" data-full="{{$gallery_root}}/{{ .src }}" src="{{ if .thumb }}{{$gallery_root}}/{{ .thumb }}{{else}}{{$gallery_root}}/{{ .src }}{{end}}" style="cursor: pointer;"/>
+            <img class="popup preload" alt="{{ .alt }}" data-full="{{$root_src}}" src="{{ if .thumb }}{{$gallery_root}}/{{ .thumb }}{{else}}{{$gallery_root}}/{{ .src }}{{end}}" style="cursor: pointer;"/>
           <figcaption>
             <div class="figcaption-group title-group">
               <h6>{{ .title }}</h6>
@@ -16,7 +17,7 @@
               {{ else }}
               <span class="location" style="display: none;"></span>
               {{ end }}
-              <a title="Download" class="icon download" href="{{ .src | absURL }}" download="{{ .src | .File.LogicalName }}"><span class="material-icons">download</span></a>
+              <a title="Download" class="icon download" href="{{ $root_src | absURL }}" download="{{ $root_src | .File.LogicalName }}"><span class="material-icons">download</span></a>
               </div>
             </div>
             <div class="figcaption-group">
