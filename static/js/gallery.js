@@ -1,3 +1,5 @@
+const galleryImages = document.querySelectorAll(".popup");
+
 class galleryItem {
   constructor(galleryImage) {
     this.popupImage = document.querySelector(".to-popup");
@@ -47,9 +49,7 @@ class galleryItem {
 
     this.closeModal();
     this.nextModal();
-    //this.lastModal();
     this.prevModal();
-    //this.firstModal();
   }
 
   nextModal() {
@@ -65,20 +65,6 @@ class galleryItem {
     };
   }
 
-  lastModal() {
-    let lastGalleryImage = document.querySelector(`#item-${this.total} img`);
-
-    this.modal.addEventListener("keydown", (e) => {
-      e = e || window.event;
-      if (e.key === "ArrowUp" && lastGalleryImage !== null) {
-        {
-          let lastGalleryItem = new galleryItem(lastGalleryImage);
-          lastGalleryItem.initModal();
-        }
-      }
-    });
-  }
-
   prevModal() {
     let prevModalNo = parseInt(this.no) - 1;
     let prevGalleryImage = document.querySelector(`#item-${prevModalNo} img`);
@@ -90,20 +76,6 @@ class galleryItem {
         prevGalleryItem.initModal();
       }
     };
-  }
-
-  firstModal() {
-    let firstGalleryImage = document.querySelector(`#item-1 img`);
-
-    document.addEventListener("keydown", (e) => {
-      e = e || window.event;
-      if (e.key === "ArrowDown" && firstGalleryImage !== null) {
-        {
-          let firstGalleryItem = new galleryItem(firstGalleryImage);
-          firstGalleryItem.initModal();
-        }
-      }
-    });
   }
 
   closeModal() {
@@ -130,11 +102,41 @@ class galleryItem {
   }
 }
 
-const galleryImages = document.querySelectorAll(".popup");
+function initFirstModal() {
+  let firstGalleryImage = document.querySelector(`#item-1 img`);
+  document.addEventListener("keydown", (e) => {
+    e = e || window.event;
+    if (e.key === "ArrowDown" && firstGalleryImage !== null) {
+      {
+        let firstGalleryItem = new galleryItem(firstGalleryImage);
+        firstGalleryItem.initModal();
+      }
+    }
+  });
+}
+
+function initLastModal() {
+  let total = document
+    .querySelector(".popup")
+    .parentElement.getAttribute("data-total");
+  let lastGalleryImage = document.querySelector(`#item-${total} img`);
+  document.addEventListener("keydown", (e) => {
+    e = e || window.event;
+    if (e.key === "ArrowUp" && lastGalleryImage !== null) {
+      {
+        let lastGalleryItem = new galleryItem(lastGalleryImage);
+        lastGalleryItem.initModal();
+      }
+    }
+  });
+}
+
 galleryImages.forEach((galleryImage) => {
   galleryImage.addEventListener("click", () => {
     galleryItemInstance = new galleryItem(galleryImage);
-    //displayImgModal(galleryItemInstance);
     galleryItemInstance.initModal();
   });
 });
+
+initFirstModal();
+initLastModal();
