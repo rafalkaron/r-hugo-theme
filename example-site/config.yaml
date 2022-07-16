@@ -14,6 +14,7 @@ Params:
   linkedin: "https://linkedin.com/in/linkedin_id"
   twitter: "https://twitter.com/twitter_id"
   five_o_o_px: "https://500px.com/500px_id"
+  gallery_root: "media/gallery"
 
 # Navigation
 # End each URL with "/" to make active pages work
