@@ -1,6 +1,6 @@
 ---
 title: Category A
-description: Optional category description.
+description: Optional category description. Ex tempor consequat sit minim. Tempor qui voluptate officia nisi aute officia. Deserunt nulla esse ea culpa amet minim amet pariatur adipisicing fugiat tempor. Est pariatur qui ea cupidatat eiusmod.
 image: "mountain.jpg"
 images:
   1:
