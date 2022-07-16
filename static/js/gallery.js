@@ -16,7 +16,7 @@ const body = document.querySelector("body");
 class galleryItem {
   constructor(galleryImage) {
     this.popupImage = document.querySelector(".to-popup");
-    this.src = galleryImage.getAttribute("full");
+    this.src = galleryImage.getAttribute("data-full");
     this.title = galleryImage.parentElement.querySelector("h6").innerText;
     this.desc =
       galleryImage.parentElement.querySelector(".description").innerText;
