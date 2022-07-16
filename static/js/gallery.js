@@ -47,9 +47,9 @@ class galleryItem {
 
     this.closeModal();
     this.nextModal();
-    this.lastModal();
+    //this.lastModal();
     this.prevModal();
-    this.firstModal();
+    //this.firstModal();
   }
 
   nextModal() {
@@ -63,22 +63,12 @@ class galleryItem {
         nextGalleryItem.initModal();
       }
     };
-
-    document.addEventListener("keydown", (e) => {
-      e = e || window.event;
-      if (e.key === "ArrowRight" && nextGalleryImage !== null) {
-        {
-          let nextGalleryItem = new galleryItem(nextGalleryImage);
-          nextGalleryItem.initModal();
-        }
-      }
-    });
   }
 
   lastModal() {
     let lastGalleryImage = document.querySelector(`#item-${this.total} img`);
 
-    document.addEventListener("keydown", (e) => {
+    this.modal.addEventListener("keydown", (e) => {
       e = e || window.event;
       if (e.key === "ArrowUp" && lastGalleryImage !== null) {
         {
@@ -100,16 +90,6 @@ class galleryItem {
         prevGalleryItem.initModal();
       }
     };
-
-    document.addEventListener("keydown", (e) => {
-      e = e || window.event;
-      if (e.key === "ArrowLeft" && prevGalleryImage !== null) {
-        {
-          let prevGalleryItem = new galleryItem(prevGalleryImage);
-          prevGalleryItem.initModal();
-        }
-      }
-    });
   }
 
   firstModal() {
