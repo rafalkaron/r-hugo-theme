@@ -1,51 +1,56 @@
-const images = document.querySelectorAll(".popup");
+class galleryItem {
+  constructor(galleryImage) {
+    this.elem = galleryImage;
+    this.src = galleryImage.getAttribute("full");
+    this.title = galleryImage.parentElement.querySelector("h6").innerText;
+    this.desc =
+      galleryImage.parentElement.querySelector(".description").innerText;
+    this.location = galleryImage.parentElement
+      .querySelector(".location")
+      .getAttribute("href");
+    this.alt = galleryImage.alt;
+    this.no = galleryImage.parentElement.getAttribute("data-item");
+    this.total = galleryImage.parentElement.getAttribute("data-total");
+  }
+}
 
-// Create img modals on click
-images.forEach((img) => {
-  let imgObj = {
-    src: img.getAttribute("full"),
-    title: img.parentElement.querySelector("h6").innerText,
-    desc: img.parentElement.querySelector(".description").innerText,
-    location: img.parentElement.querySelector(".location").getAttribute("href"),
-    alt: img.alt,
-    no: img.parentElement.getAttribute("data-item"),
-    total: img.parentElement.getAttribute("data-total"),
-  };
-
-  img.addEventListener("click", (img) => {
-    displayImgModal(imgObj);
+const galleryImages = document.querySelectorAll(".popup");
+galleryImages.forEach((galleryImage) => {
+  galleryItemInstance = new galleryItem(galleryImage);
+  galleryImage.addEventListener("click", () => {
+    displayImgModal(galleryItemInstance);
   });
 });
 
-let displayImgModal = (imgObj) => {
+let displayImgModal = (galleryItem) => {
   const modal = document.querySelector(".modal");
   modal.style.display = "flex";
 
   popupImage = document.querySelector(".to-popup");
-  popupImage.setAttribute("src", imgObj.src);
+  popupImage.setAttribute("src", galleryItem.src);
 
   popupImage = document.querySelector(".to-popup");
-  popupImage.setAttribute("alt", imgObj.alt);
+  popupImage.setAttribute("alt", galleryItem.alt);
 
   downloadIcon = document.querySelector(".modal-download");
-  downloadIcon.setAttribute("href", imgObj.src);
+  downloadIcon.setAttribute("href", galleryItem.src);
 
   modalTitle = document.querySelector(".modal-title");
-  modalTitle.textContent = imgObj.title;
+  modalTitle.textContent = galleryItem.title;
 
   modalDesc = document.querySelector(".modal-description");
-  modalDesc.textContent = imgObj.title;
+  modalDesc.textContent = galleryItem.title;
 
   modalLocation = document.querySelector(".modal-location");
-  modalLocation.setAttribute("href", imgObj.location);
+  modalLocation.setAttribute("href", galleryItem.location);
 
   modalNumber = document.querySelector(".modal-no");
-  modalNumber.textContent = imgObj.no;
+  modalNumber.textContent = galleryItem.no;
 
   modalCounter = document.querySelector(".modal-counter");
-  modalCounter.textContent = imgObj.total;
+  modalCounter.textContent = galleryItem.total;
 
-  if (imgObj.location !== null) {
+  if (galleryItem.location !== null) {
     modalLocation.style.display = "inline";
   } else {
     modalLocation.style.display = "none";
@@ -68,7 +73,7 @@ let displayImgModal = (imgObj) => {
     body.removeAttribute("class", "modal-on");
   };
   // NEXT PREV buttons
-  nextModalNo = parseInt(imgObj.no) + 1;
+  nextModalNo = parseInt(galleryItem.no) + 1;
   modalNext = document.querySelector(`#item-${nextModalNo} img`);
   //refactor
   modalNextButton = document.querySelector(".modal-next");
@@ -113,7 +118,7 @@ let displayImgModal = (imgObj) => {
     }
   });
 
-  prevModalNo = parseInt(imgObj.no) - 1;
+  prevModalNo = parseInt(galleryItem.no) - 1;
   modalprev = document.querySelector(`#item-${prevModalNo} img`);
   //refactor
   modalprevButton = document.querySelector(".modal-prev");
