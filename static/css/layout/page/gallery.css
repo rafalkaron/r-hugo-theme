@@ -14,17 +14,19 @@
   border-radius: var(--border-radius);
   background-clip: border-box;
   padding: calc(var(--margin) / 2);
+  height: fit-content;
 }
-#layout-gallery .gallery-item .description-wrapper {
-  margin-top: calc(var(--margin) / 4);
-}
-
 #layout-gallery .gallery-item .description,
 #layout-single-gallery .modal-description,
 #layout-single-gallery .gallery-items-container .description {
   font-size: 0.8rem;
   margin: 0;
   color: var(--content-text-middle);
+}
+
+#layout-gallery .gallery-item .description,
+#layout-gallery .gallery-item .description-wrapper {
+  margin-top: calc(var(--margin) / 4);
 }
 
 #layout-gallery .gallery-item .description-group {
@@ -51,6 +53,7 @@
   border-radius: var(--border-radius);
   background-clip: border-box;
   padding: calc(var(--margin) / 2);
+  height: fit-content;
 }
 #layout-single-gallery .gallery-items-container figure img {
   width: 100%;

@@ -1,5 +1,5 @@
 {{ $gallery_root := .Site.Params.gallery_root | absURL }}
-<section class="subpage gallery-item" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
+<section title="{{ with .Params.images }}{{ len . }}{{ end }} photos" class="subpage gallery-item" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
   {{ with .Params.image }}
   <div class="description-image-container">
     <img class="description-image preload" src="{{$gallery_root}}/{{.}}" />
@@ -7,17 +7,10 @@
   {{ end }}
   <div class="description-wrapper">
     <h6>{{ .Title }}</span></h6>
-    <div class="description-group">
-      <p class="description">
-      {{ with .Params.description }}
-      {{ . | markdownify }} 
-      {{ end }}
-      </p>
-      <p class="counter description">
-        {{ with .Params.images }}
-           #{{ len . }}
-        {{ end }}
-      </p>
-    </div>
+        <p class="description">
+          {{ with .Params.description }}
+            {{ . | markdownify }} 
+          {{ end }}
+        </p>
   </div>
 </section>
