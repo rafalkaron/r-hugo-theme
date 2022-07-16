@@ -1,4 +1,6 @@
 const galleryImages = document.querySelectorAll(".popup");
+
+// Img details
 let currentGalleryImage;
 let nextGalleryImage;
 let prevGalleryImage;
@@ -10,8 +12,12 @@ const lastGalleryImage = document.querySelector(
   `#item-${totalGalleryImages} img`
 );
 
+// UI elements
 const modal = document.querySelector(".modal");
 const body = document.querySelector("body");
+let modalClose = document.querySelector(".modal-close");
+let modalPrevButton = document.querySelector(".modal-prev");
+let modalNextButton = document.querySelector(".modal-next");
 
 class galleryItem {
   constructor(galleryImage) {
@@ -25,7 +31,6 @@ class galleryItem {
       .getAttribute("href");
     this.alt = galleryImage.alt;
     this.no = galleryImage.parentElement.getAttribute("data-item");
-    this.total = galleryImage.parentElement.getAttribute("data-total");
   }
 
   initModal() {
@@ -50,7 +55,7 @@ class galleryItem {
     modalNumber.textContent = this.no;
 
     let modalCounter = document.querySelector(".modal-counter");
-    modalCounter.textContent = this.total;
+    modalCounter.textContent = totalGalleryImages;
 
     if (this.location !== null) {
       modalLocation.style.display = "inline";
@@ -58,13 +63,11 @@ class galleryItem {
       modalLocation.style.display = "none";
     }
 
-    this.closeModal();
-    this.nextModal();
-    this.prevModal();
-
-    currentGalleryImage = document.querySelector(
-      `#item-${parseInt(this.no)} img`
-    );
+    currentGalleryImage = document.querySelector(`#item-${this.no} img`);
+    this.popupImage.onclick = () => {
+      modal.style.display = "none";
+      body.removeAttribute("class", "modal-on");
+    };
     nextGalleryImage = document.querySelector(
       `#item-${parseInt(this.no) + 1} img`
     );
@@ -72,74 +75,9 @@ class galleryItem {
       `#item-${parseInt(this.no) - 1} img`
     );
   }
-
-  nextModal() {
-    let nextModalNo = parseInt(this.no) + 1;
-    let nextGalleryImage = document.querySelector(`#item-${nextModalNo} img`);
-    let modalNextButton = document.querySelector(".modal-next");
-    modalNextButton.onclick = () => {
-      if (nextGalleryImage !== null) {
-        let nextGalleryItem = new galleryItem(nextGalleryImage);
-        nextGalleryItem.initModal();
-      }
-    };
-  }
-
-  prevModal() {
-    let prevModalNo = parseInt(this.no) - 1;
-    let prevGalleryImage = document.querySelector(`#item-${prevModalNo} img`);
-    let modalPrevButton = document.querySelector(".modal-prev");
-    modalPrevButton.onclick = () => {
-      if (prevGalleryImage !== null) {
-        let prevGalleryItem = new galleryItem(prevGalleryImage);
-        prevGalleryItem.initModal();
-      }
-    };
-  }
-
-  closeModal() {
-    // Close on close button click
-    let modalClose = document.querySelector(".modal-close");
-    modalClose.onclick = () => {
-      modal.style.display = "none";
-      body.removeAttribute("class", "modal-on");
-    };
-    // Close on image click
-    this.popupImage.onclick = () => {
-      modal.style.display = "none";
-      body.removeAttribute("class", "modal-on");
-    };
-  }
 }
 
-function initFirstModal() {
-  document.addEventListener("keydown", (e) => {
-    e = e || window.event;
-    if (e.key === "ArrowDown" && firstGalleryImage !== null) {
-      {
-        let firstGalleryItem = new galleryItem(firstGalleryImage);
-        firstGalleryItem.initModal();
-      }
-    }
-  });
-}
-
-function initLastModal() {
-  let total = document
-    .querySelector(".popup")
-    .parentElement.getAttribute("data-total");
-  let lastGalleryImage = document.querySelector(`#item-${total} img`);
-  document.addEventListener("keydown", (e) => {
-    e = e || window.event;
-    if (e.key === "ArrowUp" && lastGalleryImage !== null) {
-      {
-        let lastGalleryItem = new galleryItem(lastGalleryImage);
-        lastGalleryItem.initModal();
-      }
-    }
-  });
-}
-
+// Iterate over every image in the gallery
 galleryImages.forEach((galleryImage) => {
   galleryImage.addEventListener("click", () => {
     galleryItemInstance = new galleryItem(galleryImage);
@@ -177,3 +115,21 @@ document.addEventListener("keydown", (e) => {
     }
   }
 });
+
+// Add mouse events
+modalClose.onclick = () => {
+  modal.style.display = "none";
+  body.removeAttribute("class", "modal-on");
+};
+modalPrevButton.onclick = () => {
+  if (prevGalleryImage !== null) {
+    let prevGalleryItem = new galleryItem(prevGalleryImage);
+    prevGalleryItem.initModal();
+  }
+};
+modalNextButton.onclick = () => {
+  if (nextGalleryImage !== null) {
+    let nextGalleryItem = new galleryItem(nextGalleryImage);
+    nextGalleryItem.initModal();
+  }
+};
