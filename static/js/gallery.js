@@ -1,4 +1,17 @@
 const galleryImages = document.querySelectorAll(".popup");
+let currentGalleryImage;
+let nextGalleryImage;
+let prevGalleryImage;
+const totalGalleryImages = document
+  .querySelector(".popup")
+  .parentElement.getAttribute("data-total");
+const firstGalleryImage = document.querySelector(`#item-1 img`);
+const lastGalleryImage = document.querySelector(
+  `#item-${totalGalleryImages} img`
+);
+
+const modal = document.querySelector(".modal");
+const body = document.querySelector("body");
 
 class galleryItem {
   constructor(galleryImage) {
@@ -13,13 +26,11 @@ class galleryItem {
     this.alt = galleryImage.alt;
     this.no = galleryImage.parentElement.getAttribute("data-item");
     this.total = galleryImage.parentElement.getAttribute("data-total");
-    this.modal = document.querySelector(".modal");
-    this.body = document.querySelector("body");
   }
 
   initModal() {
-    this.body.setAttribute("class", "modal-on");
-    this.modal.style.display = "flex";
+    body.setAttribute("class", "modal-on");
+    modal.style.display = "flex";
     this.popupImage.setAttribute("src", this.src);
     this.popupImage.setAttribute("alt", this.alt);
 
@@ -50,13 +61,22 @@ class galleryItem {
     this.closeModal();
     this.nextModal();
     this.prevModal();
+
+    currentGalleryImage = document.querySelector(
+      `#item-${parseInt(this.no)} img`
+    );
+    nextGalleryImage = document.querySelector(
+      `#item-${parseInt(this.no) + 1} img`
+    );
+    prevGalleryImage = document.querySelector(
+      `#item-${parseInt(this.no) - 1} img`
+    );
   }
 
   nextModal() {
     let nextModalNo = parseInt(this.no) + 1;
     let nextGalleryImage = document.querySelector(`#item-${nextModalNo} img`);
     let modalNextButton = document.querySelector(".modal-next");
-
     modalNextButton.onclick = () => {
       if (nextGalleryImage !== null) {
         let nextGalleryItem = new galleryItem(nextGalleryImage);
@@ -69,7 +89,6 @@ class galleryItem {
     let prevModalNo = parseInt(this.no) - 1;
     let prevGalleryImage = document.querySelector(`#item-${prevModalNo} img`);
     let modalPrevButton = document.querySelector(".modal-prev");
-
     modalPrevButton.onclick = () => {
       if (prevGalleryImage !== null) {
         let prevGalleryItem = new galleryItem(prevGalleryImage);
@@ -79,8 +98,6 @@ class galleryItem {
   }
 
   closeModal() {
-    let body = this.body;
-    let modal = this.modal;
     // Close on close button click
     let modalClose = document.querySelector(".modal-close");
     modalClose.onclick = () => {
@@ -92,18 +109,10 @@ class galleryItem {
       modal.style.display = "none";
       body.removeAttribute("class", "modal-on");
     };
-    // Close on ESC
-    document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") {
-        modal.style.display = "none";
-        body.removeAttribute("class", "modal-on");
-      }
-    });
   }
 }
 
 function initFirstModal() {
-  let firstGalleryImage = document.querySelector(`#item-1 img`);
   document.addEventListener("keydown", (e) => {
     e = e || window.event;
     if (e.key === "ArrowDown" && firstGalleryImage !== null) {
@@ -138,5 +147,33 @@ galleryImages.forEach((galleryImage) => {
   });
 });
 
-initFirstModal();
-initLastModal();
+// Add keybindings
+document.addEventListener("keydown", (e) => {
+  e = e || window.event;
+  if (e.key === "ArrowRight" && nextGalleryImage !== null) {
+    {
+      let nextGalleryItem = new galleryItem(nextGalleryImage);
+      nextGalleryItem.initModal();
+    }
+  } else if (e.key === "ArrowLeft" && prevGalleryImage !== null) {
+    {
+      let prevGalleryItem = new galleryItem(prevGalleryImage);
+      prevGalleryItem.initModal();
+    }
+  } else if (e.key === "ArrowDown") {
+    {
+      let firstGalleryItem = new galleryItem(firstGalleryImage);
+      firstGalleryItem.initModal();
+    }
+  } else if (e.key === "ArrowUp") {
+    {
+      let lastGalleryItem = new galleryItem(lastGalleryImage);
+      lastGalleryItem.initModal();
+    }
+  } else if (e.key === "Escape") {
+    {
+      modal.style.display = "none";
+      body.removeAttribute("class", "modal-on");
+    }
+  }
+});
