@@ -12,7 +12,7 @@
               <h6>{{ .title }}</h6>
               {{ with .loc }}
               <div class="icon-group">
-              <a title="Location" class="icon location" target="_blank" href="{{ . }}"><span class="material-icons">location_on</span></a>
+              <a title="Location: {{.}}" class="icon location" target="_blank" href="https://www.google.com/maps/search/?api=1&query={{ . }}"><span class="material-icons">location_on</span></a>
               {{ else }}
               <span class="location" style="display: none;"></span>
               {{ end }}
