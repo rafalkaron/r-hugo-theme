@@ -22,6 +22,15 @@ let modalNextButton = document.querySelector(".modal-next");
 let exifIcons = document.querySelectorAll(".icon.info");
 let modalExifIcon = document.querySelector(".icon.modal-info");
 
+function formatExif(json) {
+  obj = JSON.parse(json);
+  str = "";
+  Object.entries(obj).forEach(([key, value]) => {
+    str = `${str} \n ${key}: ${value}`; // key - value
+  });
+  return str;
+}
+
 class galleryItem {
   constructor(galleryImage) {
     this.popupImage = document.querySelector(".to-popup");
@@ -80,7 +89,7 @@ class galleryItem {
     );
 
     modalExifIcon.onclick = () => {
-      window.alert(this.exif);
+      window.alert(formatExif(this.exif));
     };
   }
 }
@@ -144,6 +153,6 @@ modalNextButton.onclick = () => {
 
 exifIcons.forEach((exifIcon) => {
   exifIcon.addEventListener("click", () => {
-    window.alert(exifIcon.getAttribute("data-exif"));
+    window.alert(formatExif(exifIcon.getAttribute("data-exif")));
   });
 });
