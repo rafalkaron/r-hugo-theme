@@ -19,6 +19,9 @@ let modalClose = document.querySelector(".modal-close");
 let modalPrevButton = document.querySelector(".modal-prev");
 let modalNextButton = document.querySelector(".modal-next");
 
+let exifIcons = document.querySelectorAll(".icon.info");
+let modalExifIcon = document.querySelector(".icon.modal-info");
+
 class galleryItem {
   constructor(galleryImage) {
     this.popupImage = document.querySelector(".to-popup");
@@ -31,6 +34,7 @@ class galleryItem {
       .getAttribute("href");
     this.alt = galleryImage.alt;
     this.no = galleryImage.parentElement.getAttribute("data-item");
+    this.exif = galleryImage.parentElement.getAttribute("data-exif");
   }
 
   initModal() {
@@ -74,6 +78,10 @@ class galleryItem {
     prevGalleryImage = document.querySelector(
       `#item-${parseInt(this.no) - 1} img`
     );
+
+    modalExifIcon.onclick = () => {
+      window.alert(this.exif);
+    };
   }
 }
 
@@ -133,3 +141,9 @@ modalNextButton.onclick = () => {
     nextGalleryItem.initModal();
   }
 };
+
+exifIcons.forEach((exifIcon) => {
+  exifIcon.addEventListener("click", () => {
+    window.alert(exifIcon.getAttribute("data-exif"));
+  });
+});

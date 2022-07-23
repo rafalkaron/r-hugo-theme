@@ -6,14 +6,14 @@
       {{ range .Params.images }}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         {{ $root_src := (printf "%s%s%s" $gallery_root "/" .src ) }}
-        <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}">
+        <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}" {{with .exif}}data-exif="{{ . | jsonify }}"{{end}}>
             <img class="popup preload" alt="{{ .alt }}" data-full="{{$root_src}}" src="{{ if .thumb }}{{$gallery_root}}/{{ .thumb }}{{else}}{{$gallery_root}}/{{ .src }}{{end}}" style="cursor: pointer;"/>
           <figcaption>
             <div class="figcaption-group title-group">
               <h6>{{ .title }}</h6>
               <div class="icon-group">
               {{with .exif}}
-              <a title="Info: {{ . | jsonify }}" class="icon info" style="cursor: pointer;"><span class="material-icons">info</span></a>
+              <a title="Info" data-exif="{{ . | jsonify }}" class="icon info" style="cursor: pointer;"><span class="material-icons">info</span></a>
               {{end}}
               {{ with .loc }}
               <a title="Location: {{.}}" class="icon location" target="_blank" href="https://www.google.com/maps/search/?api=1&query={{ . }}"><span class="material-icons">location_on</span></a>
