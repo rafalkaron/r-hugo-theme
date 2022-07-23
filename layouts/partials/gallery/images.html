@@ -13,7 +13,7 @@
               <h6>{{ .title }}</h6>
               <div class="icon-group">
               {{with .exif}}
-              <a title="Info: {{ . | jsonify }}" class="icon info"><span class="material-icons">info</span></a>
+              <a title="Info: {{ . | jsonify }}" class="icon info" style="cursor: pointer;"><span class="material-icons">info</span></a>
               {{end}}
               {{ with .loc }}
               <a title="Location: {{.}}" class="icon location" target="_blank" href="https://www.google.com/maps/search/?api=1&query={{ . }}"><span class="material-icons">location_on</span></a>
