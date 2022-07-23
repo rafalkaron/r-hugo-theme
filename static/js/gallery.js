@@ -19,6 +19,9 @@ let modalClose = document.querySelector(".modal-close");
 let modalPrevButton = document.querySelector(".modal-prev");
 let modalNextButton = document.querySelector(".modal-next");
 
+const modalExif = document.querySelector(".modal-exif");
+let modalExifMetadata = document.querySelector(".modal-exif-metadata");
+let modalExifClose = document.querySelector(".modal-exif-close");
 let exifIcons = document.querySelectorAll(".icon.info");
 let modalExifIcon = document.querySelector(".icon.modal-info");
 
@@ -29,6 +32,12 @@ function formatExif(json) {
     str = `${str} \n ${key}: ${value}`; // key - value
   });
   return str;
+}
+
+function removeAllChildNodes(parent) {
+  while (parent.firstChild) {
+    parent.removeChild(parent.firstChild);
+  }
 }
 
 class galleryItem {
@@ -89,7 +98,18 @@ class galleryItem {
     );
 
     modalExifIcon.onclick = () => {
-      window.alert(formatExif(this.exif));
+      body.setAttribute("class", "modal-on");
+      modalExif.style.display = "flex";
+
+      let exifData = JSON.parse(this.exif);
+      removeAllChildNodes(modalExifMetadata);
+
+      Object.entries(exifData).forEach(([key, value]) => {
+        let text = `${key}: ${value}`;
+        let liElem = document.createElement("li");
+        liElem.textContent = text;
+        modalExifMetadata.appendChild(liElem);
+      });
     };
   }
 }
@@ -128,6 +148,7 @@ document.addEventListener("keydown", (e) => {
   } else if (e.key === "Escape") {
     {
       modal.style.display = "none";
+      modalExif.style.display = "none";
       body.removeAttribute("class", "modal-on");
     }
   }
@@ -151,8 +172,24 @@ modalNextButton.onclick = () => {
   }
 };
 
+// EXIF
 exifIcons.forEach((exifIcon) => {
   exifIcon.addEventListener("click", () => {
-    window.alert(formatExif(exifIcon.getAttribute("data-exif")));
+    body.setAttribute("class", "modal-on");
+    modalExif.style.display = "flex";
+
+    exifData = JSON.parse(exifIcon.getAttribute("data-exif"));
+    removeAllChildNodes(modalExifMetadata);
+    Object.entries(exifData).forEach(([key, value]) => {
+      let text = `${key}: ${value}`;
+      let liElem = document.createElement("li");
+      liElem.textContent = text;
+      modalExifMetadata.appendChild(liElem);
+    });
   });
 });
+
+modalExifClose.onclick = () => {
+  modalExif.style.display = "none";
+  body.removeAttribute("class", "modal-on");
+};
