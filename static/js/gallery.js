@@ -25,13 +25,44 @@ let modalExifClose = document.querySelector(".modal-exif-close");
 let exifIcons = document.querySelectorAll(".icon.info");
 let modalExifIcon = document.querySelector(".icon.modal-info");
 
-function formatExif(json) {
-  obj = JSON.parse(json);
-  str = "";
-  Object.entries(obj).forEach(([key, value]) => {
-    str = `${str} \n ${key}: ${value}`; // key - value
+function formatExif(exifData) {
+  // Do not accumulate lis
+  removeAllChildNodes(modalExifMetadata);
+
+  Object.entries(exifData).forEach(([key, value]) => {
+    let keyNice = "";
+    switch (key) {
+      case "aperture":
+        keyNice = "Aperture";
+        break;
+      case "datetimeoriginal":
+        keyNice = "Time";
+        break;
+      case "iso":
+        keyNice = "ISO";
+        break;
+      case "focallength":
+        keyNice = "Focal length";
+        break;
+      case "lensmodel":
+        keyNice = "Lens";
+        break;
+      case "model":
+        keyNice = "Camera";
+        break;
+      case "shutterspeed":
+        keyNice = "Speed";
+        break;
+      default:
+        break;
+    }
+    let text = `${keyNice}: ${value}`;
+    let liElem = document.createElement("li");
+    liElem.textContent = text;
+    modalExifMetadata.appendChild(liElem);
   });
-  return str;
+
+  return;
 }
 
 function removeAllChildNodes(parent) {
@@ -101,14 +132,7 @@ class galleryItem {
       modalExif.style.display = "flex";
 
       let exifData = JSON.parse(this.exif);
-      removeAllChildNodes(modalExifMetadata);
-
-      Object.entries(exifData).forEach(([key, value]) => {
-        let text = `${key}: ${value}`;
-        let liElem = document.createElement("li");
-        liElem.textContent = text;
-        modalExifMetadata.appendChild(liElem);
-      });
+      formatExif(exifData);
     };
   }
 }
@@ -181,13 +205,7 @@ exifIcons.forEach((exifIcon) => {
     modalExif.style.display = "flex";
 
     exifData = JSON.parse(exifIcon.getAttribute("data-exif"));
-    removeAllChildNodes(modalExifMetadata);
-    Object.entries(exifData).forEach(([key, value]) => {
-      let text = `${key}: ${value}`;
-      let liElem = document.createElement("li");
-      liElem.textContent = text;
-      modalExifMetadata.appendChild(liElem);
-    });
+    formatExif(exifData);
   });
 });
 
