@@ -56,9 +56,25 @@ function formatExif(exifData) {
       default:
         break;
     }
-    let text = `${keyNice}: ${value}`;
+
     let liElem = document.createElement("li");
-    liElem.textContent = text;
+    liElem.setAttribute("class", "exif-li");
+
+    let spanKeyElem = document.createElement("span");
+    spanKeyElem.setAttribute("class", "exif-key");
+    spanKeyElem.textContent = keyNice;
+
+    let spanSepElem = document.createElement("span");
+    spanSepElem.setAttribute("class", "exif-sep");
+    spanSepElem.textContent = ": ";
+
+    let spanValueElem = document.createElement("span");
+    spanValueElem.setAttribute("class", "exif-value");
+    spanValueElem.textContent = value;
+
+    liElem.appendChild(spanKeyElem);
+    liElem.appendChild(spanSepElem);
+    liElem.appendChild(spanValueElem);
     modalExifMetadata.appendChild(liElem);
   });
 
