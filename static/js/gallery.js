@@ -39,7 +39,6 @@ function removeAllChildNodes(parent) {
     parent.removeChild(parent.firstChild);
   }
 }
-
 class galleryItem {
   constructor(galleryImage) {
     this.popupImage = document.querySelector(".to-popup");
@@ -147,8 +146,11 @@ document.addEventListener("keydown", (e) => {
     }
   } else if (e.key === "Escape") {
     {
-      modal.style.display = "none";
-      modalExif.style.display = "none";
+      if (modalExif.style.display !== "none") {
+        modalExif.style.display = "none";
+      } else {
+        modal.style.display = "none";
+      }
       body.removeAttribute("class", "modal-on");
     }
   }
