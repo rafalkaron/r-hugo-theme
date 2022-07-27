@@ -85,25 +85,39 @@ function formatExif(exifData) {
 
   // Order elements
   modelElem = modalExifMetadataUnordered.querySelector("#model");
-  modalExifMetadata.appendChild(modelElem);
+  if (modelElem !== null) {
+    modalExifMetadata.appendChild(modelElem);
+  }
 
   lensElem = modalExifMetadataUnordered.querySelector("#lensmodel");
-  modalExifMetadata.appendChild(lensElem);
+  if (lensElem !== null) {
+    modalExifMetadata.appendChild(lensElem);
+  }
 
   focalElem = modalExifMetadataUnordered.querySelector("#focallength");
-  modalExifMetadata.appendChild(focalElem);
+  if (focalElem !== null) {
+    modalExifMetadata.appendChild(focalElem);
+  }
 
   shutterElem = modalExifMetadataUnordered.querySelector("#shutterspeed");
-  modalExifMetadata.appendChild(shutterElem);
+  if (shutterElem !== null) {
+    modalExifMetadata.appendChild(shutterElem);
+  }
 
   apertureElem = modalExifMetadataUnordered.querySelector("#aperture");
-  modalExifMetadata.appendChild(apertureElem);
+  if (apertureElem !== null) {
+    modalExifMetadata.appendChild(apertureElem);
+  }
 
   isoElem = modalExifMetadataUnordered.querySelector("#iso");
-  modalExifMetadata.appendChild(isoElem);
+  if (isoElem !== null) {
+    modalExifMetadata.appendChild(isoElem);
+  }
 
   dateElem = modalExifMetadataUnordered.querySelector("#datetimeoriginal");
-  modalExifMetadata.appendChild(dateElem);
+  if (dateElem !== null) {
+    modalExifMetadata.appendChild(dateElem);
+  }
 }
 
 function removeAllChildNodes(parent) {
