@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(50% - var(--margin) / 8) !important;
+  width: calc(50% - var(--margin) / 4);
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;
@@ -28,9 +28,12 @@
 #layout-single-gallery .gallery-item figcaption {
   display: none;
 }
-#layout-single-gallery .gallery-item:hover figcaption {
-  display: unset;
+@media (hover: hover) and (pointer: fine) {
+  #layout-single-gallery .gallery-item:hover figcaption {
+    display: unset;
+  }
 }
+
 #layout-single-gallery .gallery-item .icon-group {
   display: flex;
   justify-content: space-between;
@@ -38,10 +41,11 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  padding: 0 calc(var(--padding) * 2);
 }
 #layout-single-gallery .gallery-item .figcaption-title {
   position: absolute;
-  padding: var(--padding);
+  padding: var(--padding) calc(var(--padding) * 2.5);
   top: 0;
   left: 0;
 }

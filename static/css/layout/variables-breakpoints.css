@@ -179,8 +179,8 @@
   }
   #layout-section .subpage,
   #layout-gallery .gallery-item,
-  #layout-single-gallery .gallery-items-container figure {
-    width: 100%;
+  #layout-single-gallery .gallery-item {
+    width: 100% !important;
   }
   #nav-primary {
     display: none;
