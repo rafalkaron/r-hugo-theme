@@ -21,6 +21,9 @@ let modalNextButton = document.querySelector(".modal-next");
 
 const modalExif = document.querySelector(".modal-exif");
 let modalExifMetadata = document.querySelector(".modal-exif-metadata");
+let modalExifMetadataUnordered = document.querySelector(
+  ".modal-exif-metadata-unordered"
+);
 let modalExifClose = document.querySelector(".modal-exif-close");
 let exifIcons = document.querySelectorAll(".icon.info");
 let modalExifIcon = document.querySelector(".icon.modal-info");
@@ -58,7 +61,8 @@ function formatExif(exifData) {
     }
 
     let liElem = document.createElement("li");
-    liElem.setAttribute("class", "exif-li");
+    liElem.setAttribute("class", `exif-li`);
+    liElem.setAttribute("id", `${key}`);
 
     let spanKeyElem = document.createElement("span");
     spanKeyElem.setAttribute("class", "exif-key");
@@ -72,13 +76,34 @@ function formatExif(exifData) {
     spanValueElem.setAttribute("class", "exif-value");
     spanValueElem.textContent = value;
 
+    // Append elements to hidden unordered container
     liElem.appendChild(spanKeyElem);
     liElem.appendChild(spanSepElem);
     liElem.appendChild(spanValueElem);
-    modalExifMetadata.appendChild(liElem);
+    modalExifMetadataUnordered.appendChild(liElem);
   });
 
-  return;
+  // Order elements
+  modelElem = modalExifMetadataUnordered.querySelector("#model");
+  modalExifMetadata.appendChild(modelElem);
+
+  lensElem = modalExifMetadataUnordered.querySelector("#lensmodel");
+  modalExifMetadata.appendChild(lensElem);
+
+  focalElem = modalExifMetadataUnordered.querySelector("#focallength");
+  modalExifMetadata.appendChild(focalElem);
+
+  shutterElem = modalExifMetadataUnordered.querySelector("#shutterspeed");
+  modalExifMetadata.appendChild(shutterElem);
+
+  apertureElem = modalExifMetadataUnordered.querySelector("#aperture");
+  modalExifMetadata.appendChild(apertureElem);
+
+  isoElem = modalExifMetadataUnordered.querySelector("#iso");
+  modalExifMetadata.appendChild(isoElem);
+
+  dateElem = modalExifMetadataUnordered.querySelector("#datetimeoriginal");
+  modalExifMetadata.appendChild(dateElem);
 }
 
 function removeAllChildNodes(parent) {
