@@ -1,0 +1,95 @@
+/* Main layout */
+#layout-single-gallery .modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: none;
+  background-color: var(--content-background-dark);
+  animation: fadein 0.2s;
+  z-index: 2;
+}
+#layout-single-gallery .modal-body {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-bottom: none;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Figure items */
+#layout-single-gallery .modal-figure * {
+  text-shadow: var(--text-shadow);
+  color: var(--layout-text);
+}
+#layout-single-gallery .modal-figure img {
+  max-width: 80vw;
+  max-height: 80vh;
+  min-width: 180px;
+  object-fit: cover;
+}
+#layout-single-gallery .modal-figure .meta {
+  position: fixed;
+  bottom: var(--margin);
+  left: var(--padding-main);
+  max-width: 60vw;
+}
+#layout-single-gallery .modal-figure .counter-control {
+  position: fixed;
+  bottom: var(--margin);
+  right: calc(var(--padding-main));
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+#layout-single-gallery .modal-figure .description {
+  font-size: 0.8rem;
+}
+
+/* Icons */
+#layout-single-gallery .modal-figure .operations {
+  position: fixed;
+  top: var(--margin);
+  right: var(--padding-main);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+#layout-single-gallery .modal-figure .icon {
+  cursor: pointer;
+  margin: var(--padding);
+}
+#layout-single-gallery .modal-figure .icon * {
+  color: var(--layout-text);
+}
+
+#layout-single-gallery .modal .counter {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+#layout-single-gallery .modal .counter span {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.material-icons {
+  line-height: 1.6;
+}

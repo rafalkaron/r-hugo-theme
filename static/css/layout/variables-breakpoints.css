@@ -25,7 +25,7 @@
   #layout-section .subpage,
   #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
-    width: calc(33% - var(--margin) / 2);
+    flex: calc(25% - var(--margin));
   }
 }
 
@@ -37,7 +37,7 @@
   #layout-section .subpage,
   #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
-    width: calc(50% - var(--margin) / 2);
+    flex: calc(33% - var(--margin) / 2);
   }
 }
 
@@ -45,6 +45,11 @@
 @media only screen and (max-width: 1200px) {
   :root {
     --padding-main: 2.5rem;
+  }
+  #layout-section .subpage,
+  #layout-gallery .gallery-item,
+  #layout-single-gallery .gallery-items-container figure {
+    flex: calc(50% - var(--margin) / 2);
   }
 }
 
@@ -179,8 +184,8 @@
   }
   #layout-section .subpage,
   #layout-gallery .gallery-item,
-  #layout-single-gallery .gallery-items-container figure {
-    width: 100%;
+  #layout-single-gallery .gallery-item {
+    flex: 100% !important;
   }
   #nav-primary {
     display: none;

@@ -3,4 +3,5 @@
   --border-width: 0.5rem;
   --border-width-medium: 0.2rem;
   --border-width-thin: 0.125rem;
+  --text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
 }
