@@ -24,7 +24,7 @@
 
 #layout-single-gallery .modal-exif-body {
   position: fixed;
-  overflow: scroll;
+  overflow: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-bottom: none;

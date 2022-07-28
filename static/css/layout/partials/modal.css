@@ -19,7 +19,7 @@
   bottom: 0;
   right: 0;
   left: 0;
-  overflow: scroll;
+  overflow: hidden;
   -ms-overflow-style: none;
   scrollbar-width: none;
   border-bottom: none;
