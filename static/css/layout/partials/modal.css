@@ -1,9 +1,10 @@
+/* Main layout */
 #layout-single-gallery .modal {
   position: fixed;
-  top: 0rem;
-  bottom: 0rem;
-  right: 0rem;
-  left: 0rem;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   display: none;
   background-color: var(--content-background-dark);
   animation: fadein 0.2s;
@@ -32,12 +33,17 @@
   }
 }
 
+/* Figure items */
+#layout-single-gallery .modal-figure * {
+  text-shadow: var(--text-shadow);
+  color: var(--layout-text);
+}
 #layout-single-gallery .modal-figure img {
   max-width: 80vw;
   max-height: 80vh;
   min-width: 180px;
+  object-fit: cover;
 }
-
 #layout-single-gallery .modal-figure .meta {
   position: fixed;
   bottom: var(--margin);
@@ -52,43 +58,38 @@
   align-items: center;
   flex-direction: row;
 }
+#layout-single-gallery .modal-figure .description {
+  font-size: 0.8rem;
+}
+
+/* Icons */
 #layout-single-gallery .modal-figure .operations {
   position: fixed;
   top: var(--margin);
   right: var(--padding-main);
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: row;
 }
-
-#layout-single-gallery .modal-figure .meta *,
-#layout-single-gallery .modal-figure .counter-control *,
-#layout-single-gallery .modal-figure .operations * {
-  text-shadow: 0px 0px 0.25rem rgba(34, 34, 34, 1);
-}
-
-#layout-single-gallery .modal .icon {
+#layout-single-gallery .modal-figure .icon {
   cursor: pointer;
-  margin-right: calc(var(--margin) / 4);
+  margin: var(--padding);
 }
-#layout-single-gallery .modal .icon span,
-#layout-single-gallery .counter span {
+#layout-single-gallery .modal-figure .icon * {
   color: var(--layout-text);
 }
-#layout-single-gallery .modal .figcaption-group .icon:last-of-type,
-#layout-single-gallery .figcaption-group .icon:last-of-type {
-  margin-right: 0;
-}
-#layout-single-gallery .modal .modal-body .figcaption-group .navicon.icon {
-  cursor: pointer;
-  margin: 0 calc(var(--margin) / 4);
+
+#layout-single-gallery .modal .counter {
+  display: flex;
+  align-items: center;
+  margin: 0;
 }
 
-#layout-single-gallery .counter span {
+#layout-single-gallery .modal .counter span {
   font-size: 1rem;
   font-weight: 600;
 }
 
-#layout-single-gallery .material-icons {
+.material-icons {
   line-height: 1.6;
 }

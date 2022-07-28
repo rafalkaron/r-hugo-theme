@@ -51,7 +51,7 @@
 }
 
 #layout-single-gallery .gallery-item * {
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+  text-shadow: var(--text-shadow);
   color: var(--layout-text);
 }
 #layout-single-gallery .gallery-item a.icon {
