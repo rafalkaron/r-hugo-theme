@@ -25,7 +25,7 @@
   #layout-section .subpage,
   #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
-    width: calc(33% - var(--margin) / 2);
+    flex: calc(33% - var(--margin) / 2);
   }
 }
 
@@ -37,7 +37,7 @@
   #layout-section .subpage,
   #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-items-container figure {
-    width: calc(50% - var(--margin) / 2);
+    flex: calc(50% - var(--margin) / 2);
   }
 }
 
@@ -180,7 +180,7 @@
   #layout-section .subpage,
   #layout-gallery .gallery-item,
   #layout-single-gallery .gallery-item {
-    width: 100% !important;
+    flex: 100% !important;
   }
   #nav-primary {
     display: none;

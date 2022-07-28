@@ -8,10 +8,10 @@
 }
 
 #layout-single-gallery .gallery-item {
+  flex: calc(50% - var(--margin) / 4);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(50% - var(--margin) / 4);
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;
