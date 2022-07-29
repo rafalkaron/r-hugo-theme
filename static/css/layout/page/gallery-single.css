@@ -3,7 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  gap: calc(var(--margin) / 4);
+  gap: calc(var(--margin) / 2);
   margin-top: var(--margin);
 }
 
@@ -12,9 +12,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--content-background-middle);
-  border-radius: var(--border-radius);
-  background-clip: border-box;
   position: relative;
 }
 
