@@ -9,10 +9,6 @@
 }
 #layout-gallery .gallery-item {
   flex: calc(50% - var(--margin) / 4);
-  background-color: var(--content-background-middle);
-  border-radius: var(--border-radius);
-  background-clip: border-box;
-  padding: calc(var(--margin) / 2);
   position: relative;
 }
 
@@ -38,11 +34,16 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 0 calc(var(--margin) / 2) calc(var(--margin) / 2);
-  background-color: var(--content-background-middle);
+  padding: 0 calc(var(--margin) / 1.5) calc(var(--margin) / 2);
+  background-color: #38383834;
 }
 #layout-gallery .gallery-item .description {
   font-size: 0.8rem;
   color: var(--content-text-middle);
   margin-top: 0;
+}
+
+#layout-gallery .gallery-item * {
+  text-shadow: var(--text-shadow);
+  color: var(--layout-text);
 }

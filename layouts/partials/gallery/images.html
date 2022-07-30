@@ -3,7 +3,7 @@
 
 {{ $total := (len .Params.images) }}
 <section class="gallery-items-container not-selectable">
-      {{ range .Params.images }}
+      {{ range sort .Params.images "timestamp" "desc"}}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         {{ $root_src := (printf "%s%s%s" $gallery_root "/" .src ) }}
         <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}" {{with .exif}}data-exif="{{ . | jsonify }}"{{end}}>
