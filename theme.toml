@@ -3,10 +3,10 @@ license = "MIT"
 licenselink = "https://github.com/rafalkaron/r-hugo-theme/blob/main/LICENSE"
 description = "A simple Hugo theme suitable for a portfolio, documentation library, or blog."
 homepage = "https://rafalkaron.github.io/r-hugo-theme-demo/"
-tags = [portfolio, blog, docs, documentation]
-features = [responsive, print-friendly, automatic navigation, breadcrumbs, related links]
+tags = ["portfolio", "blog", "docs", "documentation"]
+features = ["responsive", "print-friendly", "automatic navigation", "breadcrumbs", "related links"]
 min_version = "0.41.0"
 
 [author]
   name = "Rafał Karoń"
-  homepage = "https://rafalkaron.github.io
+  homepage = "https://rafalkaron.github.io"
