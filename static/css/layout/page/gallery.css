@@ -35,11 +35,11 @@
   left: 0;
   right: 0;
   padding: 0 calc(var(--margin) / 1.5) calc(var(--margin) / 2);
-  background-color: #38383834;
+  background-color: #38383875;
 }
 #layout-gallery .gallery-item .description {
   font-size: 0.8rem;
-  color: var(--content-text-middle);
+  color: var(--layout-text);
   margin-top: 0;
 }
 
