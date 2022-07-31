@@ -170,4 +170,9 @@
     justify-content: center;
     max-width: unset;
   }
+
+  /* Prevent printing multiple pages with the same modal */
+  body.modal-on .content {
+    display: none;
+  }
 }
