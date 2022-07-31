@@ -95,6 +95,24 @@
     border: none;
   }
 
+  #layout-gallery .gallery-items,
+  #layout-single-gallery .gallery-items-container {
+    display: block;
+    margin-top: calc(var(--margin) * 3);
+  }
+  #layout-gallery .gallery-item,
+  #layout-single-gallery .gallery-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    margin: var(--margin) auto;
+    border: var(--content-background-middle) var(--border-width-medium) solid;
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: avoid;
+  }
+
   #layout-gallery .gallery-item *,
   #layout-gallery .gallery-item .description {
     color: var(--content-text-light);
