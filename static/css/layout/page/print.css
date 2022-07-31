@@ -67,6 +67,7 @@
   h5,
   h6,
   img,
+  figure,
   p,
   li,
   .post,
@@ -77,11 +78,13 @@
     break-inside: avoid;
     page-break-inside: avoid;
     -webkit-column-break-inside: avoid;
+    page-break-after: auto;
+    page-break-before: auto;
   }
 
   #layout-section .subpage,
   #layout-gallery .subpage,
-  #layout-single-gallery figure.gallery-item,
+  #layout-single-gallery .gallery-item,
   #layout-blog .post {
     border: var(--content-background-middle) var(--border-width-medium) solid;
     background-color: transparent;
@@ -90,6 +93,11 @@
   #layout-single-gallery .icon,
   #layout-galler .icon {
     border: none;
+  }
+
+  #layout-gallery .gallery-item *,
+  #layout-gallery .gallery-item .description {
+    color: var(--content-text-light);
   }
 
   /* Fix colors in code */
