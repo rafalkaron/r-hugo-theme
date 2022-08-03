@@ -208,27 +208,36 @@ galleryImages.forEach((galleryImage) => {
 });
 
 // Add keybindings
+
 document.addEventListener("keydown", (e) => {
   e = e || window.event;
   if (e.key === "ArrowRight" && nextGalleryImage !== null) {
     {
-      let nextGalleryItem = new galleryItem(nextGalleryImage);
-      nextGalleryItem.initModal();
+      if (body.getAttribute("class") === "modal-on") {
+        let nextGalleryItem = new galleryItem(nextGalleryImage);
+        nextGalleryItem.initModal();
+      }
     }
   } else if (e.key === "ArrowLeft" && prevGalleryImage !== null) {
     {
-      let prevGalleryItem = new galleryItem(prevGalleryImage);
-      prevGalleryItem.initModal();
+      if (body.getAttribute("class") === "modal-on") {
+        let prevGalleryItem = new galleryItem(prevGalleryImage);
+        prevGalleryItem.initModal();
+      }
     }
   } else if (e.key === "ArrowDown") {
     {
-      let firstGalleryItem = new galleryItem(firstGalleryImage);
-      firstGalleryItem.initModal();
+      if (body.getAttribute("class") === "modal-on") {
+        let firstGalleryItem = new galleryItem(firstGalleryImage);
+        firstGalleryItem.initModal();
+      }
     }
   } else if (e.key === "ArrowUp") {
     {
-      let lastGalleryItem = new galleryItem(lastGalleryImage);
-      lastGalleryItem.initModal();
+      if (body.getAttribute("class") === "modal-on") {
+        let lastGalleryItem = new galleryItem(lastGalleryImage);
+        lastGalleryItem.initModal();
+      }
     }
   } else if (e.key === "Escape") {
     {
