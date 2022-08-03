@@ -10,10 +10,16 @@ imagesPreload.forEach((img) => {
   }
 
   // Preload full image if needed
-  let imgFull = img.getAttribute("data-full");
+  /*let imgFull = img.getAttribute("data-full");
   if (imgFull !== null && imgFull !== "" && !arrayPreloaded.includes(imgFull)) {
     preloadImage(imgFull);
     arrayPreloaded.push(imgFull);
+  }*/
+
+  let imgPreview = img.getAttribute("data-preview");
+  if (imgPreview !== null && imgPreview !== "" && !arrayPreloaded.includes(imgPreview)) {
+    preloadImage(imgPreview);
+    arrayPreloaded.push(imgPreview);
   }
 });
 

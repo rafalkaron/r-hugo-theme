@@ -129,6 +129,7 @@ class galleryItem {
   constructor(galleryImage) {
     this.popupImage = document.querySelector(".to-popup");
     this.src = galleryImage.getAttribute("data-full");
+    this.preview = galleryImage.getAttribute("data-preview");
     this.title = galleryImage.parentElement.querySelector("h6").innerText;
     this.desc =
       galleryImage.parentElement.querySelector(".description").innerText;
@@ -143,7 +144,13 @@ class galleryItem {
   initModal() {
     body.setAttribute("class", "modal-on");
     modal.style.display = "flex";
-    this.popupImage.setAttribute("src", this.src);
+
+    if (this.preview !== null) {
+      this.popupImage.setAttribute("src", this.preview);
+    } else {
+      this.popupImage.setAttribute("src", this.src);
+    }
+
     this.popupImage.setAttribute("alt", this.alt);
 
     let downloadIcon = document.querySelector(".modal-download");

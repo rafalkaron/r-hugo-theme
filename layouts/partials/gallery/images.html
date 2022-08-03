@@ -7,7 +7,7 @@
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         {{ $root_src := (printf "%s%s%s" $gallery_root "/" .src ) }}
         <figure class="gallery-item" id="item-{{$.Scratch.Get "counter"}}" data-item="{{$.Scratch.Get "counter"}}" data-total="{{$total}}" {{with .exif}}data-exif="{{ . | jsonify }}"{{end}}>
-            <img class="popup preload" alt="{{ .alt }}" data-full="{{$root_src}}" src="{{ if .thumb }}{{$gallery_root}}/{{ .thumb }}{{else}}{{$gallery_root}}/{{ .src }}{{end}}" style="cursor: pointer;"/>
+            <img class="popup preload" alt="{{ .alt }}" data-full="{{$root_src}}" {{ if .preview }}data-preview="{{$gallery_root}}/{{ .preview }}"{{end}} src="{{ if .thumb }}{{$gallery_root}}/{{ .thumb }}{{else}}{{$gallery_root}}/{{ .src }}{{end}}" style="cursor: pointer;"/>
           <figcaption>
             <div class="figcaption-group title-group">
               <h6 class="figcaption-title">{{ .title }}</h6>
