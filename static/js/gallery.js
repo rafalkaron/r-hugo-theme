@@ -211,30 +211,46 @@ galleryImages.forEach((galleryImage) => {
 
 document.addEventListener("keydown", (e) => {
   e = e || window.event;
-  if (e.key === "ArrowRight" && nextGalleryImage !== null) {
+  if (
+    e.key === "ArrowRight" &&
+    nextGalleryImage !== null &&
+    modalExif.style.display === "none"
+  ) {
     {
-      if (body.getAttribute("class") === "modal-on") {
+      if (
+        body.getAttribute("class") === "modal-on" &&
+        modalExif.style.display === "none"
+      ) {
         let nextGalleryItem = new galleryItem(nextGalleryImage);
         nextGalleryItem.initModal();
       }
     }
   } else if (e.key === "ArrowLeft" && prevGalleryImage !== null) {
     {
-      if (body.getAttribute("class") === "modal-on") {
+      if (
+        body.getAttribute("class") === "modal-on" &&
+        modalExif.style.display === "none"
+      ) {
         let prevGalleryItem = new galleryItem(prevGalleryImage);
         prevGalleryItem.initModal();
       }
     }
   } else if (e.key === "ArrowDown") {
     {
-      if (body.getAttribute("class") === "modal-on") {
+      if (
+        body.getAttribute("class") === "modal-on" &&
+        modalExif.style.display === "none"
+      ) {
         let firstGalleryItem = new galleryItem(firstGalleryImage);
         firstGalleryItem.initModal();
       }
     }
   } else if (e.key === "ArrowUp") {
     {
-      if (body.getAttribute("class") === "modal-on") {
+      if (
+        body.getAttribute("class") === "modal-on" &&
+        modalExif.style.display === "none"
+      ) {
         let lastGalleryItem = new galleryItem(lastGalleryImage);
         lastGalleryItem.initModal();
       }
