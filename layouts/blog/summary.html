@@ -8,7 +8,7 @@
 		</div>
 	{{ end }}
 		<div class="description">
-			{{ with .Params.description | truncate 500 }}
+			{{ with .Params.description | truncate 500 | markdownify }}
 				{{ . }}
 			{{ else }}
 				{{ .Summary }}
