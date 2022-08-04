@@ -3,14 +3,14 @@
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
     <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
+      {{ partial "layout/gutter/all-posts" . }} {{ partial
+      "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
     </div>
   </div>
   <article class="content">
     {{ partial "_index.html" . }}
     <section class="posts">
-      {{ range .Paginator.Pages}}
-        {{ .Render "summary" }}
+      {{ range (where .Paginator.Pages "Type" "blog") }} {{ .Render "summary" }}
       {{ end }}
     </section>
   </article>

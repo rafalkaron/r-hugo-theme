@@ -5,7 +5,7 @@ date: yyyy-mm-dd
 # edit: yyy-mm-dd
 # author: "Custom author name"
 tags: ["Tag a", "Tag b", "Tag c"]
-categories: "Category a"
+categories: ["Category a"]
 # image: "path/to/description-image"
 # draft: true
 ---
