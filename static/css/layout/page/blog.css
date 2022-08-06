@@ -75,10 +75,17 @@
 #layout-blog .description-image,
 #layout-single .description-image {
   width: 100%;
+  max-height: 25rem;
+  object-fit: cover;
 }
 
 .read-more-container {
   display: flex;
   justify-content: right;
   margin-top: calc(var(--margin) / 4);
+}
+
+#layout-single section.introduction {
+  padding-bottom: calc(var(--margin) * 1.75);
+  border-bottom: solid var(--border-width-thin) var(--content-background-middle);
 }
