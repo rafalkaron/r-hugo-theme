@@ -9,6 +9,6 @@
     {{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
   {{ end }}
   <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
-    <a class="animation" href="{{ .p1.RelPermalink }}">{{ .p1.Title | truncate 25 }}</a>
+    <a class="animation" title="{{.p1.Title}}" href="{{ .p1.RelPermalink }}">{{ .p1.Title | truncate 35 }}</a>
   </li>
 {{ end }}
