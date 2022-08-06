@@ -1,12 +1,14 @@
+{{ $permalink := .Permalink }}
+
 <section class="post">
 	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a class="animation" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
 	<div class="summary">
 		{{ with .Params.image }}
-		<div class="description-image-container">
+		<div class="description-image-container" onclick="location.href='{{ $permalink }}';" style="cursor: pointer;">
 			<img class="description-image" src="{{ . | relURL }}"></img>
 		</div>
-	{{ end }}
+		{{ end }}
 		<div class="description">
 			{{ with .Params.description | truncate 500 | markdownify }}
 				{{ . }}
