@@ -24,7 +24,7 @@
 
 /* Style headings-links*/
 #layout-blog h2.ref {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-top: 0;
 }
 #layout-blog h2.ref > a {
@@ -70,6 +70,10 @@
 #layout-single .description,
 #layout-single .description-image {
   margin-top: calc(var(--margin) / 2);
+}
+
+#layout-blog .post .description {
+  font-size: 0.8rem;
 }
 
 #layout-blog .description-image,
