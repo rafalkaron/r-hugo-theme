@@ -85,7 +85,7 @@
   margin-top: calc(var(--margin) / 4);
 }
 
-#layout-single section.introduction {
+#layout-single.layout-blog section.introduction {
   padding-bottom: calc(var(--margin) * 1.75);
   border-bottom: solid var(--border-width-thin) var(--content-background-middle);
 }
