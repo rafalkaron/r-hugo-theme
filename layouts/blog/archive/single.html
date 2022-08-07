@@ -13,18 +13,15 @@
       {{ .Content }}
     </section>
     <section class="archive">
-        {{ $blog_posts := .CurrentSection.RegularPages }}
+        {{ $blog_posts := where .CurrentSection.RegularPages "Type" "blog"  }}
         {{ range ($blog_posts.GroupByDate "2006") }}
           {{ if not (in .Key "0001") }}
           <div class="archive-year">
             <h2>{{ .Key }}</h2>
             <ul class="archive-list">
-                {{ range .Pages }}
-                  {{ if not (in .Params.type "blog/archive") }}
-                    <li class="archive-list-item"><time>{{ .PublishDate.Format "02 January" }}: </time><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a>
-                    </li>
-                {{ end }}
-                {{end }}
+            {{ range .Pages }}
+              <li class="archive-list-item"><time>{{ .PublishDate.Format "02 January" }}: </time><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+            {{end }}
             </ul>
           </div>
           {{ end }}
