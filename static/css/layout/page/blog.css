@@ -72,10 +72,6 @@
   margin-top: calc(var(--margin) / 2);
 }
 
-#layout-blog .post .description {
-  font-size: 0.8rem;
-}
-
 #layout-blog .description-image,
 #layout-single .description-image {
   width: 100%;
