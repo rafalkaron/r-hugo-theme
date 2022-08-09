@@ -1,12 +1,16 @@
 <div class="next-prev-single-page gutter-item">
   {{ if .NextInSection }}
-  <div class="previous-page ">
-    <a class="previous-page-link animation" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">{{ i18n "prev_site" }}</a>
-  </div>
+    {{ if not (eq .NextInSection.Type "blog/archive") }}
+      <div class="previous-page ">
+        <a class="previous-page-link animation" title="{{ .NextInSection.Title | truncate 50 "..." }}" href="{{ .NextInSection.Permalink }}">{{ i18n "prev_site" }}</a>
+      </div>
+    {{ end }}
   {{ end }}
   {{ if .PrevInSection }}
-  <div class="next-page">
-    <a class="next-page-link animation" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">{{ i18n "next_site" }}</a>
-  </div>
+    {{ if not (eq .PrevInSection.Type "blog/archive") }}
+      <div class="next-page">
+        <a class="next-page-link animation" title="{{ .PrevInSection.Title | truncate 50 "..."}}" href="{{ .PrevInSection.Permalink }}">{{ i18n "next_site" }}</a>
+      </div>
+    {{ end }}
   {{ end }}
 </div>
