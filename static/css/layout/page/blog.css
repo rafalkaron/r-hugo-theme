@@ -2,9 +2,9 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 100%;
-  row-gap: var(--margin);
+  gap: var(--margin);
   margin-top: var(--margin);
 }
 
