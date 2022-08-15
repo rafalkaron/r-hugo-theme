@@ -160,7 +160,7 @@ class galleryItem {
     modalTitle.textContent = this.title;
 
     let modalDesc = document.querySelector(".modal-description");
-    modalDesc.textContent = this.title;
+    modalDesc.textContent = this.desc;
 
     let modalLocation = document.querySelector(".modal-location");
     modalLocation.setAttribute("href", this.location);
