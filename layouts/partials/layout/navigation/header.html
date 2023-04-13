@@ -1,24 +1,28 @@
-<header id="navbar" class="not-selectable">
+<header class="not-selectable">
   <div class="header-items-wrapper">
     <div class="title-nav-wrapper">
-    <div class="site-title-wrapper">
-      <a class="site-title animation" href="{{ .Site.BaseURL }}">{{ .Site.Params.Title }}</a>
-    </div>
-    <nav id="nav-primary">
+      <div class="site-title-wrapper">
+        <a class="site-title animation" href="{{ .Site.BaseURL }}"
+          >{{ .Site.Params.Title }}</a
+        >
+      </div>
+      <nav id="nav-primary">
         <ul class="nav-primary-items">
-          {{ $currentPage := . }}
-          {{ range .Site.Menus.main }}
-              <li class="nav-primary-item">
-                <a class="nav-primary-link animation {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-              </li>
+          {{ $currentPage := . }} {{ range .Site.Menus.main }}
+          <li class="nav-primary-item">
+            <a
+              class="nav-primary-link animation {{ if eq $currentPage.RelPermalink .URL }}active{{ end }}"
+              href="{{ .URL }}"
+              >{{ .Name }}</a
+            >
+          </li>
           {{ end }}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
     <div class="header-buttons-wrapper">
-      {{ partial "i18n/languages" . }}
-      {{ partial "layout/theme-switch" . }}
-      {{ partial "layout/navigation/hamburger" . }}
+      {{ partial "i18n/languages" . }} {{ partial "layout/theme-switch" . }} {{
+      partial "layout/navigation/hamburger" . }}
     </div>
   </div>
 </header>

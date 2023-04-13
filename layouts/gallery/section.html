@@ -4,9 +4,9 @@
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
   {{ partial "layout/navigation/side-menu" . }}
-  <article class="content">
+  <article id="content">
     {{ partial "_index" . }}
-    <section class="gallery-items not-selectable">
+    <section id="gallery-items" class="not-selectable">
       {{ range .Pages }} {{ .Render "summary" }} {{ end }}
     </section>
   </article>

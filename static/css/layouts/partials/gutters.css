@@ -4,14 +4,14 @@
   align-items: center;
   flex-wrap: wrap;
 }
-.top-gutter {
+.gutter.top-gutter {
   border-bottom: solid var(--border-width-thin) var(--content-text-dark);
   justify-content: flex-start;
   justify-content: space-between;
   padding-bottom: 0.25rem;
   margin-bottom: var(--margin);
 }
-.bottom-gutter {
+.gutter.bottom-gutter {
   border-top: solid var(--border-width-thin) var(--content-text-dark);
   justify-content: space-between;
   padding-top: 0.25rem;

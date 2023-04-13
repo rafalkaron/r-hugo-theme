@@ -3,17 +3,17 @@
   <div class="gutter top-gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
-  {{ partial "layout/navigation/on-this-page" . }} 
-  {{ partial "layout/navigation/side-menu-single" . }}
-  <article class="content">
-    <section class="introduction">
+  {{ partial "layout/navigation/on-this-page" . }} {{ partial
+  "layout/navigation/side-menu-single" . }}
+  <article id="content">
+    <section id="intro">
       <h1>{{ .Title }}</h1>
       {{ with .Params.description }}
-      <p class="description">{{ . | markdownify }}</p>
+      <p id="desc">{{ . | markdownify }}</p>
       {{ end }}
     </section>
-    {{ partial "layout/bodytext.html" . }}
-    {{ partial "layout/navigation/related-links" . }}
+    {{ partial "layout/bodytext.html" . }} {{ partial
+    "layout/navigation/related-links" . }}
   </article>
   <div class="gutter bottom-gutter not-selectable">
     <div class="gutter-group">

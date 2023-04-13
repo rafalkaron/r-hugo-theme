@@ -3,16 +3,16 @@
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
     <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
+      {{ partial "layout/gutter/all-posts" . }} {{ partial
+      "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
     </div>
   </div>
-  <article class="content">
+  <article id="content">
     {{ with .Title }}
     <h1 class="taxonomy-name">#{{ . }}</h1>
     {{ end }}
-    <div class="posts">
-      {{ range sort .Paginator.Pages .Params.weight }}
-        {{ .Render "summary" }}
+    <div id="posts">
+      {{ range sort .Paginator.Pages .Params.weight }} {{ .Render "summary" }}
       {{ end }}
     </div>
   </article>

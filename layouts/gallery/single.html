@@ -1,16 +1,16 @@
 {{ define "main" }}
-<main id="layout-single-gallery">
+<main id="layout-gallery-single">
   {{ partial "gallery/modal.html" . }}
   {{ partial "gallery/modal_exif.html" . }}
   <div class="gutter top-gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
   {{ partial "layout/navigation/side-menu-single" . }}
-  <article class="content">
-    <section class="introduction">
+  <article id="content">
+    <section id="intro">
       <h1>{{ .Title }}</h1>
       {{ with .Params.description }}
-      <p class="description">{{ . | markdownify }}</p>
+      <p id="desc">{{ . | markdownify }}</p>
       {{ end }}
       {{ partial "layout/bodytext.html" . }}
     </section>

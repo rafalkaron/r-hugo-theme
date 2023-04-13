@@ -1,3 +1,10 @@
+/* Disallow selecting items like menus, navigation, etc */
+.not-selectable,
+.not-selectable * {
+  user-select: none;
+}
+
+/* Animations */
 @media (hover: hover) and (pointer: fine) {
   .animation:hover,
   .animation,

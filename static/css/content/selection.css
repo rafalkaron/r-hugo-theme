@@ -1,9 +1,10 @@
 /* Invert selected text */
-*::selection {
-  background-color: var(--layout-text);
-  color: var(--layout-background);
-}
-main *::selection {
+#content *::selection {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
+}
+
+#content code::selection {
+  background-color: var(--content-text-light);
+  color: var(--content-text-dark);
 }

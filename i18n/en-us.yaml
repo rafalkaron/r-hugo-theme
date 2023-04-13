@@ -34,6 +34,10 @@ next_site:
   other: "next »"
 prev_site:
   other: "« prev"
+older_post:
+  other: "older post »"
+newer_post:
+  other: "« newer post"
 
 # gutter
 print:

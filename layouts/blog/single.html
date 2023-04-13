@@ -7,17 +7,17 @@
     </div>
 </div>
   {{ partial "layout/navigation/on-this-page" . }}
-  <article class="content">
-    <section class="introduction">
+  <article id="content">
+    <section id="intro">
     <h1>{{ .Title }}</h1>
     {{ partial "blog/meta" . }} 
     {{ with .Params.image }}
-      <div class="description-image-container">
-        <img class="description-image" src="{{ . | relURL }}"></img>
+      <div class="desc-image-container">
+        <img class="desc-image" src="{{ . | relURL }}"></img>
       </div>
     {{ end }}
     {{ with .Params.description }}
-      <p class="description">{{ .  | markdownify }}</p>
+      <p class="desc">{{ .  | markdownify }}</p>
     {{ end }} 
     </section>
     {{ partial "layout/bodytext.html" . }}

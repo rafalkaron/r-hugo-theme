@@ -1,11 +1,11 @@
 {{ define "main" }}
 <main id="layout-home">
   {{ partial "layout/navigation/on-this-page" . }}
-  <article class="content">
-    <section class="introduction">
+  <article id="content">
+    <section id="intro">
       <h1 class="home-heading">{{ .Title }}</h1>
       {{ with .Params.description }}
-      <p class="description">{{ . }}</p>
+      <p id="desc">{{ . }}</p>
       {{ end }} 
     </section>
     {{ partial "layout/bodytext.html" . }} 

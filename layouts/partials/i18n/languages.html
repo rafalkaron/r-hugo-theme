@@ -1,9 +1,11 @@
 <div class="languages-wrapper">
   <ul class="languages-list">
     {{ range $.Site.Home.AllTranslations }}
-      <li class="language-item">
-        <a class="language-link animation" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
-      </li>
+    <li class="language-item">
+      <a class="language-link animation" href="{{ .Permalink }}"
+        >{{ .Language.LanguageName }}</a
+      >
+    </li>
     {{ end }}
   </ul>
 </div>

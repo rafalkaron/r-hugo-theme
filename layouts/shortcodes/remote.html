@@ -1,6 +1,6 @@
 <!-- EXAMPLE USE: remote "https://api.github.com/repos/rafalkaron/hosty/readme" -->
-{{ $remote_url := .Get 0 }}
-{{ $json := getJSON $remote_url }} <!-- JSON that returns MD data. -->
+{{ $remote_url := .Get 0 }} {{ $json := getJSON $remote_url }}
+<!-- JSON that returns MD data. -->
 
 <section class="remote article-section">
   {{ $json.content | base64Decode | markdownify }}

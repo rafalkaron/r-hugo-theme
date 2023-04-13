@@ -1,8 +1,14 @@
 {{ $currentPage := . }}
-<aside class="on-this-page-wrapper not-selectable web">
+<aside id="on-this-page-wrapper" class="not-selectable web">
   <nav id="on-this-page">
-    <a class="on-this-page-caption on-this-page-caption-dynamic animation" href="#top">{{ .Name }}</a>
-    <p class="on-this-page-caption on-this-page-caption-static">{{ i18n "on_this_page" }}</p>
+    <a
+      class="on-this-page-caption on-this-page-caption-dynamic animation"
+      href="#top"
+      >{{ .Name }}</a
+    >
+    <p class="on-this-page-caption on-this-page-caption-static">
+      {{ i18n "on_this_page" }}
+    </p>
     {{ .TableOfContents }}
   </nav>
 </aside>

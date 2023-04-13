@@ -1,12 +1,17 @@
 {{ $gallery_root := .Site.Params.gallery_root | absURL }}
-<figure title="{{ with .Params.images }}{{ len . }}{{ end }} photos" class="gallery-item" onclick="location.href='{{ .Permalink }}';" style="cursor: pointer;">
+<figure
+  title="{{ with .Params.images }}{{ len . }}{{ end }} photos"
+  class="gallery-item"
+  onclick="location.href='{{ .Permalink }}';"
+  style="cursor: pointer"
+>
   {{ with .Params.image }}
-    <img class="description-image preload" src="{{$gallery_root}}/{{.}}" />
+  <img class="description-image preload" src="{{$gallery_root}}/{{.}}" />
   {{ end }}
   <figcaption class="description-wrapper">
     <h6 class="gallery-item-title">{{ .Title }}</h6>
     {{ with .Params.description }}
-      <p class="description">{{ . | markdownify }}</p>
+    <p class="description">{{ . | markdownify }}</p>
     {{ end }}
   </figcaption>
-  </figure>
+</figure>

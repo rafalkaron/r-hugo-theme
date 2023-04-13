@@ -1,16 +1,16 @@
-.content .footnotes * {
+#content .footnotes * {
   font-size: 0.8rem;
 }
-.content .footnotes ol {
+#content .footnotes ol {
   margin-top: 0.8rem;
 }
-.content .footnotes li {
+#content .footnotes li {
   margin: 0.25rem 1rem;
 }
 
 /* Style links */
-.content .footnotes a.footnote-backref,
-.content a.footnote-ref {
+#content .footnotes a.footnote-backref,
+#content a.footnote-ref {
   color: var(--content-text-dark);
   border-radius: var(--border-radius);
   border: transparent;
@@ -19,18 +19,18 @@
   font-weight: 600;
   border: none;
 }
-.content .footnotes a.footnote-backref:active,
-.content .footnotes a.footnote-backref:hover,
-.content .footnotes a.footnote-backref:focus,
-.content a.footnote-ref:active,
-.content a.footnote-ref:hover,
-.content a.footnote-ref:focus {
+#content .footnotes a.footnote-backref:active,
+#content .footnotes a.footnote-backref:hover,
+#content .footnotes a.footnote-backref:focus,
+#content a.footnote-ref:active,
+#content a.footnote-ref:hover,
+#content a.footnote-ref:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
 
 /* Fix anchors hidden behind navbar */
-.content sup[id] {
+#content sup[id] {
   padding-top: var(--header-height);
   margin-top: var(--header-height-negative);
 }
