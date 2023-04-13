@@ -64,3 +64,13 @@
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
+
+#content .meta .tags-wrapper li.tag,
+#content .meta .tags-wrapper li.tag {
+  margin: 0 0.3rem 0 0;
+  font-size: 0.8rem;
+}
+
+#content .meta {
+  margin-top: var(--padding);
+}

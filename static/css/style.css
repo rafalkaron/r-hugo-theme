@@ -1,33 +1,32 @@
 /* GLOBAL */
-@import "global/variables.css";
-@import "global/global.css";
-@import "global/palette/light.css";
-@import "global/palette/dark.css";
-@import "global/palette/print.css";
+@import "global/variables/layout.css";
+@import "global/variables/palette/light.css";
+@import "global/variables/palette/dark.css";
+@import "global/variables/palette/print.css";
+@import "global/typography.css";
+@import "global/layout.css";
+@import "global/extras.css";
 
-/* PAGE */
-@import "page/home.css";
-@import "page/blog.css";
-@import "page/archive.css";
-@import "page/terms.css";
-@import "page/404.css";
-@import "page/section.css";
-@import "page/gallery.css";
-
-@import "page/partials/modal.css";
-@import "page/partials/modal-exif.css";
-@import "page/partials/header.css";
-@import "page/partials/theme-switch.css";
-@import "page/partials/hamburger.css";
-@import "page/partials/gutters.css";
-@import "page/partials/on-this-page.css";
-@import "page/partials/side-menu.css";
-@import "page/partials/meta.css";
-@import "page/partials/related-links.css";
-@import "page/partials/footer.css";
-
-@import "page/print.css";
-@import "global/breakpoints.css";
+/* LAYOUTS */
+@import "layouts/home.css";
+@import "layouts/blog.css";
+@import "layouts/archive.css";
+@import "layouts/terms.css";
+@import "layouts/404.css";
+@import "layouts/section.css";
+@import "layouts/gallery.css";
+@import "layouts/partials/modal.css";
+@import "layouts/partials/modal-exif.css";
+@import "layouts/partials/header.css";
+@import "layouts/partials/theme-switch.css";
+@import "layouts/partials/hamburger.css";
+@import "layouts/partials/gutters.css";
+@import "layouts/partials/on-this-page.css";
+@import "layouts/partials/side-menu.css";
+@import "layouts/partials/meta.css";
+@import "layouts/partials/related-links.css";
+@import "layouts/partials/footer.css";
+@import "layouts/print.css";
 
 /* CONTENT */
 @import "content/typography.css";
@@ -44,3 +43,5 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/columns.css";
+
+@import "global/breakpoints.css";

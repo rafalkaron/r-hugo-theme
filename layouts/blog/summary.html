@@ -3,7 +3,7 @@
 <section class="post">
 	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a class="animation" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
-	<div id="summary">
+	<div class="summary">
 		{{ with .Params.image }}
 		<div class="desc-image-container" onclick="location.href='{{ $permalink }}';" style="cursor: pointer;">
 			<img class="desc-image" src="{{ . | relURL }}"></img>

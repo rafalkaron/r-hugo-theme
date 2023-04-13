@@ -11,6 +11,8 @@
   --content-background-middle: #e0e0e0;
   --content-background-dark: #222222;
 
+  --text-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+
   /* Extended font styling via classes in typography.css */
   /* Notes accents */
   --yellow: #f5bb00;
