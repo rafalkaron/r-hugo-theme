@@ -36,14 +36,14 @@
 }
 
 /* Style descriptions */
-#layout-section .description {
+#layout-section #desc {
   margin-top: calc(var(--margin) / 4);
 }
-#layout-section .subpage .description {
+#layout-section .subpage #desc {
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }
-#layout-section .description-image {
+#layout-section #desc-image {
   margin-top: calc(var(--margin) / 2);
   max-width: 100%;
 }

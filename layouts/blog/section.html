@@ -7,9 +7,9 @@
       "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
     </div>
   </div>
-  <article class="content">
+  <article id="content">
     {{ partial "_index.html" . }}
-    <section class="posts">
+    <section id="posts">
       {{ range (where .Paginator.Pages "Type" "blog") }} {{ .Render "summary" }}
       {{ end }}
     </section>

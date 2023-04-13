@@ -6,7 +6,7 @@
       {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
     </div>
 </div>
-  <article class="content">
+  <article id="content">
     {{ if eq .Title "Tags" }} 
       <h1>{{ i18n "tags" | title }}</h1>
     {{ else if eq .Title "Categories" }}

@@ -35,46 +35,46 @@ footer a {
   letter-spacing: -0.025em;
 }
 
-.content strong {
+#content strong {
   font-weight: 600;
 }
 
 /* Add classes for text formatting */
-.content .text_smaller {
+#content .text_smaller {
   font-size: 0.8rem !important;
 }
-.content .text_small {
+#content .text_small {
   font-size: 0.9rem !important;
 }
-.content .text_normal {
+#content .text_normal {
   font-size: 1.6rem !important;
 }
-.content .text_large {
+#content .text_large {
   font-size: 1.6rem !important;
 }
 
 /* Add classes for text coloring */
-.content .yellow,
-.content .yellow * {
+#content .yellow,
+#content .yellow * {
   color: var(--yellow) !important;
 }
-.content .green,
-.content .green * {
+#content .green,
+#content .green * {
   color: var(--green) !important;
 }
-.content .orange,
-.content .orange * {
+#content .orange,
+#content .orange * {
   color: var(--orange) !important;
 }
-.content .purple,
-.content .purple * {
+#content .purple,
+#content .purple * {
   color: var(--purple) !important;
 }
-.content .pink,
-.content .pink * {
+#content .pink,
+#content .pink * {
   color: var(--pink) !important;
 }
-.content .blue,
-.content .blue * {
+#content .blue,
+#content .blue * {
   color: var(--blue) !important;
 }

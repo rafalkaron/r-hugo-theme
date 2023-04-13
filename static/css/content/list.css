@@ -1,20 +1,20 @@
-.content li {
+#content li {
   margin: 0.8em 0 0 2rem;
 }
 
 /* Bold ordered list numbers */
-.content ol > li::marker {
+#content ol > li::marker {
   font-weight: 600;
 }
 
 /* Add a class for pill-shaped list items */
-.content ul.items {
+#content ul.items {
   display: flex;
   flex-wrap: wrap;
   margin: 0.8rem 0 0 0;
   padding: 0;
 }
-.content ul.items > li {
+#content ul.items > li {
   list-style: none;
   padding: 0.25em 0.5em;
   margin: 0rem 0.8rem 0.8rem 0;
@@ -28,26 +28,26 @@
   text-decoration: none;
   font-size: 0.8rem;
 }
-.content ul.items * {
+#content ul.items * {
   border: none;
   text-decoration: inherit;
   font-weight: inherit;
 }
 
 /* Definition list */
-.content dl {
+#content dl {
   display: block;
   margin-top: 1rem;
 }
-.content dd + dt {
+#content dd + dt {
   margin-top: 1rem;
 }
-.content dt,
-.content dd {
+#content dt,
+#content dd {
   border-left: solid var(--border-width) var(--content-background-middle);
   padding: 0 0 0 1em;
 }
-.content dt,
-.content dt * {
+#content dt,
+#content dt * {
   font-weight: 600;
 }

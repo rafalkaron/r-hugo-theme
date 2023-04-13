@@ -1,9 +1,9 @@
-<section class="introduction">
+<section id="intro">
   {{ if .Params.Title }}
   <h1 class="_index-title">{{ .Params.Title }}</h1>
   {{ else if .Name }}
   <h1 class="section-title">{{ .Name }}</h1>
   {{ end }} {{ with .Params.description }}
-  <p class="description">{{ . }}</p>
+  <p id="desc">{{ . }}</p>
   {{ end }} {{ with .Content }} {{ . }} {{ end }}
 </section>

@@ -3,13 +3,13 @@
 <section class="post">
 	<h2 title="{{ .ReadingTime }} minutes read" class="ref"><a class="animation" href="{{ .Permalink }}">{{ .Title }}</a></h1>
 	{{ partial "blog/meta" . }}
-	<div class="summary">
+	<div id="summary">
 		{{ with .Params.image }}
-		<div class="description-image-container" onclick="location.href='{{ $permalink }}';" style="cursor: pointer;">
-			<img class="description-image" src="{{ . | relURL }}"></img>
+		<div id="desc-image-container" onclick="location.href='{{ $permalink }}';" style="cursor: pointer;">
+			<img id="desc-image" src="{{ . | relURL }}"></img>
 		</div>
 		{{ end }}
-		<div class="description">
+		<div id="desc">
 			{{ with .Params.description | truncate 500 | markdownify }}
 				{{ . }}
 			{{ else }}

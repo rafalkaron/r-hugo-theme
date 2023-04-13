@@ -1,4 +1,4 @@
-#layout-single-gallery .gallery-items-container {
+#layout-single-gallery #gallery-items-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

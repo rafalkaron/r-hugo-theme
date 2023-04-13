@@ -6,11 +6,11 @@
     {{ partial "layout/gutter/breadcrumbs" . }}
   </div>
   {{ partial "layout/navigation/side-menu-single" . }}
-  <article class="content">
-    <section class="introduction">
+  <article id="content">
+    <section id="intro">
       <h1>{{ .Title }}</h1>
       {{ with .Params.description }}
-      <p class="description">{{ . | markdownify }}</p>
+      <p id="desc">{{ . | markdownify }}</p>
       {{ end }}
       {{ partial "layout/bodytext.html" . }}
     </section>

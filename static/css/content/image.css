@@ -1,4 +1,4 @@
-.content img {
+#content img {
   overflow: auto;
   padding: 0;
   display: block;
@@ -6,49 +6,49 @@
 }
 
 /* Add classes for manipulating images position */
-.content p.center {
+#content p.center {
   display: flex;
   justify-content: center;
 }
-.content p.left {
+#content p.left {
   display: flex;
   justify-content: flex-start;
 }
-.content p.right {
+#content p.right {
   display: flex;
   justify-content: flex-end;
 }
 
 /* Add classes for manipulating images size */
-.content p.tiny > img {
+#content p.tiny > img {
   width: 10rem;
 }
-.content p.small > img {
+#content p.small > img {
   width: 15rem;
 }
-.content p.medium > img {
+#content p.medium > img {
   width: 20rem;
 }
-.content p.large > img {
+#content p.large > img {
   width: 25rem;
 }
-.content p.huge > img {
+#content p.huge > img {
   width: 30rem;
 }
-.content p.three-fourth > img {
+#content p.three-fourth > img {
   width: 75%;
 }
-.content p.half > img {
+#content p.half > img {
   width: 50%;
 }
-.content p.quarter > img {
+#content p.quarter > img {
   width: 25%;
 }
 
-.content p > img {
+#content p > img {
   max-width: 100%;
 }
 
-.content p.border > img {
+#content p.border > img {
   border: solid var(--border-width-thin) var(--content-background-middle);
 }

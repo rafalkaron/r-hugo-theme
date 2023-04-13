@@ -31,12 +31,12 @@ main h6 {
 }
 
 /* Fix anchors hidden behind navbar */
-.content h1[id],
-.content h2[id],
-.content h3[id],
-.content h4[id],
-.content h5[id],
-.content h6[id] {
+#content h1[id],
+#content h2[id],
+#content h3[id],
+#content h4[id],
+#content h5[id],
+#content h6[id] {
   padding-top: var(--header-height);
   margin-top: calc(var(--header-height-negative) + 1.6em);
 }
@@ -52,7 +52,7 @@ main h6 * {
 }
 
 /* Style heading links # */
-main article.content a.heading-link {
+main article#content a.heading-link {
   color: transparent;
   text-decoration: none;
   border: none;

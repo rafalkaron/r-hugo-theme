@@ -1,0 +1,16 @@
+/* 4K+ */
+:root {
+  --margin: 1.6rem;
+  --margin-large: 20%;
+  --padding-small: 0.15em;
+  --padding: 0.25em;
+  --padding-main: 10rem;
+
+  --font-size: 1.6rem;
+  --line-height: 1.6em;
+
+  --header-height: 4rem;
+  --header-height-negative: -4rem;
+  --footer-height: 4rem;
+  --footer-height-negative: -4rem;
+}
