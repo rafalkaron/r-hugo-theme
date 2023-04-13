@@ -1,22 +1,20 @@
-{{ $related := .Site.RegularPages.Related . }}
-{{ $related_external := .Params.keywords_external }}
-
-{{ if or $related $related_external }}
+{{ $related := .Site.RegularPages.Related . }} {{ $related_external :=
+.Params.keywords_external }} {{ if or $related $related_external }}
 <section class="related-links-wrapper">
   <h2 id="see-also">{{ i18n "see_also" }}</h2>
   <ul class="related-links-list">
-    {{ with $related }}
-      {{ range . }}
-    <li class="related-link"><a class="animation" title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-    {{ end }}
-    {{ with $related_external }}
-      {{ range . }}
-      <li class="related-link">{{ . | markdownify }}</li>
-      {{ end }}
-    {{ end }}
+    {{ with $related }} {{ range . }}
+    <li class="related-link">
+      <a
+        class="animation"
+        title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}"
+        href="{{ .RelPermalink }}"
+        >{{ .Title }}</a
+      >
+    </li>
+    {{ end }} {{ end }} {{ with $related_external }} {{ range . }}
+    <li class="related-link">{{ . | markdownify }}</li>
+    {{ end }} {{ end }}
   </ul>
 </section>
 {{ end }}
-
-
