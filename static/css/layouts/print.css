@@ -126,23 +126,17 @@
   }
 
   #content pre > code,
-  .highlight pre,
-  #content .code-lg-container {
+  #content .highlight pre,
+  #content .code-lg-container,
+  #content .codeblock,
+  #content code,
+  #content code * {
     color: var(--content-text-dark) !important;
-    background-color: transparent !important;
+    background-color: var(--content-background-middle) !important;
   }
 
   #content .code-lg-container {
     justify-content: flex-end;
-  }
-
-  #content code,
-  #content code * {
-    color: var(--content-text-dark) !important;
-  }
-
-  #content code {
-    background-color: var(--content-background-middle);
   }
 
   #layout-gallery-single .modal-body,
