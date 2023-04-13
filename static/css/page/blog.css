@@ -43,7 +43,7 @@
 
 /* Summary */
 #layout-blog .post #summary,
-#layout-single .meta + p {
+#layout-single #meta + p {
   margin-top: calc(var(--margin) / 2);
 }
 
@@ -79,7 +79,8 @@
   object-fit: cover;
 }
 
-.read-more-container {
+#layout-blog .read-more-container,
+#layout-single .read-more-container {
   display: flex;
   justify-content: right;
   margin-top: calc(var(--margin) / 4);

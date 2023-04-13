@@ -154,13 +154,13 @@
     border: var(--content-background-middle) var(--border-width-medium) solid;
   }
 
-  #layout-single-gallery .modal-figure .meta *,
+  #layout-single-gallery .modal-figure #meta *,
   #layout-single-gallery .modal-figure .counter-control *,
   #layout-single-gallery .modal-figure .operations * {
     text-shadow: unset;
   }
 
-  #layout-single-gallery .modal-figure .meta {
+  #layout-single-gallery .modal-figure #meta {
     position: fixed;
     bottom: 6vh;
     left: 0;

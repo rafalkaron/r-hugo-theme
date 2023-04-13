@@ -77,9 +77,3 @@ header a.language-link:focus {
   background-color: var(--layout-text);
   color: var(--layout-background);
 }
-
-/* Indicate active sites 
-header #nav-primary a.nav-primary-link.active,
-header #nav-primary a.nav-hamburger-link.active {
-  border-bottom: solid var(--border-width-thin) var(--layout-text);
-}*/

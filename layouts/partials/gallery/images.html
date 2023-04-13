@@ -2,7 +2,7 @@
 {{ $gallery_root := .Site.Params.gallery_root | absURL }}
 
 {{ $total := (len .Params.images) }}
-<section class="gallery-items-container not-selectable">
+<section id="gallery-items-container" class="not-selectable">
       {{ range sort .Params.images "timestamp" "desc"}}
         {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
         {{ $root_src := (printf "%s%s%s" $gallery_root "/" .src ) }}

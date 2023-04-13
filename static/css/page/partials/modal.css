@@ -44,7 +44,7 @@
   min-width: 180px;
   object-fit: cover;
 }
-#layout-single-gallery .modal-figure .meta {
+#layout-single-gallery .modal-figure #meta {
   position: fixed;
   bottom: var(--margin);
   left: var(--padding-main);
@@ -90,6 +90,6 @@
   font-weight: 600;
 }
 
-.material-icons {
+#layout-single-gallery .material-icons {
   line-height: 1.6;
 }

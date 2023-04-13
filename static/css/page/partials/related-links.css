@@ -1,24 +1,24 @@
-.related-links-wrapper ul.related-links-list {
+#rellinks ul.related-links-list {
   margin: 0 0 0 1rem;
   list-style: none;
 }
 
 /* Style related links */
-.related-links-wrapper li.related-link {
+#rellinks li.related-link {
   margin: 0.25rem 0 0 0;
 }
-.related-links-wrapper li.related-link a {
+#rellinks li.related-link a {
   font-weight: normal;
   text-decoration: none;
   border-radius: var(--border-radius);
   border-color: transparent;
   padding: 0 var(--padding);
 }
-.related-links-wrapper li.related-link a::after {
+#rellinks li.related-link a::after {
   content: " »";
 }
-.related-links-wrapper li.related-link a:hover,
-.related-links-wrapper li.related-link a:active {
+#rellinks li.related-link a:hover,
+#rellinks li.related-link a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

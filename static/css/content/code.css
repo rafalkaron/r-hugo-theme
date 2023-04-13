@@ -61,7 +61,7 @@
   }
 }
 /* Fix background color for mobile */
-.highlight pre {
+#content .highlight pre {
   background-color: var(--content-background-dark) !important;
 }
 

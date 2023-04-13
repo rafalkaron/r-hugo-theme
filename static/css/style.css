@@ -1,27 +1,31 @@
-/* LAYOUT */
-@import "layout/baseof.css";
-@import "layout/page/home.css";
-@import "layout/page/blog.css";
-@import "layout/page/archive.css";
-@import "layout/page/terms.css";
-@import "layout/page/404.css";
-@import "layout/page/section.css";
-@import "layout/page/gallery.css";
-@import "layout/page/gallery-single.css";
-@import "layout/partials/modal.css";
-@import "layout/partials/modal-exif.css";
-@import "layout/partials/header.css";
-@import "layout/partials/theme-switch.css";
-@import "layout/partials/hamburger.css";
-@import "layout/partials/gutters.css";
-@import "layout/partials/on-this-page.css";
-@import "layout/partials/side-menu.css";
-@import "layout/partials/meta.css";
-@import "layout/partials/related-links.css";
-@import "layout/partials/footer.css";
-@import "layout/page/print.css";
-@import "layout/variables.css";
-@import "layout/breakpoints.css";
+/* GLOBAL */
+@import "global/variables.css";
+@import "global/global.css";
+
+/* PAGE */
+@import "page/home.css";
+@import "page/blog.css";
+@import "page/archive.css";
+@import "page/terms.css";
+@import "page/404.css";
+@import "page/section.css";
+@import "page/gallery.css";
+@import "page/gallery-single.css";
+
+@import "page/partials/modal.css";
+@import "page/partials/modal-exif.css";
+@import "page/partials/header.css";
+@import "page/partials/theme-switch.css";
+@import "page/partials/hamburger.css";
+@import "page/partials/gutters.css";
+@import "page/partials/on-this-page.css";
+@import "page/partials/side-menu.css";
+@import "page/partials/meta.css";
+@import "page/partials/related-links.css";
+@import "page/partials/footer.css";
+
+@import "page/print.css";
+@import "global/breakpoints.css";
 
 /* CONTENT */
 @import "content/typography.css";
@@ -38,10 +42,6 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/columns.css";
-@import "content/variables.css";
-
-/* EXTRAS */
-@import "extras/animations.css";
 
 /* PALETTE */
 @import "palette/light.css";

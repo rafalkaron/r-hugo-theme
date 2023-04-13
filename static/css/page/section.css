@@ -1,5 +1,5 @@
 /* Main layout */
-#layout-section .subpages {
+#layout-section #subpages {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
