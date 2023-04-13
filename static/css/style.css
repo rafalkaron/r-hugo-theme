@@ -1,6 +1,9 @@
 /* GLOBAL */
 @import "global/variables.css";
 @import "global/global.css";
+@import "global/palette/light.css";
+@import "global/palette/dark.css";
+@import "global/palette/print.css";
 
 /* PAGE */
 @import "page/home.css";
@@ -10,7 +13,6 @@
 @import "page/404.css";
 @import "page/section.css";
 @import "page/gallery.css";
-@import "page/gallery-single.css";
 
 @import "page/partials/modal.css";
 @import "page/partials/modal-exif.css";
@@ -42,8 +44,3 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/columns.css";
-
-/* PALETTE */
-@import "palette/light.css";
-@import "palette/dark.css";
-@import "palette/print.css";

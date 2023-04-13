@@ -7,13 +7,13 @@
     {{ with .Params.icon }}<span class="material-icons">{{.}}</span>{{ end
     }}<span class="subpage-heading-title">{{ .Title }}</span>
   </h2>
-  <div id="desc">
+  <div class="desc">
     {{ with .Params.description }} {{ . | markdownify }} {{ else }} {{ .Summary
     | truncate 160 }} {{ end }}
   </div>
   {{ with .Params.image }}
-  <div id="desc-image-container">
-    <img id="desc-image" src="{{ . | relURL }}" />
+  <div class="desc-image-container">
+    <img class="desc-image" src="{{ . | relURL }}" />
   </div>
   {{ end }}
 </section>

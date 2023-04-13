@@ -1,4 +1,4 @@
-.side-menu-wrapper {
+#side-menu-wrapper {
   margin: 0 0 var(--margin) 0;
 }
 #side-menu .side-menu-caption {

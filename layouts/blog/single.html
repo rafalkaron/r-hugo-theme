@@ -12,12 +12,12 @@
     <h1>{{ .Title }}</h1>
     {{ partial "blog/meta" . }} 
     {{ with .Params.image }}
-      <div id="desc-image-container">
-        <img id="desc-image" src="{{ . | relURL }}"></img>
+      <div class="desc-image-container">
+        <img class="desc-image" src="{{ . | relURL }}"></img>
       </div>
     {{ end }}
     {{ with .Params.description }}
-      <p id="desc">{{ .  | markdownify }}</p>
+      <p class="desc">{{ .  | markdownify }}</p>
     {{ end }} 
     </section>
     {{ partial "layout/bodytext.html" . }}

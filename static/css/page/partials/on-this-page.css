@@ -1,4 +1,4 @@
-.on-this-page-wrapper {
+#on-this-page-wrapper {
   margin: 0 0 var(--margin) 0;
   padding-bottom: var(--margin);
   border-bottom: solid var(--border-width-thin) var(--content-background-middle);

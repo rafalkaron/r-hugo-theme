@@ -84,24 +84,24 @@
 
   #layout-section .subpage,
   #layout-gallery .subpage,
-  #layout-single-gallery .gallery-item,
+  #layout-gallery-single .gallery-item,
   #layout-blog .post {
     border: var(--content-background-middle) var(--border-width-medium) solid;
     background-color: transparent;
   }
 
-  #layout-single-gallery .icon,
+  #layout-gallery-single .icon,
   #layout-galler .icon {
     border: none;
   }
 
   #layout-gallery #gallery-items,
-  #layout-single-gallery #gallery-items-container {
+  #layout-gallery-single #gallery-items-container {
     display: block;
     margin-top: calc(var(--margin) * 3);
   }
   #layout-gallery .gallery-item,
-  #layout-single-gallery .gallery-item {
+  #layout-gallery-single .gallery-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,22 +145,22 @@
     background-color: var(--content-background-middle);
   }
 
-  #layout-single-gallery .modal-body,
-  #layout-single-gallery .modal {
+  #layout-gallery-single .modal-body,
+  #layout-gallery-single .modal {
     background-color: #ffffff;
   }
 
-  #layout-single-gallery .modal-body {
+  #layout-gallery-single .modal-body {
     border: var(--content-background-middle) var(--border-width-medium) solid;
   }
 
-  #layout-single-gallery .modal-figure #meta *,
-  #layout-single-gallery .modal-figure .counter-control *,
-  #layout-single-gallery .modal-figure .operations * {
+  #layout-gallery-single .modal-figure .meta *,
+  #layout-gallery-single .modal-figure .counter-control *,
+  #layout-gallery-single .modal-figure .operations * {
     text-shadow: unset;
   }
 
-  #layout-single-gallery .modal-figure #meta {
+  #layout-gallery-single .modal-figure .meta {
     position: fixed;
     bottom: 6vh;
     left: 0;

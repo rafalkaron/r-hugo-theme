@@ -6,7 +6,7 @@
 }
 @media only screen and (min-width: 2000px) {
   #layout-gallery .gallery-item,
-  #layout-single-gallery #gallery-items-container figure {
+  #layout-gallery-single #gallery-items-container figure {
     flex: calc(25% - var(--margin) / 2);
     max-width: calc(25% - var(--margin) / 3);
   }
@@ -23,7 +23,7 @@
     --padding-main: 2.5rem;
   }
   #layout-gallery .gallery-item,
-  #layout-single-gallery #gallery-items-container figure {
+  #layout-gallery-single #gallery-items-container figure {
     flex: calc(33% - var(--margin) / 2);
     max-width: calc(33% - var(--margin) / 5);
   }
@@ -36,7 +36,7 @@
   }
   #layout-section .subpage,
   #layout-gallery .gallery-item,
-  #layout-single-gallery #gallery-items-container figure {
+  #layout-gallery-single #gallery-items-container figure {
     flex: calc(50% - var(--margin) / 2);
     max-width: calc(50% - var(--margin) / 4);
   }
@@ -45,7 +45,7 @@
 /* Larger than small laptops: Float side-menu and on-this-page to side-margins */
 @media only screen and (min-width: 992px) {
   /* On this page */
-  .on-this-page-wrapper {
+  #on-this-page-wrapper {
     position: fixed;
     width: calc(var(--margin-large) * 0.9);
     top: 5.75rem;
@@ -59,7 +59,7 @@
     margin-bottom: 0;
   }
   /* Remove ugly Windows scrollbars */
-  .on-this-page-wrapper::-webkit-scrollbar {
+  #on-this-page-wrapper::-webkit-scrollbar {
     display: none;
   }
   #on-this-page {
@@ -97,7 +97,7 @@
   }
 
   /* Side menu */
-  .side-menu-wrapper {
+  #side-menu-wrapper {
     position: fixed;
     width: calc(var(--margin-large) * 0.9);
     top: 5.75rem;
@@ -110,7 +110,7 @@
     margin-bottom: 0;
   }
   /* Remove ugly Windows scrollbars */
-  .side-menu-wrapper::-webkit-scrollbar {
+  #side-menu-wrapper::-webkit-scrollbar {
     display: none;
   }
   #side-menu {
@@ -143,11 +143,11 @@
     --margin-large: 2.5rem;
   }
   /* Hide on this page for home/index */
-  #layout-home .on-this-page-wrapper {
+  #layout-home #on-this-page-wrapper {
     display: none;
   }
   /* Hide side menu */
-  .side-menu-wrapper {
+  #side-menu-wrapper {
     display: none;
   }
 }
@@ -173,7 +173,7 @@
   }
   #layout-section .subpage,
   #layout-gallery .gallery-item,
-  #layout-single-gallery .gallery-item {
+  #layout-gallery-single .gallery-item {
     flex: 100% !important;
     max-width: 100% !important;
   }
