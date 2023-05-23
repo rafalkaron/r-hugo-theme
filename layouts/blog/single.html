@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div id="main-side-menu">
 <main id="layout-single" class="layout-blog">
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
@@ -32,4 +33,6 @@
     {{ partial "layout/gutter/next-prev-single-page-rev" . }}
   </div>
 </main>
+{{ partial "layout/navigation/on-this-page" . }}
+</div>
 {{ end }}

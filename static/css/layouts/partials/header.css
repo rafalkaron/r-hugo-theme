@@ -11,8 +11,8 @@ header .header-items-wrapper {
   align-items: center;
   justify-content: space-between;
   background-color: var(--layout-background);
-  padding: 0 var(--padding-main);
   min-height: var(--header-height);
+  padding: 0 calc(calc(var(--margin) * 1.25) + 4rem);
 }
 header .title-nav-wrapper {
   display: flex;

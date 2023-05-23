@@ -1,24 +1,29 @@
 {{ define "main" }}
-<main id="layout-blog">
-  <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-    <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial
-      "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
+<div id="main-side-menu">
+  {{ partial "layout/navigation/side-menu-single" . }}
+  <main id="layout-blog">
+    <div class="top-gutter gutter not-selectable">
+      {{ partial "layout/gutter/breadcrumbs" . }}
+      <div class="gutter-group">
+        {{ partial "layout/gutter/all-posts" . }} {{ partial
+        "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" .
+        }}
+      </div>
     </div>
-  </div>
-  <article id="content">
-    {{ partial "_index.html" . }}
-    <section id="posts">
-      {{ range (where .Paginator.Pages "Type" "blog") }} {{ .Render "summary" }}
-      {{ end }}
-    </section>
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+    <article id="content">
+      {{ partial "_index.html" . }}
+      <section id="posts">
+        {{ range (where .Paginator.Pages "Type" "blog") }} {{ .Render "summary"
+        }} {{ end }}
+      </section>
+    </article>
+    <div class="gutter bottom-gutter not-selectable">
+      <div class="gutter-group">
+        {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" .
+        }}
+      </div>
+      {{ partial "layout/gutter/pagination" . }}
     </div>
-    {{ partial "layout/gutter/pagination" . }}
-  </div>
-</main>
+  </main>
+</div>
 {{ end }}

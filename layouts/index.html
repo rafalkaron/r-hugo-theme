@@ -1,4 +1,5 @@
 {{ define "main" }}
+<div id="main-side-menu">
 <main id="layout-home">
   {{ partial "layout/navigation/on-this-page" . }}
   <article id="content">
@@ -15,5 +16,6 @@
       {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
     </div>
 </main>
+{{ partial "layout/navigation/on-this-page" . }}
 </div>
 {{ end }}
