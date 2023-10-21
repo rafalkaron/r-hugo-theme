@@ -9,7 +9,7 @@
   margin-top: var(--margin);
 }
 #layout-section .subpage {
-  flex: calc(50% - var(--margin) / 2);
+  flex: calc(50% - var(--margin));
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;

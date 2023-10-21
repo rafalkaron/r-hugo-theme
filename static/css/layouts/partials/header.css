@@ -12,7 +12,7 @@ header .header-items-wrapper {
   justify-content: space-between;
   background-color: var(--layout-background);
   min-height: var(--header-height);
-  padding: 0 calc(calc(var(--margin) * 1.25) + 4rem);
+  padding: 0 var(--padding-main);
 }
 header .title-nav-wrapper {
   display: flex;

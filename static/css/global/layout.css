@@ -29,12 +29,13 @@ footer {
   min-width: 320px;
 }
 main {
-  max-width: 920px !important;
+  max-width: 920px;
   min-width: 320px;
   width: 100%;
 }
 #main-side-menus {
-  margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--padding-main);
+  margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--padding-main) auto
+    var(--padding-main);
   display: flex;
   flex-direction: row;
   justify-content: center;

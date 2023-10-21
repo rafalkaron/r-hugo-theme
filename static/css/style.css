@@ -1,5 +1,4 @@
 /* GLOBAL */
-@import "global/breakpoints.css";
 @import "global/variables/layout.css";
 @import "global/variables/palette/light.css";
 @import "global/variables/palette/dark.css";
@@ -7,6 +6,7 @@
 @import "global/typography.css";
 @import "global/layout.css";
 @import "global/extras.css";
+@import "global/breakpoints.css";
 
 /* LAYOUTS */
 @import "layouts/home.css";
