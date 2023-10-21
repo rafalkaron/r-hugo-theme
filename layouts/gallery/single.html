@@ -1,28 +1,31 @@
 {{ define "main" }}
-<main id="layout-gallery-single">
-  {{ partial "gallery/modal.html" . }}
-  {{ partial "gallery/modal_exif.html" . }}
-  <div class="gutter top-gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-  </div>
+<div id="main-side-menus" class="layout-gallery-single">
   {{ partial "layout/navigation/side-menu-single" . }}
-  <article id="content">
-    <section id="intro">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.description }}
-      <p id="desc">{{ . | markdownify }}</p>
-      {{ end }}
-      {{ partial "layout/bodytext.html" . }}
-    </section>
-    {{ partial "gallery/images.html" . }}
-    {{ partial "layout/navigation/related-links" . }}
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+  <main id="layout-gallery-single">
+    {{ partial "gallery/modal_exif.html" . }}
+    <div class="gutter top-gutter not-selectable">
+      {{ partial "layout/gutter/breadcrumbs" . }}
     </div>
-    {{ partial "layout/gutter/next-prev-single-page" . }}
-  </div>
-  <script src="{{ "js/gallery.js" | relURL }}"></script>
-</main>
+    <article id="content">
+      <section id="intro">
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.description }}
+        <p id="desc">{{ . | markdownify }}</p>
+        {{ end }}
+        {{ partial "layout/bodytext.html" . }}
+      </section>
+      {{ partial "gallery/images.html" . }}
+      {{ partial "layout/navigation/related-links" . }}
+    </article>
+    <div class="gutter bottom-gutter not-selectable">
+      <div class="gutter-group">
+        {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+      </div>
+      {{ partial "layout/gutter/next-prev-single-page" . }}
+      {{ partial "gallery/modal.html" . }}
+
+    </div>
+    <script src="{{ "js/gallery.js" | relURL }}"></script>
+  </main>
+</div>
 {{ end }}

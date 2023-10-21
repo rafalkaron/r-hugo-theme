@@ -5,6 +5,7 @@
   gap: var(--margin);
   margin-top: var(--margin);
 }
+
 #layout-gallery .gallery-item {
   flex: calc(50% - var(--margin) / 4);
   position: relative;
@@ -48,11 +49,9 @@
 
 /* Gallery single */
 #layout-gallery-single #gallery-items-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  gap: calc(var(--margin) / 2);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--margin);
   margin-top: var(--margin);
 }
 

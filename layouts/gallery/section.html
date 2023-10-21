@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div id="main-side-menus">
+  {{ partial "layout/navigation/side-menu" . }}
   <main id="layout-gallery">
-    {{ partial "layout/navigation/side-menu" . }}
     <article id="content">
       {{ partial "_index" . }}
       <section id="gallery-items" class="not-selectable">
