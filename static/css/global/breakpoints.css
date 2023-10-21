@@ -1,24 +1,5 @@
-/* 4K Vertical */
-@media only screen and (max-width: 3840px) {
-  :root {
-    --padding-main: 5rem;
-  }
-}
-@media only screen and (min-width: 2000px) {
-  #layout-gallery .gallery-item,
-  #layout-gallery-single #gallery-items-container figure {
-    flex: calc(25% - var(--margin) / 2);
-    max-width: calc(25% - var(--margin) / 3);
-  }
-  #layout-section .subpage,
-  #layout-blog .post {
-    flex: calc(33% - var(--margin) / 2);
-    max-width: calc(33% - var(--margin) / 5);
-  }
-}
-
-/* 4K Horizontal */
-@media only screen and (max-width: 2000px) {
+/* Desktops */
+@media only screen and (min-width: 1800px) {
   :root {
     --padding-main: 2.5rem;
   }
@@ -30,7 +11,7 @@
 }
 
 /* Laptops */
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   :root {
     --padding-main: 2.5rem;
   }
@@ -42,8 +23,8 @@
   }
 }
 
-/* Larger than small laptops: Float side-menu and on-this-page to side-margins */
-@media only screen and (min-width: 992px) {
+/* Tablets landscape */
+@media only screen and (min-width: 1024px) {
   /* On this page */
   #on-this-page-wrapper {
     position: fixed;
@@ -137,8 +118,8 @@
   }
 }
 
-/* Tablets */
-@media only screen and (max-width: 992px) {
+/* Tablets portrait */
+@media only screen and (min-width: 768px) {
   :root {
     --margin-large: 2.5rem;
   }
@@ -152,8 +133,8 @@
   }
 }
 
-/* Small tablets */
-@media only screen and (max-width: 850px) {
+/* Phones landscape */
+@media only screen and (min-width: 640px) {
   :root {
     --font-size: 1.5rem;
     --margin: 1.5rem;
@@ -163,8 +144,8 @@
   display: none;
 }
 
-/* PORTRAIT PHONES */
-@media only screen and (max-width: 576px) {
+/* Phones portrait */
+@media only screen and (max-width: 640px) {
   :root {
     --font-size: 1.4rem;
     --margin: 1.4rem;
@@ -185,7 +166,7 @@
   }
 }
 
-/* PRINT */
+/* Print */
 @media only print {
   :root {
     --font-size: 1.2rem;
