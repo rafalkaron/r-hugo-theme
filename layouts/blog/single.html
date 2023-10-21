@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div id="main-side-menu">
+<div id="main-side-menus">
 <main id="layout-single" class="layout-blog">
   <div class="top-gutter gutter not-selectable">
     {{ partial "layout/gutter/breadcrumbs" . }}
@@ -7,7 +7,6 @@
       {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
     </div>
 </div>
-  {{ partial "layout/navigation/on-this-page" . }}
   <article id="content">
     <section id="intro">
     <h1>{{ .Title }}</h1>

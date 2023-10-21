@@ -25,97 +25,6 @@
 
 /* Tablets landscape */
 @media only screen and (min-width: 1024px) {
-  /* On this page */
-  #on-this-page-wrapper {
-    position: fixed;
-    width: calc(var(--margin-large) * 0.9);
-    top: 5.75rem;
-    right: 0;
-    bottom: 5.75rem;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  /* Remove ugly Windows scrollbars */
-  #on-this-page-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  #on-this-page {
-    margin-right: var(--padding-main);
-    padding-left: 1rem;
-    border-left: solid var(--border-width-thin) var(--content-background-middle);
-    max-width: 16rem;
-    width: fit-content;
-  }
-  /* Show level-1 link (h1) for non-mobile */
-  #on-this-page .on-this-page-caption-dynamic {
-    display: unset;
-    display: block;
-  }
-  /* Hide caption for non-mobile */
-  #on-this-page .on-this-page-caption-static {
-    display: none;
-  }
-  /* Style caption */
-  .on-this-page-caption {
-    font-size: 0.9rem;
-  }
-  /* Show level-2 links (H2) */
-  #on-this-page li > ul {
-    display: unset;
-  }
-  /* Style list items/links */
-  #on-this-page a,
-  #on-this-page li {
-    font-size: 0.7rem;
-    display: block;
-  }
-  #on-this-page a {
-    padding: 0 0.5rem;
-  }
-
-  /* Side menu */
-  #side-menu-wrapper {
-    position: fixed;
-    width: calc(var(--margin-large) * 0.9);
-    top: 5.75rem;
-    left: 0;
-    bottom: 5.75rem;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  /* Remove ugly Windows scrollbars */
-  #side-menu-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  #side-menu {
-    margin-left: var(--padding-main);
-    padding-right: 1rem;
-    border-right: solid var(--border-width-thin)
-      var(--content-background-middle);
-  }
-  #side-menu > ul {
-    max-width: 16rem;
-    width: fit-content;
-  }
-  /* Style caption */
-  #side-menu .side-menu-caption {
-    font-size: 0.9rem;
-  }
-  /* Style items/links */
-  #side-menu a,
-  #side-menu li {
-    font-size: 0.7rem;
-  }
-  #side-menu a {
-    padding: 0 0.5rem;
-  }
 }
 
 /* Tablets portrait */
@@ -123,11 +32,7 @@
   :root {
     --margin-large: 2.5rem;
   }
-  /* Hide on this page for home/index */
-  #layout-home #on-this-page-wrapper {
-    display: none;
-  }
-  /* Hide side menu */
+  #on-this-page-wrapper,
   #side-menu-wrapper {
     display: none;
   }
@@ -140,7 +45,8 @@
     --margin: 1.5rem;
   }
 }
-.hamburger-wrapper {
+.hamburger-wrapper,
+#nav-primary {
   display: none;
 }
 
@@ -158,11 +64,10 @@
     flex: 100% !important;
     max-width: 100% !important;
   }
-  #nav-primary {
-    display: none;
-  }
+  .side-menu-wrapper,
+  .on-this-page-wrapper,
   .hamburger-wrapper {
-    display: unset;
+    display: none;
   }
 }
 

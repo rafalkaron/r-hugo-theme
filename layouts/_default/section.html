@@ -1,11 +1,10 @@
 {{ define "main" }}
-<div id="main-side-menu">
+<div id="main-side-menus">
   {{ partial "layout/navigation/side-menu" . }}
   <main id="layout-section">
     <div class="top-gutter gutter not-selectable">
       {{ partial "layout/gutter/breadcrumbs" . }}
     </div>
-    {{ partial "layout/navigation/side-menu" . }}
     <article id="content">
       {{ partial "_index" . }}
       <section id="subpages">

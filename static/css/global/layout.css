@@ -26,13 +26,14 @@ body.modal-on {
 body,
 header,
 footer {
-  min-width: 360px;
+  min-width: 320px;
 }
 main {
   max-width: 920px !important;
+  min-width: 320px;
   width: 100%;
 }
-#main-side-menu {
+#main-side-menus {
   margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--padding-main);
   display: flex;
   flex-direction: row;

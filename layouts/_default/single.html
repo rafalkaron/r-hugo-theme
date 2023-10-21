@@ -1,11 +1,10 @@
 {{ define "main" }}
-<div id="main-side-menu">
+<div id="main-side-menus">
   {{ partial "layout/navigation/side-menu-single" . }}
   <main id="layout-single">
     <div class="gutter top-gutter not-selectable">
       {{ partial "layout/gutter/breadcrumbs" . }}
     </div>
-    {{ partial "layout/navigation/on-this-page" . }}
     <article id="content">
       <section id="intro">
         <h1>{{ .Title }}</h1>
