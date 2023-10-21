@@ -1,7 +1,7 @@
 .side-menu-wrapper {
   margin: 0 0 var(--margin) 0;
-  min-width: 150px;
-  max-width: 250px;
+  width: 150px;
+  max-width: 150px;
 }
 
 #side-menu .side-menu-caption {

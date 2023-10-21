@@ -9,7 +9,6 @@
 @import "global/breakpoints.css";
 
 /* LAYOUTS */
-@import "layouts/home.css";
 @import "layouts/blog.css";
 @import "layouts/archive.css";
 @import "layouts/terms.css";
