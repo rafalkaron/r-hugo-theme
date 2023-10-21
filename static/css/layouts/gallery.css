@@ -1,7 +1,7 @@
 /* Gallery grid */
 #layout-gallery #gallery-items {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--margin);
   margin-top: var(--margin);
 }
@@ -50,7 +50,7 @@
 /* Gallery single */
 #layout-gallery-single #gallery-items-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: var(--margin);
   margin-top: var(--margin);
 }
