@@ -1,9 +1,6 @@
 #layout-blog #posts {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: var(--margin);
   margin-top: var(--margin);
 }

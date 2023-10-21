@@ -23,7 +23,9 @@
   }
 
   /* Reset body props inherited from base style */
-  body {
+  body,
+  main,
+  #main-side-menus {
     margin: unset;
     min-width: unset;
     display: unset;
@@ -48,7 +50,7 @@
     padding: 0;
   }
   footer {
-    border-top: solid var(--border-width-medium) var(--content-text-dark);
+    border-top: solid var(--border-width-medium) black;
     margin-top: calc(var(--margin) * 1.25);
   }
 
@@ -119,7 +121,6 @@
   }
 
   /* Fix colors in code */
-
   #content .codeblock {
     border: var(--content-background-middle) var(--border-width-medium) solid;
     background-color: transparent !important;

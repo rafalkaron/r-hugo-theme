@@ -1,13 +1,11 @@
 /* Main layout */
 #layout-section #subpages {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  width: 100%;
-  gap: calc(var(--margin));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: var(--margin);
   margin-top: var(--margin);
 }
+
 #layout-section .subpage {
   flex: calc(50% - var(--margin));
   background-color: var(--content-background-middle);
