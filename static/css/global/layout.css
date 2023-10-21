@@ -39,7 +39,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: var(--margin);
+  column-gap: var(--padding-main);
 }
 #side-menu,
 #on-this-page {

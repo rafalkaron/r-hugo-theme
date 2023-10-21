@@ -1,19 +1,19 @@
 {{ define "main" }}
-<main id="layout-gallery">
-  <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-  </div>
-  {{ partial "layout/navigation/side-menu" . }}
-  <article id="content">
-    {{ partial "_index" . }}
-    <section id="gallery-items" class="not-selectable">
-      {{ range .Pages }} {{ .Render "summary" }} {{ end }}
-    </section>
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
+<div id="main-side-menus">
+  <main id="layout-gallery">
+    {{ partial "layout/navigation/side-menu" . }}
+    <article id="content">
+      {{ partial "_index" . }}
+      <section id="gallery-items" class="not-selectable">
+        {{ range .Pages }} {{ .Render "summary" }} {{ end }}
+      </section>
+    </article>
+    <div class="gutter bottom-gutter not-selectable">
+      <div class="gutter-group">
+        {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" .
+        }}
+      </div>
     </div>
-  </div>
-</main>
+  </main>
+</div>
 {{ end }}
