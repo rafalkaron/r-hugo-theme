@@ -28,9 +28,9 @@
   background-color: var(--layout-background);
   text-align: right;
   padding: var(--margin) var(--padding-main);
-  border-top: solid var(--border-width-thin) var(--content-background-middle);
+  border-top: solid var(--border-width-medium) var(--content-background-middle);
   max-height: calc(100vh - 4rem);
-  overflow: scroll;
+  overflow: auto;
 }
 
 #nav-hamburger li {
