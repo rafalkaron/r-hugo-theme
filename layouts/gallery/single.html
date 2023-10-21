@@ -2,7 +2,6 @@
 <div id="main-side-menus" class="layout-gallery-single">
   {{ partial "layout/navigation/side-menu-single" . }}
   <main id="layout-gallery-single">
-    {{ partial "gallery/modal_exif.html" . }}
     <div class="gutter top-gutter not-selectable">
       {{ partial "layout/gutter/breadcrumbs" . }}
     </div>
@@ -23,7 +22,7 @@
       </div>
       {{ partial "layout/gutter/next-prev-single-page" . }}
       {{ partial "gallery/modal.html" . }}
-
+      {{ partial "gallery/modal_exif.html" . }}
     </div>
     <script src="{{ "js/gallery.js" | relURL }}"></script>
   </main>
