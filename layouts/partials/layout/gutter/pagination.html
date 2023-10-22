@@ -1,14 +1,13 @@
 {{ if or (.Paginator.HasPrev ) (.Paginator.HasNext) }}
 <div class="pagination gutter-item">
-  {{ if .Paginator.HasPrev }}
-    <a class="pagination-prev-link animation" href="{{ .Paginator.Prev.URL }}">{{ i18n "prev_site" }}</a>
+  {{ if.Paginator.HasPrev }}
+  <a class="pagination-prev-link animation" href="{{ .Paginator.Prev.URL }}">{{ i18n "prev_site" }}</a>
   {{ end }}
   {{ if or (.Paginator.HasNext) (.Paginator.HasPrev) }}
-  <ph class="pagination-counter">{{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}
-  </ph>
+  <ph class="pagination-counter">{{ .Paginator.PageNumber }}/{{ .Paginator.TotalPages }}</ph>
   {{ end }}
-  {{ if .Paginator.HasNext }}
-    <a class="pagination-next-link animation" href="{{ .Paginator.Next.URL }}">{{ i18n "next_site" }}</a>
+  {{ if.Paginator.HasNext }}
+  <a class="pagination-next-link animation" href="{{ .Paginator.Next.URL }}">{{ i18n "next_site" }}</a>
   {{ end }}
 </div>
-{{ end }}
+{{ end  }}

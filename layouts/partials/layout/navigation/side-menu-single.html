@@ -3,17 +3,13 @@
     <a
       title="{{ with .Parent.Params.description }}{{ . }}{{ else }}{{ .Parent.Summary | truncate 150 }}{{ end }}"
       href="{{ .Parent.Permalink }}"
-      class="side-menu-caption"
-      >{{ .Parent.Title }}</a
-    >
+      class="side-menu-caption">{{ .Parent.Title }}</a>
     {{ $currentPage := . }} {{ range .CurrentSection.Pages }}
     <li>
       <a
         class="side-menu-link {{ if eq $currentPage.Permalink .Permalink }}active{{ end }}"
         title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}"
-        href="{{ .Permalink }}"
-        >{{ .Title }}</a
-      >
+        href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
     {{ end }}
   </nav>

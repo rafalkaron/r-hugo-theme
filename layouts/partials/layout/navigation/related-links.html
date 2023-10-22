@@ -1,9 +1,11 @@
-{{ $related := .Site.RegularPages.Related . }} {{ $related_external :=
-.Params.keywords_external }} {{ if or $related $related_external }}
+{{ $related := .Site.RegularPages.Related . }}
+{{ $related_external := .Params.keywords_external }}
+{{ if or $related $related_external }}
 <section id="rellinks">
   <h2 id="see-also">{{ i18n "see_also" }}</h2>
   <ul class="related-links-list">
-    {{ with $related }} {{ range . }}
+    {{ with $related }} 
+    {{ range . }}
     <li class="related-link">
       <a
         class="animation"
@@ -12,9 +14,13 @@
         >{{ .Title }}</a
       >
     </li>
-    {{ end }} {{ end }} {{ with $related_external }} {{ range . }}
+    {{ end }} 
+    {{ end }}
+    {{ with $related_external }} 
+    {{ range . }}
     <li class="related-link">{{ . | markdownify }}</li>
-    {{ end }} {{ end }}
+    {{ end }} 
+    {{ end }}
   </ul>
 </section>
 {{ end }}

@@ -1,14 +1,12 @@
 <div class="gutter-subpages gutter-item">
-  {{ with .RegularPages }}
+  {{ with.RegularPages }}
   <ul>
-    {{ range . }}
+    {{ range. }}
     <li>
       <a
         class="animation"
         title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}"
-        href="{{ .Permalink }}"
-        >{{ .Title }}</a
-      >
+        href="{{ .Permalink }}">{{ .Title }}</a>
     </li>
     {{ end }}
   </ul>

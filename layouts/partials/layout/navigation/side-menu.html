@@ -2,18 +2,14 @@
   <nav id="side-menu" class="not-selectable web">
     <ul>
       <li>
-        <a href="{{ .Permalink }}" class="side-menu-caption animation"
-          >{{ .Title }}</a
-        >
+        <a href="{{ .Permalink }}" class="side-menu-caption animation">{{ .Title }}</a>
         <ul>
-          {{ range .Pages }}
+          {{ range.Pages }}
           <li>
             <a
               class="animation"
               title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}"
-              href="{{ .Permalink }}"
-              >{{ .Title }}</a
-            >
+              href="{{ .Permalink }}">{{ .Title }}</a>
           </li>
           {{ end }}
         </ul>
