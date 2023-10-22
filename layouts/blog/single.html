@@ -15,7 +15,7 @@
       <p class="desc">{{ .  | markdownify }}</p>
     {{ end }} 
     </section>
-    {{ partial "layout/bodytext.html" . }}
+    {{ partial "layout/content/bodytext.html" . }}
     {{ with .Site.DisqusShortname }}
       <section>{{ template "_internal/disqus.html" . }}</section>
     {{ end }}

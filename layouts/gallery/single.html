@@ -9,7 +9,7 @@
         {{ with.Params.description }}
         <p id="desc">{{ .| markdownify }}</p>
         {{ end }}
-        {{ partial "layout/bodytext.html" . }}
+        {{ partial "layout/content/bodytext.html" . }}
       </section>
       {{ partial "gallery/images.html" . }}
       {{ partial "layout/navigation/related-links" . }}
