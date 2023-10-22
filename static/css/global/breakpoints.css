@@ -65,7 +65,7 @@
   #layout-section .subpage,
   .layout-gallery .gallery-item,
   .layout-gallery-single .gallery-item {
-    flex: calc(33% - var(--margin)) !important;
+    flex: calc(33% - var(--margin));
   }
   .hamburger-wrapper,
   .hamburger-wrapper * {
@@ -90,7 +90,7 @@
   #layout-section .subpage,
   .layout-gallery .gallery-item,
   .layout-gallery-single .gallery-item {
-    flex: calc(25% - var(--margin)) !important;
+    flex: calc(25% - var(--margin));
   }
   .hamburger-wrapper,
   .hamburger-wrapper * {

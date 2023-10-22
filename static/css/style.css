@@ -1,12 +1,7 @@
-/* global */
-@import "global/variables/layout.css";
-@import "global/variables/palette/light.css";
-@import "global/variables/palette/dark.css";
-@import "global/variables/palette/print.css";
-@import "global/typography.css";
-@import "global/layout.css";
-@import "global/extras.css";
-@import "global/breakpoints.css";
+@import "variables/layout.css";
+@import "variables/palette/light.css";
+@import "variables/palette/dark.css";
+@import "variables/palette/print.css";
 
 /* layouts */
 @import "layouts/_default/header.css";
@@ -30,8 +25,6 @@
 @import "layouts/gallery/modal.css";
 @import "layouts/gallery/modal-exif.css";
 
-@import "layouts/print.css";
-
 /* content */
 @import "content/typography.css";
 @import "content/selection.css";
@@ -48,3 +41,10 @@
 @import "content/fn.css";
 @import "content/columns.css";
 @import "content/related-links.css";
+
+/* global */
+@import "global/breakpoints.css";
+@import "global/typography.css";
+@import "global/layout.css";
+@import "global/extras.css";
+@import "global/print.css";
