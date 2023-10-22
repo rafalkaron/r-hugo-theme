@@ -63,8 +63,8 @@
 
 #on-this-page a:hover,
 #on-this-page a:active {
-  background-color: var(--content-text-dark);
-  color: var(--content-text-light);
+  background-color: var(--content-text-dark) !important;
+  color: var(--content-text-light) !important;
 }
 
 #on-this-page-wrapper::-webkit-scrollbar {
