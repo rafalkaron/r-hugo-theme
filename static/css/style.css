@@ -1,4 +1,4 @@
-/* GLOBAL */
+/* global */
 @import "global/variables/layout.css";
 @import "global/variables/palette/light.css";
 @import "global/variables/palette/dark.css";
@@ -8,24 +8,26 @@
 @import "global/extras.css";
 @import "global/breakpoints.css";
 
-/* LAYOUTS */
-@import "layouts/blog.css";
-@import "layouts/archive.css";
-@import "layouts/terms.css";
-@import "layouts/404.css";
-@import "layouts/section.css";
-@import "layouts/gallery.css";
-@import "layouts/partials/modal.css";
-@import "layouts/partials/modal-exif.css";
-@import "layouts/partials/header.css";
-@import "layouts/partials/theme-switch.css";
-@import "layouts/partials/hamburger.css";
-@import "layouts/partials/gutters.css";
-@import "layouts/partials/on-this-page.css";
-@import "layouts/partials/side-menu.css";
-@import "layouts/partials/meta.css";
-@import "layouts/partials/related-links.css";
-@import "layouts/partials/footer.css";
+/* layouts */
+@import "layouts/_default/header.css";
+@import "layouts/_default/theme-switch.css";
+@import "layouts/_default/hamburger.css";
+@import "layouts/_default/on-this-page.css";
+@import "layouts/_default/side-menu.css";
+@import "layouts/_default/gutters.css";
+@import "layouts/_default/footer.css";
+@import "layouts/_default/section.css";
+@import "layouts/_default/404.css";
+
+@import "layouts/blog/blog.css";
+@import "layouts/blog/meta.css";
+@import "layouts/blog/archive.css";
+@import "layouts/blog/terms.css";
+
+@import "layouts/gallery/gallery.css";
+@import "layouts/gallery/modal.css";
+@import "layouts/gallery/modal-exif.css";
+
 @import "layouts/print.css";
 
 /* CONTENT */
@@ -43,3 +45,4 @@
 @import "content/hr.css";
 @import "content/fn.css";
 @import "content/columns.css";
+@import "content/related-links.css";
