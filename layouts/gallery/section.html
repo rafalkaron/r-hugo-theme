@@ -1,13 +1,10 @@
 {{ define "main" }}
 <div id="main-asides">
-  {{ partial "_default/navigation/side-menu" . }}
   <main id="layout-section" class="layout-gallery">
     <article id="content">
       {{ partial "_index" . }}
       <section id="gallery-items" class="not-selectable">
-        {{ range .Pages }} 
-        {{ .Render "summary" }} 
-        {{ end }}
+        {{ range .Pages }} {{ .Render "summary" }} {{ end }}
       </section>
     </article>
     {{ partial "_default/gutter/gutter-buttom-section" . }}
