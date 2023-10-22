@@ -1,13 +1,7 @@
 {{ define "main" }}
 <div id="main-asides">
   <main id="layout-section" class="layout-blog">
-    <div class="top-gutter gutter not-selectable">
-      <div class="gutter-group">
-        {{ partial "layout/gutter/all-posts" . }}
-        {{ partial "layout/gutter/taxonomy-refs" . }} 
-        {{ partial "layout/gutter/archive" . }}
-      </div>
-    </div>
+    {{ partial "layout/gutter/gutter-top-section-blog" . }}
     <article id="content">
       {{ partial "_index.html" . }}
       <section id="posts">
