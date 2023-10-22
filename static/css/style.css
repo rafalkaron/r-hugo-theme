@@ -19,18 +19,20 @@
 @import "layouts/_default/section.css";
 @import "layouts/_default/404.css";
 
-@import "layouts/blog/blog.css";
+@import "layouts/blog/section.css";
+@import "layouts/blog/summary.css";
 @import "layouts/blog/meta.css";
 @import "layouts/blog/archive.css";
 @import "layouts/blog/terms.css";
 
-@import "layouts/gallery/gallery.css";
+@import "layouts/gallery/section.css";
+@import "layouts/gallery/single.css";
 @import "layouts/gallery/modal.css";
 @import "layouts/gallery/modal-exif.css";
 
 @import "layouts/print.css";
 
-/* CONTENT */
+/* content */
 @import "content/typography.css";
 @import "content/selection.css";
 @import "content/headings.css";
