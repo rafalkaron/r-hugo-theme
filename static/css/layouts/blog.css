@@ -1,4 +1,4 @@
-#layout-blog #posts {
+.layout-blog #posts {
   display: grid;
   grid-template-columns: repeat(auto-fit, 1fr);
   gap: var(--margin);
@@ -6,7 +6,7 @@
 }
 
 /* Make more space between articles */
-#layout-blog .post {
+.layout-blog .post {
   width: 100%;
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
@@ -15,36 +15,36 @@
 }
 
 /* Hide "Blogs" */
-#layout-blog h1.section-title {
+.layout-blog h1.section-title {
   display: none;
 }
 
 /* Style headings-links*/
-#layout-blog h2.ref {
+.layout-blog h2.ref {
   font-size: 1.5rem;
   margin-top: 0;
 }
-#layout-blog h2.ref > a {
+.layout-blog h2.ref > a {
   color: var(--content-text-dark);
   text-decoration: none;
   border: transparent;
   border-radius: var(--border-radius);
   background-clip: border-box;
 }
-#layout-blog h2.ref > a:hover,
-#layout-blog h2.ref > a:active {
+.layout-blog h2.ref > a:hover,
+.layout-blog h2.ref > a:active {
   text-decoration: none;
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
 
 /* Summary */
-#layout-blog .post .summary,
+.layout-blog .post .summary,
 #layout-single #meta + p {
   margin-top: calc(var(--margin) / 2);
 }
 
-#layout-blog .summary a.read-more {
+.layout-blog .summary a.read-more {
   font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
@@ -55,27 +55,27 @@
   border-radius: var(--border-radius);
   background-clip: border-box;
 }
-#layout-blog a.read-more:hover,
-#layout-blog a.read-more:active,
-#layout-blog a.read-more:focus {
+.layout-blog a.read-more:hover,
+.layout-blog a.read-more:active,
+.layout-blog a.read-more:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
 
-#layout-blog .desc,
-#layout-blog .desc-image,
+.layout-blog .desc,
+.layout-blog .desc-image,
 #layout-single .desc,
 #layout-single .desc-image {
   margin-top: calc(var(--margin) / 2);
 }
 
-#layout-blog .desc-image,
+.layout-blog .desc-image,
 #layout-single .desc-image {
   width: 100%;
   object-fit: cover;
 }
 
-#layout-blog .read-more-container,
+.layout-blog .read-more-container,
 #layout-single .read-more-container {
   display: flex;
   justify-content: right;

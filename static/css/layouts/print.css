@@ -25,7 +25,7 @@
   /* Reset body props inherited from base style */
   body,
   main,
-  #main-side-menus {
+  #main-asides {
     margin: unset;
     min-width: unset;
     display: unset;
@@ -85,25 +85,25 @@
   }
 
   #layout-section .subpage,
-  #layout-gallery .subpage,
-  #layout-gallery-single .gallery-item,
-  #layout-blog .post {
+  .layout-gallery .subpage,
+  .layout-gallery-single .gallery-item,
+  .layout-blog .post {
     border: var(--content-background-middle) var(--border-width-medium) solid;
     background-color: transparent;
   }
 
-  #layout-gallery-single .icon,
+  .layout-gallery-single .icon,
   #layout-galler .icon {
     border: none;
   }
 
-  #layout-gallery #gallery-items,
-  #layout-gallery-single #gallery-items-container {
+  .layout-gallery #gallery-items,
+  .layout-gallery-single #gallery-items-container {
     display: block;
     margin-top: calc(var(--margin) * 3);
   }
-  #layout-gallery .gallery-item,
-  #layout-gallery-single .gallery-item {
+  .layout-gallery .gallery-item,
+  .layout-gallery-single .gallery-item {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,8 +115,8 @@
     page-break-inside: avoid;
   }
 
-  #layout-gallery .gallery-item *,
-  #layout-gallery .gallery-item .description {
+  .layout-gallery .gallery-item *,
+  .layout-gallery .gallery-item .description {
     color: var(--content-text-light);
   }
 
@@ -140,22 +140,22 @@
     justify-content: flex-end;
   }
 
-  #layout-gallery-single .modal-body,
-  #layout-gallery-single .modal {
+  .layout-gallery-single .modal-body,
+  .layout-gallery-single .modal {
     background-color: #ffffff;
   }
 
-  #layout-gallery-single .modal-body {
+  .layout-gallery-single .modal-body {
     border: var(--content-background-middle) var(--border-width-medium) solid;
   }
 
-  #layout-gallery-single .modal-figure .meta *,
-  #layout-gallery-single .modal-figure .counter-control *,
-  #layout-gallery-single .modal-figure .operations * {
+  .layout-gallery-single .modal-figure .meta *,
+  .layout-gallery-single .modal-figure .counter-control *,
+  .layout-gallery-single .modal-figure .operations * {
     text-shadow: unset;
   }
 
-  #layout-gallery-single .modal-figure .meta {
+  .layout-gallery-single .modal-figure .meta {
     position: fixed;
     bottom: 6vh;
     left: 0;

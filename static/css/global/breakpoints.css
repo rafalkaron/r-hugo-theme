@@ -63,8 +63,8 @@
     --padding-main: 2.5rem;
   }
   #layout-section .subpage,
-  #layout-gallery .gallery-item,
-  #layout-gallery-single .gallery-item {
+  .layout-gallery .gallery-item,
+  .layout-gallery-single .gallery-item {
     flex: calc(33% - var(--margin)) !important;
   }
   .hamburger-wrapper,
@@ -88,8 +88,8 @@
     --padding-main: 2.5rem;
   }
   #layout-section .subpage,
-  #layout-gallery .gallery-item,
-  #layout-gallery-single .gallery-item {
+  .layout-gallery .gallery-item,
+  .layout-gallery-single .gallery-item {
     flex: calc(25% - var(--margin)) !important;
   }
   .hamburger-wrapper,

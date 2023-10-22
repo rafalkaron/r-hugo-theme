@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div id="main-side-menus" class="layout-blog">
-  <main id="layout-blog">
+<div id="main-asides">
+  <main id="layout-section" class="layout-blog">
     <div class="top-gutter gutter not-selectable">
       <div class="gutter-group">
         {{ partial "layout/gutter/all-posts" . }} {{ partial
@@ -15,13 +15,7 @@
         }} {{ end }}
       </section>
     </article>
-    <div class="gutter bottom-gutter not-selectable">
-      <div class="gutter-group">
-        {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" .
-        }}
-      </div>
-      {{ partial "layout/gutter/pagination" . }}
-    </div>
+    {{ partial "layout/gutter/gutter-buttom-section" . }}
   </main>
 </div>
 {{ end }}
