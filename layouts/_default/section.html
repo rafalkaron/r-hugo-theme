@@ -2,6 +2,9 @@
 <div id="main-asides">
   {{ partial "_default/navigation/side-menu" . }}
   <main id="layout-section">
+    {{ if ne .Section (path.Base .File.Dir) }}
+    {{ partial "_default/gutter/gutter-top-single" . }}
+    {{ end }}
     <article id="content">
       {{ partial "_index" . }}
       <section id="subpages">
