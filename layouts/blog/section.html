@@ -5,8 +5,8 @@
     <article id="content">
       {{ partial "_index.html" . }}
       <section id="posts">
-        {{ range (where .Paginator.Pages "Type" "blog") }}
-        {{ .Render "summary" }} 
+        {{ range (where .Paginator.Pages "Type" "blog" ) }}
+        {{ .Render "summary" }}
         {{ end }}
       </section>
     </article>
