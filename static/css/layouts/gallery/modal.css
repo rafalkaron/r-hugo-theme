@@ -1,5 +1,5 @@
 /* Main layout */
-#layout-single.layout-gallery-single .modal {
+#layout-single.layout-gallery-single #modal {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -79,13 +79,13 @@
   color: var(--layout-text);
 }
 
-#layout-single.layout-gallery-single .modal .counter {
+#layout-single.layout-gallery-single #modal .counter {
   display: flex;
   align-items: center;
   margin: 0;
 }
 
-#layout-single.layout-gallery-single .modal .counter span {
+#layout-single.layout-gallery-single #modal .counter span {
   font-size: 1rem;
   font-weight: 600;
 }
