@@ -2,18 +2,8 @@
 <div id="main-asides">
   {{ partial "layout/navigation/side-menu-single" . }}
   <main id="layout-single">
-    {{ partial "layout/gutter/gutter-top-single" . }}
-    <article id="content">
-      <section id="intro">
-        <h1>{{ .Title }}</h1>
-        {{ with .Params.description }}
-        <p id="desc">{{ . | markdownify }}</p>
-        {{ end }}
-      </section>
-      {{ partial "layout/bodytext.html" . }} {{ partial
-      "layout/navigation/related-links" . }}
-    </article>
-    {{ partial "layout/gutter/gutter-bottom-single" . }}
+    {{ partial "layout/gutter/gutter-top-single" . }} {{ partial
+    "layout/content" . }} {{ partial "layout/gutter/gutter-bottom-single" . }}
   </main>
   {{ partial "layout/navigation/on-this-page" . }}
 </div>

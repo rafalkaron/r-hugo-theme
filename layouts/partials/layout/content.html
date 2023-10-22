@@ -1,0 +1,10 @@
+<article id="content">
+  <section id="intro">
+    <h1>{{ .Title }}</h1>
+    {{ with .Params.description }}
+    <p id="desc">{{ . | markdownify }}</p>
+    {{ end }}
+  </section>
+  {{ partial "layout/bodytext.html" . }} {{ partial
+  "layout/navigation/related-links" . }}
+</article>
