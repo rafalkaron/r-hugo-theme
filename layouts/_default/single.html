@@ -1,10 +1,11 @@
 {{ define "main" }}
 <div id="main-asides">
-  {{ if eq .Section (path.Base .File.Dir) }}
+  {{ $pathElements := split .File.Path "/" }}
+  {{ if ne (len $pathElements) 1 }}
   {{ partial "_default/navigation/side-menu-single" . }}
   {{ end }}
   <main id="layout-single">
-    {{ if eq .Section (path.Base .File.Dir) }}
+    {{ if ne (len $pathElements) 1 }}
     {{ partial "_default/gutter/gutter-top-single" . }}
     {{ end }}
     {{ partial "_default/content/content" . }}
