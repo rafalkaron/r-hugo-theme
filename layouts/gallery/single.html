@@ -1,5 +1,5 @@
 {{ define "main" }}
-<div id="main-asides">
+<div id="main-asides">    
   <main id="layout-single" class="layout-gallery-single">
     {{ partial "_default/gutter/gutter-top-single" . }}
     <article id="content">
@@ -13,14 +13,9 @@
       {{ partial "gallery/images.html" . }}
       {{ partial "_default/content/related-links" . }}
     </article>
-    <div class="gutter bottom-gutter not-selectable">
-      <div class="gutter-group">
-        {{ partial "_default/gutter/top" . }} {{ partial "_default/gutter/print" . }}
-      </div>
-      {{ partial "_default/gutter/next-prev-single-page" . }}
-      {{ partial "gallery/modal.html" . }}
-      {{ partial "gallery/modal_exif.html" . }}
-    </div>
+    {{ partial "_default/gutter/gutter-bottom-single" . }}
+    {{ partial "gallery/modal_exif.html" . }}
+    {{ partial "gallery/modal.html" . }}
     <script src="{{ "js/gallery.js" | relURL }}"></script>
   </main>
 </div>
