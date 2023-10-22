@@ -6,15 +6,14 @@
     <article id="content">
       <section id="intro">
         <h1>{{ .Title }}</h1>
-        {{ with .Params.description }}
-        <p id="desc">{{ . | markdownify }}</p>
+        {{ with.Params.description }}
+        <p id="desc">{{ .| markdownify }}</p>
         {{ end }}
         {{ partial "layout/bodytext.html" . }}
       </section>
       {{ partial "gallery/images.html" . }}
       {{ partial "layout/navigation/related-links" . }}
     </article>
-    
     <div class="gutter bottom-gutter not-selectable">
       <div class="gutter-group">
         {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
@@ -24,7 +23,6 @@
       {{ partial "gallery/modal_exif.html" . }}
     </div>
     <script src="{{ "js/gallery.js" | relURL }}"></script>
-
   </main>
 </div>
 {{ end }}

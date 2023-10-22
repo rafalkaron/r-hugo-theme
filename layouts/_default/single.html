@@ -2,9 +2,10 @@
 <div id="main-asides">
   {{ partial "layout/navigation/side-menu-single" . }}
   <main id="layout-single">
-    {{ partial "layout/gutter/gutter-top-single" . }} {{ partial
-    "layout/content" . }} {{ partial "layout/gutter/gutter-bottom-single" . }}
+    {{ partial "layout/gutter/gutter-top-single" . }}
+    {{ partial "layout/content" . }}
+    {{ partial "layout/gutter/gutter-bottom-single" . }}
   </main>
   {{ partial "layout/navigation/on-this-page" . }}
 </div>
-{{ end }}
+{{ end  }}
