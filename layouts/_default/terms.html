@@ -1,11 +1,7 @@
 {{ define "main" }}
 <div id="main-asides" class="layout-blog">
 <main id="layout-terms">
-  <div class="top-gutter gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
-    </div>
-</div>
+  {{ partial "layout/gutter/gutter-top-section-blog" . }}
   <article id="content">
     {{ if eq .Title "Tags" }} 
       <h1>{{ i18n "tags" | title }}</h1>
@@ -27,11 +23,7 @@
       </ul>
     </section>
   </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }}
-      {{ partial "layout/gutter/print" . }}
-    </div>
+  {{ partial "layout/gutter/gutter-bottom-section-blog" . }}
 </main>
 </div>
 {{ end }}

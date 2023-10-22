@@ -1,13 +1,7 @@
 {{ define "main" }}
 <div id="main-asides" class="layout-blog">
   <main id="layout-blog" class="layout-taxonomy">
-    <div class="top-gutter gutter not-selectable">
-      <div class="gutter-group">
-        {{ partial "layout/gutter/all-posts" . }} {{ partial
-        "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" .
-        }}
-      </div>
-    </div>
+    {{ partial "layout/gutter/gutter-top-section-blog" . }}
     <article id="content">
       {{ with .Title }}
       <h1 class="taxonomy-name">#{{ . }}</h1>
@@ -17,13 +11,7 @@
         {{ end }}
       </div>
     </article>
-    <div class="gutter bottom-gutter not-selectable">
-      <div class="gutter-group">
-        {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" .
-        }}
-      </div>
-      {{ partial "layout/gutter/pagination" . }}
-    </div>
+    {{ partial "layout/gutter/gutter-bottom-section-blog" . }}
   </main>
 </div>
 {{ end }}
