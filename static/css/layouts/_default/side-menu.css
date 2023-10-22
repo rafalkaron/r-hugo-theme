@@ -21,6 +21,26 @@
   padding-top: 0;
 }
 
+/* Remove ugly Windows scrollbars */
+#side-menu-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+#side-menu > ul {
+  width: fit-content;
+}
+/* Style caption */
+#side-menu .side-menu-caption {
+  font-size: 0.9rem;
+}
+/* Style items/links */
+#side-menu a,
+#side-menu li {
+  font-size: 0.7rem;
+}
+#side-menu a {
+  padding: 0 0.5rem;
+}
 /* Links */
 #side-menu a {
   text-decoration: none;
@@ -42,25 +62,4 @@
 #side-menu li .side-menu-link.active:focus {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
-}
-
-/* Remove ugly Windows scrollbars */
-#side-menu-wrapper::-webkit-scrollbar {
-  display: none;
-}
-
-#side-menu > ul {
-  width: fit-content;
-}
-/* Style caption */
-#side-menu .side-menu-caption {
-  font-size: 0.9rem;
-}
-/* Style items/links */
-#side-menu a,
-#side-menu li {
-  font-size: 0.7rem;
-}
-#side-menu a {
-  padding: 0 0.5rem;
 }
