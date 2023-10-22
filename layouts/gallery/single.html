@@ -2,9 +2,7 @@
 <div id="main-asides">
   {{ partial "layout/navigation/side-menu-single" . }}
   <main id="layout-single" class="layout-gallery-single">
-    <div class="gutter top-gutter not-selectable">
-      {{ partial "layout/gutter/breadcrumbs" . }}
-    </div>
+    {{ partial "layout/gutter/gutter-top-single" . }}
     <article id="content">
       <section id="intro">
         <h1>{{ .Title }}</h1>
@@ -16,6 +14,7 @@
       {{ partial "gallery/images.html" . }}
       {{ partial "layout/navigation/related-links" . }}
     </article>
+    
     <div class="gutter bottom-gutter not-selectable">
       <div class="gutter-group">
         {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
@@ -25,6 +24,7 @@
       {{ partial "gallery/modal_exif.html" . }}
     </div>
     <script src="{{ "js/gallery.js" | relURL }}"></script>
+
   </main>
 </div>
 {{ end }}

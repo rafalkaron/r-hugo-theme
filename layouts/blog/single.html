@@ -1,12 +1,7 @@
 {{ define "main" }}
 <div id="main-asides">
 <main id="layout-single" class="layout-blog">
-  <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-    <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
-    </div>
-</div>
+  {{ partial "layout/gutter/gutter-top-single-blog" . }}
   <article id="content">
     <section id="intro">
     <h1>{{ .Title }}</h1>
@@ -25,12 +20,7 @@
       <section>{{ template "_internal/disqus.html" . }}</section>
     {{ end }}
   </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
-    </div>
-    {{ partial "layout/gutter/next-prev-single-page-rev" . }}
-  </div>
+  {{ partial "layout/gutter/gutter-bottom-single-blog" . }}
 </main>
 {{ partial "layout/navigation/on-this-page" . }}
 </div>

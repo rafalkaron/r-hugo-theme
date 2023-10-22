@@ -1,6 +1,6 @@
 {{ define "main" }}
-<div id="main-asides" class="layout-single">
-  <main id="layout-single">
+<div id="main-asides">
+  <main id="layout-single" class="layout-simple">
     <article id="content">
       <section id="intro">
         <h1>{{ .Title }}</h1>
@@ -11,13 +11,7 @@
       {{ partial "layout/bodytext.html" . }} {{ partial
       "layout/navigation/related-links" . }}
     </article>
-    <div class="gutter bottom-gutter not-selectable">
-      <div class="gutter-group">
-        {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" .
-        }}
-      </div>
-      {{ partial "layout/gutter/next-prev-single-page" . }}
-    </div>
+    {{ partial "layout/gutter/gutter-bottom-single" . }}
   </main>
   {{ partial "layout/navigation/on-this-page" . }}
 </div>
