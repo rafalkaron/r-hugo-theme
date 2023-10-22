@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode | default "en-us" }}">
-	{{ partial "layout/head" . }}
+	{{ partial "_default/head" . }}
 	<body>
-		{{ partial "layout/navigation/header" . }}
+		{{ partial "_default/navigation/header" . }}
 		<script src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
 		<script src="{{ "js/hide-navbar.js" | relURL }}"></script>
 		<script src="{{ "js/toc-indicator.js" | relURL }}"></script>
@@ -11,6 +11,6 @@
 		{{ end }}
 		{{ block "main" . }}{{ end }}
 		<script src="{{ "js/preload.js" | relURL }}"></script>
-		{{ partial "layout/footer" . }}
+		{{ partial "_default/footer" . }}
 	</body>
 </html>

@@ -1,11 +1,11 @@
 {{ define "main" }}
 <div id="main-asides">
-  {{ partial "layout/navigation/side-menu-single" . }}
+  {{ partial "_default/navigation/side-menu-single" . }}
   <main id="layout-single">
-    {{ partial "layout/gutter/gutter-top-single" . }}
-    {{ partial "layout/content/content" . }}
-    {{ partial "layout/gutter/gutter-bottom-single" . }}
+    {{ partial "_default/gutter/gutter-top-single" . }}
+    {{ partial "_default/content/content" . }}
+    {{ partial "_default/gutter/gutter-bottom-single" . }}
   </main>
-  {{ partial "layout/navigation/on-this-page" . }}
+  {{ partial "_default/navigation/on-this-page" . }}
 </div>
 {{ end  }}

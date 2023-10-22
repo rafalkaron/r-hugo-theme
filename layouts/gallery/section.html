@@ -1,6 +1,6 @@
 {{ define "main" }}
 <div id="main-asides">
-  {{ partial "layout/navigation/side-menu" . }}
+  {{ partial "_default/navigation/side-menu" . }}
   <main id="layout-section" class="layout-gallery">
     <article id="content">
       {{ partial "_index" . }}
@@ -10,7 +10,7 @@
         {{ end }}
       </section>
     </article>
-    {{ partial "layout/gutter/gutter-buttom-section" . }}
+    {{ partial "_default/gutter/gutter-buttom-section" . }}
   </main>
 </div>
 {{ end }}

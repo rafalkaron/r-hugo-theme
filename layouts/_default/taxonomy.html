@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div id="main-asides" class="layout-blog">
   <main id="layout-blog" class="layout-taxonomy">
-    {{ partial "layout/gutter/gutter-top-section-blog" . }}
+    {{ partial "_default/gutter/gutter-top-section-blog" . }}
     <article id="content">
       {{ with .Title }}
       <h1 class="taxonomy-name">#{{ . }}</h1>
@@ -11,7 +11,7 @@
         {{ end }}
       </div>
     </article>
-    {{ partial "layout/gutter/gutter-bottom-section-blog" . }}
+    {{ partial "_default/gutter/gutter-bottom-section-blog" . }}
   </main>
 </div>
 {{ end }}
