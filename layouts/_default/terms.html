@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div id="main-asides" class="layout-blog">
 <main id="layout-terms">
-  {{ partial "_default/gutter/gutter-top-section-blog" . }}
+  {{ partial "_default/gutter/gutter-top-blog" . }}
   <article id="content">
     {{ if eq .Title "Tags" }} 
       <h1>{{ i18n "tags" | title }}</h1>
