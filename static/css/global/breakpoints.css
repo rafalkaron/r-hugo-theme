@@ -1,195 +1,117 @@
-/* 4K Vertical */
-@media only screen and (max-width: 3840px) {
-  :root {
-    --padding-main: 5rem;
-  }
+/* S */
+:root {
+  --font-size: 1.4rem;
+  --margin: 1.4rem;
+  --margin-large: 1.5rem;
+  --padding-main: 1.5rem;
 }
-@media only screen and (min-width: 2000px) {
-  #layout-gallery .gallery-item,
-  #layout-gallery-single #gallery-items-container figure {
-    flex: calc(25% - var(--margin) / 2);
-    max-width: calc(25% - var(--margin) / 3);
-  }
-  #layout-section .subpage,
-  #layout-blog .post {
-    flex: calc(33% - var(--margin) / 2);
-    max-width: calc(33% - var(--margin) / 5);
-  }
+.hamburger-wrapper,
+.hamburger-wrapper * {
+  display: unset;
 }
-
-/* 4K Horizontal */
-@media only screen and (max-width: 2000px) {
-  :root {
-    --padding-main: 2.5rem;
-  }
-  #layout-gallery .gallery-item,
-  #layout-gallery-single #gallery-items-container figure {
-    flex: calc(33% - var(--margin) / 2);
-    max-width: calc(33% - var(--margin) / 5);
-  }
+#nav-primary {
+  display: none;
 }
-
-/* Laptops */
-@media only screen and (max-width: 1200px) {
-  :root {
-    --padding-main: 2.5rem;
-  }
-  #layout-section .subpage,
-  #layout-gallery .gallery-item,
-  #layout-gallery-single #gallery-items-container figure {
-    flex: calc(50% - var(--margin) / 2);
-    max-width: calc(50% - var(--margin) / 4);
-  }
+.side-menu-wrapper {
+  display: none;
 }
-
-/* Larger than small laptops: Float side-menu and on-this-page to side-margins */
-@media only screen and (min-width: 992px) {
-  /* On this page */
-  #on-this-page-wrapper {
-    position: fixed;
-    width: calc(var(--margin-large) * 0.9);
-    top: 5.75rem;
-    right: 0;
-    bottom: 5.75rem;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    border-bottom: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  /* Remove ugly Windows scrollbars */
-  #on-this-page-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  #on-this-page {
-    margin-right: var(--padding-main);
-    padding-left: 1rem;
-    border-left: solid var(--border-width-thin) var(--content-background-middle);
-    max-width: 16rem;
-    width: fit-content;
-  }
-  /* Show level-1 link (h1) for non-mobile */
-  #on-this-page .on-this-page-caption-dynamic {
-    display: unset;
-    display: block;
-  }
-  /* Hide caption for non-mobile */
-  #on-this-page .on-this-page-caption-static {
-    display: none;
-  }
-  /* Style caption */
-  .on-this-page-caption {
-    font-size: 0.9rem;
-  }
-  /* Show level-2 links (H2) */
-  #on-this-page li > ul {
-    display: unset;
-  }
-  /* Style list items/links */
-  #on-this-page a,
-  #on-this-page li {
-    font-size: 0.7rem;
-    display: block;
-  }
-  #on-this-page a {
-    padding: 0 0.5rem;
-  }
-
-  /* Side menu */
-  #side-menu-wrapper {
-    position: fixed;
-    width: calc(var(--margin-large) * 0.9);
-    top: 5.75rem;
-    left: 0;
-    bottom: 5.75rem;
-    overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-  /* Remove ugly Windows scrollbars */
-  #side-menu-wrapper::-webkit-scrollbar {
-    display: none;
-  }
-  #side-menu {
-    margin-left: var(--padding-main);
-    padding-right: 1rem;
-    border-right: solid var(--border-width-thin)
-      var(--content-background-middle);
-  }
-  #side-menu > ul {
-    max-width: 16rem;
-    width: fit-content;
-  }
-  /* Style caption */
-  #side-menu .side-menu-caption {
-    font-size: 0.9rem;
-  }
-  /* Style items/links */
-  #side-menu a,
-  #side-menu li {
-    font-size: 0.7rem;
-  }
-  #side-menu a {
-    padding: 0 0.5rem;
-  }
-}
-
-/* Tablets */
-@media only screen and (max-width: 992px) {
-  :root {
-    --margin-large: 2.5rem;
-  }
-  /* Hide on this page for home/index */
-  #layout-home #on-this-page-wrapper {
-    display: none;
-  }
-  /* Hide side menu */
-  #side-menu-wrapper {
-    display: none;
-  }
-}
-
-/* Small tablets */
-@media only screen and (max-width: 850px) {
-  :root {
-    --font-size: 1.5rem;
-    --margin: 1.5rem;
-  }
-}
-.hamburger-wrapper {
+.on-this-page-wrapper {
   display: none;
 }
 
-/* PORTRAIT PHONES */
-@media only screen and (max-width: 576px) {
+/* M */
+@media only screen and (min-width: 600px) {
   :root {
-    --font-size: 1.4rem;
-    --margin: 1.4rem;
-    --margin-large: 1.5rem;
-    --padding-main: 1.5rem;
+    --margin-large: 2.5rem;
+    --padding-main: 2.5rem;
   }
-  #layout-section .subpage,
-  #layout-gallery .gallery-item,
-  #layout-gallery-single .gallery-item {
-    flex: 100% !important;
-    max-width: 100% !important;
-  }
-  #nav-primary {
+  .hamburger-wrapper,
+  .hamburger-wrapper * {
     display: none;
   }
-  .hamburger-wrapper {
+  #nav-primary {
+    display: unset;
+  }
+  .side-menu-wrapper {
+    display: none;
+  }
+  .on-this-page-wrapper {
+    display: none;
+  }
+}
+
+/* L */
+@media only screen and (min-width: 900px) {
+  .hamburger-wrapper,
+  .hamburger-wrapper * {
+    display: none;
+  }
+  #nav-primary {
+    display: unset;
+  }
+  .side-menu-wrapper {
+    display: unset;
+  }
+  .on-this-page-wrapper {
     display: unset;
   }
 }
 
-/* PRINT */
+/* XL */
+@media only screen and (min-width: 1200px) {
+  :root {
+    --padding-main: 2.5rem;
+  }
+  #layout-section .subpage,
+  .layout-gallery .gallery-item,
+  .layout-gallery-single .gallery-item {
+    flex: calc(33% - var(--margin));
+  }
+  .hamburger-wrapper,
+  .hamburger-wrapper * {
+    display: none;
+  }
+  #nav-primary {
+    display: unset;
+  }
+  .side-menu-wrapper {
+    display: unset;
+  }
+  .on-this-page-wrapper {
+    display: unset;
+  }
+}
+
+/* XXL */
+@media only screen and (min-width: 1800px) {
+  :root {
+    --padding-main: 2.5rem;
+  }
+  #layout-section .subpage,
+  .layout-gallery .gallery-item,
+  .layout-gallery-single .gallery-item {
+    flex: calc(25% - var(--margin));
+  }
+  .hamburger-wrapper,
+  .hamburger-wrapper * {
+    display: none;
+  }
+  #nav-primary {
+    display: unset;
+  }
+  .side-menu-wrapper {
+    display: unset;
+  }
+  .on-this-page-wrapper {
+    display: unset;
+  }
+}
+
+/* Print */
 @media only print {
   :root {
     --font-size: 1.2rem;
     --margin: 1.2rem;
-    --margin-large: 0rem;
+    --margin-large: 0;
   }
 }

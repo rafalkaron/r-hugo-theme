@@ -10,10 +10,10 @@
 		</div>
 		{{ end }}
 		<div class="desc">
-			{{ with .Params.description | truncate 500 | markdownify }}
+			{{ with .Params.description | truncate 350 | markdownify }}
 				{{ . }}
 			{{ else }}
-				{{ .Summary }}
+				{{ .Summary | truncate 350 }}
 			{{ end }}
 			<div class="read-more-container">
 			<a class="read-more animation" title="{{ .Title }} | {{ .ReadingTime }} minutes read" href="{{ .Permalink }}">Read more »</a></div>

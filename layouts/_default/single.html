@@ -1,25 +1,16 @@
 {{ define "main" }}
-<main id="layout-single">
-  <div class="gutter top-gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-  </div>
-  {{ partial "layout/navigation/on-this-page" . }} {{ partial
-  "layout/navigation/side-menu-single" . }}
-  <article id="content">
-    <section id="intro">
-      <h1>{{ .Title }}</h1>
-      {{ with .Params.description }}
-      <p id="desc">{{ . | markdownify }}</p>
-      {{ end }}
-    </section>
-    {{ partial "layout/bodytext.html" . }} {{ partial
-    "layout/navigation/related-links" . }}
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
-    </div>
-    {{ partial "layout/gutter/next-prev-single-page" . }}
-  </div>
-</main>
-{{ end }}
+<div id="main-asides">
+  {{ $pathElements := split .File.Path "/" }}
+  {{ if ne (len $pathElements) 1 }}
+  {{ partial "_default/navigation/side-menu-single" . }}
+  {{ end }}
+  <main id="layout-single">
+    {{ if ne (len $pathElements) 1 }}
+    {{ partial "_default/gutter/gutter-top-single" . }}
+    {{ end }}
+    {{ partial "_default/content/content" . }}
+    {{ partial "_default/gutter/gutter-bottom-single" . }}
+  </main>
+  {{ partial "_default/navigation/on-this-page" . }}
+</div>
+{{ end  }}

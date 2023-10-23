@@ -1,0 +1,13 @@
+<ul class="breadcrumbs gutter-item">
+  {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+</ul>
+
+{{ define "breadcrumbnav" }}
+  {{ if .p1.Parent }}
+    {{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}  <li{{ if eq .p1 .p2 }} class="active"{{ end }}>
+      <a class="animation" title="{{.p1.Title}}" href="{{ .p1.RelPermalink }}">{{ .p1.Title | truncate 35 }}</a>
+    </li>
+
+  {{ end }}
+
+{{ end }}

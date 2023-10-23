@@ -1,24 +1,16 @@
 {{ define "main" }}
-<main id="layout-blog">
-  <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-    <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial
-      "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
-    </div>
-  </div>
-  <article id="content">
-    {{ partial "_index.html" . }}
-    <section id="posts">
-      {{ range (where .Paginator.Pages "Type" "blog") }} {{ .Render "summary" }}
-      {{ end }}
-    </section>
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
-    </div>
-    {{ partial "layout/gutter/pagination" . }}
-  </div>
-</main>
+<div id="main-asides">
+  <main id="layout-section" class="layout-blog">
+    {{ partial "_default/gutter/gutter-top-blog" . }}
+    <article id="content">
+      {{ partial "_index.html" . }}
+      <section id="posts">
+        {{ range (where .Paginator.Pages "Type" "blog" ) }}
+        {{ .Render "summary" }}
+        {{ end }}
+      </section>
+    </article>
+    {{ partial "_default/gutter/gutter-bottom-section-blog" . }}
+  </main>
+</div>
 {{ end }}

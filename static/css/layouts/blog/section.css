@@ -1,0 +1,57 @@
+#layout-section.layout-blog #posts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--margin);
+  margin-top: var(--margin);
+}
+
+/* Make more space between articles */
+#layout-section.layout-blog .post {
+  width: 100%;
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+  padding: var(--margin);
+}
+
+/* Hide "Blogs" */
+#layout-section.layout-blog h1.section-title {
+  display: none;
+}
+
+/* Style headings-links*/
+#layout-section.layout-blog h2.ref {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+#layout-section.layout-blog h2.ref > a {
+  color: var(--content-text-dark);
+  text-decoration: none;
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+}
+#layout-section.layout-blog h2.ref > a:hover,
+#layout-section.layout-blog h2.ref > a:active {
+  text-decoration: none;
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+}
+
+#layout-section.layout-blog .summary a.read-more {
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  border: none;
+  font-size: 1rem;
+  padding: 0 var(--padding-small);
+  border: transparent;
+  border-radius: var(--border-radius);
+  background-clip: border-box;
+}
+#layout-section.layout-blog a.read-more:hover,
+#layout-section.layout-blog a.read-more:active,
+#layout-section.layout-blog a.read-more:focus {
+  background-color: var(--content-text-dark);
+  color: var(--content-text-light);
+}

@@ -13,13 +13,13 @@ const lastGalleryImage = document.querySelector(
 );
 
 // UI elements
-const modal = document.querySelector(".modal");
+const modal = document.querySelector("#modal");
 const body = document.querySelector("body");
 let modalClose = document.querySelector(".modal-close");
 let modalPrevButton = document.querySelector(".modal-prev");
 let modalNextButton = document.querySelector(".modal-next");
 
-const modalExif = document.querySelector(".modal-exif");
+const modalExif = document.querySelector("#modal-exif");
 let modalExifMetadata = document.querySelector(".modal-exif-metadata");
 let modalExifMetadataUnordered = document.querySelector(
   ".modal-exif-metadata-unordered"

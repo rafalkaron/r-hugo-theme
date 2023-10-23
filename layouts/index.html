@@ -1,19 +1,9 @@
 {{ define "main" }}
-<main id="layout-home">
-  {{ partial "layout/navigation/on-this-page" . }}
-  <article id="content">
-    <section id="intro">
-      <h1 class="home-heading">{{ .Title }}</h1>
-      {{ with .Params.description }}
-      <p id="desc">{{ . }}</p>
-      {{ end }} 
-    </section>
-    {{ partial "layout/bodytext.html" . }} 
-  </article>
-  <div class="gutter bottom-gutter">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
-    </div>
-</main>
+<div id="main-asides">
+  <main id="layout-single" class="layout-home">
+    {{ partial "_default/content/content" . }}
+    {{ partial "_default/gutter/gutter-bottom-single" . }}
+  </main>
+  {{ partial "_default/navigation/on-this-page" . }}
 </div>
 {{ end }}

@@ -26,11 +26,31 @@ body.modal-on {
 body,
 header,
 footer {
-  min-width: 360px;
+  min-width: 320px;
+}
+
+/* Main layout */
+#main-asides {
+  margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--padding-main) auto
+    var(--padding-main);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: var(--padding-main);
 }
 main {
-  margin: calc(calc(var(--margin) * 1.25) + 4rem) var(--margin-large) auto
-    var(--margin-large);
+  max-width: 920px;
+  min-width: 320px;
+  width: 100%;
+}
+#side-menu,
+#on-this-page {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  top: 0;
+  align-self: flex-start; /* <-- this is the fix */
+  padding: calc(calc(var(--margin) * 1.25) + 4rem) 0;
+  margin-top: -10rem;
 }
 article {
   margin-top: var(--margin);

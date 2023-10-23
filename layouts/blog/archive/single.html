@@ -1,43 +1,37 @@
 {{ define "main" }}
-<main id="layout-archive">
-  <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-    <div class="gutter-group">
-      {{ partial "layout/gutter/all-posts" . }} {{ partial
-      "layout/gutter/taxonomy-refs" . }} {{ partial "layout/gutter/archive" . }}
-    </div>
-  </div>
-  <article id="content">
-    <section id="intro">
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
-    </section>
-    <section id="archive">
-      {{ $blog_posts := where .CurrentSection.RegularPages "Type" "blog" }} {{
-      range ($blog_posts.GroupByDate "2006") }} {{ if not (in .Key "0001") }}
-      <div class="archive-year">
-        <h2>{{ .Key }}</h2>
-        <ul class="archive-list">
-          {{ range .Pages }}
-          <li class="archive-list-item">
-            <time>{{ .PublishDate.Format "02 January" }}: </time
-            ><a
-              class="animation"
-              title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}"
-              href="{{ .RelPermalink }}"
-              >{{ .Title }}</a
-            >
-          </li>
-          {{end }}
-        </ul>
-      </div>
-      {{ end }} {{ end }}
-    </section>
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
-    </div>
-  </div>
-</main>
+<div id="main-asides">
+  <main id="layout-archive">
+    {{ partial "_default/gutter/gutter-top-blog" . }}
+    <article id="content">
+      <section id="intro">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+      </section>
+      <section id="archive">
+        {{ $blog_posts := where .CurrentSection.RegularPages "Type" "blog" }}
+        {{ range ($blog_posts.GroupByDate "2006") }} 
+        {{ if not (in .Key "0001") }}
+        <div class="archive-year">
+          <h2>{{ .Key }}</h2>
+          <ul class="archive-list">
+            {{ range .Pages }}
+            <li class="archive-list-item">
+              <time>{{ .PublishDate.Format "02 January" }}: </time>
+              <a
+                class="animation"
+                title="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary | truncate 150 }}{{ end }}"
+                href="{{ .RelPermalink }}"
+                >{{ .Title }}
+              </a>
+            </li>
+            {{end }}
+          </ul>
+        </div>
+        {{ end }}
+        {{ end }}
+      </section>
+    </article>
+    {{ partial "_default/gutter/gutter-buttom-section" . }}
+  </main>
+</div>
 {{ end }}

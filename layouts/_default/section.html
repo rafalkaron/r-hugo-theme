@@ -1,19 +1,15 @@
 {{ define "main" }}
-<main id="layout-section">
-  <div class="top-gutter gutter not-selectable">
-    {{ partial "layout/gutter/breadcrumbs" . }}
-  </div>
-  {{ partial "layout/navigation/side-menu" . }}
-  <article id="content">
-    {{ partial "_index" . }}
-    <section id="subpages">
-      {{ range .Pages }} {{ .Render "summary" }} {{ end }}
-    </section>
-  </article>
-  <div class="gutter bottom-gutter not-selectable">
-    <div class="gutter-group">
-      {{ partial "layout/gutter/top" . }} {{ partial "layout/gutter/print" . }}
-    </div>
-  </div>
-</main>
+<div id="main-asides">
+  <main id="layout-section">
+    {{ if ne .Section (path.Base .File.Dir) }} {{ partial
+    "_default/gutter/gutter-top-single" . }} {{ end }}
+    <article id="content">
+      {{ partial "_index" . }}
+      <section id="subpages">
+        {{ range.Pages }} {{ .Render "summary" }} {{ end }}
+      </section>
+    </article>
+    {{ partial "_default/gutter/gutter-buttom-section" . }}
+  </main>
+</div>
 {{ end }}
