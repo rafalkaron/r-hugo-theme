@@ -20,7 +20,7 @@
 }
 
 /* M */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   :root {
     --margin-large: 2.5rem;
     --padding-main: 2.5rem;
@@ -33,7 +33,7 @@
     display: unset;
   }
   .side-menu-wrapper {
-    display: unset;
+    display: none;
   }
   .on-this-page-wrapper {
     display: none;
@@ -41,7 +41,7 @@
 }
 
 /* L */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 900px) {
   .hamburger-wrapper,
   .hamburger-wrapper * {
     display: none;
