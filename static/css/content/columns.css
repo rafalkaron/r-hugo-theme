@@ -16,6 +16,13 @@
   column-gap: var(--margin);
 }
 
+#content p.two_column,
+#content p.three_column,
+#content p.four_column {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 #content .two_column *,
 #content .three_column *,
 #content .four_column * {

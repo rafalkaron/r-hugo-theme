@@ -19,6 +19,14 @@
   display: none;
 }
 
+@media only screen and (max-width: 600px) {
+  #content .two_column,
+  #content .three_column,
+  #content .four_column {
+    column-count: 1;
+  }
+}
+
 /* M */
 @media only screen and (min-width: 600px) {
   :root {
@@ -50,7 +58,7 @@
     display: unset;
   }
   .side-menu-wrapper {
-    display: unset;
+    display: none;
   }
   .on-this-page-wrapper {
     display: unset;

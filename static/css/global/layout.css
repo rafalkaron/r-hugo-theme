@@ -26,7 +26,7 @@ body.modal-on {
 body,
 header,
 footer {
-  min-width: 320px;
+  min-width: var(--main-min-width);
 }
 
 /* Main layout */
@@ -39,8 +39,8 @@ footer {
   column-gap: var(--padding-main);
 }
 main {
-  max-width: 920px;
-  min-width: 320px;
+  max-width: var(--main-max-width);
+  min-width: var(--main-min-width);
   width: 100%;
 }
 #side-menu,

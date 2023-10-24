@@ -3,6 +3,7 @@
   padding: 0;
   display: block;
   border-radius: var(--border-radius);
+  padding-top: var(--margin);
 }
 
 /* Add classes for manipulating images position */
@@ -51,4 +52,25 @@
 
 #content p.border > img {
   border: solid var(--border-width-thin) var(--content-background-middle);
+}
+
+#content p.center,
+#content p.left,
+#content p.right,
+#content p.tiny,
+#content p.small,
+#content p.medium,
+#content p.large,
+#content p.huge,
+#content p.three-fourth,
+#content p.half,
+#content p.quarter,
+#content p.inline {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+#content p.inline > img {
+  margin-top: 0;
+  padding-top: 0;
 }

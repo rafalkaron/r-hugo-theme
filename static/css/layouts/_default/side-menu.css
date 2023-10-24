@@ -1,7 +1,8 @@
 .side-menu-wrapper {
   margin: 0 0 var(--margin) 0;
-  width: 150px;
-  max-width: 150px;
+  width: var(--aside-width);
+  max-width: var(--aside-width);
+  min-width: var(--aside-width);
 }
 
 #side-menu .side-menu-caption {
@@ -29,20 +30,14 @@
 #side-menu > ul {
   width: fit-content;
 }
-/* Style caption */
-#side-menu .side-menu-caption {
-  font-size: 0.9rem;
-}
+
 /* Style items/links */
 #side-menu a,
 #side-menu li {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 #side-menu a {
   padding: 0 0.5rem;
-}
-/* Links */
-#side-menu a {
   text-decoration: none;
   font-size: 0.8rem;
   color: var(--content-text-middle);
@@ -52,6 +47,7 @@
   background-clip: border-box;
   text-align: start;
 }
+
 #side-menu .side-menu-link.active {
   background-color: var(--content-background-middle);
 }

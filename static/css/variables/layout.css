@@ -17,4 +17,8 @@
   --border-width: 0.5rem;
   --border-width-medium: 0.2rem;
   --border-width-thin: 0.125rem;
+
+  --aside-width: 175px;
+  --main-max-width: 920px;
+  --main-min-width: 320px;
 }
