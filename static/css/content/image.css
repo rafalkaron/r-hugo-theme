@@ -70,7 +70,8 @@
   padding-top: 0;
 }
 
-#content p.inline > img {
+#content p.inline > img,
+#content p.border > img {
   margin-top: 0;
   padding-top: 0;
 }
