@@ -75,3 +75,7 @@
   margin-top: 0;
   padding-top: 0;
 }
+
+#content p.border {
+  margin-top: var(--margin);
+}

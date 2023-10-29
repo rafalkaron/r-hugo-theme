@@ -28,6 +28,7 @@
 /* content */
 @import "content/typography.css";
 @import "content/selection.css";
+@import "content/columns.css";
 @import "content/headings.css";
 @import "content/paragraph.css";
 @import "content/link.css";
@@ -39,7 +40,6 @@
 @import "content/image.css";
 @import "content/hr.css";
 @import "content/fn.css";
-@import "content/columns.css";
 @import "content/related-links.css";
 
 /* global */
