@@ -17,6 +17,7 @@
 /* Remove top-margin for paragraphs in lists */
 #content li p {
   margin: 0;
+  text-wrap: pretty;
 }
 
 #content ul.items + p {

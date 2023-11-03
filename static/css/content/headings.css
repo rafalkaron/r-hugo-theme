@@ -22,12 +22,14 @@
 #content h1,
 #content h2 {
   font-weight: 700;
+  text-wrap: balance;
 }
 #content h3,
 #content h4,
 #content h5,
 #content h6 {
   font-weight: 600;
+  text-wrap: balance;
 }
 
 /* Fix anchors hidden behind navbar */
