@@ -31,7 +31,7 @@
 @media only screen and (min-width: 600px) {
   :root {
     --margin-large: 2.5rem;
-    --padding-main: 2.5rem;
+    --padding-main: 4rem;
   }
   .hamburger-wrapper,
   .hamburger-wrapper * {
