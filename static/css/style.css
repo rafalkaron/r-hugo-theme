@@ -12,6 +12,7 @@
 @import "layouts/_default/gutters.css";
 @import "layouts/_default/footer.css";
 @import "layouts/_default/section.css";
+@import "layouts/_default/single.css";
 @import "layouts/_default/404.css";
 
 @import "layouts/blog/section.css";

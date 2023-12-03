@@ -1,0 +1,11 @@
+#layout-single #intro {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--margin);
+}
+
+#layout-single #intro-thumbnail img {
+  height: 80px;
+  margin-top: 0;
+  padding-top: 0;
+}
