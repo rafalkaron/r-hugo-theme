@@ -1,7 +1,6 @@
 #content img {
   overflow: auto;
   padding: 0;
-  display: block;
   border-radius: var(--border-radius);
 }
 
@@ -9,17 +8,14 @@
 #content p.center {
   display: flex;
   justify-content: center;
-  margin-top: 0;
 }
 #content p.left {
   display: flex;
   justify-content: flex-start;
-  margin-top: 0;
 }
 #content p.right {
   display: flex;
   justify-content: flex-end;
-  margin-top: 0;
 }
 
 /* Add classes for manipulating images size */
@@ -50,13 +46,10 @@
 
 #content p > img {
   max-width: 100%;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 #content p.border > img {
   border: solid var(--border-width-thin) var(--content-background-middle);
-}
-
-#content p > img {
-  margin-top: var(--margin);
-  padding-top: 0;
 }

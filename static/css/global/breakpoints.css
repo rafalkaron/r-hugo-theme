@@ -25,6 +25,11 @@
   #content .four_column {
     column-count: 1;
   }
+  #content .two_column > img,
+  #content .three_column > img,
+  #content .four_column > img {
+    display: block;
+  }
   #content .two_column > img ~ img,
   #content .three_column > img ~ img,
   #content .four_column > img ~ img {
