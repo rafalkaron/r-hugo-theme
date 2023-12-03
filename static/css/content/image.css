@@ -3,21 +3,23 @@
   padding: 0;
   display: block;
   border-radius: var(--border-radius);
-  padding-top: var(--margin);
 }
 
 /* Add classes for manipulating images position */
 #content p.center {
   display: flex;
   justify-content: center;
+  margin-top: 0;
 }
 #content p.left {
   display: flex;
   justify-content: flex-start;
+  margin-top: 0;
 }
 #content p.right {
   display: flex;
   justify-content: flex-end;
+  margin-top: 0;
 }
 
 /* Add classes for manipulating images size */
@@ -54,29 +56,7 @@
   border: solid var(--border-width-thin) var(--content-background-middle);
 }
 
-#content p > img,
-#content p.center,
-#content p.left,
-#content p.right,
-#content p.tiny,
-#content p.small,
-#content p.medium,
-#content p.large,
-#content p.huge,
-#content p.three-fourth,
-#content p.half,
-#content p.quarter,
-#content p.inline {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-#content p.inline > img,
-#content p.border > img {
-  margin-top: 0;
-  padding-top: 0;
-}
-
-#content p.border {
+#content p > img {
   margin-top: var(--margin);
+  padding-top: 0;
 }
