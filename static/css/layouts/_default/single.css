@@ -1,4 +1,4 @@
-#layout-single #intro {
+#layout-single.layout-home #intro {
   display: flex;
   justify-content: space-between;
   gap: var(--margin);
