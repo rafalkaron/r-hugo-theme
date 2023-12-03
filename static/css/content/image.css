@@ -54,6 +54,7 @@
   border: solid var(--border-width-thin) var(--content-background-middle);
 }
 
+#content p > img,
 #content p.center,
 #content p.left,
 #content p.right,
