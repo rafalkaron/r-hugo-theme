@@ -7,11 +7,7 @@
       {{ end }} {{ if.Params.thumbnail }}
     </div>
     <div id="intro-thumbnail">
-      <img
-        src="{{ .Params.thumbnail }}"
-        onclick="window.open(this.src)"
-        style="cursor: pointer"
-      />
+      <img src="{{ .Params.thumbnail }}" />
     </div>
     {{ end }}
   </section>
