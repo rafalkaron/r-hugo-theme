@@ -1,14 +1,8 @@
 <article id="content">
   <section id="intro">
-    <div id="intro-text">
-      <h1>{{ .Title }}</h1>
-      {{ with.Params.description }}
-      <p id="desc">{{ .| markdownify }}</p>
-      {{ end }} {{ if.Params.thumbnail }}
-    </div>
-    <div id="intro-thumbnail">
-      <img src="{{ .Params.thumbnail }}" />
-    </div>
+    <h1>{{ .Title }}</h1>
+    {{ with.Params.description }}
+    <p id="desc">{{ .| markdownify }}</p>
     {{ end }}
   </section>
   {{ partial "_default/content/bodytext.html" . }} {{ partial

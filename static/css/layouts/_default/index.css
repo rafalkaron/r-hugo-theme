@@ -4,7 +4,7 @@
   gap: var(--margin);
 }
 
-#layout-single #intro-thumbnail img {
+#layout-single.layout-home #intro-avatar img {
   height: 80px;
   margin-top: 0;
   padding-top: 0;
