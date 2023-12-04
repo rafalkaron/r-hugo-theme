@@ -5,6 +5,6 @@
     <p id="desc">{{ .| markdownify }}</p>
     {{ end }}
   </section>
-  {{ partial "_default/content/bodytext.html" . }}
-  {{ partial "_default/content/related-links" . }}
+  {{ partial "_default/content/bodytext.html" . }} {{ partial
+  "_default/content/related-links" . }}
 </article>

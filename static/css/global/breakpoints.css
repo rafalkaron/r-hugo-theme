@@ -25,13 +25,23 @@
   #content .four_column {
     column-count: 1;
   }
+  #content .two_column > img,
+  #content .three_column > img,
+  #content .four_column > img {
+    display: block;
+  }
+  #content .two_column > img ~ img,
+  #content .three_column > img ~ img,
+  #content .four_column > img ~ img {
+    margin-top: var(--margin);
+  }
 }
 
 /* M */
 @media only screen and (min-width: 600px) {
   :root {
     --margin-large: 2.5rem;
-    --padding-main: 2.5rem;
+    --padding-main: 4rem;
   }
   .hamburger-wrapper,
   .hamburger-wrapper * {

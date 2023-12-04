@@ -20,6 +20,13 @@
 #content p.three_column,
 #content p.four_column {
   margin-top: 0;
+  padding-top: var(--margin);
+}
+
+#content p.two_column > img,
+#content p.three_column > img,
+#content p.four_column > img {
+  margin-top: 0;
   padding-top: 0;
 }
 

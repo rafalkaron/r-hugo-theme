@@ -1,6 +1,6 @@
 #layout-section.layout-blog #posts {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--margin);
   margin-top: var(--margin);
 }
@@ -12,6 +12,11 @@
   border-radius: var(--border-radius);
   background-clip: border-box;
   padding: var(--margin);
+}
+
+#layout-section.layout-blog .post .desc-image {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Hide "Blogs" */

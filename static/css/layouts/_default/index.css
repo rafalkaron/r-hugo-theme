@@ -1,0 +1,11 @@
+#layout-single.layout-home #intro {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--margin);
+}
+
+#layout-single.layout-home #intro-avatar img {
+  height: 80px;
+  margin-top: 0;
+  padding-top: 0;
+}

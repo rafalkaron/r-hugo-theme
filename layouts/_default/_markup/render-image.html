@@ -1,1 +1,8 @@
-  <img src="{{ .Destination | relURL }}" alt="{{ .Text }}" {{ with .Title}} title="{{ . }}"{{ end }} />
+<img
+  src="{{ .Destination | relURL }}"
+  alt="{{ .Text }} "
+  onclick="window.open(this.src)"
+  style="cursor: pointer;"
+  {{ with .Title }}
+  title="{{ . }}"
+  {{ end }} />
