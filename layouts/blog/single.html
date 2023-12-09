@@ -1,27 +1,30 @@
 {{ define "main" }}
 <div id="main-asides">
-<main id="layout-single" class="layout-blog">
-  {{ partial "_default/gutter/gutter-top-blog" . }}
-  <article id="content">
-    <section id="intro">
-    <h1>{{ .Title }}</h1>
-    {{ partial "blog/meta" . }} 
-    {{ with .Params.image }}
-      <div class="desc-image-container">
-        <img class="desc-image" src="{{ . | relURL }}"></img>
-      </div>
-    {{ end }}
-    {{ with .Params.description }}
-      <p class="desc">{{ .  | markdownify }}</p>
-    {{ end }} 
-    </section>
-    {{ partial "_default/content/bodytext.html" . }}
-    {{ with .Site.DisqusShortname }}
+  <main id="layout-single" class="layout-blog">
+    {{ partial "_default/gutter/gutter-top-blog" . }}
+    <article id="content">
+      <section id="intro">
+        <h1>{{ .Title }}</h1>
+        {{ partial "blog/meta" . }} {{ with .Params.image }}
+        <div class="desc-image-container">
+          <img
+            class="desc-image"
+            src="{{ . | relURL }}"
+            onclick="openModal({{ . | relURL }})"
+            style="cursor: pointer"
+          />
+        </div>
+        {{ end }} {{ with .Params.description }}
+        <p class="desc">{{ . | markdownify }}</p>
+        {{ end }}
+      </section>
+      {{ partial "_default/content/bodytext.html" . }} {{ with
+      .Site.DisqusShortname }}
       <section>{{ template "_internal/disqus.html" . }}</section>
-    {{ end }}
-  </article>
-  {{ partial "_default/gutter/gutter-bottom-single-blog" . }}
-</main>
-{{ partial "_default/navigation/on-this-page" . }}
+      {{ end }}
+    </article>
+    {{ partial "_default/gutter/gutter-bottom-single-blog" . }}
+  </main>
+  {{ partial "_default/navigation/on-this-page" . }}
 </div>
 {{ end }}

@@ -1,4 +1,12 @@
-/* The Modal (background) */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 #lightbox {
   display: none;
   position: fixed;
@@ -7,10 +15,11 @@
   top: 0;
   bottom: 0;
   right: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
+  background-color: var(--content-background-light);
+  animation: fadein 0.2s;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 #lightbox-img {

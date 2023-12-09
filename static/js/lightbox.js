@@ -1,12 +1,15 @@
-let lightbox = document.getElementById("lightbox");
-let lightboxImg = document.getElementById("lightbox-img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const body = document.querySelector("body");
 
 function openModal(src) {
+  body.setAttribute("class", "modal-on");
   lightbox.style.display = "flex";
   lightboxImg.setAttribute("src", src);
 }
 
 function closeModal() {
+  body.removeAttribute("class", "modal-on");
   document.getElementById("lightbox").style.display = "none";
 }
 
