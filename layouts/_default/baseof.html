@@ -11,6 +11,7 @@
 		{{ end }}
 		{{ block "main" . }}{{ end }}
 		<script src="{{ "js/preload.js" | relURL }}"></script>
+		{{ partial "_default/lightbox" . }}
 		{{ partial "_default/footer" . }}
 	</body>
 </html>
