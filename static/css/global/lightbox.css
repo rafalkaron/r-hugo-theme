@@ -38,7 +38,10 @@
 }
 
 #lightbox .lightbox-button {
-  text-shadow: var(--text-shadow);
-  color: var(--layout-text);
   text-decoration: none;
+}
+
+#lightbox .lightbox-button .material-icons {
+  text-shadow: var(--text-shadow);
+  color: var(--content-text-dark);
 }
