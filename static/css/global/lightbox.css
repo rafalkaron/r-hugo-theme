@@ -24,8 +24,20 @@
 
 #lightbox-img {
   object-fit: scale-down;
-  margin: 0;
   height: 100%;
   width: 100%;
+  margin: 0 !important;
   padding: var(--padding-main) !important;
+}
+
+#lightbox-buttons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: var(--margin) !important;
+}
+
+#lightbox .lightbox-button {
+  text-shadow: var(--text-shadow);
+  color: var(--layout-text);
 }
