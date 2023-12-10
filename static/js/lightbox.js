@@ -16,7 +16,7 @@ function openModal(src) {
 
 function closeModal() {
   pageBody.removeAttribute("class", "modal-on");
-  document.getElementById("lightbox").style.display = "none";
+  lightbox.style.display = "none";
 }
 
 function downloadFile() {
@@ -25,6 +25,6 @@ function downloadFile() {
 
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    lightbox.style.display = "none";
+    closeModal();
   }
 });
