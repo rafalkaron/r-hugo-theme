@@ -22,19 +22,19 @@
   scrollbar-width: none;
 }
 
-#lightbox-img {
+#lightbox #lightbox-img {
   object-fit: scale-down;
   height: 100%;
   width: 100%;
-  margin: 0 !important;
-  padding: var(--padding-main) !important;
+  margin: 0;
+  padding: var(--padding-main);
 }
 
-#lightbox-buttons {
+#lightbox #lightbox-buttons {
   position: fixed;
   top: 0;
   right: 0;
-  margin: var(--margin) !important;
+  margin: var(--margin);
 }
 
 #lightbox .lightbox-button {
