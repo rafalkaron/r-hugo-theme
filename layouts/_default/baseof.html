@@ -4,9 +4,9 @@
 	<body>
 		{{ partial "_default/header/header" . }}
 		<script src="{{ "js/toc-indicator.js" | relURL }}"></script>
-		<script async src="{{ "js/preload.js" | relURL }}"></script>
-		<script async src="{{ "js/hide-navbar.js" | relURL }}"></script>
-		<script async src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
+		<script src="{{ "js/preload.js" | relURL }}"></script>
+		<script src="{{ "js/hide-navbar.js" | relURL }}"></script>
+		<script src="{{ "js/light-dark-toggle.js" | relURL }}"></script> 
 		{{ if (findRE "<pre" .Content 1) }}
 			<script src="{{ "js/copy-text.js" | relURL }}"></script> 
 		{{ end }}
