@@ -1,0 +1,53 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--content-background-light);
+  animation: fadein 0.2s;
+  overflow: hidden;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#lightbox #lightbox-img {
+  object-fit: scale-down;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: var(--padding-main);
+}
+
+#lightbox #lightbox-buttons {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: var(--margin);
+}
+
+#lightbox .lightbox-button {
+  text-decoration: none;
+}
+
+#lightbox .lightbox-button .material-icons {
+  color: var(--content-text-dark);
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+}
+
+#lightbox .lightbox-button .material-icons:hover {
+  color: #f4f4f4;
+  background-color: var(--content-background-dark);
+}

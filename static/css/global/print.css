@@ -167,7 +167,9 @@
   }
 
   /* Prevent printing multiple pages with the same modal */
-  body.modal-on #content {
+  body.modal-on header,
+  body.modal-on #content,
+  body.modal-on footer {
     display: none;
   }
 }
