@@ -42,6 +42,12 @@
 }
 
 #lightbox .lightbox-button .material-icons {
-  text-shadow: var(--text-shadow);
   color: var(--content-text-dark);
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+}
+
+#lightbox .lightbox-button .material-icons:hover {
+  color: var(--content-text-dark);
+  background-color: var(--content-background-dark);
 }
