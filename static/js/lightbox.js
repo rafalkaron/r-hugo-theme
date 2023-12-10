@@ -24,14 +24,7 @@ function downloadFile() {
 }
 
 document.addEventListener("keydown", (e) => {
-  e = e || window.event;
   if (e.key === "Escape") {
-    {
-      if (lightbox.style.display !== "none") {
-        lightbox.style.display = "none";
-      } else {
-        lightbox.style.display = "none";
-      }
-    }
+    lightbox.style.display = "none";
   }
 });
