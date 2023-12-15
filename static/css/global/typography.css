@@ -3,12 +3,62 @@
   font-family: "Open Sans Italic";
   src: local("Open Sans Italic"),
     url("/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: local("Open Sans Italic"),
+    url("/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: local("Open Sans Italic"),
+    url("/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: local("Open Sans Italic"),
+    url("/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans Italic";
+  src: local("Open Sans Italic"),
+    url("/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Open Sans";
   src: local("Open Sans"),
     url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("/fonts/OpenSans-VariableFont_wdth,wght.ttf") format("truetype");
+  font-weight: 700;
 }
 
 @font-face {
