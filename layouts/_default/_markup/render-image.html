@@ -1,7 +1,7 @@
 <img
   src="{{ .Destination | relURL }}"
   alt="{{ .Text }} "
-  onclick="openModal({{ .Destination | relURL }})"
+  onclick="openModal({{ .Destination | relURL }}, {{ .Text }})"
   style="cursor: pointer;"
   {{ with .Title }}
   title="{{ . }}"

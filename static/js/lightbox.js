@@ -7,10 +7,13 @@ const pageBody = document.querySelector("body");
 
 let lightboxImageSrc = null;
 
-function openModal(src) {
+function openModal(src, alt) {
   pageBody.setAttribute("class", "modal-on");
   lightbox.style.display = "flex";
   lightboxImg.setAttribute("src", src);
+  if (alt != null) {
+    lightboxImg.setAttribute("alt", alt);
+  }
   lightboxImageSrc = src;
 }
 

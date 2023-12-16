@@ -39,6 +39,7 @@
 
 #lightbox .lightbox-button {
   text-decoration: none;
+  padding: var(--padding);
 }
 
 #lightbox .lightbox-button .material-icons {

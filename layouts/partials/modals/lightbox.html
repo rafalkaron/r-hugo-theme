@@ -1,4 +1,4 @@
-<div id="lightbox" onclick="closeModal()">
+<div id="lightbox" onclick="closeModal()" class="not-selectable">
     <div id="lightbox-buttons" class="web">
     <a title="Download and close" class="lightbox-button" download="" id="lightbox-button-download" onclick="downloadFile()">
         <span class="material-icons animation" style="cursor: pointer;">download</span>
@@ -7,7 +7,7 @@
         <span class="material-icons animation" style="cursor: pointer;">close</span>
     </a>
 </div>
-    <img id="lightbox-img"/>
+    <img id="lightbox-img" />
 </div>
 
 <script src="{{ "js/lightbox.js" | relURL }}"></script>
