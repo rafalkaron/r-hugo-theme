@@ -1,3 +1,8 @@
+#content figure {
+  padding: 0;
+  width: 100%;
+}
+
 #content img {
   overflow: auto;
   padding: 0;

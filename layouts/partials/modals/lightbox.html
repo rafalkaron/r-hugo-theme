@@ -1,13 +1,19 @@
 <div id="lightbox" onclick="closeModal()" class="not-selectable">
     <div id="lightbox-buttons" class="web">
-    <a title="Download and close" class="lightbox-button" download="" id="lightbox-button-download" onclick="downloadFile()">
-        <span class="material-icons animation" style="cursor: pointer;">download</span>
+    <a title="Info" class="lightbox-button"><span class="material-icons animation">info</span></a>
+    <a title="Location" target="_blank" class="lightbox-button" download=""><span
+            class="material-icons animation">location_on</span></a>
+    <a title="Download" class="lightbox-button" download="" id="lightbox-button-download" onclick="downloadFile()">
+        <span class="material-icons animation">download</span>
     </a>
     <a title="Close" class="lightbox-button" id="lightbox-button-close" onclick="closeModal()">
-        <span class="material-icons animation" style="cursor: pointer;">close</span>
+        <span class="material-icons animation">close</span>
     </a>
 </div>
-    <img id="lightbox-img" />
+    <figure>
+        <img id="lightbox-img" />
+        <figcatpion id="lightbox-figcaption"></figcatpion>
+    </figure>
 </div>
 
 <script src="{{ "js/lightbox.js" | relURL }}"></script>

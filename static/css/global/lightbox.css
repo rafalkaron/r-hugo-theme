@@ -46,9 +46,17 @@
   color: var(--content-text-dark);
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
+  cursor: pointer;
 }
 
 #lightbox .lightbox-button .material-icons:hover {
   color: #f4f4f4;
   background-color: var(--content-background-dark);
+}
+
+#lightbox #lightbox-figcaption {
+  color: var(--content-text-dark);
+  background-color: var(--content-background-middle);
+  border-radius: var(--border-radius);
+  display: block;
 }
