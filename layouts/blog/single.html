@@ -19,7 +19,7 @@
         {{ end }}
       </section>
       {{ partial "_default/content/bodytext.html" . }} {{ with
-      .Site.DisqusShortname }}
+      .Site.Config.Services.Disqus.Shortname}}
       <section>{{ template "_internal/disqus.html" . }}</section>
       {{ end }}
     </article>
